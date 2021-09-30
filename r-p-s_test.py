@@ -35,4 +35,3 @@ while replay:
             replay = False
         elif again not in yes:
             print("I'm sorry, I didn't understand that.")
-            again = ""
