@@ -21,6 +21,7 @@ class Human(Player):
     def __init__(self, letter):
         super().__init__(letter)
 
+    # Checks if the desired square is real and available. If so, returns it as the next desired move.
     def get_move(self, game):
         valid_square = False
         val = None
