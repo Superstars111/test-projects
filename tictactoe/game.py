@@ -1,5 +1,5 @@
 # Based on a tutorial
-from player import Human, RandomComputer
+from player import Human, RandomComputer, GeniusComputer
 import time
 
 
@@ -70,16 +70,17 @@ class TicTacToe:
         return False
 
 
-def play(game, x_player, o_player, print_game=True):
+def play(game, x, o, print_game=True):
+
     if print_game:
         game.print_nums()
 
     letter = "X"
     while game.empty_squares():
         if letter == "O":
-            square = o_player.get_move(game)
+            square = o.get_move(game)
         else:
-            square = x_player.get_move(game)
+            square = x.get_move(game)
 
         # I believe this should always return True. One return specifies it, and the other doesn't.
         if game.make_move(square, letter):
@@ -91,11 +92,12 @@ def play(game, x_player, o_player, print_game=True):
             if game.winner:
                 if print_game:
                     print(letter + " wins!")
-                    return
+                return "O" if letter == "O" else "X"
 
             letter = "O" if letter == "X" else "X"
 
-        time.sleep(0.8)
+        if print_game:
+            time.sleep(0.8)
 
     if print_game:
         print("It's a tie...")
@@ -104,19 +106,91 @@ def play(game, x_player, o_player, print_game=True):
 # Plays and replays the game until no longer desired
 replay = True
 while replay:
+    x_wins = 0
+    o_wins = 0
+    ties = 0
+
     if __name__ == "__main__":
-        x = Human("X")
-        o = RandomComputer("O")
+
         t = TicTacToe()
-        play(t, x, o, print_game=True)
+        x_player = Human("X")
+        o_player = Human("O")
+        mode = input("How many players would you like? 1, 2, or a simulation (sim)? ").lower()
+        if mode == "2":
+            play(t, Human("X"), Human("O"), print_game=True)
+
+        elif mode == "1":
+            level = input("Would you like to play against the random computer (r), or the genius computer (g)? ").lower()
+            order = input("Would you like to be X or O? ").lower()
+            if level == "r" and order == "x":
+                play(t, Human("X"), RandomComputer("O"), print_game=True)
+
+            elif level == "r" and order == "o":
+                play(t, RandomComputer("X"), Human("O"), print_game=True)
+
+            elif level == "g" and order == "x":
+                play(t, Human("X"), GeniusComputer("O"), print_game=True)
+
+            elif level == "g" and order == "o":
+                play(t, GeniusComputer("X"), Human("O"), print_game=True)
+
+            elif level not in ("r", "g") or order not in ("x", "o"):
+                print("I'm sorry, I didn't understand your choices. Please use single letters.")
+
+        elif mode == "sim":
+            sim_count = input("How many simulations would you like to run? (High numbers may take a while.) ")
+            try:
+                int(sim_count)
+            except ValueError:
+                print("Please input an integer.")
+            sim_type = input("Would you like two genius computers (g), "
+                             "two random computers (r), or one of each (both)? ").lower()
+            if sim_type == "g":
+                x_player = GeniusComputer("X")
+                o_player = GeniusComputer("O")
+
+            elif sim_type == "r":
+                x_player = RandomComputer("X")
+                o_player = RandomComputer("O")
+
+            elif sim_type == "both":
+                sim_order = input("Would you like the Genius to be X or O? ").lower()
+                if sim_order == "x":
+                    x_player = GeniusComputer("X")
+                    o_player = RandomComputer("O")
+
+                elif sim_order == "o":
+                    x_player = RandomComputer("X")
+                    o_player = GeniusComputer("O")
+
+                elif sim_order not in ("x", "o"):
+                    print("I'm sorry, I didn't understand that.")
+
+            elif sim_type not in ("g", "r", "both"):
+                print("I'm sorry, I didn't understand that.")
+
+            if sim_type in ("g", "r,", "both"):
+                for test in range(int(sim_count)):
+                    result = play(t, x_player, o_player, print_game=False)
+                    if result == "X":
+                        x_wins += 1
+                    elif result == "O":
+                        o_wins += 1
+                    else:
+                        ties += 1
+
+                print(f"X won {x_wins} times, O won {o_wins} times, and there were {ties} ties.")
+
         endgame = ""
         while endgame == "":
             yes = ("y", "yes")
             no = ("n", "no")
             endgame = input("Would you like to play again? ").lower()
+
             if endgame in no:
                 print("Thanks for playing!")
                 replay = False
+
             elif endgame not in (yes or no):
                 print("I'm sorry, I understand that.")
                 endgame = ""
