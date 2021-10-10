@@ -221,7 +221,7 @@ blackBox = {
     "idealPlayers": (2,),
     "copyPlayers": (2,),
     "compType": "pvp",
-    "ownedBy": "Dad",
+    "ownedBy": ["Dad"],
     "length": "",
     "turns": "turnBased",
 }
@@ -491,7 +491,7 @@ cribbage = {
     "idealPlayers": (2, 3, 4),
     "copyPlayers": (2, 3, 4),
     "compType": "pvp",
-    "ownedBy": "Mom",
+    "ownedBy": ["Mom"],
     "length": "",
     "turns": "turnBased",
 }
@@ -776,7 +776,7 @@ go = {
     "idealPlayers": (2,),
     "copyPlayers": (2,),
     "compType": "pvp",
-    "ownedBy": "Dad",
+    "ownedBy": ["Dad"],
     "length": "",
     "turns": "turnBased",
 }
@@ -866,7 +866,7 @@ handAndFoot = {
     "idealPlayers": (2,),
     "copyPlayers": (2,),
     "compType": "pvp",
-    "ownedBy": "Mom",
+    "ownedBy": ["Mom"],
     "length": "",
     "turns": "turnBased",
 }
@@ -1256,7 +1256,7 @@ othello = {
     "idealPlayers": (2,),
     "copyPlayers": (2,),
     "compType": "pvp",
-    "ownedBy": "Dad",
+    "ownedBy": ["Dad"],
     "length": "",
     "turns": "turnBased",
 }
@@ -1586,7 +1586,7 @@ rummikub = {
     "idealPlayers": (4,),
     "copyPlayers": (2, 3, 4),
     "compType": "pvp",
-    "ownedBy": "Mom",
+    "ownedBy": ["Mom"],
     "length": "",
     "turns": "turnBased",
 }
@@ -1631,7 +1631,7 @@ shanghiRummy = {
     "idealPlayers": (4, 5, 6, 7, 8),
     "copyPlayers": (2, 3, 4, 5, 6, 7, 8),
     "compType": "pvp",
-    "ownedBy": "Mom",
+    "ownedBy": ["Mom"],
     "length": "",
     "turns": "turnBased",
 }
@@ -2216,7 +2216,7 @@ unstableUnicorns = {
     "idealPlayers": (3, 4, 5, 6, 7, 8),
     "copyPlayers": (2, 3, 4, 5, 6, 7, 8),
     "compType": "pvp",
-    "ownedBy": "Jared",
+    "ownedBy": ["Jared"],
     "length": "",
     "turns": "turnBased",
 }
