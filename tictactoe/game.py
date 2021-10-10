@@ -169,7 +169,7 @@ while replay:
             elif sim_type not in ("g", "r", "both"):
                 print("I'm sorry, I didn't understand that.")
 
-            if sim_type in ("g", "r,", "both"):
+            if sim_type in ("g", "r", "both"):
                 for test in range(int(sim_count)):
                     result = play(t, x_player, o_player, print_game=False)
                     if result == "X":
