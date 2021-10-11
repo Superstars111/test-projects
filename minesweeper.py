@@ -60,8 +60,8 @@ class Board:
         elif self.board[row][col] > 0:
             return True
 
-        for r in range(max(0, row-1), min(self.dim_size-1, row+1)):
-            for c in range(max(0, col-1), min(self.dim_size-1, col+1)):
+        for r in range(max(0, row-1), min(self.dim_size-1, (row+1) + 1)):
+            for c in range(max(0, col-1), min(self.dim_size-1, (col+1) + 1)):
                 if (r, c) in self.dug:
                     continue
                 self.dig(r, c)
@@ -90,16 +90,18 @@ class Board:
                 )
             )
 
-        # We need to return a single string
+        # This builds the numbers at the top that label the columns
         indices = [i for i in range(self.dim_size)]
         indices_row = "   "
         cells = []
+        # Yeah... No clue how this part works
         for idx, col in enumerate(indices):
             form = "%-" + str(widths[idx]) + "s"
             cells.append(form % col)
-        indices_row += " ".join(cells)
+        indices_row += "  ".join(cells)
         indices_row += " \n"
 
+        # This part builds the grid into a single string. ...Not entirely sure how.
         for i in range(len(visible_board)):
             row = visible_board[i]
             string_rep += f"{i} |"
@@ -110,6 +112,7 @@ class Board:
             string_rep += " |".join(cells)
             string_rep += " |\n"
 
+        # This builds the final string. Numbers at the top + dashes and \n + grid (including newlines) + more dashes.
         str_len = int(len(string_rep) / self.dim_size)
         string_rep = indices_row + "-"*str_len + "\n" + string_rep + "-"*str_len
 
