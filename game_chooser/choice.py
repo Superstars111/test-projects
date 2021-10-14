@@ -1,5 +1,23 @@
 import options
 
+
+def sort(game_list, spec, dict_key, inclusion=True):
+    for game in game_list:
+        if spec in game[dict_key]:
+            calc.append(game)
+
+
+def set_sort(game_list, spec, dict_key, inclusion=True):
+    if inclusion:
+        for game in game_list:
+            if not set(game[dict_key]).isdisjoint(spec):
+                calc.append(game)
+    else:
+        for game in game_list:
+            if set(game[dict_key]).isdisjoint(spec):
+                calc.append(game)
+
+
 # Collects the number of players. Anything above 10 is rare and unlikely, so using 10 as your option should work fine.
 retry = True
 while retry:
@@ -18,9 +36,7 @@ results = options.options.copy()  # Used for filtering from and final results
 calc = []  # Used for filtering into and updating results
 
 # Limits possible games to only what can be played with the current number of players
-for game in results:
-    if play_count in game["players"]:
-        calc.append(game)
+sort(results, play_count, "players")
 
 results = calc.copy()
 calc = []
@@ -40,7 +56,7 @@ calc = []
 
 # If the game requires multiple copies and not everybody has a copy, this rules it out.
 for game in results:
-    if game["shared"] is True or (game["shared"] is False and set(players) <= set(game["ownedBy"])):
+    if game["shared"] is True or set(players) <= set(game["ownedBy"]):
         calc.append(game)
 
 results = calc.copy()
@@ -56,9 +72,7 @@ while retry:
     style = input("Let's narrow it down further. "
                   "Which type of game are you looking for. Video, tabletop, or either? ").lower()
     if style == "video":
-        for game in results:
-            if game["type"] == "video":
-                calc.append(game)
+        sort(results, style, "type")
         retry = False
 
     elif style == "tabletop":
@@ -81,16 +95,8 @@ calc = []
 retry = True
 while retry:
     style = input("Do you want a co-op game, a PvP game, or either? ").lower()
-    if style == "co-op":
-        for game in results:
-            if game["compType"] == ("co-op" or "modes"):
-                calc.append(game)
-        retry = False
-
-    elif style == "pvp":
-        for game in results:
-            if game["compType"] == ("pvp" or "modes"):
-                calc.append(game)
+    if style in ("co-op", "pvp"):
+        sort(results, style, "compType")
         retry = False
 
     elif style == "either":
@@ -102,6 +108,50 @@ while retry:
 
 results = calc.copy()
 calc = []
+feel = []
+
+retry = True
+while retry:
+    style = input("If you like a specific \"feel\" of game, input it now. "
+                  "For a list, type list. When you're done, type done. ").lower()
+    if style in options.feelings:
+        feel.append(style)
+    elif style == "list":
+        for feeling in options.feelings:
+            print(feeling)
+
+    elif style == "done":
+        if not feel:
+            feel = options.feelings.copy()
+        retry = False
+    else:
+        print("I'm sorry, I didn't understand that.")
+
+set_sort(results, feel, "feel")
+
+results = calc.copy()
+calc = []
+feel = []
+
+retry = True
+while retry:
+    style = input("If you would like to exclude a specific game feeling, please input it now. "
+                  "For a list, type list. When you're done, type done. ").lower()
+    if style in options.feelings:
+        feel.append(style)
+    elif style == "list":
+        for feeling in options.feelings:
+            print(feeling)
+    elif style == "done":
+        retry = False
+    else:
+        print("I'm sorry, I didn't understand that.")
+
+set_sort(results, feel, "feel", inclusion=False)
+
+results = calc.copy()
+calc = []
+feel = []
 
 # Some games can be played with x players, but weren't designed that way. This optionally rules those out.
 print(f"\nYou currently have {len(results)} {'option' if len(results) == 1 else 'options'} for your game.")
