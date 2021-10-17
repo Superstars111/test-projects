@@ -133,14 +133,22 @@ if __name__ == "__main__":
                       "For a list, type list. When you're done, type done. ").lower()
         if style in options.feelings:
             feel.append(style)
+
         elif style == "list":
-            for feeling in options.feelings:
-                print(feeling)
+            for num, feeling in enumerate(options.feelings, start=1):
+                if num != len(options.feelings):
+                    print(feeling + ", ", end="")
+                else:
+                    print(feeling, end="")
+                if num % 4 == 0:
+                    print()
+            print()
 
         elif style == "done":
             if not feel:
                 feel = options.feelings.copy()
             retry = False
+
         else:
             print("I'm sorry, I didn't understand that.")
 
@@ -156,11 +164,20 @@ if __name__ == "__main__":
                       "For a list, type list. When you're done, type done. ").lower()
         if style in options.feelings:
             exclude.append(style)
+
         elif style == "list":
-            for feeling in options.feelings:
-                print(feeling)
+            for num, feeling in enumerate(options.feelings, start=1):
+                if num != len(options.feelings):
+                    print(feeling + ", ", end="")
+                else:
+                    print(feeling, end="")
+                if num % 4 == 0:
+                    print()
+            print()
+
         elif style == "done":
             retry = False
+
         else:
             print("I'm sorry, I didn't understand that.")
 
