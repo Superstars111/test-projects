@@ -1,0 +1,6870 @@
+[
+    {
+        "title": "221 B Baker Street",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy",
+            "puzzle",
+            "mystery",
+            "race",
+            "dice",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 6,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "5D Chess With Multiverse Time Travel",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Age of Empires II (2013)",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Hannah",
+            "Simon",
+            "Kenan",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Age of Empires II: Definitive Edition",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Age of Empires III (2007)",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Age of Mythology: Extended Edition",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Aggravation",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "race",
+            "chance",
+            "dice"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 6,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Aperture Tag: The Paint Gun Testing Initiative",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "puzzle"
+        ],
+        "shared": false,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Apex Legends",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "fast"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            3,
+            6,
+            9
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Kenan",
+            "Micah",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Apples to Apples Junior",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "party",
+            "group",
+            "comedy"
+        ],
+        "shared": true,
+        "players": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "ARK: Survival Evolved",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "creative",
+            "discovery",
+            "adventure"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [
+            "arb"
+        ],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "ARK: Survival Of The Fittest",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "adventure",
+            "fast"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "BFF or Die",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "party",
+            "fast",
+            "adventure"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Black & White Bushido",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fighting"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Black Box",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "puzzle"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Blade Symphony",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fighting"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Blockus",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Boggle",
+        "vetoedBy": [],
+        "favoredBy": [
+            "Kenan"
+        ],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "fast"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Boid",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": false,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Brawlhalla",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fighting",
+            "fast",
+            "party"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah",
+            "Alan"
+        ],
+        "length": [
+            "arb"
+        ],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Card Clash",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Card Hunter",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy",
+            "adventure",
+            "discovery",
+            "group"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3
+        ],
+        "idealPlayers": [
+            2,
+            3
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [],
+        "points": 0
+    },
+    {
+        "title": "Cards",
+        "vetoedBy": [
+            "Kenan"
+        ],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "group",
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Chess",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Clue",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy",
+            "mystery",
+            "puzzle",
+            "dice",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 6,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Cluedo: Sherlock Edition",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy",
+            "puzzle",
+            "mystery",
+            "group",
+            "dice"
+        ],
+        "shared": true,
+        "players": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 6,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Codenames",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "group",
+            "teams"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Codenames Duet",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "puzzle"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Connect 4",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Contraption Maker",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "puzzle",
+            "creative",
+            "sim"
+        ],
+        "shared": false,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [],
+        "points": 0
+    },
+    {
+        "title": "Cranium",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "party",
+            "group",
+            "teams",
+            "dice",
+            "race",
+            "creative",
+            "trivia"
+        ],
+        "shared": true,
+        "players": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            6,
+            8
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Cribbage",
+        "vetoedBy": [],
+        "favoredBy": [
+            "Mom"
+        ],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "strategy",
+            "race"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Mom"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Crown and Council",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Detective Club",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            5,
+            6
+        ],
+        "copyPlayers": 6,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Diner Bros",
+        "vetoedBy": [
+            "Simon"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "party",
+            "fast",
+            "sim"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Hannah"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Diplomacy",
+        "vetoedBy": [],
+        "favoredBy": [
+            "Jared"
+        ],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "idealPlayers": [
+            7
+        ],
+        "copyPlayers": 7,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Simon"
+        ],
+        "length": [
+            "day"
+        ],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Dominoes",
+        "vetoedBy": [
+            "Kenan"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "strategy",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Don't Starve Together",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "discovery",
+            "adventure"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Door Kickers",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy",
+            "adventure"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Duck Game",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "party",
+            "fighting",
+            "fast"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Dungeon of the ENDLESS",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy",
+            "combat",
+            "discovery",
+            "adventure"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Element",
+        "vetoedBy": [],
+        "favoredBy": [
+            "Jared"
+        ],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Enter the Gungeon",
+        "vetoedBy": [],
+        "favoredBy": [
+            "Alan"
+        ],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "fast",
+            "discovery",
+            "adventure"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Kenan",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Escape First",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "puzzle",
+            "discovery"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "EVE Online",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "discovery",
+            "adventure"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": "arb",
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Exposed",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "group",
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 6,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Factorio",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy",
+            "puzzle",
+            "combat",
+            "creative",
+            "adventure"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": "arb",
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Farkle",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "dice",
+            "group",
+            "party"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            8
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Funglish",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "group",
+            "party",
+            "fast"
+        ],
+        "shared": true,
+        "players": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Gauntlet Slayer Edition",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "adventure",
+            "combat"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [],
+        "points": 0
+    },
+    {
+        "title": "GO",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "GOAT OF DUTY",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "party",
+            "fighting",
+            "fast",
+            "comedy"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Half-Life",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Half-Life 2: Deathmatch",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Half-Life Deathmatch: Source",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Half-Life: Opposing Force",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Hand and Foot",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Mom"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "A Hat in Time",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "adventure"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "HELLDIVERS",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "fast"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "HYPERFIGHT",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fighting",
+            "fast",
+            "party"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 8,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "ibb & obb",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "puzzle",
+            "discovery",
+            "adventure"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [],
+        "points": 0
+    },
+    {
+        "title": "imaginiff",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "group",
+            "comedy",
+            "party"
+        ],
+        "shared": true,
+        "players": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 8,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Interplanetary: Enhanced Edition",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Interstellar Marines",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "INVERSUS Deluxe",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fast"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Kakatte Koi Yo!",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fighting"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTIme"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Keep Talking and Nobody Explodes",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "puzzle",
+            "fast"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "The Game of LIFE",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "chance",
+            "group",
+            "sim"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 6,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Mastermind",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "puzzle"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Meadow",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "discovery",
+            "sim"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": "arb",
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Mille Bornes",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "strategy",
+            "group",
+            "teams"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            6
+        ],
+        "idealPlayers": [
+            4,
+            6
+        ],
+        "copyPlayers": 6,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Minecraft",
+        "vetoedBy": [
+            "Simon"
+        ],
+        "favoredBy": [
+            "Jared"
+        ],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "creative",
+            "adventure"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Jared",
+            "Hannah",
+            "Simon",
+            "Kenan",
+            "Micah",
+            "Alan"
+        ],
+        "length": "arb",
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Move or Die",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "party",
+            "fast"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Munchkin",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy",
+            "group",
+            "race",
+            "comedy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 6,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "N++",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "adventure"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "NARUTO: Ultimate Ninja STORM",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fighting"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Need for Speed: Hot Pursuit",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "race",
+            "fast"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Never Split the Party",
+        "vetoedBy": [
+            "Simon"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy",
+            "party",
+            "combat",
+            "fast",
+            "adventure"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon",
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "The New Yorker Cartoon Caption Game",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "party",
+            "comedy",
+            "creative"
+        ],
+        "shared": true,
+        "players": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "No Man's Sky",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "discovery",
+            "adventure",
+            "creative"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            1,
+            2,
+            3
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": "arb",
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Offworld Trading Company",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [],
+        "points": 0
+    },
+    {
+        "title": "Othello",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Overcooked",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "party",
+            "fast",
+            "sim"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Overcooked! 2",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "party",
+            "fast",
+            "sim"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Kenan",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "PARTICLE MACE",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fast",
+            "combat"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "PENTE",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Phase 10",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "group",
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Pikuniku",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "puzzle",
+            "adventure",
+            "discovery"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [],
+        "points": 0
+    },
+    {
+        "title": "PIT",
+        "vetoedBy": [
+            "Kenan"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "party",
+            "fast"
+        ],
+        "shared": true,
+        "players": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 8,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Plague Inc: Evolved",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy",
+            "sim"
+        ],
+        "shared": false,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Pok\u00e9mon Monopoly",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "group",
+            "party",
+            "dice",
+            "chance"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 6,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Portal 2",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "puzzle"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Project Winter",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy",
+            "adventure"
+        ],
+        "shared": false,
+        "players": [
+            8
+        ],
+        "idealPlayers": [
+            8
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [],
+        "points": 0
+    },
+    {
+        "title": "Punderdome",
+        "vetoedBy": [
+            "Simon"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "group",
+            "comedy",
+            "creative"
+        ],
+        "shared": true,
+        "players": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Puyo Puyo Tetris",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "chance",
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Quick Wit",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "group",
+            "trivia"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Raft",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "creative",
+            "adventure",
+            "discovery"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Retimed",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fast",
+            "party",
+            "combat"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Revolution Ace",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "RISK",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy",
+            "groups",
+            "dice"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 6,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Lord of the Rings RISK",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy",
+            "dice",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Risk of Rain",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "fast"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Simon",
+            "Kenan",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Risk of Rain 2",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "fast"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Rougelands",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "adventure",
+            "combat",
+            "discovery"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Rummikub",
+        "vetoedBy": [],
+        "favoredBy": [
+            "Mom"
+        ],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "strategy",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Mom"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Sanctum",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "strategy"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Screencheat",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "party",
+            "fast",
+            "combat"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "The Settlers of Catan",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy",
+            "group",
+            "dice"
+        ],
+        "shared": true,
+        "players": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 6,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [
+            "mid"
+        ],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Shanghi Rummy",
+        "vetoedBy": [],
+        "favoredBy": [
+            "Mom"
+        ],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "strategy",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 8,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Mom"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Sho-gi",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Shovel Knight: Treasure Trove",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "adventure"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            1
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Sid Meier's Civilization VI",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Sins of a Solar Empire: Rebellion",
+        "vetoedBy": [],
+        "favoredBy": [
+            "Alan"
+        ],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Snakeybus",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fast"
+        ],
+        "shared": false,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Sorry!",
+        "vetoedBy": [
+            "Kenan"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "race",
+            "chance",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Splatter - Zombiecalypse Now",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "adventure",
+            "combat"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Spy Trackdown",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy",
+            "mystery",
+            "race",
+            "puzzle",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Starbound",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "adventure",
+            "discovery",
+            "creative"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            7
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Stardew Valley",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "creative",
+            "discovery",
+            "sim"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Hannah",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Stick Fight: The Game",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "party",
+            "fighting",
+            "fast"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Stranded Deep",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "discovery",
+            "adventure"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": "arb",
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Stratego",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Street Fighter V",
+        "vetoedBy": [],
+        "favoredBy": [
+            "Kenan"
+        ],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fighting"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Styx: Shards of Darkness",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "adventure"
+        ],
+        "shared": false,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Sudoku Zenkai",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "puzzle"
+        ],
+        "shared": false,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            1
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Super Bit Blaster XL",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fast",
+            "combat"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Superfight",
+        "vetoedBy": [
+            "Dad",
+            "Mom"
+        ],
+        "favoredBy": [
+            "Jared"
+        ],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "strategy",
+            "party",
+            "group",
+            "comedy",
+            "creative"
+        ],
+        "shared": true,
+        "players": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            3,
+            4,
+            5,
+            6,
+            9
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": "long",
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Sword Art Online: Fatal Bullet",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "adventure",
+            "combat"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Sword Art Online: Hollow Realization",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "adventure",
+            "combat"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Sword Art Online: Lost Song",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "adventure",
+            "combat"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Tabletop Simulator",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "group",
+            "sim"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Kenan",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [],
+        "points": 0
+    },
+    {
+        "title": "Team Fortress Classic",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Tales of Escape",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "puzzle",
+            "discovery"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Terraria",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "creative",
+            "adventure"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Hannah",
+            "Simon",
+            "Kenan",
+            "Micah",
+            "Alan"
+        ],
+        "length": "arb",
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Terrorhedron Tower Defense",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Them's Fightin' Herds",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fighting"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Throne of Lies: Medieval Politics",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy"
+        ],
+        "shared": false,
+        "players": [
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [],
+        "points": 0
+    },
+    {
+        "title": "Ticket to Ride",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "strategy",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5
+        ],
+        "idealPlayers": [
+            4,
+            5
+        ],
+        "copyPlayers": 5,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Tick Tock: A Tale for Two",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "puzzle",
+            "mystery"
+        ],
+        "shared": false,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Timberman",
+        "vetoedBy": [
+            "Kenan"
+        ],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fast"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            1
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Touring",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "strategy",
+            "group",
+            "teams"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            6
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            6
+        ],
+        "copyPlayers": 6,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Towerfall Ascension",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fast",
+            "combat",
+            "party"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Trine 2",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "adventure"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3
+        ],
+        "idealPlayers": [
+            2,
+            3
+        ],
+        "copyPlayers": 3,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Trivial Pursuit: Family Edition",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "trivia",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Ultimate Chicken Horse",
+        "vetoedBy": [],
+        "favoredBy": [
+            "Jared"
+        ],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "party",
+            "strategy",
+            "race",
+            "fast",
+            "comedy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Hannah",
+            "Simon",
+            "Kenan",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Uno",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "party",
+            "strategy",
+            "chance",
+            "fast"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Harry Potter Uno",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "party",
+            "strategy",
+            "chance",
+            "fast"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Unstable Unicorns",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "strategy",
+            "party",
+            "group",
+            "comedy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 8,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Viscera Cleanup Detail",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "sim"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": "arb",
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Viscera Cleanup Detail: Santa's Rampage",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "sim"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": "arb",
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Viscera Cleanup Detail: Shadow Warrior",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "sim"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [
+            "arb"
+        ],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Warframe",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "adventure"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Water-Works",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "card"
+        ],
+        "feel": [
+            "strategy",
+            "group"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5
+        ],
+        "idealPlayers": [
+            4,
+            5
+        ],
+        "copyPlayers": 5,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Wavelength",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "group",
+            "teams"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Wayward",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "adventure",
+            "discovery"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Hannah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "We Were Here",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "puzzle",
+            "mystery"
+        ],
+        "shared": false,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Alan"
+        ],
+        "length": "mid",
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "We Were Here Together",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "puzzle",
+            "mystery"
+        ],
+        "shared": false,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "We Were Here Too",
+        "vetoedBy": [
+            "Jared"
+        ],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "puzzle",
+            "mystery"
+        ],
+        "shared": false,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Who's Your Daddy?!",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "comedy",
+            "fast"
+        ],
+        "shared": false,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Simon",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Wits and Wagers: Party Edition",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "board"
+        ],
+        "feel": [
+            "group",
+            "trivia"
+        ],
+        "shared": true,
+        "players": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 10,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Simon",
+            "Kenan",
+            "Micah"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Worms",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "comedy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Worms Armageddon",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "comedy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Worms Clan Wars",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "comedy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Worms Reloaded",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "comedy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Worms Revolution",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "comedy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Worms Ultimate Mayhem",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "comedy"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            3,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Worms World Party Remastered",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "comedy"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "XCOM: Enemy Unknown",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "strategy",
+            "combat",
+            "adventure"
+        ],
+        "shared": false,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp",
+            "co-op"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Yakuza Kiwami",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            1
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "turnBased"
+        ],
+        "points": 0
+    }
+]
