@@ -79,15 +79,9 @@ def add_game(add_num):
 
         cont = True  # Type collection
         while cont:
-            gameType = input("Is this a video game, a board game, or a card game? ").lower()
-            if gameType == "video":
-                game["type"] = ["video"]
-                cont = False
-            elif gameType == "board":
-                game["type"] = ["board"]
-                cont = False
-            elif gameType == "card":
-                game["type"] = ["card"]
+            game_type = input("Is this a video game, a board game, or a card game? ").lower()
+            if game_type in ("video", "board", "card"):
+                game["type"] = [game_type]
                 cont = False
             else:
                 print("I'm sorry, I didn't understand that. Please type video, board, or card.")
@@ -205,6 +199,7 @@ def check_game(title):
         print("I'm sorry, I couldn't find that game in our library.")
 
 
+# Takes an existing game and alters it
 def edit_game(title):
     match = None
     for game in options:
@@ -215,14 +210,16 @@ def edit_game(title):
         edit_style = input("What would you like to do with this entry?\n"
                            "(1) Add a player to the vetoed, favored, lowered, or owners category\n"
                            "(2) Remove a player from one of the above categories\n"
-                           "(3) Correct the game's technical information\n").lower()
+                           "(3) Correct the game's technical information\n"
+                           ">> ").lower()
 
         if edit_style in ("1", "add"):
             category = input("Which category would you like to add to?\n"
                              "(1) Veto\n"
                              "(2) Favored\n"
                              "(3) Lowered\n"
-                             "(4) Owned\n").lower()
+                             "(4) Owned\n"
+                             ">> ").lower()
             if category in ("1", "veto"):
                 veto = input("Please put the first name or common title (e.g. \"Dad\") here. ").title()
                 if veto in match["vetoedBy"]:
@@ -259,7 +256,8 @@ def edit_game(title):
                              "(1) Veto\n"
                              "(2) Favored\n"
                              "(3) Lowered\n"
-                             "(4) Owned\n").lower()
+                             "(4) Owned\n"
+                             ">> ").lower()
             if category in ("1", "veto"):
                 veto = input("Please put the first name or common title (e.g. \"Dad\") here. ").title()
                 if veto in match["vetoedBy"]:
@@ -302,7 +300,8 @@ def edit_game(title):
                           "(7) Copy players supported\n"
                           "(8) Competition type\n"
                           "(9) Length\n"
-                          "(10) Turn style\n").lower()
+                          "(10) Turn style\n"
+                          ">> ").lower()
 
             if field in ("1", "title"):
                 new_title = input("Please input the correct full title for this game. "
@@ -367,37 +366,66 @@ def edit_game(title):
                     print("*Sigh...* What's so difficult about typing add or remove?")
 
             elif field in ("4", "shared"):
-                pass
+                shared = input("Can multiple people play with one copy of this game? ").lower()
+                if shared in ("yes", "y"):
+                    match["shared"] = True
+                else:
+                    match["shared"] = False
 
             elif field in ("5", "players"):
-                pass
+                play_count = re.split(r",\s*",
+                                      input("How many players can play? Please split with a comma. ex. 2, 3, 4, 6 "))
+                for i in play_count:
+                    match["players"].append(int(i))
 
             elif field in ("6", "ideal"):
-                pass
+                ideal_count = re.split(r",\s*", input("What would be the perfect amount of players for this game? "
+                                                      "ex. 2, 5, 6. Note that the game must allow"
+                                                      " for that many players."))
+                for i in ideal_count:
+                    if i in match["players"]:
+                        match["idealPlayers"].append(int(i))
 
             elif field in ("7", "copy"):
-                pass
+                if match["type"] in ("board", "card"):
+                    match["copyPlayers"] = max(match["players"])
+                    print("The game has been updated automatically.")
+                else:
+                    copy = input("What is the maximum number of people who can play with a single copy of this game? ")
+                    match["copyPlayers"] = int(copy)
 
             elif field in ("8", "competition"):
-                pass
+                comp = input("Is this a co-op game, a pvp game, or both? ").lower()
+                if comp in ("co-op", "pvp"):
+                    match["compType"] = [comp]
+                elif comp == "both":
+                    match["compType"] = ["pvp", "co-op"]
+                else:
+                    print("I'm sorry, I didn't understand that.")
 
             elif field in ("9", "length"):
-                pass
+                match["length"] = [input("Is this game short, mid, long, day, or arb? ").lower()]
 
             elif field in ("10", "turn"):
-                pass
+                turns = input("Do you play this game in turns, or in real-time? ").lower()
+                if turns == "turns":
+                    match["turns"] = ["turnBased"]
+                elif turns == "real-time":
+                    match["turns"] = ["realTime"]
+                else:
+                    print("I'm sorry, I didn't understand that.")
 
             else:
                 print("I'm sorry, I didn't understand that.")
-
-
 
     else:
         print("I'm sorry, I couldn't find that game in our library.")
 
 
+# Lists the games in the library by title
 def list_games():
-    pass
+    for game in options:
+        print(game["title"])
 
 
 if __name__ == "__main__":
@@ -408,7 +436,8 @@ if __name__ == "__main__":
                      "(2) Check the library for an existing game\n"
                      "(3) Edit a game's entry\n"
                      "(4) List all games\n"
-                     "(5) End program\n").lower()
+                     "(5) End program\n"
+                     ">> ").lower()
 
         if mode in ("1", "add"):
             add = input("How many games would you like to add today? Please input an integer. ")
