@@ -1,4 +1,30 @@
-import options
+#import options
+import json
+Currys = ["Dad", "Mom", "Jared", "Simon", "Kenan", "Micah"]
+tabletop = [["board"], ["card"]]
+feelings = [
+    "adventure",
+    "chance",
+    "combat",
+    "comedy",
+    "creative",
+    "dice",
+    "discovery",
+    "fast",
+    "fighting",
+    "group",
+    "mystery",
+    "party",
+    "puzzle",
+    "race",
+    "sim",
+    "strategy",
+    "teams",
+    "trivia",
+]
+
+with open("options.json", "r") as option_list:
+    options = json.load(option_list)
 
 
 # If the game has x feature, keep the game
@@ -35,7 +61,7 @@ if __name__ == "__main__":
             print("I'm sorry, I didn't understand that. Please input an integer between 2 and 10.")
 
     # These get updated/reset after each calculation
-    results = options.options.copy()  # Used for filtering from and final results
+    results = options.copy()  # Used for filtering from and final results
     calc = []  # Used for filtering into and updating results
 
     sort(results, play_count, "players")
@@ -77,7 +103,7 @@ if __name__ == "__main__":
     results = calc.copy()
     calc = []
 
-    ruled = len(options.options) - len(results)
+    ruled = len(options) - len(results)
 
     print(f"\nGreat! We've ruled out {ruled} {'game' if ruled == 1 else 'games'} "
           f"that would be impossible for your group to play.")
@@ -93,7 +119,7 @@ if __name__ == "__main__":
 
         elif style == "tabletop":
             for game in results:
-                if game["type"] in options.tabletop:
+                if game["type"] in tabletop:
                     calc.append(game)
             retry = False
 
@@ -131,12 +157,12 @@ if __name__ == "__main__":
     while retry:
         style = input("If you like a specific \"feel\" of game, input it now. "
                       "For a list, type list. When you're done, type done. ").lower()
-        if style in options.feelings:
+        if style in feelings:
             feel.append(style)
 
         elif style == "list":
-            for num, feeling in enumerate(options.feelings, start=1):
-                if num != len(options.feelings):
+            for num, feeling in enumerate(feelings, start=1):
+                if num != len(feelings):
                     print(feeling + ", ", end="")
                 else:
                     print(feeling, end="")
@@ -146,7 +172,7 @@ if __name__ == "__main__":
 
         elif style == "done":
             if not feel:
-                feel = options.feelings.copy()
+                feel = feelings.copy()
             retry = False
 
         else:
@@ -162,12 +188,12 @@ if __name__ == "__main__":
     while retry:
         style = input("If you would like to exclude a specific game feeling, please input it now. "
                       "For a list, type list. When you're done, type done. ").lower()
-        if style in options.feelings:
+        if style in feelings:
             exclude.append(style)
 
         elif style == "list":
-            for num, feeling in enumerate(options.feelings, start=1):
-                if num != len(options.feelings):
+            for num, feeling in enumerate(feelings, start=1):
+                if num != len(feelings):
                     print(feeling + ", ", end="")
                 else:
                     print(feeling, end="")
@@ -206,7 +232,7 @@ if __name__ == "__main__":
                 points += 1
             if player in game["loweredBy"]:
                 points -= 1
-        if feel != options.feelings:
+        if feel != feelings:
             for style in feel:
                 if style in game["feel"]:
                     points += 1
