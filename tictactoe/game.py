@@ -172,17 +172,13 @@ while replay:
                 o_wins = 0
                 ties = 0
                 for test in range(int(sim_count)):
-                    t = TicTacToe()
-                    result = play(t, x_player, o_player, print_game=False)
+                    result = play(TicTacToe(), x_player, o_player, print_game=False)
                     if result == "X":
                         x_wins += 1
-                        print(f"X is at {x_wins}")
                     elif result == "O":
                         o_wins += 1
-                        print(f"O is at {o_wins}")
                     else:
                         ties += 1
-                        print(f"We've got {ties} ties.")
 
                 print(f"X won {x_wins} times, O won {o_wins} times, and there were {ties} ties.")
 
