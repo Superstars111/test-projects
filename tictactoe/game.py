@@ -106,9 +106,6 @@ def play(game, x, o, print_game=True):
 # Plays and replays the game until no longer desired
 replay = True
 while replay:
-    x_wins = 0
-    o_wins = 0
-    ties = 0
 
     if __name__ == "__main__":
 
@@ -120,7 +117,8 @@ while replay:
             play(t, Human("X"), Human("O"), print_game=True)
 
         elif mode == "1":
-            level = input("Would you like to play against the random computer (r), or the genius computer (g)? ").lower()
+            level = input("Would you like to play against the random computer (r), "
+                          "or the genius computer (g)? ").lower()
             order = input("Would you like to be X or O? ").lower()
             if level == "r" and order == "x":
                 play(t, Human("X"), RandomComputer("O"), print_game=True)
@@ -170,14 +168,21 @@ while replay:
                 print("I'm sorry, I didn't understand that.")
 
             if sim_type in ("g", "r", "both"):
+                x_wins = 0
+                o_wins = 0
+                ties = 0
                 for test in range(int(sim_count)):
+                    t = TicTacToe()
                     result = play(t, x_player, o_player, print_game=False)
                     if result == "X":
                         x_wins += 1
+                        print(f"X is at {x_wins}")
                     elif result == "O":
                         o_wins += 1
+                        print(f"O is at {o_wins}")
                     else:
                         ties += 1
+                        print(f"We've got {ties} ties.")
 
                 print(f"X won {x_wins} times, O won {o_wins} times, and there were {ties} ties.")
 
@@ -192,5 +197,5 @@ while replay:
                 replay = False
 
             elif endgame not in (yes or no):
-                print("I'm sorry, I understand that.")
+                print("I'm sorry, I didn't understand that.")
                 endgame = ""
