@@ -1,4 +1,6 @@
 # Based on a tutorial from freeCodeCamp.org
+# This doesn't truly solve the sudoku, but rather, 
+# determines if at least one possible solution exits.
 
 # Finds the next -1 square
 def find_next_empty(puzzle):
