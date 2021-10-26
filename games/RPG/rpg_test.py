@@ -4,62 +4,71 @@
 # Working title: "Snakes in a Cave"
 
 import re
-motion = ("walk", "run", "move", "stroll", "sprint", "go", "waddle", "head")
-take = ("take", "loot", "grab", "steal")
-observe = ("look", "check", "view", "examine", "read", "study")
-space = ("room", "area", "location", "place", "space", "surroundings")
-bag = ("bag", "backpack", "inventory", "pocket", "pockets", "satchel")
-usage = ("use", "utilize", "activate")
-emote = ("dance", "sing", "frolic", "daydream", "draw", "paint")
-controls = ("controls", "commands", "help")
-north = ("north", "up")
-south = ("south", "down")
-east = ("east", "right")
-west = ("west", "left")
-forward = ("forward", "forth", "ahead", "onward")
-backward = ("back", "backward", "reverse")
-s_desc = ["The room you started in. There are four corridors, one for each cardinal direction.",
-          "This room is a large and empty circle. Sunlight filters down from a hole high above you. "
-          "That's probably where you fell down. Four ornate doorposts can be seen along the walls, "
-          "one for each cardinal direction."]
-s_vis = ["*--\"--*", "|     |", "=     =", "|     |", "*--\"--*"]
-u_desc = ["The northern room. There is a keypad on the wall, and a door to the south.",
-          "A single torch lights this room. It is small, enough that only a few people could stand here comfortably " 
-          "at a time. On the northern wall there is a small, 9-digit keypad next to an indent in the shape of a door."]
-u_vis = ["*-----*", "|     |", "|     |", "|     |", "*--\"--*"]
-d_desc = ["The southern room. It contains a bed and a chest. There is a door to the north.",
-          "This room is quite cozy. The floor is carpeted, and there is a bed in the corner. Posters hang on the " 
-          "walls, a small chest sits at the foot of the bed."]
-d_vis = ["*--\"--*", "|     |", "|     |", "|     |", "*-----*"]
-l_desc = ["The western room. A grand hall with a door to the east.",
-          "This room is a grand hall, built from marble with massive pillars reaching to the ceiling. Hundreds of " 
-          "torches line the walls, and dozens of great banquet tables fill the room. Each one is set as if it has " 
-          "been prepared ahead of time, and recently. At the east is the door you came from, and at the head of " 
-          " the room opposite that there is a massive throne."]
-l_vis = ["*-----*", "|     |", "|     =", "|     |", "*-----*"]
-r_desc = ["The eastern room. A passage lies to the west, and a locked gate is to the east.",
-          "This long room is almost like a hallway itself, if it weren't far too wide for that. At the far eastern " 
-          "end of the room is a massive gate. An enormous lock is bolting it shut. Through the bars you can see " 
-          "nothing but darkness. The door you came from is to the west."]
-r_vis = ["*-----*", "|     |", "=    +=", "|     |", "*-----*"]
-dun_desc = ["The dungeon. You used your key to get here.",
-            "Beyond the gate lies an enormous dungeon. Massive chains hang from the walls, all shattered. Beneath "
-            "them, huge shackles lie on the ground, far too large to hold any human. The walls are scarred with "
-            "gashes and scorch marks."]
-dun_vis = ["*-----*", "|     |", "=     |", "|     |", "*-----*"]
-key = {
-    "name": "key",
-    "code": 1,
-    "reusable": False,
-    "desc": "A large metal key. It looks exactly like the default key you would see in any low-effort adventure game."
-}
-gate = {
-    "name": "gate",
-    "code": 1,
-    "effect": 1,
-    "desc": "An enormous iron gate. It looks like it was built to contain something dangerous. ...Either that, or just "
-            "to look impressive. Could be either."
-}
+import json
+with open("C:\\Users\\jared\\Desktop\\Tech_Stuff\\Python_Learning\\RPG\\gamedata.json", "r") as gamedata:
+    data = json.load(gamedata)
+# motion = ("walk", "run", "move", "stroll", "sprint", "go", "waddle", "head")
+# take = ("take", "loot", "grab", "steal")
+# observe = ("look", "check", "view", "examine", "read", "study")
+# space = ("room", "area", "location", "place", "space", "surroundings")
+# bag = ("bag", "backpack", "inventory", "pocket", "pockets", "satchel")
+# usage = ("use", "utilize", "activate")
+# emote = ("dance", "sing", "frolic", "daydream", "draw", "paint")
+# controls = ("controls", "commands", "help")
+# north = ("north", "up")
+# south = ("south", "down")
+# east = ("east", "right")
+# west = ("west", "left")
+# forward = ("forward", "forth", "ahead", "onward")
+# backward = ("back", "backward", "reverse")
+# stairs = ("stairs", "upstairs", "downstairs")
+# s_desc = ["The room you started in. There are four corridors, one for each cardinal direction.",
+#           "This room is a large and empty circle. Sunlight filters down from a hole high above you. "
+#           "That's probably where you fell down. Four ornate doorposts can be seen along the walls, "
+#           "one for each cardinal direction."]
+# s_vis = ["*---\"---*", "|       |", "=       =", "|       |", "*---\"---*"]
+# u_desc = ["The northern room. There is a keypad on the wall, and a door to the south.",
+#           "A single torch lights this room. It is small, enough that only a few people could stand here comfortably "
+#           "at a time. On the northern wall there is a small, 9-digit keypad next to an indent in the shape of a door."]
+# u_vis = ["*-------*", "|       |", "|       |", "|       |", "*---\"---*"]
+# d_desc = ["The southern room. It contains a bed and a chest. There is a door to the north.",
+#           "This room is quite cozy. The floor is carpeted, and there is a bed in the corner. Posters hang on the "
+#           "walls, a small chest sits at the foot of the bed."]
+# d_vis = ["*---\"---*", "|       |", "|       |", "|       |", "*-------*"]
+# l_desc = ["The western room. A grand hall with a door to the east.",
+#           "This room is a grand hall, built from marble with massive pillars reaching to the ceiling. Hundreds of "
+#           "torches line the walls, and dozens of great banquet tables fill the room. Each one is set as if it has "
+#           "been prepared ahead of time, and recently. At the east is the door you came from, and at the head of "
+#           " the room opposite that there is a massive throne."]
+# l_vis = ["*-------*", "|       |", "|       =", "|       |", "*-------*"]
+# r_desc = ["The eastern room. A passage lies to the west, and a locked gate is to the east.",
+#           "This long room is almost like a hallway itself, if it weren't far too wide for that. At the far eastern "
+#           "end of the room is a massive gate. An enormous lock is bolting it shut. Through the bars you can see "
+#           "nothing but darkness. The door you came from is to the west."]
+# r_vis = ["*-------*", "|       |", "=       =", "|       |", "*-------*"]
+# dun_desc = ["The dungeon. You used your key to get here.",
+#             "Beyond the gate lies an enormous dungeon. Massive chains hang from the walls, all shattered. Beneath "
+#             "them, huge shackles lie on the ground, far too large to hold any human. The walls are scarred with "
+#             "gashes and scorch marks."]
+# dun_vis = ["*-------*", "|       |", "=       |", "|       |", "*-------*"]
+# key = {
+#     "name": "key",
+#     "code": 1,
+#     "reusable": False,
+#     "desc": "A large metal key. It looks exactly like the default key you would see in any low-effort adventure game."
+# }
+# gate = {
+#     "name": "gate",
+#     "code": 1,
+#     "effect": 1,
+#     "desc": "An enormous iron gate. It looks like it was built to contain something dangerous. ...Either that, or just "
+#             "to look impressive. Could be either."
+# }
+# lever = {
+#     "name": "lever",
+#     "effect": 2,
+#     "desc": "It appears to be an old lever. Who knows what it does?"
+# }
 
 
 # Unfinished help function
@@ -86,16 +95,18 @@ class Location:
     occupied = False
     explored = False
 
-    def __init__(self, n=True, s=True, e=True, w=True):
+    def __init__(self, n=False, s=False, e=False, w=False, us=False, ds=False):
         self.n_passable = n
         self.s_passable = s
         self.e_passable = e
         self.w_passable = w
+        self.upstairs = us
+        self.downstairs = ds
 
 
 class Room(Location):
-    def __init__(self, desc, visual, loot=None, features=None, n=False, s=False, e=False, w=False):
-        super().__init__(n, s, e, w)
+    def __init__(self, desc, visual, loot=None, features=None, n=False, s=False, e=False, w=False, us=False, ds=False):
+        super().__init__(n, s, e, w, us, ds)
         self.loot = loot
         self.features = features
         self.short_description = desc[0]
@@ -112,9 +123,9 @@ class Wall(Location):
     features = None
     loot = None
 
-    def __init__(self, n=False, s=False, e=False, w=False):
-        super().__init__(n, s, e, w)
-        self.visual = ["*-----*", "|     |", "|     |", "|     |", "*-----*"]
+    def __init__(self):
+        super().__init__()
+        self.visual = ["*-----*", "|-----|", "|-----|", "|-----|", "*-----*"]
 
     def __str__(self):
         return self.long_description
@@ -125,31 +136,43 @@ class Player:
 
 
 class Map:
-    rooms = [
+    floor1 = [
         [Wall(), Wall(), Wall(), Wall(), Wall()],
-        [Wall(), Wall(), Room(u_desc, u_vis, s=True), Wall(), Wall()],
-        [Wall(), Room(l_desc, l_vis, e=True), Room(s_desc, s_vis, n=True, s=True, e=True, w=True),
-         Room(r_desc, r_vis, features=[gate], e=True, w=True), Room(dun_desc, dun_vis)],
-        [Wall(), Wall(), Room(d_desc, d_vis, loot=[key], n=True), Wall(), Wall()],
+        [Wall(), Wall(), Room(data["u_desc"], data["u_vis"], s=True), Wall(), Wall()],
+        [Wall(), Room(data["l_desc"], data["l_vis"], e=True), Room(data["s_desc"], data["s_vis"], n=True, s=True, e=True, w=True),
+         Room(data["r_desc"], data["r_vis"], features=[data["gate"]], w=True), Room(data["dun_desc"], data["dun_vis"], w=True, ds=True)],
+        [Wall(), Wall(), Room(data["d_desc"], data["d_vis"], loot=[data["key"]], n=True), Wall(), Wall()],
         [Wall(), Wall(), Wall(), Wall(), Wall()]
         ]
-    current = rooms[2][2]
-    previous = rooms[2][2]
-    coords = [2, 2]
-    prev_coords = [2, 2]
+    floor2 = [
+        [Wall(), Wall(), Wall(), Wall(), Wall()],
+        [Wall(), Wall(), Room(data["u_desc"], data["u_vis"], s=True), Wall(), Wall()],
+        [Wall(), Room(data["l_desc"], data["l_vis"], e=True), Room(data["s_desc"], data["s_vis"], n=True, s=True, e=True, w=True),
+         Room(data["r_desc"], data["r_vis"], features=[data["gate"]], w=True), Room(data["dun_desc"], data["dun_vis"], w=True, us=True)],
+        [Wall(), Wall(), Room(data["d_desc"], data["d_vis"], loot=[data["key"]], n=True), Wall(), Wall()],
+        [Wall(), Wall(), Wall(), Wall(), Wall()]
+        ]
+
+    current = floor1[2][2]
+    previous = floor1[2][2]
+    coords = [2, 2, 0]
+    prev_coords = [2, 2, 0]
+    floors = [floor1, floor2]
+    current_floor = floors[0]
+    previous_floor = floors[0]
 
     def move(self):
-        row, col = self.coords[0], self.coords[1]
+        row, col, layer = self.coords[0], self.coords[1], self.coords[2]
 
-        if action[min(1, len(action) - 1)] in north:
-            if not self.current.n_passable or not self.rooms[row-1][col].s_passable:
-                print("You have hit a wall and cannot go this way.")
-            else:
+        if action[-1] in data["stairs"]:
+            if self.current.upstairs and self.floors[layer-1][row][col].downstairs:
                 self.current.occupied = False
                 self.previous = self.current
-                self.current = self.rooms[row-1][col]
+                self.current = self.floors[layer-1][row][col]
+                self.previous_floor = self.current_floor
+                self.current_floor = self.floors[layer-1]
                 self.prev_coords = self.coords
-                self.coords = [row-1, col]
+                self.coords = [row, col, layer-1]
                 self.current.occupied = True
                 if self.current.explored:
                     print(self.current.short_description)
@@ -157,15 +180,14 @@ class Map:
                     self.current.explored = True
                     print(self.current)
 
-        elif action[min(1, len(action) - 1)] in south:
-            if not self.current.s_passable or not self.rooms[row+1][col].n_passable:
-                print("You have hit a wall and cannot go this way.")
-            else:
+            elif self.current.downstairs and self.floors[layer+1][row][col].upstairs:
                 self.current.occupied = False
                 self.previous = self.current
-                self.current = self.rooms[row+1][col]
+                self.current = self.floors[layer+1][row][col]
+                self.previous_floor = self.current_floor
+                self.current_floor = self.floors[layer+1]
                 self.prev_coords = self.coords
-                self.coords = [row+1, col]
+                self.coords = [row, col, layer+1]
                 self.current.occupied = True
                 if self.current.explored:
                     print(self.current.short_description)
@@ -173,45 +195,78 @@ class Map:
                     self.current.explored = True
                     print(self.current)
 
-        elif action[min(1, len(action) - 1)] in west:
-            if not self.current.w_passable or not self.rooms[row][col-1].e_passable:
-                print("You have hit a wall and cannot go this way.")
-            else:
+        elif action[min(1, len(action) - 1)] in data["north"]:
+            if self.current.n_passable and self.current_floor[row - 1][col].s_passable:
                 self.current.occupied = False
                 self.previous = self.current
-                self.current = self.rooms[row][col-1]
+                self.current = self.current_floor[row - 1][col]
                 self.prev_coords = self.coords
-                self.coords = [row, col-1]
+                self.coords = [row-1, col, layer]
                 self.current.occupied = True
                 if self.current.explored:
                     print(self.current.short_description)
                 else:
                     self.current.explored = True
                     print(self.current)
-
-        elif action[min(1, len(action) - 1)] in east:
-            if not self.current.e_passable or not self.rooms[row][col+1].w_passable:
-                print("You have hit a wall and cannot go this way.")
             else:
+                print("You have hit a wall and cannot go this way.")
+
+        elif action[min(1, len(action) - 1)] in data["south"]:
+            if self.current.s_passable and self.current_floor[row + 1][col].n_passable:
                 self.current.occupied = False
                 self.previous = self.current
-                self.current = self.rooms[row][col+1]
+                self.current = self.current_floor[row + 1][col]
                 self.prev_coords = self.coords
-                self.coords = [row, col+1]
+                self.coords = [row+1, col, layer]
                 self.current.occupied = True
                 if self.current.explored:
                     print(self.current.short_description)
                 else:
                     self.current.explored = True
                     print(self.current)
+            else:
+                print("You have hit a wall and cannot go this way.")
 
-        elif action[min(1, len(action) - 1)] in backward:
+        elif action[min(1, len(action) - 1)] in data["west"]:
+            if self.current.w_passable and self.current_floor[row][col - 1].e_passable:
+                self.current.occupied = False
+                self.previous = self.current
+                self.current = self.current_floor[row][col - 1]
+                self.prev_coords = self.coords
+                self.coords = [row, col-1, layer]
+                self.current.occupied = True
+                if self.current.explored:
+                    print(self.current.short_description)
+                else:
+                    self.current.explored = True
+                    print(self.current)
+            else:
+                print("You have hit a wall and cannot go this way.")
+
+        elif action[min(1, len(action) - 1)] in data["east"]:
+            if self.current.e_passable and self.current_floor[row][col + 1].w_passable:
+                self.current.occupied = False
+                self.previous = self.current
+                self.current = self.current_floor[row][col + 1]
+                self.prev_coords = self.coords
+                self.coords = [row, col+1, layer]
+                self.current.occupied = True
+                if self.current.explored:
+                    print(self.current.short_description)
+                else:
+                    self.current.explored = True
+                    print(self.current)
+            else:
+                print("You have hit a wall and cannot go this way.")
+
+        elif action[min(1, len(action) - 1)] in data["backward"]:
             if self.current == self.previous:
                 print("You look up towards the hole you fell from. You jump, but it remains out of reach.")
             else:
                 self.current.occupied = False
                 self.current, self.previous = self.previous, self.current
                 self.coords, self.prev_coords = self.prev_coords, self.coords
+                self.current_floor, self.previous_floor = self.previous_floor, self.current_floor
                 self.current.occupied = True
                 print(self.current.short_description)
 
@@ -219,39 +274,74 @@ class Map:
             print("You really, really want to do that. But try as you might, you can't think what direction that is.")
 
     def view_map(self):
-        for row in self.rooms:
-            for i in range(5):
-                for room in row:
+        special = 0  # If a special character is printed, this prevents the normal character from printing.
+        for row_idx, row in enumerate(self.current_floor):
+            for idx, line in enumerate(self.current.visual):  # For each row in the room's visual representation.
+                for col_idx, room in enumerate(row):
                     if room.explored:
-                        print(room.visual[i], end="")
-                    else:
-                        print("#######", end="")
+                        for char in range(len(line)):  # Go through each character individually
+                            # Player marker
+                            if room.occupied and char == 4 and idx == 2:
+                                print("X", end="")
+                                special += 1
+                            # Eastern gate
+                            if self.current_floor[row_idx][min(len(row) - 1, col_idx + 1)] != room:  # Boundary verification
+                                if not room.e_passable and self.current_floor[row_idx][col_idx + 1].w_passable \
+                                        and char == len(line) - 2 and idx == len(self.current.visual) // 2:
+                                    print("+", end="")
+                                    special += 1
+                            # Western gate
+                            if self.current_floor[row_idx][max(0, col_idx - 1)] != room:  # Boundary verification
+                                if not room.w_passable and self.current_floor[row_idx][col_idx - 1].e_passable \
+                                        and char == 1 and idx == len(self.current.visual) // 2:
+                                    print("+", end="")
+                                    special += 1
+                            # Northern gate
+                            if self.current_floor[max(0, row_idx - 1)][col_idx] != room:  # Boundary verification
+                                if not room.n_passable and self.current_floor[row_idx - 1][col_idx].s_passable \
+                                        and char == len(line) // 2 and idx == 1:
+                                    print("+", end="")
+                                    special += 1
+                            # Southern gate
+                            if self.current_floor[min(len(self.current_floor), row_idx + 1)][col_idx] != room:  # Boundary verification
+                                if not room.s_passable and self.current_floor[row_idx + 1][col_idx].n_passable \
+                                        and char == len(line) // 2 and idx == len(self.current.visual) - 2:
+                                    print("+", end="")
+                                    special += 1
+                            if not special:
+                                print(room.visual[idx][char], end="")
+                            special = 0
+                    else:  # If the room hasn't been explored, don't show it on the map.
+                        print("#########", end="")
                 print()
 
     def loot_room(self, item):
-        if self.current.loot:
-            for thing in self.current.loot:
-                if item == thing["name"]:
-                    Player.inventory.append(thing)
-                    self.current.loot.remove(thing)
-                    print(f"You take the {item} and place it in your inventory.")
-                else:
-                    print("You searched high and low, but you can't seem to find that object in this room.")
+        if item == "stairs":
+            self.move()
         else:
-            print("You searched high and low, but you can't seem to find that object in this room.")
+            if self.current.loot:
+                for thing in self.current.loot:
+                    if item == thing["name"]:
+                        Player.inventory.append(thing)
+                        self.current.loot.remove(thing)
+                        print(f"You take the {item} and place it in your inventory.")
+                    else:
+                        print("You searched high and low, but you can't seem to find that object in this room.")
+            else:
+                print("You searched high and low, but you can't seem to find that object in this room.")
 
     def examination(self, target):
         if target == "map":
             self.view_map()
-        elif target in space:
+        elif target in data["space"]:
             print(self.current)
-        elif target in bag:
+        elif target in data["bag"]:
             if Player.inventory:
                 for item in Player.inventory:
                     print(f"{item['name']}")  # Will likely add additional formatting later. Hence the f-string.
             else:
                 print("Your inventory seems to be empty... Wait- is that a pebble!?")
-        elif target in controls:
+        elif target in data["controls"]:
             game_help()
 
     def use_item(self):
@@ -280,17 +370,17 @@ class Map:
 
     def effect(self, code):
         if code == 1:
-            self.rooms[2][3].features = None
-            self.rooms[2][4].w_passable = True
+            self.floor1[2][3].features = None
+            self.floor1[2][3].e_passable = True
             print("You try to use the key on the gate. Golly, what a shock. I don't think anyone's ever thought of "
                   "that before. More importantly, did it work? Well... Yes. Yes it did. The gate is open.")
-            self.rooms[2][3].short_description = "The eastern room. A passage lies to the west, and an open gate is " \
-                                                 "to the east."
-            self.rooms[2][3].long_description = "This long room is almost like a hallway itself, if it weren't far " \
-                                                "too wide for that. At the far eastern end of the room is a massive " \
-                                                "gate. An enormous lock was bolting it shut, but has now been " \
-                                                "opened. Through the bars you can see nothing but darkness. " \
-                                                "The door you came from is to the west."
+            self.floor1[2][3].short_description = "The eastern room. A passage lies to the west, and an open gate is " \
+                                                  "to the east."
+            self.floor1[2][3].long_description = "This long room is almost like a hallway itself, if it weren't far " \
+                                                 "too wide for that. At the far eastern end of the room is a massive " \
+                                                 "gate. An enormous lock was bolting it shut, but has now been " \
+                                                 "opened. Through the bars you can see nothing but darkness. " \
+                                                 "The door you came from is to the west."
 
 
 if __name__ == "__main__":
@@ -301,17 +391,17 @@ if __name__ == "__main__":
     print(game.current)
     while x:
         action = re.split(r"\s", input(">> ").lower())
-        if action[0] in motion:
+        if action[0] in data["motion"]:
             game.move()
-        elif action[0] in observe:
+        elif action[0] in data["observe"]:
             game.examination(action[-1])
-        elif action[0] in take:
+        elif action[0] in data["take"]:
             game.loot_room(action[-1])
-        elif action[0] in usage:
+        elif action[0] in data["usage"]:
             game.use_item()
         elif action[0] == "help":
             game_help()
-        elif action[0] in emote:
+        elif action[0] in data["emote"]:
             print("Self-expression is truly a wonderful thing, isn't it?")
 
 
