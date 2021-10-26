@@ -1,0 +1,100 @@
+{
+  "motion": ["walk", "run", "move", "stroll", "sprint", "go", "waddle", "head"],
+  "take": ["take", "loot", "grab", "steal"],
+  "observe": ["look", "check", "view", "examine", "read", "study"],
+  "space": ["room", "area", "location", "place", "space", "surroundings"],
+  "bag": ["bag", "backpack", "inventory", "pocket", "pockets", "satchel"],
+  "usage": ["use", "utilize", "activate"],
+  "emote": ["dance", "sing", "frolic", "daydream", "draw", "paint"],
+  "controls": ["controls", "commands", "help"],
+  "north": ["north", "up"],
+  "south": ["south", "down"],
+  "east": ["east", "right"],
+  "west": ["west", "left"],
+  "forward": ["forward", "forth", "ahead", "onward"],
+  "backward": ["back", "backward", "reverse"],
+  "stairs": ["stairs", "upstairs", "downstairs"],
+  "s_desc": [
+  "The room you started in. There are four corridors, one for each cardinal direction.",
+  "This room is a large and empty circle. Sunlight filters down from a hole high above you. That's probably where you fell down. Four ornate doorposts can be seen along the walls, one for each cardinal direction."
+],
+"s_vis": [
+  "*---\"---*",
+  "|       |",
+  "=       =",
+  "|       |",
+  "*---\"---*"
+],
+"u_desc": [
+  "The northern room. There is a keypad on the wall, and a door to the south.",
+  "A single torch lights this room. It is small, enough that only a few people could stand here comfortably at a time. On the northern wall there is a small, 9-digit keypad next to an indent in the shape of a door."
+],
+"u_vis": [
+  "*-------*",
+  "|       |",
+  "|       |",
+  "|       |",
+  "*---\"---*"
+],
+"d_desc": [
+  "The southern room. It contains a bed and a chest. There is a door to the north.",
+  "This room is quite cozy. The floor is carpeted, and there is a bed in the corner. Posters hang on the walls, a small chest sits at the foot of the bed."
+],
+"d_vis": [
+  "*---\"---*",
+  "|       |",
+  "|       |",
+  "|       |",
+  "*-------*"
+],
+"l_desc": [
+  "The western room. A grand hall with a door to the east.",
+  "This room is a grand hall, built from marble with massive pillars reaching to the ceiling. Hundreds of torches line the walls, and dozens of great banquet tables fill the room. Each one is set as if it has been prepared ahead of time, and recently. At the east is the door you came from, and at the head of the room opposite that there is a massive throne."
+],
+"l_vis": [
+  "*-------*",
+  "|       |",
+  "|       =",
+  "|       |",
+  "*-------*"
+],
+"r_desc": [
+  "The eastern room. A passage lies to the west, and a locked gate is to the east.",
+  "This long room is almost like a hallway itself, if it weren't far too wide for that. At the far eastern end of the room is a massive gate. An enormous lock is bolting it shut. Through the bars you can see nothing but darkness. The door you came from is to the west."
+],
+"r_vis": [
+  "*-------*",
+  "|       |",
+  "=       =",
+  "|       |",
+  "*-------*"
+],
+"dun_desc": [
+  "The dungeon. You used your key to get here.",
+  "Beyond the gate lies an enormous dungeon. Massive chains hang from the walls, all shattered. Beneath them, huge shackles lie on the ground, far too large to hold any human. The walls are scarred with gashes and scorch marks."
+],
+"dun_vis": [
+  "*-------*",
+  "|       |",
+  "=       |",
+  "|       |",
+  "*-------*"
+],
+"key": {
+  "name": "key",
+  "code": 1,
+  "reusable": false,
+  "desc": "A large metal key. It looks exactly like the default key you would see in any low-effort adventure game."
+},
+"gate": {
+  "name": "gate",
+  "code": 1,
+  "effect": 1,
+  "desc": "An enormous iron gate. It looks like it was built to contain something dangerous. ...Either that, or just to look impressive. Could be either."
+},
+"lever": {
+  "name": "lever",
+  "effect": 2,
+  "desc": "It appears to be an old lever. Who knows what it does?"
+}
+}
