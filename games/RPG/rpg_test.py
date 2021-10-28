@@ -5,7 +5,7 @@
 
 import re
 import json
-with open("C:\\Users\\jared\\Desktop\\Tech_Stuff\\Python_Learning\\RPG\\gamedata.json", "r") as gamedata:
+with open("gamedata.json", "r") as gamedata:
     data = json.load(gamedata)
 # motion = ("walk", "run", "move", "stroll", "sprint", "go", "waddle", "head")
 # take = ("take", "loot", "grab", "steal")
