@@ -71,6 +71,37 @@ with open("gamedata.json", "r") as gamedata:
 # }
 
 
+class Item:
+    def __init__(self, desc, inf=False, reuse=False):
+        self.infinite = inf
+        self.reuse = reuse
+        self.description = desc
+
+
+class Key(Item):
+    name = "key"
+
+    def __init__(self, code, desc):
+        super().__init__(desc)
+        self.item_code = code
+
+
+class Feature:
+    def __init__(self, obj_code, effect):
+        self.obj_code = obj_code
+        self.effect = effect
+
+
+class Gate(Feature):
+    def __init__(self, obj_code, effect):
+        super().__init__(obj_code, effect)
+
+
+class Lever(Feature):
+    def __init__(self, obj_code, effect):
+        super().__init__(obj_code, effect)
+
+
 # Unfinished help function
 def game_help():
     print("Welcome! My name is Jared. I built this text-based RPG for practicing Python. I've tried to make it\n"
@@ -95,18 +126,19 @@ class Location:
     occupied = False
     explored = False
 
-    def __init__(self, n=False, s=False, e=False, w=False, us=False, ds=False):
-        self.n_passable = n
-        self.s_passable = s
-        self.e_passable = e
-        self.w_passable = w
-        self.upstairs = us
-        self.downstairs = ds
+    # Set to 0 if you can't move that direction, or 1 if you can. "nsewud"
+    def __init__(self, move="000000"):
+        self.n_passable = int(move[0])
+        self.s_passable = int(move[1])
+        self.e_passable = int(move[2])
+        self.w_passable = int(move[3])
+        self.upstairs = int(move[4])
+        self.downstairs = int(move[5])
 
 
 class Room(Location):
-    def __init__(self, desc, visual, loot=None, features=None, n=False, s=False, e=False, w=False, us=False, ds=False):
-        super().__init__(n, s, e, w, us, ds)
+    def __init__(self, desc, visual, loot=None, features=None, move="000000"):
+        super().__init__(move)
         self.loot = loot
         self.features = features
         self.short_description = desc[0]
@@ -138,18 +170,18 @@ class Player:
 class Map:
     floor1 = [
         [Wall(), Wall(), Wall(), Wall(), Wall()],
-        [Wall(), Wall(), Room(data["u_desc"], data["u_vis"], s=True), Wall(), Wall()],
-        [Wall(), Room(data["l_desc"], data["l_vis"], e=True), Room(data["s_desc"], data["s_vis"], n=True, s=True, e=True, w=True),
-         Room(data["r_desc"], data["r_vis"], features=[data["gate"]], w=True), Room(data["dun_desc"], data["dun_vis"], w=True, ds=True)],
-        [Wall(), Wall(), Room(data["d_desc"], data["d_vis"], loot=[data["key"]], n=True), Wall(), Wall()],
+        [Wall(), Wall(), Room(data["u_desc"], data["u_vis"], move="010000"), Wall(), Wall()],
+        [Wall(), Room(data["l_desc"], data["l_vis"], move="001000"), Room(data["s_desc"], data["s_vis"], move="111100"),
+         Room(data["r_desc"], data["r_vis"], features=[data["gate"]], move="000100"), Room(data["dun_desc"], data["dun_vis"], move="000101")],
+        [Wall(), Wall(), Room(data["d_desc"], data["d_vis"], loot=[data["key"]], move="100000"), Wall(), Wall()],
         [Wall(), Wall(), Wall(), Wall(), Wall()]
         ]
     floor2 = [
         [Wall(), Wall(), Wall(), Wall(), Wall()],
-        [Wall(), Wall(), Room(data["u_desc"], data["u_vis"], s=True), Wall(), Wall()],
-        [Wall(), Room(data["l_desc"], data["l_vis"], e=True), Room(data["s_desc"], data["s_vis"], n=True, s=True, e=True, w=True),
-         Room(data["r_desc"], data["r_vis"], features=[data["gate"]], w=True), Room(data["dun_desc"], data["dun_vis"], w=True, us=True)],
-        [Wall(), Wall(), Room(data["d_desc"], data["d_vis"], loot=[data["key"]], n=True), Wall(), Wall()],
+        [Wall(), Wall(), Room(data["u_desc"], data["u_vis"], move="010000"), Wall(), Wall()],
+        [Wall(), Room(data["l_desc"], data["l_vis"], move="001000"), Room(data["s_desc"], data["s_vis"], move="111100"),
+         Room(data["r_desc"], data["r_vis"], features=[data["gate"]], move="000100"), Room(data["dun_desc"], data["dun_vis"], move="000110")],
+        [Wall(), Wall(), Room(data["d_desc"], data["d_vis"], loot=[data["key"]], move="100000"), Wall(), Wall()],
         [Wall(), Wall(), Wall(), Wall(), Wall()]
         ]
 
