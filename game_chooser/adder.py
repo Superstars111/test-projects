@@ -26,7 +26,53 @@ feelings = [
 ]
 
 
-# Adds a game to the library
+# Adds or removes a player (or players) from a field- specifically, favoredBy, vetoedBy, loweredBy, and ownedBy
+def alter_player(alt_type, target, rem=False):
+    cont = True
+    while cont:
+        play_name = input("Please put the first name or common title (e.g. \"Dad\") here. "
+                          "When you're done, type done. ").title()
+        if play_name == "Done":
+            break
+        if rem:
+            if play_name in target[alt_type]:
+                target[alt_type].remove(play_name)
+            else:
+                print("That person isn't in this field!")
+        else:
+            if play_name in target[alt_type]:
+                print("That person is already in this field!")
+            elif play_name == "Family":
+                for member in ["Dad", "Mom", "Jared", "Hannah", "Simon", "Kenan", "Micah"]:
+                    if member not in target[alt_type]:
+                        target[alt_type].append(member)
+            else:
+                target[alt_type].append(play_name)
+
+
+def alphabetize(title):
+    # TODO: Put in a regex to filter out "the" from the beginnings of titles.
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    low = 0
+    high = 0
+    # n = 0
+    # while spot not found
+    # if title[n] == game["title"][n]:
+    #    n +=1
+    for i, char in enumerate(title):
+        for idx, game in enumerate(options):
+            if char < game["title"][i]:
+                low = idx
+            elif char > game["title"][i]:
+                high = idx
+            elif char == game["title"][i]:
+                prev_loc = loc
+                loc = idx
+
+
+
+
+# Adds a new game to the library
 def add_game(add_num):
 
     for i in range(add_num):
@@ -48,34 +94,17 @@ def add_game(add_num):
             "points": 0
         }
 
-        game["title"] = input("What is this game's title? ")  # Title collection
+        # TODO: Add protection against duplicate titles.
+        game["title"] = input("What is this game's title? Please be exact. ")  # Title collection
 
-        cont = True  # Veto collection
-        while cont:
-            player = input("Is there anyone who will refuse to play this game? Put their name here. "
-                           "When you're done, type done. ").title()
-            if player == "Done":
-                cont = False
-            else:
-                game["vetoedBy"].append(player)
+        print("Is there anyone who will refuse to play this game?")  # Veto collection
+        alter_player(game, "vetoedBy")
 
-        cont = True  # Favored collection
-        while cont:
-            player = input("Does anyone especially like this game? Put their name here. "
-                           "When you're done, type done. ").title()
-            if player == "Done":
-                cont = False
-            else:
-                game["favoredBy"].append(player)
+        print("Does anyone especially like this game?")  # Favored collection
+        alter_player(game, "favoredBy")
 
-        cont = True  # Lowered collection
-        while cont:
-            player = input("Does anyone lean against this game? Put their name here. "
-                           "When you're done, type done. ").title()
-            if player == "Done":
-                cont = False
-            else:
-                game["loweredBy"].append(player)
+        print("Does anyone lean against this game?")  # Lowered collection
+        alter_player(game, "loweredBy")
 
         cont = True  # Type collection
         while cont:
@@ -112,24 +141,32 @@ def add_game(add_num):
             else:
                 print("I'm sorry, I didn't understand that.")
 
-        if game["type"] == "video":  # Shared collection
+        # Shared collection
+        if game["type"] == "video":
             shared = input("Can multiple people play with just one copy of this game? Yes or no. ").lower()
             if shared in ("yes", "y"):
                 game["shared"] = True
         else:
             game["shared"] = True
 
-        play_count = re.split(r",\s*", input("How many players can play? Please split with a comma. ex. 2, 3, 4, 6 "))
-        for i in play_count:
-            game["players"].append(int(i))
+        # Player count collection
+        cont = True
+        while cont:
+            play_count = re.split(r",\s*", input("How many players can play? Please split with a comma. ex. 2, 3, 4, 6 "))
+            try:
+                game["players"] = [int(i) for i in play_count]
+                cont = False
+            except TypeError:
+                print("Please only use integers. If there are multiple, separate them with a comma.")
 
-        ideal_count = re.split(r",\s*",
-                               input("What would be the perfect amount of players for this game? ex. 2, 5, 6 "))
+        # Ideal number of players collection
+        ideal_count = re.split(r",\s*", input("What would be the perfect amount of players for this game? ex. 2, 5, 6 "))
         for i in ideal_count:
             if i in play_count:
                 game["idealPlayers"].append(int(i))
 
-        if game["shared"]:  # Max copy players collection
+        # Maximum players per copy collection
+        if game["shared"]:
             if game["type"] in (["board"], ["card"]):
                 game["copyPlayers"] = max(game["players"])
             else:
@@ -141,11 +178,8 @@ def add_game(add_num):
         cont = True  # Competition collection
         while cont:
             comp = input("Is this game pvp, co-op, or both? ").lower()
-            if comp == "pvp":
-                game["compType"] = ["pvp"]
-                cont = False
-            elif comp == "co-op":
-                game["compType"] = ["co-op"]
+            if comp in ("pvp", "co-op"):
+                game["compType"] = [comp]
                 cont = False
             elif comp == "both":
                 game["compType"] = ["pvp", "co-op"]
@@ -153,17 +187,8 @@ def add_game(add_num):
             else:
                 print("I'm sorry, I didn't understand that. Please input pvp, co-op, or both.")
 
-        cont = True  # Owner collection
-        while cont:
-            player = input("Who owns this game? "
-                           "If this is a Curry family game, type family. When you're done, type done. ").title()
-            if player == "Done":
-                cont = False
-            elif player == "Family":
-                for member in ["Dad", "Mom", "Jared", "Hannah", "Simon", "Kenan", "Micah"]:
-                    game["ownedBy"].append(member)
-            else:
-                game["ownedBy"].append(player)
+        print("Who owns this game? If this is a Curry family game, you can type family.")  # Owner collection
+        alter_player(game, "ownedBy")
 
         cont = True  # Turn style collection
         while cont:
@@ -221,32 +246,16 @@ def edit_game(title):
                              "(4) Owned\n"
                              ">> ").lower()
             if category in ("1", "veto"):
-                veto = input("Please put the first name or common title (e.g. \"Dad\") here. ").title()
-                if veto in match["vetoedBy"]:
-                    print("That person has already vetoed this game!")
-                else:
-                    match["vetoedBy"].append(veto)
+                alter_player("vetoedBy", match)
 
             elif category in ("2", "favored"):
-                favor = input("Please put the first name or common title (e.g. \"Dad\") here. ").title()
-                if favor in match["favoredBy"]:
-                    print("That person already favors this game!")
-                else:
-                    match["favoredBy"].append(favor)
+                alter_player("favoredBy", match)
 
             elif category in ("3", "lowered"):
-                lower = input("Please put the first name or common title (e.g. \"Dad\") here. ").title()
-                if lower in match["loweredBy"]:
-                    print("That person already lowers this game!")
-                else:
-                    match["loweredBy"].append(lower)
+                alter_player("loweredBy", match)
 
             elif category in ("4", "owned"):
-                owner = input("Please put the first name or common title (e.g. \"Dad\") here. ").title()
-                if owner in match["ownedBy"]:
-                    print("That person already owns this game!")
-                else:
-                    match["ownedBy"].append(owner)
+                alter_player("ownedBy", match)
 
             else:
                 print("I'm sorry, I didn't understand that.")
@@ -259,32 +268,16 @@ def edit_game(title):
                              "(4) Owned\n"
                              ">> ").lower()
             if category in ("1", "veto"):
-                veto = input("Please put the first name or common title (e.g. \"Dad\") here. ").title()
-                if veto in match["vetoedBy"]:
-                    match["vetoedBy"].remove(veto)
-                else:
-                    print("That person hasn't vetoed this game!")
+                alter_player("vetoedBy", match, rem=True)
 
             elif category in ("2", "favored"):
-                favor = input("Please put the first name or common title (e.g. \"Dad\") here. ").title()
-                if favor in match["favoredBy"]:
-                    match["favoredBy"].remove(favor)
-                else:
-                    print("That person hasn't favored this game!")
+                alter_player("favoredBy", match, rem=True)
 
             elif category in ("3", "lowered"):
-                lower = input("Please put the first name or common title (e.g. \"Dad\") here. ").title()
-                if lower in match["loweredBy"]:
-                    match["loweredBy"].remove(lower)
-                else:
-                    print("That person hasn't lowered this game!")
+                alter_player("loweredBy", match, rem=True)
 
             elif category in ("4", "owned"):
-                owner = input("Please put the first name or common title (e.g. \"Dad\") here. ").title()
-                if owner in match["ownedBy"]:
-                    match["ownedBy"].remove(owner)
-                else:
-                    print("That person doesn't own this game!")
+                alter_player("ownedBy", match, rem=True)
 
             else:
                 print("I'm sorry, I didn't understand that.")
@@ -377,6 +370,8 @@ def edit_game(title):
                                       input("How many players can play? Please split with a comma. ex. 2, 3, 4, 6 "))
                 for i in play_count:
                     match["players"].append(int(i))
+                if match["type"] in ("board", "card"):
+                    match["copyPlayers"] = max(match["players"])
 
             elif field in ("6", "ideal"):
                 ideal_count = re.split(r",\s*", input("What would be the perfect amount of players for this game? "

@@ -1,4 +1,4 @@
-#import options
+# import options
 import json
 Currys = ["Dad", "Mom", "Jared", "Simon", "Kenan", "Micah"]
 tabletop = [["board"], ["card"]]
