@@ -1,5 +1,6 @@
 import json
 import re
+import string
 
 with open("options.json", "r") as option_list:
     options = json.load(option_list)
@@ -50,26 +51,59 @@ def alter_player(alt_type, target, rem=False):
                 target[alt_type].append(play_name)
 
 
-def alphabetize(title):
-    # TODO: Put in a regex to filter out "the" from the beginnings of titles.
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
-    low = 0
-    high = 0
-    # n = 0
-    # while spot not found
-    # if title[n] == game["title"][n]:
-    #    n +=1
-    for i, char in enumerate(title):
-        for idx, game in enumerate(options):
-            if char < game["title"][i]:
-                low = idx
-            elif char > game["title"][i]:
-                high = idx
-            elif char == game["title"][i]:
-                prev_loc = loc
-                loc = idx
+def alphabetize(new_game, game_list):
+    s = 0
+    c = 0
+    g = 0
+    title_check = False
+    spot = False
+    while not spot:
+        if not title_check:
+            if len(game_list[g]["title"]) >= 4:
+                if game_list[g]["title"] == "The Game of LIFE":
+                    c = c + 12
+                elif game_list[g]["title"][0:2] == "A ":
+                    c = c + 2
+                elif game_list[g]["title"][0:4] == "The ":
+                    c = c + 4
 
+            if len(new_game["title"]) >= 4:
+                if new_game["title"][0:4] == "The ":
+                    s = s + 4
+                elif new_game["title"][0:2] == "A ":
+                    s = s + 2
+            title_check = True
 
+        if new_game["title"][s] in (string.punctuation, " "):
+            s += 1
+            continue
+        if game_list[g]["title"][c] in (string.punctuation, " "):
+            c += 1
+            continue
+
+        if g == len(game_list):
+            # If you reach the end of the list, put it there
+            game_list[g] = [new_game]
+            spot = True
+        elif s == len(new_game["title"]):
+            # If you've found a title that encompasses this one, put this title right before that one
+            game_list[g:g] = [new_game]
+            spot = True
+        elif c >= len(game_list[g]["title"]):
+            game_list[g+1:g+1] = [new_game]
+            spot = True
+        elif new_game["title"][s].lower() > game_list[g]["title"][c].lower():
+            # If you're still ahead of your alphabetic position, check the next game
+            g += 1
+            s = 0
+            c = 0
+            title_check = False
+        elif new_game["title"][s].lower() == game_list[g]["title"][c].lower():
+            s += 1
+            c += 1
+        elif new_game["title"][s].lower() < game_list[g]["title"][c].lower():
+            game_list[g:g] = [new_game]
+            spot = True
 
 
 # Adds a new game to the library
@@ -94,17 +128,24 @@ def add_game(add_num):
             "points": 0
         }
 
-        # TODO: Add protection against duplicate titles.
+        duplicate = False
         game["title"] = input("What is this game's title? Please be exact. ")  # Title collection
+        for old_game in options:
+            if old_game["title"] == game["title"]:
+                duplicate = True
+        if duplicate:
+            print("That game already exist in the library!")
+            break
+
 
         print("Is there anyone who will refuse to play this game?")  # Veto collection
-        alter_player(game, "vetoedBy")
+        alter_player("vetoedBy", game)
 
         print("Does anyone especially like this game?")  # Favored collection
-        alter_player(game, "favoredBy")
+        alter_player("favoredBy", game)
 
         print("Does anyone lean against this game?")  # Lowered collection
-        alter_player(game, "loweredBy")
+        alter_player("loweredBy", game)
 
         cont = True  # Type collection
         while cont:
@@ -141,18 +182,11 @@ def add_game(add_num):
             else:
                 print("I'm sorry, I didn't understand that.")
 
-        # Shared collection
-        if game["type"] == "video":
-            shared = input("Can multiple people play with just one copy of this game? Yes or no. ").lower()
-            if shared in ("yes", "y"):
-                game["shared"] = True
-        else:
-            game["shared"] = True
-
         # Player count collection
         cont = True
         while cont:
-            play_count = re.split(r",\s*", input("How many players can play? Please split with a comma. ex. 2, 3, 4, 6 "))
+            play_count = re.split(r",\s*", input("How many players can play? Please split with a comma. ex. 2, 3, 4, 6"
+                                                 "\n>> "))
             try:
                 game["players"] = [int(i) for i in play_count]
                 cont = False
@@ -160,18 +194,33 @@ def add_game(add_num):
                 print("Please only use integers. If there are multiple, separate them with a comma.")
 
         # Ideal number of players collection
-        ideal_count = re.split(r",\s*", input("What would be the perfect amount of players for this game? ex. 2, 5, 6 "))
-        for i in ideal_count:
-            if i in play_count:
-                game["idealPlayers"].append(int(i))
+        if len(game["players"]) > 1:
+            ideal_count = re.split(r",\s*", input("What would be the perfect amount of players for this game? ex. 2, 5, 6"
+                                                  "\n>> "))
+            for i in ideal_count:
+                if i in play_count:
+                    game["idealPlayers"].append(int(i))
+        else:
+            game["idealPlayers"] = game["players"]
+
+        # Shared collection
+        if game["type"] == ["video"]:
+            shared = input("Can multiple people play with just one copy of this game? Yes or no. ").lower()
+            if shared in ("yes", "y"):
+                game["shared"] = True
+        else:
+            game["shared"] = True
 
         # Maximum players per copy collection
         if game["shared"]:
-            if game["type"] in (["board"], ["card"]):
-                game["copyPlayers"] = max(game["players"])
+            if len(game["Players"]) > 1:
+                if game["type"] in (["board"], ["card"]):
+                    game["copyPlayers"] = max(game["players"])
+                else:
+                    game["copyPlayers"] = int(input("What is the maximum number of people who can play "
+                                                    "with one copy of this game? "))
             else:
-                game["copyPlayers"] = int(input("What is the maximum number of people who can play "
-                                                "with one copy of this game? "))
+                game["copyPlayers"] = game["Players"]
         else:
             game["copyPlayers"] = 1
 
@@ -188,7 +237,7 @@ def add_game(add_num):
                 print("I'm sorry, I didn't understand that. Please input pvp, co-op, or both.")
 
         print("Who owns this game? If this is a Curry family game, you can type family.")  # Owner collection
-        alter_player(game, "ownedBy")
+        alter_player("ownedBy", game)
 
         cont = True  # Turn style collection
         while cont:
@@ -202,7 +251,7 @@ def add_game(add_num):
             else:
                 print("I'm sorry, I didn't understand that.")
 
-        options.append(game)
+        alphabetize(game, options)
         print()
 
 

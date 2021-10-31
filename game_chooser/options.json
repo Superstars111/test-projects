@@ -303,6 +303,58 @@
         "points": 0
     },
     {
+        "title": "Among Us",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fast",
+            "mystery",
+            "party",
+            "strategy",
+            "teams"
+        ],
+        "shared": false,
+        "players": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "idealPlayers": [
+            8,
+            9,
+            10
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Hannah",
+            "Simon",
+            "Kenan",
+            "Micah",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
         "title": "Aperture Tag: The Paint Gun Testing Initiative",
         "vetoedBy": [
             "Jared"
@@ -3512,6 +3564,39 @@
         "points": 0
     },
     {
+        "title": "One Strike",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "fast",
+            "fighting"
+        ],
+        "shared": true,
+        "players": [
+            2
+        ],
+        "idealPlayers": [
+            2
+        ],
+        "copyPlayers": 2,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Jared",
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
         "title": "Othello",
         "vetoedBy": [],
         "favoredBy": [],
@@ -4815,6 +4900,55 @@
         "length": [],
         "turns": [
             "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Spaceteam",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "party",
+            "fast"
+        ],
+        "shared": false,
+        "players": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "idealPlayers": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "copyPlayers": 1,
+        "compType": [
+            "co-op"
+        ],
+        "ownedBy": [
+            "Dad",
+            "Mom",
+            "Jared",
+            "Hannah",
+            "Simon",
+            "Kenan",
+            "Micah",
+            "Alan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
         ],
         "points": 0
     },
