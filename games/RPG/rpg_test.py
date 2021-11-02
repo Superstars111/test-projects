@@ -117,14 +117,15 @@ def game_help():
           "My goal is to make it so that you can intuitively do whatever you'd like (within reason), so ideally you\n"
           "won't need a list of commands. However, if you'd like one, you can type \"list\" now. Otherwise, you can\n"
           "type \"done\" to get back to the game.")
-    com_list = input(">> ").lower()
-    if com_list in ("ls", "list"):
+
+    if input(">> ").lower() in ("ls", "list"):
         pass
+    # TODO: Add command list in the help function.
 
 
 class Location:
-    occupied = False
-    explored = False
+    is_occupied = False
+    is_explored = False
 
     # Set to 0 if you can't move that direction, or 1 if you can. "nsewud"
     def __init__(self, move="000000"):
@@ -184,148 +185,127 @@ class Map:
         [Wall(), Wall(), Room(data["d_desc"], data["d_vis"], loot=[data["key"]], move="100000"), Wall(), Wall()],
         [Wall(), Wall(), Wall(), Wall(), Wall()]
         ]
+    floors = [floor1, floor2]
 
-    current = floor1[2][2]
-    previous = floor1[2][2]
+    # TODO: Add better system for coordinates. I can define "row," "col," and "layer" and just use those with a
+    #   reference to "floors" whenever I need them, but I need to be careful about redefining them in the move function.
+    current_location = floor1[2][2]
+    previous_location = floor1[2][2]
     coords = [2, 2, 0]
     prev_coords = [2, 2, 0]
-    floors = [floor1, floor2]
     current_floor = floors[0]
     previous_floor = floors[0]
 
-    def move(self):
+    def move(self, destination):
         row, col, layer = self.coords[0], self.coords[1], self.coords[2]
+        is_passable = False
+        no_barrier = False
 
-        if action[-1] in data["stairs"]:
-            if self.current.upstairs and self.floors[layer-1][row][col].downstairs:
-                self.current.occupied = False
-                self.previous = self.current
-                self.current = self.floors[layer-1][row][col]
-                self.previous_floor = self.current_floor
-                self.current_floor = self.floors[layer-1]
-                self.prev_coords = self.coords
-                self.coords = [row, col, layer-1]
-                self.current.occupied = True
-                if self.current.explored:
-                    print(self.current.short_description)
-                else:
-                    self.current.explored = True
-                    print(self.current)
+        if destination in data["north"]:
+            row = row - 1
+            if self.current_location.n_passable and self.current_floor[row][col].s_passable:
+                is_passable = True
 
-            elif self.current.downstairs and self.floors[layer+1][row][col].upstairs:
-                self.current.occupied = False
-                self.previous = self.current
-                self.current = self.floors[layer+1][row][col]
-                self.previous_floor = self.current_floor
-                self.current_floor = self.floors[layer+1]
-                self.prev_coords = self.coords
-                self.coords = [row, col, layer+1]
-                self.current.occupied = True
-                if self.current.explored:
-                    print(self.current.short_description)
-                else:
-                    self.current.explored = True
-                    print(self.current)
+        elif destination in data["south"]:
+            row = row + 1
+            if self.current_location.s_passable and self.current_floor[row][col].n_passable:
+                is_passable = True
 
-        elif action[min(1, len(action) - 1)] in data["north"]:
-            if self.current.n_passable and self.current_floor[row - 1][col].s_passable:
-                self.current.occupied = False
-                self.previous = self.current
-                self.current = self.current_floor[row - 1][col]
-                self.prev_coords = self.coords
-                self.coords = [row-1, col, layer]
-                self.current.occupied = True
-                if self.current.explored:
-                    print(self.current.short_description)
-                else:
-                    self.current.explored = True
-                    print(self.current)
-            else:
-                print("You have hit a wall and cannot go this way.")
+        elif destination in data["east"]:
+            col = col + 1
+            if self.current_location.e_passable and self.current_floor[row][col].w_passable:
+                is_passable = True
 
-        elif action[min(1, len(action) - 1)] in data["south"]:
-            if self.current.s_passable and self.current_floor[row + 1][col].n_passable:
-                self.current.occupied = False
-                self.previous = self.current
-                self.current = self.current_floor[row + 1][col]
-                self.prev_coords = self.coords
-                self.coords = [row+1, col, layer]
-                self.current.occupied = True
-                if self.current.explored:
-                    print(self.current.short_description)
-                else:
-                    self.current.explored = True
-                    print(self.current)
-            else:
-                print("You have hit a wall and cannot go this way.")
+        elif destination in data["west"]:
+            col = col - 1
+            if self.current_location.w_passable and self.current_floor[row][col].e_passable:
+                is_passable = True
 
-        elif action[min(1, len(action) - 1)] in data["west"]:
-            if self.current.w_passable and self.current_floor[row][col - 1].e_passable:
-                self.current.occupied = False
-                self.previous = self.current
-                self.current = self.current_floor[row][col - 1]
-                self.prev_coords = self.coords
-                self.coords = [row, col-1, layer]
-                self.current.occupied = True
-                if self.current.explored:
-                    print(self.current.short_description)
-                else:
-                    self.current.explored = True
-                    print(self.current)
-            else:
-                print("You have hit a wall and cannot go this way.")
+        # TODO: Re-add ability to use stairs, and give the distinction of up and down.
 
-        elif action[min(1, len(action) - 1)] in data["east"]:
-            if self.current.e_passable and self.current_floor[row][col + 1].w_passable:
-                self.current.occupied = False
-                self.previous = self.current
-                self.current = self.current_floor[row][col + 1]
-                self.prev_coords = self.coords
-                self.coords = [row, col+1, layer]
-                self.current.occupied = True
-                if self.current.explored:
-                    print(self.current.short_description)
-                else:
-                    self.current.explored = True
-                    print(self.current)
-            else:
-                print("You have hit a wall and cannot go this way.")
-
-        elif action[min(1, len(action) - 1)] in data["backward"]:
-            if self.current == self.previous:
+        elif destination in data["backward"]:
+            if self.current_location == self.previous_location:
                 print("You look up towards the hole you fell from. You jump, but it remains out of reach.")
             else:
-                self.current.occupied = False
-                self.current, self.previous = self.previous, self.current
+                self.current_location.is_occupied = False
+                self.current_location, self.previous_location = self.previous_location, self.current_location
                 self.coords, self.prev_coords = self.prev_coords, self.coords
                 self.current_floor, self.previous_floor = self.previous_floor, self.current_floor
-                self.current.occupied = True
-                print(self.current.short_description)
+                self.current_location.is_occupied = True
+                print(self.current_location.short_description)
+            no_barrier = True
 
         else:
             print("You really, really want to do that. But try as you might, you can't think what direction that is.")
+            no_barrier = True
+
+        if is_passable:
+            self.current_location.is_occupied = False
+            self.previous_location = self.current_location
+            self.current_location = self.current_floor[row][col]
+            self.prev_coords = self.coords
+            self.coords = [row, col, layer]
+            self.current_location.is_occupied = True
+            if self.current_location.is_explored:
+                print(self.current_location.short_description)
+            else:
+                self.current_location.is_explored = True
+                print(self.current_location)
+        elif not no_barrier:
+            print("You have hit a wall and cannot go this way.")
+
+        # if action[-1] in data["stairs"]:
+        #     if self.current_location.upstairs and self.floors[layer - 1][row][col].downstairs:
+        #         self.current_location.is_occupied = False
+        #         self.previous_location = self.current_location
+        #         self.current_location = self.floors[layer - 1][row][col]
+        #         self.previous_floor = self.current_floor
+        #         self.current_floor = self.floors[layer-1]
+        #         self.prev_coords = self.coords
+        #         self.coords = [row, col, layer-1]
+        #         self.current_location.is_occupied = True
+        #         if self.current_location.is_explored:
+        #             print(self.current_location.short_description)
+        #         else:
+        #             self.current_location.is_explored = True
+        #             print(self.current_location)
+        #
+        #     elif self.current_location.downstairs and self.floors[layer + 1][row][col].upstairs:
+        #         self.current_location.is_occupied = False
+        #         self.previous_location = self.current_location
+        #         self.current_location = self.floors[layer + 1][row][col]
+        #         self.previous_floor = self.current_floor
+        #         self.current_floor = self.floors[layer+1]
+        #         self.prev_coords = self.coords
+        #         self.coords = [row, col, layer+1]
+        #         self.current_location.is_occupied = True
+        #         if self.current_location.is_explored:
+        #             print(self.current_location.short_description)
+        #         else:
+        #             self.current_location.is_explored = True
+        #             print(self.current_location)
 
     def view_map(self):
         special = 0  # If a special character is printed, this prevents the normal character from printing.
         for row_idx, row in enumerate(self.current_floor):
-            for idx, line in enumerate(self.current.visual):  # For each row in the room's visual representation.
+            for idx, line in enumerate(self.current_location.visual):  # For each row in the room's visual representation.
                 for col_idx, room in enumerate(row):
-                    if room.explored:
+                    if room.is_explored:
                         for char in range(len(line)):  # Go through each character individually
                             # Player marker
-                            if room.occupied and char == 4 and idx == 2:
+                            if room.is_occupied and char == 4 and idx == 2:
                                 print("X", end="")
                                 special += 1
                             # Eastern gate
                             if self.current_floor[row_idx][min(len(row) - 1, col_idx + 1)] != room:  # Boundary verification
                                 if not room.e_passable and self.current_floor[row_idx][col_idx + 1].w_passable \
-                                        and char == len(line) - 2 and idx == len(self.current.visual) // 2:
+                                        and char == len(line) - 2 and idx == len(self.current_location.visual) // 2:
                                     print("+", end="")
                                     special += 1
                             # Western gate
                             if self.current_floor[row_idx][max(0, col_idx - 1)] != room:  # Boundary verification
                                 if not room.w_passable and self.current_floor[row_idx][col_idx - 1].e_passable \
-                                        and char == 1 and idx == len(self.current.visual) // 2:
+                                        and char == 1 and idx == len(self.current_location.visual) // 2:
                                     print("+", end="")
                                     special += 1
                             # Northern gate
@@ -337,7 +317,7 @@ class Map:
                             # Southern gate
                             if self.current_floor[min(len(self.current_floor), row_idx + 1)][col_idx] != room:  # Boundary verification
                                 if not room.s_passable and self.current_floor[row_idx + 1][col_idx].n_passable \
-                                        and char == len(line) // 2 and idx == len(self.current.visual) - 2:
+                                        and char == len(line) // 2 and idx == len(self.current_location.visual) - 2:
                                     print("+", end="")
                                     special += 1
                             if not special:
@@ -349,28 +329,28 @@ class Map:
 
     def loot_room(self, item):
         if item == "stairs":
-            self.move()
+            self.move(item)
         else:
-            if self.current.loot:
-                for thing in self.current.loot:
+            if self.current_location.loot:
+                for thing in self.current_location.loot:
                     if item == thing["name"]:
                         Player.inventory.append(thing)
-                        self.current.loot.remove(thing)
+                        self.current_location.loot.remove(thing)
                         print(f"You take the {item} and place it in your inventory.")
                     else:
                         print("You searched high and low, but you can't seem to find that object in this room.")
             else:
                 print("You searched high and low, but you can't seem to find that object in this room.")
 
-    def examination(self, target):
+    def examine(self, target):
         if target == "map":
             self.view_map()
         elif target in data["space"]:
-            print(self.current)
+            print(self.current_location)
         elif target in data["bag"]:
             if Player.inventory:
                 for item in Player.inventory:
-                    print(f"{item['name']}")  # Will likely add additional formatting later. Hence the f-string.
+                    print(f"{item['name']}")  # TODO: Add formatting for player inventory
             else:
                 print("Your inventory seems to be empty... Wait- is that a pebble!?")
         elif target in data["controls"]:
@@ -385,8 +365,8 @@ class Map:
                     tool = item
                     if not item["reusable"]:
                         Player.inventory.remove(item)
-        if self.current.features:
-            for thing in self.current.features:
+        if self.current_location.features:
+            for thing in self.current_location.features:
                 if thing["name"] in action:
                     target = thing
         if not tool:
@@ -418,15 +398,15 @@ class Map:
 if __name__ == "__main__":
     game = Map()
     x = True
-    game.current.occupied = True
-    game.current.explored = True
-    print(game.current)
+    game.current_location.is_occupied = True
+    game.current_location.is_explored = True
+    print(game.current_location)
     while x:
         action = re.split(r"\s", input(">> ").lower())
         if action[0] in data["motion"]:
-            game.move()
+            game.move(action[min(1, len(action) - 1)])
         elif action[0] in data["observe"]:
-            game.examination(action[-1])
+            game.examine(action[-1])
         elif action[0] in data["take"]:
             game.loot_room(action[-1])
         elif action[0] in data["usage"]:

@@ -1,36 +1,16 @@
 import json
 import re
 import string
+from choice import game_styles, print_formatted_list
 
 with open("options.json", "r") as option_list:
     options = json.load(option_list)
 
-feelings = [
-    "adventure",
-    "chance",
-    "combat",
-    "comedy",
-    "creative",
-    "dice",
-    "discovery",
-    "fast",
-    "fighting",
-    "group",
-    "mystery",
-    "party",
-    "puzzle",
-    "race",
-    "sim",
-    "strategy",
-    "teams",
-    "trivia",
-]
-
 
 # Adds or removes a player (or players) from a field- specifically, favoredBy, vetoedBy, loweredBy, and ownedBy
 def alter_player(alt_type, target, rem=False):
-    cont = True
-    while cont:
+    keep_looping = True
+    while keep_looping:
         play_name = input("Please put the first name or common title (e.g. \"Dad\") here. "
                           "When you're done, type done. ").title()
         if play_name == "Done":
@@ -51,59 +31,59 @@ def alter_player(alt_type, target, rem=False):
                 target[alt_type].append(play_name)
 
 
-def alphabetize(new_game, game_list):
-    s = 0
-    c = 0
-    g = 0
-    title_check = False
-    spot = False
-    while not spot:
-        if not title_check:
-            if len(game_list[g]["title"]) >= 4:
-                if game_list[g]["title"] == "The Game of LIFE":
-                    c = c + 12
-                elif game_list[g]["title"][0:2] == "A ":
-                    c = c + 2
-                elif game_list[g]["title"][0:4] == "The ":
-                    c = c + 4
+def insert_alphabetically(new_game, game_list):
+    idx = 0
+    comp_idx = 0
+    game = 0
+    title_checked = False
+    is_inserted = False
+    while not is_inserted:
+        if not title_checked:
+            if len(game_list[game]["title"]) >= 4:
+                if game_list[game]["title"] == "The Game of LIFE":
+                    comp_idx = comp_idx + 12
+                elif game_list[game]["title"][0:2] == "A ":
+                    comp_idx = comp_idx + 2
+                elif game_list[game]["title"][0:4] == "The ":
+                    comp_idx = comp_idx + 4
 
             if len(new_game["title"]) >= 4:
                 if new_game["title"][0:4] == "The ":
-                    s = s + 4
+                    idx = idx + 4
                 elif new_game["title"][0:2] == "A ":
-                    s = s + 2
-            title_check = True
+                    idx = idx + 2
+            title_checked = True
 
-        if new_game["title"][s] in (string.punctuation, " "):
-            s += 1
+        if new_game["title"][idx] in (string.punctuation, " "):
+            idx += 1
             continue
-        if game_list[g]["title"][c] in (string.punctuation, " "):
-            c += 1
+        if game_list[game]["title"][comp_idx] in (string.punctuation, " "):
+            comp_idx += 1
             continue
 
-        if g == len(game_list):
+        if game == len(game_list):
             # If you reach the end of the list, put it there
-            game_list[g] = [new_game]
-            spot = True
-        elif s == len(new_game["title"]):
+            game_list[game] = [new_game]
+            is_inserted = True
+        elif idx == len(new_game["title"]):
             # If you've found a title that encompasses this one, put this title right before that one
-            game_list[g:g] = [new_game]
-            spot = True
-        elif c >= len(game_list[g]["title"]):
-            game_list[g+1:g+1] = [new_game]
-            spot = True
-        elif new_game["title"][s].lower() > game_list[g]["title"][c].lower():
+            game_list[game:game] = [new_game]
+            is_inserted = True
+        elif comp_idx >= len(game_list[game]["title"]):
+            game_list[game+1:game+1] = [new_game]
+            is_inserted = True
+        elif new_game["title"][idx].lower() > game_list[game]["title"][comp_idx].lower():
             # If you're still ahead of your alphabetic position, check the next game
-            g += 1
-            s = 0
-            c = 0
-            title_check = False
-        elif new_game["title"][s].lower() == game_list[g]["title"][c].lower():
-            s += 1
-            c += 1
-        elif new_game["title"][s].lower() < game_list[g]["title"][c].lower():
-            game_list[g:g] = [new_game]
-            spot = True
+            game += 1
+            idx = 0
+            comp_idx = 0
+            title_checked = False
+        elif new_game["title"][idx].lower() == game_list[game]["title"][comp_idx].lower():
+            idx += 1
+            comp_idx += 1
+        elif new_game["title"][idx].lower() < game_list[game]["title"][comp_idx].lower():
+            game_list[game:game] = [new_game]
+            is_inserted = True
 
 
 # Adds a new game to the library
@@ -128,15 +108,14 @@ def add_game(add_num):
             "points": 0
         }
 
-        duplicate = False
+        is_duplicate = False
         game["title"] = input("What is this game's title? Please be exact. ")  # Title collection
-        for old_game in options:
-            if old_game["title"] == game["title"]:
-                duplicate = True
-        if duplicate:
-            print("That game already exist in the library!")
+        for existing_game in options:
+            if existing_game["title"] == game["title"]:
+                is_duplicate = True
+        if is_duplicate:
+            print("That game already exists in the library!")
             break
-
 
         print("Is there anyone who will refuse to play this game?")  # Veto collection
         alter_player("vetoedBy", game)
@@ -147,130 +126,125 @@ def add_game(add_num):
         print("Does anyone lean against this game?")  # Lowered collection
         alter_player("loweredBy", game)
 
-        cont = True  # Type collection
-        while cont:
+        keep_looping = True  # Type collection
+        while keep_looping:
             game_type = input("Is this a video game, a board game, or a card game? ").lower()
             if game_type in ("video", "board", "card"):
                 game["type"] = [game_type]
-                cont = False
+                keep_looping = False
             else:
                 print("I'm sorry, I didn't understand that. Please type video, board, or card.")
 
-        cont = True  # Feel collection
-        while cont:
+        keep_looping = True  # Feel collection
+        while keep_looping:
             style = input("What is the \"feel\" of this game? "
                           "For a list, type list. When you're done, type done. ").lower()
-            if style in feelings:
+            if style in game_styles:
                 game["feel"].append(style)
 
             elif style == "list":
-                for num, feeling in enumerate(feelings, start=1):
-                    if num != len(feelings):
-                        print(feeling + ", ", end="")
-                    else:
-                        print(feeling, end="")
-                    if num % 4 == 0:
-                        print()
+                print_formatted_list(game_styles)
                 print()
 
             elif style == "done":
                 if not game["feel"]:
                     print("Please choose at least one feel for each game.")
                 else:
-                    cont = False
+                    keep_looping = False
 
             else:
                 print("I'm sorry, I didn't understand that.")
 
         # Player count collection
-        cont = True
-        while cont:
-            play_count = re.split(r",\s*", input("How many players can play? Please split with a comma. ex. 2, 3, 4, 6"
+        keep_looping = True
+        while keep_looping:
+            player_count = re.split(r",\s*", input("How many players can play? Please split with a comma. ex. 2, 3, 4, 6"
                                                  "\n>> "))
             try:
-                game["players"] = [int(i) for i in play_count]
-                cont = False
-            except TypeError:
+                game["players"] = [int(i) for i in player_count]
+                keep_looping = False
+            except ValueError:
                 print("Please only use integers. If there are multiple, separate them with a comma.")
 
         # Ideal number of players collection
         if len(game["players"]) > 1:
-            ideal_count = re.split(r",\s*", input("What would be the perfect amount of players for this game? ex. 2, 5, 6"
+            ideal_player_count = re.split(r",\s*", input("What would be the perfect amount of players for this game? ex. 2, 5, 6"
                                                   "\n>> "))
-            for i in ideal_count:
-                if i in play_count:
+            for i in ideal_player_count:
+                if i in player_count:
                     game["idealPlayers"].append(int(i))
         else:
             game["idealPlayers"] = game["players"]
 
         # Shared collection
         if game["type"] == ["video"]:
-            shared = input("Can multiple people play with just one copy of this game? Yes or no. ").lower()
-            if shared in ("yes", "y"):
+            sharable = input("Can multiple people play with just one copy of this game? Yes or no. ").lower()
+            if sharable in ("yes", "y"):
                 game["shared"] = True
         else:
             game["shared"] = True
 
         # Maximum players per copy collection
         if game["shared"]:
-            if len(game["Players"]) > 1:
-                if game["type"] in (["board"], ["card"]):
-                    game["copyPlayers"] = max(game["players"])
-                else:
-                    game["copyPlayers"] = int(input("What is the maximum number of people who can play "
-                                                    "with one copy of this game? "))
+            if game["type"] in (["board"], ["card"]) or len(game["players"]) == 1:
+                game["copyPlayers"] = max(game["players"])
+
             else:
-                game["copyPlayers"] = game["Players"]
+                game["copyPlayers"] = int(input("What is the maximum number of people who can play with one copy of this game? "))
+
         else:
             game["copyPlayers"] = 1
 
-        cont = True  # Competition collection
-        while cont:
-            comp = input("Is this game pvp, co-op, or both? ").lower()
-            if comp in ("pvp", "co-op"):
-                game["compType"] = [comp]
-                cont = False
-            elif comp == "both":
+        keep_looping = True  # Competition collection
+        while keep_looping:
+            competition_type = input("Is this game pvp, co-op, or both? ").lower()
+            if competition_type in ("pvp", "co-op"):
+                game["compType"] = [competition_type]
+                keep_looping = False
+            elif competition_type == "both":
                 game["compType"] = ["pvp", "co-op"]
-                cont = False
+                keep_looping = False
             else:
                 print("I'm sorry, I didn't understand that. Please input pvp, co-op, or both.")
 
         print("Who owns this game? If this is a Curry family game, you can type family.")  # Owner collection
         alter_player("ownedBy", game)
 
-        cont = True  # Turn style collection
-        while cont:
+        keep_looping = True  # Turn style collection
+        while keep_looping:
             turns = input("Is this game turn-based, or real-time? ").lower()
             if turns == "turn-based":
                 game["turns"] = ["turnBased"]
-                cont = False
+                keep_looping = False
             elif turns == "real-time":
                 game["turns"] = ["realTime"]
-                cont = False
+                keep_looping = False
             else:
                 print("I'm sorry, I didn't understand that.")
 
-        alphabetize(game, options)
+        insert_alphabetically(game, options)
         print()
 
 
 # Checks the status of a game already in the library
-def check_game(title):
+def check_game(title, print_results=True):
     match = None
     for game in options:
         if title == game["title"].lower():
             match = game
 
     if match:
-        print_game = input("I've found a game with that title! Would you like to see it? ").lower()
+        print_game = input("I've found a game that has that title! Would you like to see it? ").lower()
         if print_game in ("yes", "y"):
             for field in match:
                 print(f"{field}: {match[field] if match[field] else ''}")
             print()
+        return True
 
     else:
-        print("I'm sorry, I couldn't find that game in our library.")
+        if print_results:
+            print("I'm sorry, I couldn't find that game in our library.")
+        return False
 
 
 # Takes an existing game and alters it
@@ -348,12 +322,7 @@ def edit_game(title):
             if field in ("1", "title"):
                 new_title = input("Please input the correct full title for this game. "
                                   "Be sure to pay attention to capitalization and punctuation. ")
-                trigger = False
-                for game in options:
-                    if new_title == game["title"]:
-                        print("A game already exists with that title!")
-                        trigger = True
-                if not trigger:
+                if not check_game(new_title, print_results=False):
                     match["title"] = new_title
 
             elif field in ("2", "type"):
@@ -364,69 +333,52 @@ def edit_game(title):
                     print("Please input a valid game type.")
 
             elif field in ("3", "feel"):
-                add_rem = input("Do you need to add or remove a feel from this game? ").lower()
-                if add_rem == "add":
-                    feel = input("Which feeling do you need to add? For a list, type list. ").lower()
-                    if feel == "list":
-                        for idx, feeling in enumerate(feelings, start=1):
-                            if idx != len(feelings):
-                                print(feeling + ", ", end="")
-                            else:
-                                print(feeling)
-                            if idx % 4 == 0:
-                                print()
+                adjustment_type = input("Do you need to add or remove a feel from this game? ").lower()
+                if adjustment_type in ("add", "remove"):
+                    feel = input(f"Which feeling do you need to {adjustment_type}? For a list, type list. ").lower()
 
-                    else:
-                        if feel in feelings:
+                    if feel in game_styles:
+                        if adjustment_type == "add":
                             if feel not in match["feel"]:
                                 match["feel"].append(feel)
                             else:
                                 print("This game already has that feeling assigned to it.")
                         else:
-                            print("That is not in the list of approved feelings. Sorry. Please feel better.")
-
-                elif add_rem == "remove":
-                    feel = input("Which feeling do you need to remove? For a list, type list. ").lower()
-                    if feel == "list":
-                        for idx, feeling in enumerate(feelings, start=1):
-                            if idx != len(feelings):
-                                print(feeling + ", ", end="")
-                            else:
-                                print(feeling)
-                            if idx % 4 == 0:
-                                print()
-
-                    else:
-                        if feel in feelings:
                             if feel not in match["feel"]:
                                 print("This game doesn't have that feeling assigned to it.")
                             else:
                                 match["feel"].remove(feel)
-                        else:
-                            print("That is not in the list of approved feelings. Sorry. Please feel better.")
+
+                    elif feel == "list":
+                        print_formatted_list(game_styles)
+
+                    else:
+                        print("That is not in the list of approved feelings. Sorry. Please feel better.")
+
                 else:
                     print("*Sigh...* What's so difficult about typing add or remove?")
 
             elif field in ("4", "shared"):
-                shared = input("Can multiple people play with one copy of this game? ").lower()
-                if shared in ("yes", "y"):
+                if input("Can multiple people play with one copy of this game? ").lower() in ("yes", "y"):
                     match["shared"] = True
                 else:
                     match["shared"] = False
 
             elif field in ("5", "players"):
-                play_count = re.split(r",\s*",
-                                      input("How many players can play? Please split with a comma. ex. 2, 3, 4, 6 "))
+                match["players"] = []
+                play_count = re.split(r",\s*", input("How many players can play? Please split with a comma. ex. 2, 3, 4, 6 "))
+
                 for i in play_count:
                     match["players"].append(int(i))
-                if match["type"] in ("board", "card"):
+
+                if match["type"] in (["board"], ["card"]):
                     match["copyPlayers"] = max(match["players"])
 
             elif field in ("6", "ideal"):
-                ideal_count = re.split(r",\s*", input("What would be the perfect amount of players for this game? "
-                                                      "ex. 2, 5, 6. Note that the game must allow"
-                                                      " for that many players."))
-                for i in ideal_count:
+                match["idealPlayers"] = []
+                ideal_players = re.split(r",\s*", input("What would be the perfect amount of players for this game? "
+                                                        "ex. 2, 5, 6. Note that the game must allow for that many players."))
+                for i in ideal_players:
                     if i in match["players"]:
                         match["idealPlayers"].append(int(i))
 
@@ -439,10 +391,10 @@ def edit_game(title):
                     match["copyPlayers"] = int(copy)
 
             elif field in ("8", "competition"):
-                comp = input("Is this a co-op game, a pvp game, or both? ").lower()
-                if comp in ("co-op", "pvp"):
-                    match["compType"] = [comp]
-                elif comp == "both":
+                competition_type = input("Is this a co-op game, a pvp game, or both? ").lower()
+                if competition_type in ("co-op", "pvp"):
+                    match["compType"] = [competition_type]
+                elif competition_type == "both":
                     match["compType"] = ["pvp", "co-op"]
                 else:
                     print("I'm sorry, I didn't understand that.")
@@ -484,17 +436,16 @@ if __name__ == "__main__":
                      ">> ").lower()
 
         if mode in ("1", "add"):
-            add = input("How many games would you like to add today? Please input an integer. ")
-            add_game(int(add))
+            add_game(int(input("How many games would you like to add today? Please input an integer. ")))
 
         elif mode in ("2", "check"):
             check = input("Which game would you like to check? "
-                          "Please make sure the title is exact, including and punctuation. ").lower()
+                          "Please make sure the title is exact, including punctuation. ").lower()
             check_game(check)
 
         elif mode in ("3", "edit"):
             alter = input("Which game would you like to edit? "
-                          "Please make sure the title is exact, including and punctuation. ").lower()
+                          "Please make sure the title is exact, including punctuation. ").lower()
             edit_game(alter)
 
         elif mode in ("4", "list"):
@@ -508,8 +459,7 @@ if __name__ == "__main__":
             print("I'm sorry, I didn't understand that.")
             continue
 
-        again = input("Will that be all today? ").lower()
-        if again in ("yes", "y"):
+        if input("Will that be all today? ").lower() in ("yes", "y"):
             repeat = False
 
 
