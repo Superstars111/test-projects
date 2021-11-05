@@ -1,5 +1,7 @@
 # import options
 import json
+import tkinter as tk
+from tkinter import ttk
 Currys = ["Dad", "Mom", "Jared", "Simon", "Kenan", "Micah"]
 tabletop = [["board"], ["card"]]
 game_styles = [
@@ -25,6 +27,66 @@ game_styles = [
 
 with open("options.json", "r") as option_list:
     options = json.load(option_list)
+
+
+def activate_player_collection():
+    player_count = int(spin_players.get())
+    for i in range(10):
+        if i + 1 > player_count:
+            for widget in frm_selection.grid_slaves(row=i):
+                widget.grid_remove()
+
+    for i in range(player_count):
+        lbl_player_name = tk.Label(master=frm_selection, text=f"Player {i + 1}:")
+        ent_player_name = tk.Entry(master=frm_selection, width=30)
+        lbl_player_name.grid(row=i, column=1, sticky="e")
+        ent_player_name.grid(row=i, column=2)
+
+
+window = tk.Tk()
+window.title("Game Chooser")
+frm_selection = tk.Frame(master=window)
+frm_selection.rowconfigure([i for i in range(20)], minsize=25)
+frm_selection.columnconfigure([0, 1, 2], minsize=60)
+frm_results_display = tk.Frame(master=window)
+
+spin_players = ttk.Spinbox(frm_selection, from_=2.0, to=10.0, command=activate_player_collection)
+spin_players.state(["readonly"])
+spin_players.set(2)
+activate_player_collection()
+spin_players.grid(row=0, column=0)
+
+# for i in range(10):
+#     lbl_player_name = tk.Label(master=frm_selection, text=f"Player {i+1}:")
+#     ent_player_name = tk.Entry(master=frm_selection, width=30)
+#     lbl_player_name.grid(row=i, column=1, sticky="e")
+#     ent_player_name.grid(row=i, column=2)
+
+combo_game_type = ttk.Combobox(frm_selection)
+combo_game_type["values"] = ("Any type", "Tabletop game", "Video game", "Board game", "Card game")
+combo_game_type.state(["readonly"])
+combo_game_type.set("Any type")
+combo_game_type.grid(row=1, column=0)
+
+combo_competition_type = ttk.Combobox(frm_selection)
+combo_competition_type["values"] = ("Any competition", "Co-op", "PvP")
+combo_competition_type.state(["readonly"])
+combo_competition_type.set("Any competition")
+combo_competition_type.grid(row=2, column=0)
+
+game_styles_var = tk.StringVar(value=game_styles)
+list_style_select = tk.Listbox(master=frm_selection, listvariable=game_styles_var, selectmode="extended")
+list_style_select.grid(row=3, column=0, rowspan=10)
+
+list_style_veto = tk.Listbox(master=frm_selection, listvariable=game_styles_var, selectmode="extended")
+list_style_veto.grid(row=13, column=0, rowspan=10)
+
+btn_calculate = tk.Button(master=frm_selection, text="Calculate")
+btn_calculate.grid(row=20, column=2)
+
+
+frm_selection.grid()
+window.mainloop()
 
 
 # If the game has x feature, keep the game
