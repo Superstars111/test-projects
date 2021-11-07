@@ -33,59 +33,102 @@ def activate_player_collection():
     player_count = int(spin_players.get())
     for i in range(10):
         if i + 1 > player_count:
-            for widget in frm_selection.grid_slaves(row=i):
+            for widget in frm_player_selection.grid_slaves(row=i, column=0):
+                widget.grid_remove()
+            for widget in frm_player_selection.grid_slaves(row=i, column=1):
                 widget.grid_remove()
 
     for i in range(player_count):
-        lbl_player_name = tk.Label(master=frm_selection, text=f"Player {i + 1}:")
-        ent_player_name = tk.Entry(master=frm_selection, width=30)
-        lbl_player_name.grid(row=i, column=1, sticky="e")
-        ent_player_name.grid(row=i, column=2)
+        if frm_player_selection.grid_slaves(row=i, column=1):
+            continue
+        else:
+            lbl_player_name = tk.Label(master=frm_player_selection, text=f"Player {i + 1}:")
+            ent_player_name = tk.Entry(master=frm_player_selection, width=30)
+            lbl_player_name.grid(row=i, column=0, sticky="e")
+            ent_player_name.grid(row=i, column=1)
+
+
+def add_to_list():
+    #TODO: Use lambda to pass an argument into this.
+    style_list = []
+    selected = list_style_select.curselection()
+    for i in selected:
+        style_list.append(game_styles[i])
+    style_list_var = tk.StringVar(value=style_list)
+    list_collected_styles["listvariable"] = style_list_var
+
+
+def check_results():
+    players = []
+    for field in frm_player_selection.grid_slaves(column=1):
+        players.append(field.get())
+    game_type = combo_game_type.get()
+    competition_type = combo_competition_type.get()
 
 
 window = tk.Tk()
 window.title("Game Chooser")
+
 frm_selection = tk.Frame(master=window)
-frm_selection.rowconfigure([i for i in range(20)], minsize=25)
-frm_selection.columnconfigure([0, 1, 2], minsize=60)
+frm_selection.rowconfigure([i for i in range(13)], minsize=25)
+frm_selection.columnconfigure([0, 1], minsize=60)
+frm_selection.grid()
+
+frm_player_selection = tk.Frame(master=frm_selection, borderwidth=1, relief=tk.SUNKEN)
+frm_player_selection.columnconfigure(0, minsize=60)
+frm_player_selection.grid(row=0, column=1, rowspan=9, sticky="nsew", padx=5)
+
 frm_results_display = tk.Frame(master=window)
+
+lbl_players = tk.Label(master=frm_selection, text="Players:")
+lbl_players.grid(row=0, column=0, sticky="w")
 
 spin_players = ttk.Spinbox(frm_selection, from_=2.0, to=10.0, command=activate_player_collection)
 spin_players.state(["readonly"])
 spin_players.set(2)
 activate_player_collection()
-spin_players.grid(row=0, column=0)
+spin_players.grid(row=1, column=0)
 
-# for i in range(10):
-#     lbl_player_name = tk.Label(master=frm_selection, text=f"Player {i+1}:")
-#     ent_player_name = tk.Entry(master=frm_selection, width=30)
-#     lbl_player_name.grid(row=i, column=1, sticky="e")
-#     ent_player_name.grid(row=i, column=2)
+lbl_game_type = tk.Label(master=frm_selection, text="Game type:")
+lbl_game_type.grid(row=3, column=0, sticky="w")
 
 combo_game_type = ttk.Combobox(frm_selection)
 combo_game_type["values"] = ("Any type", "Tabletop game", "Video game", "Board game", "Card game")
 combo_game_type.state(["readonly"])
 combo_game_type.set("Any type")
-combo_game_type.grid(row=1, column=0)
+combo_game_type.grid(row=4, column=0)
+
+lbl_competition_type = tk.Label(master=frm_selection, text="Competition type:")
+lbl_competition_type.grid(row=5, column=0, sticky="w")
 
 combo_competition_type = ttk.Combobox(frm_selection)
 combo_competition_type["values"] = ("Any competition", "Co-op", "PvP")
 combo_competition_type.state(["readonly"])
 combo_competition_type.set("Any competition")
-combo_competition_type.grid(row=2, column=0)
+combo_competition_type.grid(row=6, column=0)
+
+lbl_style_select = tk.Label(master=frm_selection, text="Game styles:")
+lbl_style_select.grid(row=8, column=0, sticky="w")
 
 game_styles_var = tk.StringVar(value=game_styles)
 list_style_select = tk.Listbox(master=frm_selection, listvariable=game_styles_var, selectmode="extended")
-list_style_select.grid(row=3, column=0, rowspan=10)
+list_style_select.grid(row=9, column=0, sticky="ns")
+
+lbl_style_veto = tk.Label(master=frm_selection, text="Game styles:")
+lbl_style_veto.grid(row=10, column=0, sticky="w")
+
+list_collected_styles = tk.Listbox(master=frm_selection, selectmode="extended")
+list_collected_styles.grid(row=9, column=1, sticky="nse")
 
 list_style_veto = tk.Listbox(master=frm_selection, listvariable=game_styles_var, selectmode="extended")
-list_style_veto.grid(row=13, column=0, rowspan=10)
+list_style_veto.grid(row=11, column=0, sticky="ns")
 
-btn_calculate = tk.Button(master=frm_selection, text="Calculate")
-btn_calculate.grid(row=20, column=2)
+btn_collect = tk.Button(master=frm_selection, text="Collect", command=add_to_list)
+btn_collect.grid()
+btn_calculate = tk.Button(master=frm_selection, text="Calculate", command=check_results)
+btn_calculate.grid(row=13, column=1, sticky="e", padx=5, pady=3)
 
 
-frm_selection.grid()
 window.mainloop()
 
 
