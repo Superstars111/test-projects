@@ -377,7 +377,7 @@ def edit_game(title):
             elif field in ("6", "ideal"):
                 match["idealPlayers"] = []
                 ideal_players = re.split(r",\s*", input("What would be the perfect amount of players for this game? "
-                                                        "ex. 2, 5, 6. Note that the game must allow for that many players."))
+                                                        "ex. 2, 5, 6. Note that the game must allow for that many players. "))
                 for i in ideal_players:
                     if i in match["players"]:
                         match["idealPlayers"].append(int(i))

@@ -303,6 +303,39 @@
         "points": 0
     },
     {
+        "title": "Akuto: Showdown",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat",
+            "fast",
+            "party"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
+        ],
+        "points": 0
+    },
+    {
         "title": "Among Us",
         "vetoedBy": [],
         "favoredBy": [],
@@ -1020,6 +1053,42 @@
         "length": [],
         "turns": [
             "turnBased"
+        ],
+        "points": 0
+    },
+    {
+        "title": "Chambara",
+        "vetoedBy": [],
+        "favoredBy": [],
+        "loweredBy": [
+            "Jared"
+        ],
+        "type": [
+            "video"
+        ],
+        "feel": [
+            "combat"
+        ],
+        "shared": true,
+        "players": [
+            2,
+            3,
+            4
+        ],
+        "idealPlayers": [
+            2,
+            4
+        ],
+        "copyPlayers": 4,
+        "compType": [
+            "pvp"
+        ],
+        "ownedBy": [
+            "Kenan"
+        ],
+        "length": [],
+        "turns": [
+            "realTime"
         ],
         "points": 0
     },

@@ -48,14 +48,30 @@ def activate_player_collection():
             ent_player_name.grid(row=i, column=1)
 
 
-def add_to_list():
-    #TODO: Use lambda to pass an argument into this.
-    style_list = []
-    selected = list_style_select.curselection()
+def add_to_list(style_list, lbox_out, lbox_in):
+    selected = lbox_out.curselection()
+    print(f"incoming add {style_list}")
     for i in selected:
-        style_list.append(game_styles[i])
+        if game_styles[i] not in set(style_list):
+            style_list.append(game_styles[i])
+    print(f"outgoing add {style_list}")
+
     style_list_var = tk.StringVar(value=style_list)
-    list_collected_styles["listvariable"] = style_list_var
+    lbox_in["listvariable"] = style_list_var
+
+
+def remove_from_list(style_list, lbox):
+    selected = lbox.curselection()
+    print(f"incoming rem {style_list}")
+    calc = []
+    for idx, style in enumerate(style_list):
+        if idx not in selected:
+            calc.append(style)
+    style_list = calc.copy()
+    print(f"outgoing rem {style_list}")
+
+    style_list_var = tk.StringVar(value=style_list)
+    lbox["listvariable"] = style_list_var
 
 
 def check_results():
@@ -76,7 +92,7 @@ frm_selection.grid()
 
 frm_player_selection = tk.Frame(master=frm_selection, borderwidth=1, relief=tk.SUNKEN)
 frm_player_selection.columnconfigure(0, minsize=60)
-frm_player_selection.grid(row=0, column=1, rowspan=9, sticky="nsew", padx=5)
+frm_player_selection.grid(row=0, column=1, rowspan=9, columnspan=2, sticky="nsew", padx=5)
 
 frm_results_display = tk.Frame(master=window)
 
@@ -110,23 +126,40 @@ combo_competition_type.grid(row=6, column=0)
 lbl_style_select = tk.Label(master=frm_selection, text="Game styles:")
 lbl_style_select.grid(row=8, column=0, sticky="w")
 
+collected_styles = []
 game_styles_var = tk.StringVar(value=game_styles)
-list_style_select = tk.Listbox(master=frm_selection, listvariable=game_styles_var, selectmode="extended")
-list_style_select.grid(row=9, column=0, sticky="ns")
+lbox_style_select = tk.Listbox(master=frm_selection, listvariable=game_styles_var, selectmode="extended")
+lbox_style_select.bind("<Double-1>", lambda x: add_to_list(collected_styles, lbox_style_select, lbox_collected_styles))
+lbox_style_select.grid(row=9, column=0, rowspan=2, sticky="ns")
+
+lbox_collected_styles = tk.Listbox(master=frm_selection, selectmode="extended")
+lbox_collected_styles.bind("<Double-1>", lambda x: remove_from_list(collected_styles, lbox_collected_styles))
+lbox_collected_styles.grid(row=9, column=2, rowspan=2, sticky="nse")
 
 lbl_style_veto = tk.Label(master=frm_selection, text="Game styles:")
-lbl_style_veto.grid(row=10, column=0, sticky="w")
+lbl_style_veto.grid(row=11, column=0, sticky="w")
 
-list_collected_styles = tk.Listbox(master=frm_selection, selectmode="extended")
-list_collected_styles.grid(row=9, column=1, sticky="nse")
+collected_vetoes = []
+lbox_style_veto = tk.Listbox(master=frm_selection, listvariable=game_styles_var, selectmode="extended")
+lbox_style_veto.grid(row=12, column=0, rowspan=2, sticky="ns")
 
-list_style_veto = tk.Listbox(master=frm_selection, listvariable=game_styles_var, selectmode="extended")
-list_style_veto.grid(row=11, column=0, sticky="ns")
+lbox_vetoed_styles = tk.Listbox(master=frm_selection, selectmode="extended")
+lbox_vetoed_styles.grid(row=12, column=2, rowspan=2, sticky="nse")
 
-btn_collect = tk.Button(master=frm_selection, text="Collect", command=add_to_list)
-btn_collect.grid()
+btn_collect_style = tk.Button(master=frm_selection, text="Include",
+                              command=lambda: add_to_list(collected_styles, lbox_style_select, lbox_collected_styles))
+btn_collect_style.grid(row=9, column=1, sticky="s")
+btn_remove_style = tk.Button(master=frm_selection, text="Remove",
+                             command=lambda: remove_from_list(collected_styles, lbox_collected_styles))
+btn_remove_style.grid(row=10, column=1, sticky="s")
+btn_collect_veto = tk.Button(master=frm_selection, text="Veto",
+                             command=lambda: add_to_list(collected_vetoes, lbox_style_veto, lbox_vetoed_styles))
+btn_collect_veto.grid(row=12, column=1, sticky="s")
+btn_remove_veto = tk.Button(master=frm_selection, text="Remove",
+                            command=lambda: remove_from_list(collected_vetoes, lbox_vetoed_styles))
+btn_remove_veto.grid(row=13, column=1, sticky="s")
 btn_calculate = tk.Button(master=frm_selection, text="Calculate", command=check_results)
-btn_calculate.grid(row=13, column=1, sticky="e", padx=5, pady=3)
+btn_calculate.grid(row=14, column=1, sticky="e", padx=5, pady=3)
 
 
 window.mainloop()
