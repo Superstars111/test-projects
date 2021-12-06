@@ -1,0 +1,141 @@
+[
+    {
+        "id": "98005",
+        "romajiTitle": "Ballroom e Youkoso",
+        "englishTitle": "Welcome to the Ballroom",
+        "nativeTitle": "\u30dc\u30fc\u30eb\u30eb\u30fc\u30e0\u3078\u3088\u3046\u3053\u305d",
+        "description": "Fujita has drifted through middle school aimlessly, unable to find friends or anything that can hold his attention. Then, one day, he's attacked by a gang and saved by a mysterious man. But this isn't a karate master; it's a ballroom dance instructor! Reluctantly, Fujita takes a few beginner's classes, only to find his inspiration... an entrancing, teenage dance prodigy named Shizuku.\n<br>\nIt's Fujita's first step into the high-octane world of competitive dance!\n<br><br>\n(Source: Kodansha USA)",
+        "episodes": 24,
+        "seasons": 1,
+        "coverLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx98005-rz5ViwReN7S3.jpg",
+        "coverMed": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx98005-rz5ViwReN7S3.jpg",
+        "coverSmall": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx98005-rz5ViwReN7S3.jpg",
+        "genres": [
+            "Drama",
+            "Romance",
+            "Sports"
+        ],
+        "tags": [
+            {
+                "name": "Dancing",
+                "rank": 96,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Male Protagonist",
+                "rank": 78,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Coming of Age",
+                "rank": 64,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Shounen",
+                "rank": 60,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Heterosexual",
+                "rank": 60,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "School",
+                "rank": 42,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Rehabilitation",
+                "rank": 20,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Ensemble Cast",
+                "rank": 10,
+                "isMediaSpoiler": false
+            }
+        ],
+        "score": 79,
+        "jaredScore": [
+            81,
+            -15,
+            -15
+        ],
+        "simonScore": [
+            0,
+            0,
+            0
+        ],
+        "kenanScore": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "id": "97932",
+        "romajiTitle": "Oushitsu Kyoushi Heine",
+        "englishTitle": "The Royal Tutor",
+        "nativeTitle": "\u738b\u5ba4\u6559\u5e2b\u30cf\u30a4\u30cd",
+        "description": "Accepting the post of Royal Tutor at the court of the king of Grannzreich, Heine Wittgenstein is a little professor with a big job ahead! Each of the kingdom's four princes has a rather distinct personality. Does their diminutive new instructor have what it takes to lay down some learning? It's a comedy of educational proportions!<br><br>\n\n(Source: Yen Press)",
+        "episodes": 13,
+        "seasons": 2,
+        "coverLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx97932-mIhBEmGhR6uB.jpg",
+        "coverMed": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx97932-mIhBEmGhR6uB.jpg",
+        "coverSmall": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx97932-mIhBEmGhR6uB.jpg",
+        "genres": [
+            "Comedy",
+            "Slice of Life"
+        ],
+        "tags": [
+            {
+                "name": "Teacher",
+                "rank": 97,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Male Protagonist",
+                "rank": 95,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Primarily Male Cast",
+                "rank": 72,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Historical",
+                "rank": 71,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Shounen",
+                "rank": 60,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Tsundere",
+                "rank": 60,
+                "isMediaSpoiler": false
+            }
+        ],
+        "score": 71,
+        "jaredScore": [
+            96,
+            -5,
+            19
+        ],
+        "simonScore": [
+            0,
+            0,
+            0
+        ],
+        "kenanScore": [
+            0,
+            0,
+            0
+        ]
+    }
+]
