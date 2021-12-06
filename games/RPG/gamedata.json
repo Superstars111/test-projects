@@ -1,10 +1,10 @@
 {
-  "motion": ["walk", "run", "move", "stroll", "sprint", "go", "waddle", "head", "sally"],
+  "motion": ["walk", "run", "move", "stroll", "sprint", "go", "waddle", "hop", "venture", "head", "sally"],
   "take": ["take", "loot", "grab", "steal"],
   "observe": ["look", "check", "view", "examine", "read", "study"],
   "space": ["room", "area", "location", "place", "space", "surroundings"],
   "bag": ["bag", "backpack", "inventory", "pocket", "pockets", "satchel"],
-  "usage": ["use", "utilize", "activate"],
+  "usage": ["use", "try", "utilize", "activate"],
   "emote": ["dance", "sing", "frolic", "daydream", "draw", "paint"],
   "controls": ["controls", "commands", "help"],
   "north": ["north", "northward", "up"],
