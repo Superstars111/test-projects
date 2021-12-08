@@ -1,4 +1,6 @@
 import json
+import tkinter as tk
+
 import requests as rq
 
 url = "https://graphql.anilist.co/"
@@ -27,7 +29,7 @@ query = """query($id: Int){
 }"""
 
 
-def collect_seasonal_data(show_id, episodes=0, seasons=1):
+def collect_seasonal_data(show_id, episodes=0, seasons=1, unaired_seasons=0, movies=0):
     id_var = {"id": show_id}
     sequel_id = None
     query = """query($id: Int){
@@ -37,19 +39,27 @@ def collect_seasonal_data(show_id, episodes=0, seasons=1):
                        relationType,
                        node{
                          id,
-                         episodes}}}}}"""
+                         episodes,
+                         format,
+                         status}}}}}"""
     showData = rq.post(url, json={"query": query, "variables": id_var}).json()["data"]["Media"]
     for series in showData["relations"]["edges"]:
         if series["relationType"] == "SEQUEL":
-            if series["node"]["episodes"]:
-                episodes += series["node"]["episodes"]
-            seasons += 1
+            if series["node"]["format"] in ("TV", "TV_SHORT"):
+                if series["node"]["status"] == "FINISHED":
+                    episodes += series["node"]["episodes"]
+                    seasons += 1
+                else:
+                    unaired_seasons += 1
+            elif series["node"]["format"] == "MOVIE":
+                movies += 1
             sequel_id = series["node"]["id"]
 
     if sequel_id:
-        episodes, seasons, sequel_id = collect_seasonal_data(sequel_id, episodes=episodes, seasons=seasons)
+        episodes, seasons, unaired_seasons, movies, sequel_id = \
+            collect_seasonal_data(sequel_id, episodes=episodes, seasons=seasons, unaired_seasons=unaired_seasons, movies=movies)
 
-    return episodes, seasons, sequel_id
+    return episodes, seasons, unaired_seasons, movies, sequel_id
 
 
 with open("anime_data.json", "r") as anime_data:
@@ -68,7 +78,7 @@ while retry:
 
 id_var = {"id": media_id}
 request = rq.post(url, json={"query": query, "variables": id_var}).json()['data']["Media"]
-total_episodes, seasons, sequel = collect_seasonal_data(media_id, episodes=request["episodes"])
+total_episodes, seasons, unaired_seasons, movies, sequel = collect_seasonal_data(media_id, episodes=request["episodes"])
 
 jared_rating = [0, 0, 0]
 simon_rating = [0, 0, 0]
@@ -99,6 +109,8 @@ entry = {
     "description": request["description"],
     "episodes": total_episodes,
     "seasons": seasons,
+    "unairedSeasons": unaired_seasons,
+    "movies": movies,
     "coverLarge": request["coverImage"]["extraLarge"],
     "coverMed": request["coverImage"]["large"],
     "coverSmall": request["coverImage"]["medium"],
