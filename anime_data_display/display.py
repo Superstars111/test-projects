@@ -32,7 +32,9 @@ def add_options():
     lbox_library = tk.Listbox(dlg_selection, listvariable=library_var)
     lbox_selected = tk.Listbox(dlg_selection, listvariable=options_var)
     btn_add_option = tk.Button(dlg_selection, text="Add", command=lambda: add_to_list(lbox_library, lbox_selected))
+    lbox_library.bind("<Double-1>", lambda x: add_to_list(lbox_library, lbox_selected))
     btn_remove_option = tk.Button(dlg_selection, text="Remove", command=lambda: remove_from_list(options, lbox_selected))
+    lbox_selected.bind("<Double-1>", lambda x: remove_from_list(options, lbox_selected))
 
     lbox_library.grid(row=1, column=0, rowspan=4)
     lbox_selected.grid(row=1, column=2, rowspan=4)
@@ -54,19 +56,32 @@ def convert_image(url):
 
 
 def plot_graph(show):
+    scores = [show["jaredScore"], show["simonScore"], show["kenanScore"]]
+    ratings = [score_list[0] for score_list in scores]
+    pacing_scores = []
+    drama_scores = []
+    for idx, score in enumerate(ratings):
+        if score > 0:
+            pacing_scores.append(scores[idx][1])
+            drama_scores.append(scores[idx][2])
+
     graph_location = {
-        "pacing": [show["jaredScore"][1], show["simonScore"][1], show["kenanScore"][1]],
-        "comedy": [show["jaredScore"][2], show["simonScore"][2], show["kenanScore"][2]]
+        "pacing": pacing_scores,
+        "comedy": drama_scores
     }
     data_sorting = pandas.DataFrame(graph_location, columns=["pacing", "comedy"])
-    graph_frame = plt.Figure(figsize=(5, 5), dpi=100)
+    # graph.axhline(0, color="black")
+    # graph.axvline(0, color="black")
+    graph_frame = plt.Figure(figsize=(5, 4), dpi=100)
     graph = graph_frame.add_subplot(111)
-    graph.scatter(data_sorting["pacing"], data_sorting["comedy"], color="g")
+    graph.grid()
+    graph.scatter([50, -50], [50, -50], s=[0, 0])
     scatter_chart = FigureCanvasTkAgg(graph_frame, frm_anime_display)
-    scatter_chart.get_tk_widget().grid(row=2, column=0, rowspan=6, columnspan=2)
-    graph.legend(["comedy"])
-    graph.set_xlabel(["Pacing"])
-    graph.set_title("Pacing vs. Comedy and Drama")
+    scatter_chart.get_tk_widget().grid(row=2, column=0, rowspan=4, columnspan=2)
+    graph.set_ylabel("< Drama \u2022 Comedy >")
+    graph.set_xlabel("< Slow Pacing \u2022 Fast Pacing >")
+    graph.scatter(data_sorting["pacing"], data_sorting["comedy"], color="g")
+    # graph.set_title("Pacing vs. Comedy and Drama")
 
 
 def add_to_list(lbox_out, lbox_in):
@@ -96,6 +111,15 @@ def dismiss_window(popup):
     lbox_options["listvariable"] = options_var
 
 
+def toggle_spoilers():
+    if spoiler_state.get() == 1:
+        lbl_spoiler_tags.grid(row=11, column=0)
+        cbox_spoiler_tags["text"] = "\u25BC Spoiler Tags: (0, 0, 0)"
+    else:
+        lbl_spoiler_tags.grid_remove()
+        cbox_spoiler_tags["text"] = "\u25B6 Spoiler Tags: (0, 0, 0)"
+
+
 def update_page_display(test):
     show = options[lbox_options.curselection()[0]]
     seenby = 0
@@ -115,6 +139,8 @@ def update_page_display(test):
         lbl_unaired_seasons["text"] = ""
     else:
         lbl_unaired_seasons["text"] = f"Unfinished Seasons: {show['unairedSeasons']}"
+    lbl_description["text"] = show['description']
+    lbl_genres_list["text"] = f"{', '.join(show['genres'])}"
 
 
 if __name__ == "__main__":
@@ -130,10 +156,15 @@ if __name__ == "__main__":
     lbl_unaired_seasons = tk.Label(frm_anime_display, text="Unfinished Seasons: 0")
     lbl_movies = tk.Label(frm_anime_display, text="Movies: 0")
     frm_description = tk.Frame(frm_anime_display, width=300, height=300, borderwidth=2, relief="solid")
-    lbl_genres = tk.Label(frm_anime_display, text="Genre List Here")
-    lbl_spoiler_genres = tk.Label(frm_anime_display, text="Spoiler Genres Hidden")
-    lbl_tags = tk.Label(frm_anime_display, text="Tag List Here")
-    lbl_spoiler_tags = tk.Label(frm_anime_display, text="Spoiler Tags Hidden")
+    lbl_description = tk.Label(frm_description, text="", wraplength=450)
+    lbl_genres = tk.Label(frm_anime_display, text="Genres:")
+    lbl_genres_list = tk.Label(frm_anime_display, text="")
+    lbl_tags = tk.Label(frm_anime_display, text="Tags:")
+    lbl_tags_list = tk.Label(frm_anime_display, text="")
+    spoiler_state = tk.IntVar()
+    cbox_spoiler_tags = tk.Checkbutton(frm_anime_display, text="\u25B6 Spoiler Tags: (0, 0, 0)",
+                                       command=toggle_spoilers, variable=spoiler_state)
+    lbl_spoiler_tags = tk.Label(frm_anime_display, text="SPOILERS")
     lbox_options = tk.Listbox(window, height=35)
     btn_options = tk.Button(window, text="Add Options", command=add_options)
 
@@ -142,17 +173,29 @@ if __name__ == "__main__":
     lbl_title.grid(row=0, column=0, columnspan=4, pady=8)
     lbl_avg_rating.grid(row=1, column=0)
     lbl_house_rating.grid(row=1, column=1)
-    cnvs_graph.grid(row=2, column=0, rowspan=6, columnspan=2)
+    #cnvs_graph.grid(row=2, column=0, rowspan=6, columnspan=2)
+
+    graph_frame = plt.Figure(figsize=(5, 4), dpi=100)
+    graph = graph_frame.add_subplot(111)
+    graph.grid()
+    graph.scatter([50, -50], [50, -50], s=[0, 0])
+    scatter_chart = FigureCanvasTkAgg(graph_frame, frm_anime_display)
+    scatter_chart.get_tk_widget().grid(row=2, column=0, rowspan=4, columnspan=2)
+    graph.set_ylabel("< Drama \u2022 Comedy >")
+    graph.set_xlabel("< Slow Pacing \u2022 Fast Pacing >")
+
     lbl_cover_image.grid(row=2, column=2, rowspan=4)
     lbl_episodes.grid(row=2, column=3)
     lbl_seasons.grid(row=3, column=3)
     lbl_movies.grid(row=4, column=3)
     lbl_unaired_seasons.grid(row=5, column=3)
+    lbl_description.grid()
     frm_description.grid(row=6, column=2, rowspan=4, columnspan=2)
     lbl_genres.grid(row=6, column=0)
-    lbl_spoiler_genres.grid(row=7, column=0)
+    lbl_genres_list.grid(row=7, column=0)
     lbl_tags.grid(row=8, column=0)
-    lbl_spoiler_tags.grid(row=9, column=0)
+    lbl_tags_list.grid(row=9, column=0)
+    cbox_spoiler_tags.grid(row=10, column=0)
 
     frm_anime_display.grid()
     lbox_options.grid(row=0, column=1)
