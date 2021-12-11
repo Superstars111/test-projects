@@ -141,5 +141,147 @@
             0,
             0
         ]
+    },
+    {
+        "id": "21202",
+        "romajiTitle": "Kono Subarashii Sekai ni Shukufuku wo!",
+        "englishTitle": "KONOSUBA -God's blessing on this wonderful world!",
+        "nativeTitle": "\u3053\u306e\u7d20\u6674\u3089\u3057\u3044\u4e16\u754c\u306b\u795d\u798f\u3092\uff01",
+        "description": "Kazuma Satou decides that today is the day to get out of the house for a bit. Since he dies, pointlessly, it's clearly a bad choice. The goddess who greets him in the afterlife, however, offers him a chance to be reborn in a world not unlike that of a video game, and as a bonus she'll even throw in a cool item or power! Can't possibly be a bad choice, right? Except he arrives with no money at all, dead average skills, and his \"bonus\" isn't useful at all--since he picked the goddess, Aqua, herself. How are the two of them supposed to defeat the evil Devil King and live happily ever after? Well, for them, it probably starts with day laboring rather than adventuring. And it's only going to get more disappointing from there!<br>\n<br>\n(Source: Crunchyroll)",
+        "episodes": 20,
+        "seasons": 2,
+        "unairedSeasons": 0,
+        "movies": 1,
+        "coverLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21202-TfzXuWQf2oLQ.png",
+        "coverMed": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21202-TfzXuWQf2oLQ.png",
+        "coverSmall": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21202-TfzXuWQf2oLQ.png",
+        "genres": [
+            "Adventure",
+            "Comedy",
+            "Fantasy"
+        ],
+        "tags": [
+            {
+                "name": "Isekai",
+                "rank": 97,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Satire",
+                "rank": 95,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Parody",
+                "rank": 89,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Male Protagonist",
+                "rank": 84,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Primarily Female Cast",
+                "rank": 84,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Magic",
+                "rank": 80,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Masochism",
+                "rank": 78,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Afterlife",
+                "rank": 74,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Gods",
+                "rank": 69,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Meta",
+                "rank": 61,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Chuunibyou",
+                "rank": 60,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Nudity",
+                "rank": 54,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Sadism",
+                "rank": 54,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Alternate Universe",
+                "rank": 53,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Robots",
+                "rank": 48,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Female Harem",
+                "rank": 45,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Succubus",
+                "rank": 36,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Dungeon",
+                "rank": 34,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Swordplay",
+                "rank": 33,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Dullahan",
+                "rank": 30,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Survival",
+                "rank": 26,
+                "isMediaSpoiler": false
+            }
+        ],
+        "score": 80,
+        "jaredScore": [
+            52,
+            5,
+            48
+        ],
+        "simonScore": [
+            0,
+            0,
+            0
+        ],
+        "kenanScore": [
+            55,
+            0,
+            45
+        ]
     }
 ]
