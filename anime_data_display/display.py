@@ -9,6 +9,7 @@ import io
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import pandas
+import decimal as dc
 
 with open("anime_data.json", "r") as anime_data:
     library = json.load(anime_data)
@@ -50,13 +51,19 @@ class Root:
         self.lbl_unaired_seasons = tk.Label(self.frm_series_info, text="Unfinished Seasons: 0")
         self.lbl_movies = tk.Label(self.frm_series_info, text="Movies: 0")
         self.frm_description = tk.Frame(self.frm_anime_display, width=300, height=300, borderwidth=2, relief="solid")
-        self.lbl_description = tk.Label(self.frm_description, text="", wraplength=440)
+        #self.cnv_description = tk.Canvas(self.frm_description, bg="blue")
+        self.txt_description = tk.Text(self.frm_description, height=20, width=55, state="disabled", wrap="word", font=default_font)
+        self.sbar = tk.Scrollbar(self.frm_description, orient=tk.VERTICAL, command=self.txt_description.yview)
+        #self.cnv_description.configure(yscrollcommand=self.sbar.set, width=300, height=300, scrollregion=self.cnv_description.bbox("all"))
+        #self.frm_desc_display = tk.Frame(self.cnv_description, width=300, height=300, bg="green")
+        #self.lbl_description = tk.Label(self.frm_desc_display, wraplength=440)
+        #self.cnv_description.create_window((0, 0), window=self.frm_desc_display, anchor="nw")
         self.lbl_genres = tk.Label(self.frm_tags, text="Genres:")
         self.lbl_genres_list = tk.Label(self.frm_tags, text="", wraplength=400)
         self.lbl_tags = tk.Label(self.frm_tags, text="Tags:")
         self.lbl_tags_list = tk.Label(self.frm_tags, text="", wraplength=400)
         self.cbox_spoiler_tags = tk.Checkbutton(self.frm_tags, text="\u25B6 Spoiler Tags: (0, 0, 0)",
-                                           command=self.toggle_spoilers, variable=self.spoiler_state)
+                                                command=self.toggle_spoilers, variable=self.spoiler_state)
         self.lbl_spoiler_tags = tk.Label(self.frm_tags, text="SPOILERS! Hide this before selecting a series.", wraplength=400)
         self.lbox_options = tk.Listbox(self.parent, height=35)
         self.btn_options = tk.Button(self.parent, text="Add Options", command=self.add_options)
@@ -83,9 +90,15 @@ class Root:
         self.lbl_seasons.grid(row=1, column=1)
         self.lbl_movies.grid(row=2, column=1)
         self.lbl_unaired_seasons.grid(row=3, column=1)
-        self.lbl_description.grid(sticky="new")
+        #self.frm_description.grid_propagate(False)
+        #self.cnv_description.grid_propagate(False)
+        #self.lbl_description.grid(sticky="new")
         self.frm_description.columnconfigure(0, minsize=450)
         self.frm_description.rowconfigure(0, minsize=330)
+        #self.cnv_description.grid(sticky="nsew")
+        #self.frm_desc_display.grid(row=0, column=0)
+        self.txt_description.grid(row=0, column=0)
+        self.sbar.grid(row=0, column=1, sticky="ns")
         self.frm_ratings.grid(row=1, column=0, padx=10)
         self.frm_series_info.grid(row=1, column=1)
         self.frm_tags.grid(row=2, column=0)
@@ -96,7 +109,7 @@ class Root:
         self.lbl_tags_list.grid(row=3, column=0)
         self.cbox_spoiler_tags.grid(row=4, column=0)
 
-        self.frm_tags.rowconfigure(5, minsize=30)
+        self.frm_tags.rowconfigure(5, minsize=50)
         self.frm_anime_display.rowconfigure(0, minsize=90)
         self.frm_anime_display.grid()
         self.lbox_options.grid(row=0, column=1, sticky="s")
@@ -120,16 +133,18 @@ class Root:
             if rating > 0:
                 seenby += 1
         if seenby > 0:
-            avg_house_score = (self.show["jaredScore"][0] + self.show["simonScore"][0] + self.show["kenanScore"][0]) // seenby
+            avg_house_score = (self.show["jaredScore"][0] + self.show["simonScore"][0] + self.show["kenanScore"][0]) / seenby
+            dc.getcontext().rounding = dc.ROUND_HALF_UP
+            avg_house_score = int(dc.Decimal(str(avg_house_score)).quantize(dc.Decimal("1")))
         else:
             avg_house_score = 0
         if self.show["score"] >= 85:
             self.lbl_public_star.config(fg="purple")
-        elif show["score"] >= 70:
+        elif self.show["score"] >= 70:
             self.lbl_public_star.config(fg="blue")
-        elif show["score"] >= 55:
+        elif self.show["score"] >= 55:
             self.lbl_public_star.config(fg="orange")
-        elif show["score"] >= 1:
+        elif self.show["score"] >= 1:
             self.lbl_public_star.config(fg="red")
         else:
             self.lbl_public_star.config(fg="black")
@@ -157,7 +172,11 @@ class Root:
             self.lbl_unaired_seasons["text"] = ""
         else:
             self.lbl_unaired_seasons["text"] = f"Unfinished Seasons: {self.show['unairedSeasons']}"
-        self.lbl_description["text"] = self.show['description']
+        #self.lbl_description["text"] = self.show['description']
+        self.txt_description["state"] = "normal"
+        self.txt_description.delete("1.0", tk.END)
+        self.txt_description.insert("1.0", self.show["description"])
+        self.txt_description["state"] = "disabled"
         self.lbl_genres_list["text"] = f"{', '.join(self.show['genres'])}"
         normal_tags, spoiler_tags = self.sort_tags()
         self.lbl_tags_list["text"] = f"{', '.join(normal_tags)}"
@@ -236,7 +255,7 @@ class SelectionWindow(tk.Toplevel):
         self.btn_add_option = tk.Button(self.selection_frame, text="Add", command=self.add_to_list)
         self.lbox_library.bind("<Double-1>", lambda x: self.add_to_list())
         self.btn_remove_option = tk.Button(self.selection_frame, text="Remove",
-                                      command=lambda: self.remove_from_list(options))
+                                           command=lambda: self.remove_from_list(options))
         self.lbox_selected.bind("<Double-1>", lambda x: self.remove_from_list(options))
         self.btn_edit_library = tk.Button(self.selection_frame, text="Edit Entry", command=self.add_to_library)
 
@@ -335,7 +354,7 @@ class EditWindow(tk.Toplevel):
         id_var = {"id": media_id}
         request = rq.post(collection.url, json={"query": collection.query, "variables": id_var}).json()['data']["Media"]
         total_episodes, seasons, unaired_seasons, movies, sequel = collection.collect_seasonal_data(media_id,
-                                                                                         episodes=request["episodes"])
+                                                                                                    episodes=request["episodes"])
 
         entry = {
             "id": media_id,
@@ -401,9 +420,9 @@ def convert_image(url):
 
 if __name__ == "__main__":
     application = tk.Tk()
-    window = Root(application)
     default_font = fnt.nametofont("TkDefaultFont")
     default_font.configure(size=12)
+    window = Root(application)
 
     application.mainloop()
 

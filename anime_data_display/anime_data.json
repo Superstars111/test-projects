@@ -1331,9 +1331,9 @@
             0
         ],
         "kenanScore": [
+            80,
             0,
-            0,
-            0
+            5
         ]
     },
     {
@@ -1770,12 +1770,12 @@
         "jaredScore": [
             91,
             15,
-            37
+            -37
         ],
         "simonScore": [
             85,
             -5,
-            -50
+            -45
         ],
         "kenanScore": [
             95,
@@ -2256,7 +2256,7 @@
         "jaredScore": [
             90,
             -15,
-            30
+            -30
         ],
         "simonScore": [
             0,
@@ -2851,7 +2851,7 @@
             -20
         ],
         "kenanScore": [
-            0,
+            65,
             -40,
             -20
         ]
@@ -3795,6 +3795,104 @@
             0,
             0,
             0
+        ]
+    },
+    {
+        "id": "9989",
+        "romajiTitle": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai.",
+        "englishTitle": "Anohana: The Flower We Saw That Day",
+        "nativeTitle": "\u3042\u306e\u65e5\u898b\u305f\u82b1\u306e\u540d\u524d\u3092\u50d5\u9054\u306f\u307e\u3060\u77e5\u3089\u306a\u3044\u3002",
+        "description": "Jinta Yadomi and his group of childhood friends have become estranged after a tragic accident split them apart. Now in their high school years, a sudden surprise forces each of them to confront their guilt over what happened that day and come to terms with the ghosts of their past. <br><br>\n(Source: NIS America)",
+        "episodes": 11,
+        "seasons": 1,
+        "unairedSeasons": 0,
+        "movies": 1,
+        "coverLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9989-qCd2RgAL0P8I.png",
+        "coverMed": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9989-qCd2RgAL0P8I.png",
+        "coverSmall": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx9989-qCd2RgAL0P8I.png",
+        "genres": [
+            "Drama",
+            "Romance",
+            "Slice of Life",
+            "Supernatural"
+        ],
+        "tags": [
+            {
+                "name": "Coming of Age",
+                "rank": 94,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Tragedy",
+                "rank": 91,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Ghost",
+                "rank": 91,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Hikikomori",
+                "rank": 78,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Love Triangle",
+                "rank": 68,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Male Protagonist",
+                "rank": 65,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Kuudere",
+                "rank": 50,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Tsundere",
+                "rank": 48,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Crossdressing",
+                "rank": 43,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Heterosexual",
+                "rank": 40,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Bullying",
+                "rank": 34,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Female Protagonist",
+                "rank": 20,
+                "isMediaSpoiler": false
+            }
+        ],
+        "score": 81,
+        "jaredScore": [
+            0,
+            0,
+            0
+        ],
+        "simonScore": [
+            0,
+            0,
+            0
+        ],
+        "kenanScore": [
+            90,
+            0,
+            -40
         ]
     }
 ]
