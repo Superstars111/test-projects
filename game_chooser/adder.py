@@ -32,57 +32,57 @@ def alter_player(alt_type, target, rem=False):
 
 
 def insert_alphabetically(new_game, game_list):
-    idx = 0
+    title_idx = 0
     comp_idx = 0
-    game = 0
+    game_idx = 0
     title_checked = False
     is_inserted = False
     while not is_inserted:
         if not title_checked:
-            if len(game_list[game]["title"]) >= 4:
-                if game_list[game]["title"] == "The Game of LIFE":
+            if len(game_list[game_idx]["title"]) >= 4:
+                if game_list[game_idx]["title"] == "The Game of LIFE":
                     comp_idx = comp_idx + 12
-                elif game_list[game]["title"][0:2] == "A ":
+                elif game_list[game_idx]["title"][0:2] == "A ":
                     comp_idx = comp_idx + 2
-                elif game_list[game]["title"][0:4] == "The ":
+                elif game_list[game_idx]["title"][0:4] == "The ":
                     comp_idx = comp_idx + 4
 
             if len(new_game["title"]) >= 4:
                 if new_game["title"][0:4] == "The ":
-                    idx = idx + 4
+                    title_idx = title_idx + 4
                 elif new_game["title"][0:2] == "A ":
-                    idx = idx + 2
+                    title_idx = title_idx + 2
             title_checked = True
 
-        if new_game["title"][idx] in (string.punctuation, " "):
-            idx += 1
+        if new_game["title"][title_idx] in (string.punctuation, " "):
+            title_idx += 1
             continue
-        if game_list[game]["title"][comp_idx] in (string.punctuation, " "):
+        if game_list[game_idx]["title"][comp_idx] in (string.punctuation, " "):
             comp_idx += 1
             continue
 
-        if game == len(game_list):
+        if game_idx == len(game_list):
             # If you reach the end of the list, put it there
-            game_list[game] = [new_game]
+            game_list[game_idx] = [new_game]
             is_inserted = True
-        elif idx == len(new_game["title"]):
+        elif title_idx == len(new_game["title"]):
             # If you've found a title that encompasses this one, put this title right before that one
-            game_list[game:game] = [new_game]
+            game_list[game_idx:game_idx] = [new_game]
             is_inserted = True
-        elif comp_idx >= len(game_list[game]["title"]):
-            game_list[game+1:game+1] = [new_game]
+        elif comp_idx >= len(game_list[game_idx]["title"]):
+            game_list[game_idx+1:game_idx+1] = [new_game]
             is_inserted = True
-        elif new_game["title"][idx].lower() > game_list[game]["title"][comp_idx].lower():
+        elif new_game["title"][title_idx].lower() > game_list[game_idx]["title"][comp_idx].lower():
             # If you're still ahead of your alphabetic position, check the next game
-            game += 1
-            idx = 0
+            game_idx += 1
+            title_idx = 0
             comp_idx = 0
             title_checked = False
-        elif new_game["title"][idx].lower() == game_list[game]["title"][comp_idx].lower():
-            idx += 1
+        elif new_game["title"][title_idx].lower() == game_list[game_idx]["title"][comp_idx].lower():
+            title_idx += 1
             comp_idx += 1
-        elif new_game["title"][idx].lower() < game_list[game]["title"][comp_idx].lower():
-            game_list[game:game] = [new_game]
+        elif new_game["title"][title_idx].lower() < game_list[game_idx]["title"][comp_idx].lower():
+            game_list[game_idx:game_idx] = [new_game]
             is_inserted = True
 
 
