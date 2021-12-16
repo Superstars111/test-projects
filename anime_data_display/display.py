@@ -18,7 +18,7 @@ option_titles = []
 library_titles = []
 cover_image = []
 users = ["Jared", "Simon", "Kenan"]
-mild_warnings = ("Afterlife", "Ahegao", "Angels", "Assassins", "Bisexual", "Body Swapping", "Cosmic Horror", "Crossdressing", "Death Game", "DILF", "Drugs", "Ero Guru", "Feet", "Female Harem", "Flat Chest", "Gambling", "Gangs", "Gender Bending", "Ghost", "Gods", "Large Breasts", "Male Harem", "Masochism", "MILF", "Oiran", "Prostitution", "Reincarnation", "Slavery", "Succubus", "Sweat", "Teens' Love", "Tentacles", "Terrorism", "Virginity", "Yandere", "Youkai")
+mild_warnings = ("Afterlife", "Ahegao", "Angels", "Assassins", "Bisexual", "Body Swapping", "Bullying", "Cosmic Horror", "Crossdressing", "Death Game", "DILF", "Drugs", "Ero Guru", "Feet", "Female Harem", "Flat Chest", "Gambling", "Gangs", "Gender Bending", "Ghost", "Gods", "Large Breasts", "Male Harem", "Masochism", "MILF", "Oiran", "Prostitution", "Reincarnation", "Slavery", "Succubus", "Sweat", "Teens' Love", "Tentacles", "Terrorism", "Virginity", "Yandere", "Youkai")
 extreme_warnings = ("Anal Sex", "Ashikoki", "Body Horror", "Boobjob", "Boy's Love", "Cannibalism", "Cunnilingus", "Defloration", "Ero Guro", "Exhibitionism", "Facial", "Fellatio", "Femdom", "Flash", "Futanari", "Gore", "Group Sex", "Handjob", "Incest", "Inseki", "Irrumatio", "Lactation", "LGBTQ+ Themes", "Masturmation", "Nakadashi", "Netorare", "Netorase", "Netori", "Nudity", "Public Sex", "Rape", "Rimjob", "Scat", "Scissoring", "Sex Toys", "Suicide", "Sumata", "Threesome", "Torture", "Transgenger", "Vore", "Voyeur", "Yaoi", "Yuri")
 content_warnings = [0, 0, 0]
 
@@ -48,23 +48,20 @@ class Root:
         self.lbl_cover_image = tk.Label(self.frm_series_info)
         self.lbl_episodes = tk.Label(self.frm_series_info, text="Episodes: 0")
         self.lbl_seasons = tk.Label(self.frm_series_info, text="Seasons: 0")
-        self.lbl_unaired_seasons = tk.Label(self.frm_series_info, text="Unfinished Seasons: 0")
+        self.lbl_unaired_seasons = tk.Label(self.frm_series_info, text="Unfinished Seasons: 0", width=22)
         self.lbl_movies = tk.Label(self.frm_series_info, text="Movies: 0")
         self.frm_description = tk.Frame(self.frm_anime_display, width=300, height=300, borderwidth=2, relief="solid")
-        #self.cnv_description = tk.Canvas(self.frm_description, bg="blue")
-        self.txt_description = tk.Text(self.frm_description, height=20, width=55, state="disabled", wrap="word", font=default_font)
+        self.txt_description = tk.Text(self.frm_description, height=18, width=55, state="disabled", wrap="word", font=default_font, bg="gray92")
         self.sbar = tk.Scrollbar(self.frm_description, orient=tk.VERTICAL, command=self.txt_description.yview)
-        #self.cnv_description.configure(yscrollcommand=self.sbar.set, width=300, height=300, scrollregion=self.cnv_description.bbox("all"))
-        #self.frm_desc_display = tk.Frame(self.cnv_description, width=300, height=300, bg="green")
-        #self.lbl_description = tk.Label(self.frm_desc_display, wraplength=440)
-        #self.cnv_description.create_window((0, 0), window=self.frm_desc_display, anchor="nw")
         self.lbl_genres = tk.Label(self.frm_tags, text="Genres:")
-        self.lbl_genres_list = tk.Label(self.frm_tags, text="", wraplength=400)
+        self.lbl_genres_list = tk.Label(self.frm_tags, text="", wraplength=490)
         self.lbl_tags = tk.Label(self.frm_tags, text="Tags:")
-        self.lbl_tags_list = tk.Label(self.frm_tags, text="", wraplength=400)
+        self.lbl_tags_list = tk.Label(self.frm_tags, text="", wraplength=490)
+        self.lbl_warnings = tk.Label(self.frm_tags, text="Content Warnings:")
+        self.lbl_warnings_list = tk.Label(self.frm_tags, text="", wraplength=490)
         self.cbox_spoiler_tags = tk.Checkbutton(self.frm_tags, text="\u25B6 Spoiler Tags: (0, 0, 0)",
                                                 command=self.toggle_spoilers, variable=self.spoiler_state)
-        self.lbl_spoiler_tags = tk.Label(self.frm_tags, text="SPOILERS! Hide this before selecting a series.", wraplength=400)
+        self.lbl_spoiler_tags = tk.Label(self.frm_tags, text="SPOILERS! Hide this before selecting a series.", wraplength=490)
         self.lbox_options = tk.Listbox(self.parent, height=35)
         self.btn_options = tk.Button(self.parent, text="Add Options", command=self.add_options)
 
@@ -90,30 +87,32 @@ class Root:
         self.lbl_seasons.grid(row=1, column=1)
         self.lbl_movies.grid(row=2, column=1)
         self.lbl_unaired_seasons.grid(row=3, column=1)
-        #self.frm_description.grid_propagate(False)
-        #self.cnv_description.grid_propagate(False)
-        #self.lbl_description.grid(sticky="new")
         self.frm_description.columnconfigure(0, minsize=450)
         self.frm_description.rowconfigure(0, minsize=330)
-        #self.cnv_description.grid(sticky="nsew")
-        #self.frm_desc_display.grid(row=0, column=0)
         self.txt_description.grid(row=0, column=0)
         self.sbar.grid(row=0, column=1, sticky="ns")
-        self.frm_ratings.grid(row=1, column=0, padx=10)
+        self.frm_ratings.grid(row=1, column=0, padx=15)
         self.frm_series_info.grid(row=1, column=1)
-        self.frm_tags.grid(row=2, column=0)
-        self.frm_description.grid(row=2, column=1)
-        self.lbl_genres.grid(row=0, column=0)
+        self.frm_series_info.rowconfigure((0, 1, 2, 3), minsize=90)
+        self.frm_series_info.columnconfigure(0, minsize=270)
+        self.frm_tags.grid(row=2, column=0, sticky="n")
+        self.frm_description.grid(row=2, column=1, padx=15)
+        self.lbl_genres.grid(row=0, column=0, sticky="n")
         self.lbl_genres_list.grid(row=1, column=0)
-        self.lbl_tags.grid(row=2, column=0)
+        self.lbl_tags.grid(row=2, column=0, sticky="n")
         self.lbl_tags_list.grid(row=3, column=0)
-        self.cbox_spoiler_tags.grid(row=4, column=0)
+        self.lbl_warnings.grid(row=4, column=0)
+        self.lbl_warnings_list.grid(row=5, column=0)
+        self.cbox_spoiler_tags.grid(row=6, column=0)
 
+        self.frm_tags.rowconfigure(1, minsize=50)
+        self.frm_tags.rowconfigure(3, minsize=115)
         self.frm_tags.rowconfigure(5, minsize=50)
-        self.frm_anime_display.rowconfigure(0, minsize=90)
+        self.frm_tags.rowconfigure(7, minsize=70)
+        self.frm_anime_display.rowconfigure(0, minsize=120)
         self.frm_anime_display.grid()
-        self.lbox_options.grid(row=0, column=1, sticky="s")
-        self.btn_options.grid(row=1, column=1, pady=7, padx=3)
+        self.lbox_options.grid(row=0, column=1, sticky="ns", padx=10, pady=5)
+        self.btn_options.grid(row=1, column=1, pady=7, padx=3, sticky="n")
 
     def add_options(self):
 
@@ -138,6 +137,7 @@ class Root:
             avg_house_score = int(dc.Decimal(str(avg_house_score)).quantize(dc.Decimal("1")))
         else:
             avg_house_score = 0
+
         if self.show["score"] >= 85:
             self.lbl_public_star.config(fg="purple")
         elif self.show["score"] >= 70:
@@ -178,8 +178,9 @@ class Root:
         self.txt_description.insert("1.0", self.show["description"])
         self.txt_description["state"] = "disabled"
         self.lbl_genres_list["text"] = f"{', '.join(self.show['genres'])}"
-        normal_tags, spoiler_tags = self.sort_tags()
+        normal_tags, warning_tags, spoiler_tags = self.sort_tags()
         self.lbl_tags_list["text"] = f"{', '.join(normal_tags)}"
+        self.lbl_warnings_list["text"] = f"{', '.join(warning_tags)}"
         self.lbl_spoiler_tags["text"] = f"{', '.join(spoiler_tags)}"
         if self.spoiler_state.get() == 1:
             self.cbox_spoiler_tags[
@@ -216,7 +217,7 @@ class Root:
 
     def toggle_spoilers(self):
         if self.spoiler_state.get() == 1:
-            self.lbl_spoiler_tags.grid(row=5, column=0)
+            self.lbl_spoiler_tags.grid(row=7, column=0)
             self.cbox_spoiler_tags[
                 "text"] = f"\u25BC Spoiler Tags: ({content_warnings[0]}, {content_warnings[1]}, {content_warnings[2]})"
         else:
@@ -226,20 +227,23 @@ class Root:
 
     def sort_tags(self):
         normal_tags = []
+        warning_tags = []
         spoiler_tags = []
         for tag in self.show["tags"]:
             if tag["isMediaSpoiler"]:
                 spoiler_tags.append(f"{tag['name']} ({tag['rank']}%)")
                 if tag["name"] in extreme_warnings:
                     content_warnings[2] += 1
-                elif tag['name'] in mild_warnings:
+                elif tag["name"] in mild_warnings:
                     content_warnings[1] += 1
                 else:
                     content_warnings[0] += 1
+            elif tag["name"] in mild_warnings or tag["name"] in extreme_warnings:
+                warning_tags.append(f"{tag['name']} ({tag['rank']}%)")
             else:
                 normal_tags.append(f"{tag['name']} ({tag['rank']}%)")
 
-        return normal_tags, spoiler_tags
+        return normal_tags, warning_tags, spoiler_tags
 
 
 class SelectionWindow(tk.Toplevel):

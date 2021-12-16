@@ -1,6 +1,6 @@
 import json
 import tkinter as tk
-
+from justwatch import JustWatch
 import requests as rq
 
 url = "https://graphql.anilist.co/"
