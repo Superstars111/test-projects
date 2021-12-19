@@ -33,93 +33,101 @@ class Root:
         self.show = {}
         self.spoiler_state = tk.IntVar()
 
+        self.lbox_options = tk.Listbox(self.parent, height=35)
+        self.lbox_options.bind("<<ListboxSelect>>", self.update_page_display)
+        self.btn_options = tk.Button(self.parent, text="Add Options", command=self.add_options)
+
         # Build main window
+        self.frm_anime_display = tk.Frame(self.parent)
+        self.lbl_title = tk.Label(self.frm_anime_display, text="Anime Data Program", font=("Arial", 20), wraplength=900)
 
         # Build ratings frame
-
-        # Build data frame
-
-        # Build tags frame
-
-        # Build synopsis frame
-
-        self.frm_anime_display = tk.Frame(self.parent)
         self.frm_ratings = tk.Frame(self.frm_anime_display)
-        self.frm_series_info = tk.Frame(self.frm_anime_display)
-        self.frm_tags = tk.Frame(self.frm_anime_display)
-        self.lbl_title = tk.Label(self.frm_anime_display, text="Anime Data Program", font=("Arial", 20), wraplength=900)
         self.lbl_avg_rating = tk.Label(self.frm_ratings, text="Public score: 0/100")
         self.lbl_house_rating = tk.Label(self.frm_ratings, text="House score: 0/100")
         self.lbl_public_star = tk.Label(self.frm_ratings, text="\u2605")
         self.lbl_house_star = tk.Label(self.frm_ratings, text="\u2605")
+        graph_frame = plt.Figure(figsize=(5, 4), dpi=100)
+        graph = graph_frame.add_subplot(111)
+        graph.scatter([50, -50], [50, -50], s=[0, 0])
+        scatter_chart = FigureCanvasTkAgg(graph_frame, self.frm_ratings)
+        graph.set_ylabel("< Drama \u2022 Comedy >")
+        graph.set_xlabel("< Slow Pacing \u2022 Fast Pacing >")
+
+        # Build data frame
+        self.frm_series_info = tk.Frame(self.frm_anime_display)
         self.lbl_cover_image = tk.Label(self.frm_series_info)
         self.lbl_episodes = tk.Label(self.frm_series_info, text="Episodes: 0")
         self.lbl_seasons = tk.Label(self.frm_series_info, text="Seasons: 0")
         self.lbl_unaired_seasons = tk.Label(self.frm_series_info, text="Unfinished Seasons: 0", width=22)
         self.lbl_movies = tk.Label(self.frm_series_info, text="Movies: 0")
-        self.frm_description = tk.Frame(self.frm_anime_display, width=300, height=300, borderwidth=2, relief="solid")
-        self.txt_description = tk.Text(self.frm_description, height=18, width=55, state="disabled", wrap="word", font=default_font, bg="gray92")
-        self.sbar = tk.Scrollbar(self.frm_description, orient=tk.VERTICAL, command=self.txt_description.yview)
-        self.lbl_genres = tk.Label(self.frm_tags, text="Genres:")
+
+        # Build tags frame
+        self.frm_tags = tk.Frame(self.frm_anime_display)
+        lbl_genres = tk.Label(self.frm_tags, text="Genres:")
         self.lbl_genres_list = tk.Label(self.frm_tags, text="", wraplength=490)
-        self.lbl_tags = tk.Label(self.frm_tags, text="Tags:")
+        lbl_tags = tk.Label(self.frm_tags, text="Tags:")
         self.lbl_tags_list = tk.Label(self.frm_tags, text="", wraplength=490)
-        self.lbl_warnings = tk.Label(self.frm_tags, text="Content Warnings:")
+        lbl_warnings = tk.Label(self.frm_tags, text="Content Warnings:")
         self.lbl_warnings_list = tk.Label(self.frm_tags, text="", wraplength=490)
         self.cbox_spoiler_tags = tk.Checkbutton(self.frm_tags, text="\u25B6 Spoiler Tags: (0, 0, 0)",
                                                 command=self.toggle_spoilers, variable=self.spoiler_state)
-        self.lbl_spoiler_tags = tk.Label(self.frm_tags, text="SPOILERS! Hide this before selecting a series.", wraplength=490)
-        self.lbox_options = tk.Listbox(self.parent, height=35)
-        self.btn_options = tk.Button(self.parent, text="Add Options", command=self.add_options)
+        self.lbl_spoiler_tags = tk.Label(self.frm_tags, text="SPOILERS! Hide this before selecting a series.",
+                                         wraplength=490)
 
-        self.lbox_options.bind("<<ListboxSelect>>", self.update_page_display)
+        # Build synopsis frame
+        self.frm_description = tk.Frame(self.frm_anime_display, width=300, height=300, borderwidth=2, relief="solid")
+        self.txt_description = tk.Text(self.frm_description, height=18, width=55, state="disabled",
+                                       wrap="word", font=default_font, bg="gray92")
+        self.sbar = tk.Scrollbar(self.frm_description, orient=tk.VERTICAL, command=self.txt_description.yview)
 
+
+        # Grid main window
+        self.lbox_options.grid(row=0, column=1, sticky="ns", padx=10, pady=5)
+        self.btn_options.grid(row=1, column=1, pady=7, padx=3, sticky="n")
+        self.frm_anime_display.grid(row=0, column=0)
+        self.frm_anime_display.rowconfigure(0, minsize=120)
         self.lbl_title.grid(row=0, column=0, columnspan=2, pady=8)
+
+        # Grid ratings frame
+        self.frm_ratings.grid(row=1, column=0, padx=15)
         self.lbl_avg_rating.grid(row=0, column=0, sticky="e")
         self.lbl_public_star.grid(row=0, column=1, sticky="w")
         self.lbl_house_rating.grid(row=0, column=2, sticky="e")
         self.lbl_house_star.grid(row=0, column=3, sticky="w")
-
-        graph_frame = plt.Figure(figsize=(5, 4), dpi=100)
-        graph = graph_frame.add_subplot(111)
         graph.grid()
-        graph.scatter([50, -50], [50, -50], s=[0, 0])
-        scatter_chart = FigureCanvasTkAgg(graph_frame, self.frm_ratings)
         scatter_chart.get_tk_widget().grid(row=1, column=0, columnspan=4)
-        graph.set_ylabel("< Drama \u2022 Comedy >")
-        graph.set_xlabel("< Slow Pacing \u2022 Fast Pacing >")
 
+        # Grid data frame
         self.lbl_cover_image.grid(row=0, column=0, rowspan=4, sticky="w", padx=15)
         self.lbl_episodes.grid(row=0, column=1)
         self.lbl_seasons.grid(row=1, column=1)
         self.lbl_movies.grid(row=2, column=1)
         self.lbl_unaired_seasons.grid(row=3, column=1)
+        self.frm_series_info.grid(row=1, column=1)
+        self.frm_series_info.rowconfigure((0, 1, 2, 3), minsize=90)
+        self.frm_series_info.columnconfigure(0, minsize=270)
+
+        # Grid tags frame
+        self.frm_tags.grid(row=2, column=0, sticky="n")
+        lbl_genres.grid(row=0, column=0, sticky="n")
+        self.frm_tags.rowconfigure(1, minsize=50)
+        self.lbl_genres_list.grid(row=1, column=0)
+        lbl_tags.grid(row=2, column=0, sticky="n")
+        self.frm_tags.rowconfigure(3, minsize=115)
+        self.lbl_tags_list.grid(row=3, column=0)
+        lbl_warnings.grid(row=4, column=0)
+        self.frm_tags.rowconfigure(5, minsize=50)
+        self.lbl_warnings_list.grid(row=5, column=0)
+        self.cbox_spoiler_tags.grid(row=6, column=0)
+        self.frm_tags.rowconfigure(7, minsize=70)
+
+        # Grid synopsis frame
+        self.frm_description.grid(row=2, column=1, padx=15)
         self.frm_description.columnconfigure(0, minsize=450)
         self.frm_description.rowconfigure(0, minsize=330)
         self.txt_description.grid(row=0, column=0)
         self.sbar.grid(row=0, column=1, sticky="ns")
-        self.frm_ratings.grid(row=1, column=0, padx=15)
-        self.frm_series_info.grid(row=1, column=1)
-        self.frm_series_info.rowconfigure((0, 1, 2, 3), minsize=90)
-        self.frm_series_info.columnconfigure(0, minsize=270)
-        self.frm_tags.grid(row=2, column=0, sticky="n")
-        self.frm_description.grid(row=2, column=1, padx=15)
-        self.lbl_genres.grid(row=0, column=0, sticky="n")
-        self.lbl_genres_list.grid(row=1, column=0)
-        self.lbl_tags.grid(row=2, column=0, sticky="n")
-        self.lbl_tags_list.grid(row=3, column=0)
-        self.lbl_warnings.grid(row=4, column=0)
-        self.lbl_warnings_list.grid(row=5, column=0)
-        self.cbox_spoiler_tags.grid(row=6, column=0)
-
-        self.frm_tags.rowconfigure(1, minsize=50)
-        self.frm_tags.rowconfigure(3, minsize=115)
-        self.frm_tags.rowconfigure(5, minsize=50)
-        self.frm_tags.rowconfigure(7, minsize=70)
-        self.frm_anime_display.rowconfigure(0, minsize=120)
-        self.frm_anime_display.grid()
-        self.lbox_options.grid(row=0, column=1, sticky="ns", padx=10, pady=5)
-        self.btn_options.grid(row=1, column=1, pady=7, padx=3, sticky="n")
 
     def add_options(self):
 
@@ -136,17 +144,22 @@ class Root:
         content_warnings[0] = 0
         content_warnings[1] = 0
         content_warnings[2] = 0
+        normal_tags, warning_tags, spoiler_tags = self.sort_tags()
+        self.plot_graph()
+
+        # Get average household score
         for rating in (self.show["houseScores"]):
             if rating[1]:
                 seenby += 1
                 total_house_score += rating[1]
         if seenby > 0:
-            avg_house_score = (total_house_score) / seenby
+            avg_house_score = total_house_score / seenby
             dc.getcontext().rounding = dc.ROUND_HALF_UP
             avg_house_score = int(dc.Decimal(str(avg_house_score)).quantize(dc.Decimal("1")))
         else:
             avg_house_score = 0
 
+        # Set stars to correct colors
         if self.show["score"] >= 85:
             self.lbl_public_star.config(fg="purple")
         elif self.show["score"] >= 70:
@@ -169,33 +182,35 @@ class Root:
         else:
             self.lbl_house_star.config(fg="black")
 
-        self.lbl_title["text"] = f"{self.show['romajiTitle']} \u2022 {self.show['englishTitle']} \u2022 {self.show['nativeTitle']}"
-        self.lbl_avg_rating["text"] = f"Public score: {self.show['score']}/100"
-        self.lbl_house_rating["text"] = f"House score: {avg_house_score}/100"
-        self.plot_graph()
-        self.lbl_cover_image["image"] = convert_image(self.show["coverMed"])
-        self.lbl_episodes["text"] = f"Total episodes: {self.show['episodes']}"
-        self.lbl_seasons["text"] = f"Seasons: {self.show['seasons']}"
-        self.lbl_movies["text"] = f"Movies: {self.show['movies']}"
+        # Toggle display
         if self.show["unairedSeasons"] == 0:
             self.lbl_unaired_seasons["text"] = ""
         else:
             self.lbl_unaired_seasons["text"] = f"Unfinished Seasons: {self.show['unairedSeasons']}"
-        self.txt_description["state"] = "normal"
-        self.txt_description.delete("1.0", tk.END)
-        self.txt_description.insert("1.0", self.show["description"])
-        self.txt_description["state"] = "disabled"
-        self.lbl_genres_list["text"] = f"{', '.join(self.show['genres'])}"
-        normal_tags, warning_tags, spoiler_tags = self.sort_tags()
-        self.lbl_tags_list["text"] = f"{', '.join(normal_tags)}"
-        self.lbl_warnings_list["text"] = f"{', '.join(warning_tags)}"
-        self.lbl_spoiler_tags["text"] = f"{', '.join(spoiler_tags)}"
+
         if self.spoiler_state.get() == 1:
             self.cbox_spoiler_tags[
                 "text"] = f"\u25BC Spoiler Tags: ({content_warnings[0]}, {content_warnings[1]}, {content_warnings[2]})"
         else:
             self.cbox_spoiler_tags[
                 "text"] = f"\u25B6 Spoiler Tags: ({content_warnings[0]}, {content_warnings[1]}, {content_warnings[2]})"
+
+        # Update display values
+        self.lbl_title["text"] = f"{self.show['romajiTitle']} \u2022 {self.show['englishTitle']} \u2022 {self.show['nativeTitle']}"
+        self.lbl_avg_rating["text"] = f"Public score: {self.show['score']}/100"
+        self.lbl_house_rating["text"] = f"House score: {avg_house_score}/100"
+        self.lbl_cover_image["image"] = convert_image(self.show["coverMed"])
+        self.lbl_episodes["text"] = f"Total episodes: {self.show['episodes']}"
+        self.lbl_seasons["text"] = f"Seasons: {self.show['seasons']}"
+        self.lbl_movies["text"] = f"Movies: {self.show['movies']}"
+        self.txt_description["state"] = "normal"
+        self.txt_description.delete("1.0", tk.END)
+        self.txt_description.insert("1.0", self.show["description"])
+        self.txt_description["state"] = "disabled"
+        self.lbl_genres_list["text"] = f"{', '.join(self.show['genres'])}"
+        self.lbl_tags_list["text"] = f"{', '.join(normal_tags)}"
+        self.lbl_warnings_list["text"] = f"{', '.join(warning_tags)}"
+        self.lbl_spoiler_tags["text"] = f"{', '.join(spoiler_tags)}"
 
     def plot_graph(self):
         self.frm_ratings.grid_slaves(row=1, column=0)[0].grid_remove()
