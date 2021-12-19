@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import pandas
 import decimal as dc
+import alphabetize
 
 with open("anime_data.json", "r") as anime_data:
     library = json.load(anime_data)
@@ -17,16 +18,12 @@ options = []
 option_titles = []
 library_titles = []
 cover_image = []
-users = ["Jared", "Simon", "Kenan"]
 mild_warnings = ("Afterlife", "Ahegao", "Angels", "Assassins", "Bisexual", "Body Swapping", "Bullying", "Cosmic Horror", "Crossdressing", "Death Game", "DILF", "Drugs", "Ero Guru", "Feet", "Female Harem", "Flat Chest", "Gambling", "Gangs", "Gender Bending", "Ghost", "Gods", "Large Breasts", "Male Harem", "Masochism", "MILF", "Oiran", "Prostitution", "Reincarnation", "Slavery", "Succubus", "Sweat", "Teens' Love", "Tentacles", "Terrorism", "Virginity", "Yandere", "Youkai")
 extreme_warnings = ("Anal Sex", "Ashikoki", "Body Horror", "Boobjob", "Boy's Love", "Cannibalism", "Cunnilingus", "Defloration", "Ero Guro", "Exhibitionism", "Facial", "Fellatio", "Femdom", "Flash", "Futanari", "Gore", "Group Sex", "Handjob", "Incest", "Inseki", "Irrumatio", "Lactation", "LGBTQ+ Themes", "Masturmation", "Nakadashi", "Netorare", "Netorase", "Netori", "Nudity", "Public Sex", "Rape", "Rimjob", "Scat", "Scissoring", "Sex Toys", "Suicide", "Sumata", "Threesome", "Torture", "Transgenger", "Vore", "Voyeur", "Yaoi", "Yuri")
 content_warnings = [0, 0, 0]
 
 for show in library:
-    if show["englishTitle"]:
-        library_titles.append(show["englishTitle"])
-    else:
-        library_titles.append(show["romajiTitle"])
+    library_titles.append(show["defaultTitle"])
 
 
 class Root:
@@ -35,6 +32,16 @@ class Root:
         parent.title("Anime Data Displayinator 9001 (Beta)")
         self.show = {}
         self.spoiler_state = tk.IntVar()
+
+        # Build main window
+
+        # Build ratings frame
+
+        # Build data frame
+
+        # Build tags frame
+
+        # Build synopsis frame
 
         self.frm_anime_display = tk.Frame(self.parent)
         self.frm_ratings = tk.Frame(self.frm_anime_display)
@@ -125,14 +132,16 @@ class Root:
     def update_page_display(self, *ignore):
         self.show = options[self.lbox_options.curselection()[0]]
         seenby = 0
+        total_house_score = 0
         content_warnings[0] = 0
         content_warnings[1] = 0
         content_warnings[2] = 0
-        for rating in (self.show["jaredScore"][0], self.show["simonScore"][0], self.show["kenanScore"][0]):
-            if rating > 0:
+        for rating in (self.show["houseScores"]):
+            if rating[1]:
                 seenby += 1
+                total_house_score += rating[1]
         if seenby > 0:
-            avg_house_score = (self.show["jaredScore"][0] + self.show["simonScore"][0] + self.show["kenanScore"][0]) / seenby
+            avg_house_score = (total_house_score) / seenby
             dc.getcontext().rounding = dc.ROUND_HALF_UP
             avg_house_score = int(dc.Decimal(str(avg_house_score)).quantize(dc.Decimal("1")))
         else:
@@ -172,7 +181,6 @@ class Root:
             self.lbl_unaired_seasons["text"] = ""
         else:
             self.lbl_unaired_seasons["text"] = f"Unfinished Seasons: {self.show['unairedSeasons']}"
-        #self.lbl_description["text"] = self.show['description']
         self.txt_description["state"] = "normal"
         self.txt_description.delete("1.0", tk.END)
         self.txt_description.insert("1.0", self.show["description"])
@@ -191,14 +199,14 @@ class Root:
 
     def plot_graph(self):
         self.frm_ratings.grid_slaves(row=1, column=0)[0].grid_remove()
-        scores = [self.show["jaredScore"], self.show["simonScore"], self.show["kenanScore"]]
-        ratings = [score_list[0] for score_list in scores]
+        scores = [rating for rating in self.show["houseScores"]]
+        ratings = [score_list[1] for score_list in scores]
         pacing_scores = []
         drama_scores = []
         for idx, score in enumerate(ratings):
             if score > 0:
-                pacing_scores.append(scores[idx][1])
-                drama_scores.append(scores[idx][2])
+                pacing_scores.append(scores[idx][2])
+                drama_scores.append(scores[idx][3])
 
         graph_location = {
             "pacing": pacing_scores,
@@ -314,28 +322,29 @@ class EditWindow(tk.Toplevel):
         self.btn_confirm_id = tk.Button(self.edit_frame, text="Confirm", command=self.update_series)
         self.bind("<Return>", self.update_series)
         self.lbl_show_name = tk.Label(self.edit_frame)
-        self.lbl_score = tk.Label(self.edit_frame, text="Score")
-        self.lbl_energy = tk.Label(self.edit_frame, text="Energy")
-        self.lbl_drama = tk.Label(self.edit_frame, text="Drama")
+        self.frm_user_ratings = tk.Frame(self.edit_frame)
+        self.lbl_name = tk.Label(self.frm_user_ratings, text="Name")
+        self.lbl_score = tk.Label(self.frm_user_ratings, text="Score")
+        self.lbl_energy = tk.Label(self.frm_user_ratings, text="Energy")
+        self.lbl_drama = tk.Label(self.frm_user_ratings, text="Tone")
 
-        for row, user in enumerate(users):
-            lbl_user = tk.Label(self.edit_frame, text=f"{user}: ")
-            lbl_user.grid(row=row + 3, column=0)
-            for col in range(3):
-                ent_score = tk.Entry(self.edit_frame, width=5, state="disabled")
-                ent_score.grid(row=row + 3, column=col + 1, padx=3)
+        self.adjust_rows()
 
         btn_confirm_scores = tk.Button(self.edit_frame, text="Confirm", command=self.enter_ratings)
+        btn_add_user = tk.Button(self.edit_frame, text="Add User", command=self.add_user)
 
         self.lbl_id_no.grid(row=0, column=0)
         self.ent_id_no.grid(row=0, column=1, columnspan=2)
         self.btn_confirm_id.grid(row=0, column=3, padx=3, pady=3)
         self.edit_frame.rowconfigure(1, minsize=15)
         self.lbl_show_name.grid(row=1, column=0, columnspan=4)
-        self.lbl_score.grid(row=2, column=1)
-        self.lbl_energy.grid(row=2, column=2)
-        self.lbl_drama.grid(row=2, column=3)
-        btn_confirm_scores.grid(row=len(users) + 3, column=2, padx=3, pady=3)
+        self.frm_user_ratings.grid(row=2, column=0, columnspan=4)
+        self.lbl_name.grid(row=0, column=0)
+        self.lbl_score.grid(row=0, column=1)
+        self.lbl_energy.grid(row=0, column=2)
+        self.lbl_drama.grid(row=0, column=3)
+        btn_confirm_scores.grid(row=3, column=2, padx=3, pady=3)
+        btn_add_user.grid(row=3, column=1, padx=3, pady=3)
         self.edit_frame.grid()
 
     def update_series(self, *ignore):
@@ -345,11 +354,13 @@ class EditWindow(tk.Toplevel):
             self.lbl_show_name["text"] = self.current_show["englishTitle"]
         else:
             self.lbl_show_name["text"] = self.current_show["romajiTitle"]
-        user_reviews = [self.current_show["jaredScore"], self.current_show["simonScore"], self.current_show["kenanScore"]]
+        user_reviews = [rating for rating in self.current_show["houseScores"]]
+
+        self.adjust_rows()
 
         for row, user in enumerate(user_reviews):
-            for col in range(3):
-                for widget in self.edit_frame.grid_slaves(row=row+3, column=col+1):
+            for col in range(4):
+                for widget in self.frm_user_ratings.grid_slaves(row=row+1, column=col):
                     widget["state"] = "normal"
                     widget.delete(0, tk.END)
                     widget.insert(0, user[col])
@@ -376,16 +387,12 @@ class EditWindow(tk.Toplevel):
             "genres": request["genres"],
             "tags": request["tags"],
             "score": request["averageScore"],
-            "jaredScore": [0, 0, 0],
-            "simonScore": [0, 0, 0],
-            "kenanScore": [0, 0, 0]
+            "houseScores": ["", 0, 0, 0]
         }
 
         for show in library:
             if media_id == show["id"]:
-                entry["jaredScore"] = show["jaredScore"]
-                entry["simonScore"] = show["simonScore"]
-                entry["kenanScore"] = show["kenanScore"]
+                entry["houseScores"] = show["houseScores"]
 
         self.current_show = entry
 
@@ -405,10 +412,41 @@ class EditWindow(tk.Toplevel):
                 match_found = True
 
         if not match_found:
-            library.append(self.current_show)
-            library_titles.append(self.current_show["englishTitle"])
+            alphabetize.insert_alphabetically(self.current_show, library)
+            library_titles[0:-1] = []
+            for show in library:
+                library_titles.append(show["defaultTitle"])
 
         self.lbl_show_name["text"] = "Data Confirmed!"
+
+    def add_user(self):
+        rows = 0
+        for idx in range(len(self.frm_user_ratings.grid_slaves())):
+            if idx % 4 == 0:
+                rows += 1
+
+        ent_user = tk.Entry(self.frm_user_ratings)
+        ent_user.grid(row=rows+1, column=0)
+        for col in range(3):
+            ent_score = tk.Entry(self.frm_user_ratings, width=5)
+            ent_score.grid(row=rows+1, column=col+1, padx=3)
+
+    def adjust_rows(self):
+        for idx, widget in enumerate(self.frm_user_ratings.grid_slaves()):
+            if idx > 3:
+                widget.destroy()
+        if self.current_show:
+            users = self.current_show["houseScores"]
+        else:
+            users = []
+        for row, user in enumerate(users):
+            # lbl_user = tk.Label(self.frm_user_ratings, text=f"{user}: ")
+            # lbl_user.grid(row=row + 1, column=0)
+            ent_user = tk.Entry(self.frm_user_ratings, state="disabled")
+            ent_user.grid(row=row + 1, column=0)
+            for col in range(3):
+                ent_score = tk.Entry(self.frm_user_ratings, width=5, state="disabled")
+                ent_score.grid(row=row + 1, column=col + 1, padx=3)
 
 
 def convert_image(url):
