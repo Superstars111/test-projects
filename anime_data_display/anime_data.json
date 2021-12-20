@@ -336,21 +336,6 @@
             }
         ],
         "score": 79,
-        "jaredScore": [
-            86,
-            10,
-            10
-        ],
-        "simonScore": [
-            75,
-            10,
-            35
-        ],
-        "kenanScore": [
-            70,
-            -30,
-            20
-        ],
         "defaultTitle": "ASTRA LOST IN SPACE",
         "houseScores": [
             [
@@ -370,6 +355,12 @@
                 70,
                 -30,
                 20
+            ],
+            [
+                "Mom",
+                85,
+                10,
+                -30
             ]
         ]
     },
@@ -742,6 +733,74 @@
         ],
         "defaultTitle": "Beyond the Boundary",
         "houseScores": []
+    },
+    {
+        "id": "101610",
+        "romajiTitle": "Bokura no Nanokakan Sensou",
+        "englishTitle": null,
+        "nativeTitle": "\u307c\u304f\u3089\u306e\u4e03\u65e5\u9593\u6226\u4e89",
+        "format": "MOVIE",
+        "description": "The mystery story and social satire begins on the day before summer vacation, when every boy in a first-year class of a downtown Tokyo middle school disappears. Was it some accident? A mass kidnapping? Actually, the boys holed themselves up in an abandoned factory on the riverbed. With support from the schoolgirls, the boys start a revolution against the adults from this \"liberation zone.\"<br><br>\n\n(Source: Anime News Network)",
+        "episodes": 0,
+        "seasons": 0,
+        "unairedSeasons": 0,
+        "movies": 1,
+        "coverLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101610-8vfcvNlYD84F.jpg",
+        "coverMed": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101610-8vfcvNlYD84F.jpg",
+        "coverSmall": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101610-8vfcvNlYD84F.jpg",
+        "genres": [
+            "Action",
+            "Comedy",
+            "Drama",
+            "Thriller"
+        ],
+        "tags": [
+            {
+                "name": "Coming of Age",
+                "rank": 88,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Ensemble Cast",
+                "rank": 79,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Yuri",
+                "rank": 58,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Crossdressing",
+                "rank": 56,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Politics",
+                "rank": 53,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Tomboy",
+                "rank": 50,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Ojou-sama",
+                "rank": 30,
+                "isMediaSpoiler": false
+            }
+        ],
+        "score": 64,
+        "defaultTitle": "Bokura no Nanokakan Sensou",
+        "houseScores": [
+            [
+                "",
+                0,
+                0,
+                0
+            ]
+        ]
     },
     {
         "id": "20997",
@@ -1370,7 +1429,7 @@
             },
             {
                 "name": "Crime",
-                "rank": 93,
+                "rank": 92,
                 "isMediaSpoiler": false
             },
             {
@@ -1380,7 +1439,7 @@
             },
             {
                 "name": "Time Skip",
-                "rank": 85,
+                "rank": 86,
                 "isMediaSpoiler": false
             },
             {
@@ -1440,7 +1499,7 @@
             },
             {
                 "name": "Heterosexual",
-                "rank": 45,
+                "rank": 40,
                 "isMediaSpoiler": false
             },
             {
@@ -1450,21 +1509,6 @@
             }
         ],
         "score": 82,
-        "jaredScore": [
-            90,
-            -20,
-            -38
-        ],
-        "simonScore": [
-            80,
-            -35,
-            -25
-        ],
-        "kenanScore": [
-            85,
-            35,
-            -40
-        ],
         "defaultTitle": "ERASED",
         "houseScores": [
             [
@@ -1484,6 +1528,12 @@
                 85,
                 35,
                 -40
+            ],
+            [
+                "Mom",
+                90,
+                35,
+                -45
             ]
         ]
     },
@@ -1569,21 +1619,6 @@
             }
         ],
         "score": 66,
-        "jaredScore": [
-            87,
-            42,
-            35
-        ],
-        "simonScore": [
-            95,
-            25,
-            40
-        ],
-        "kenanScore": [
-            90,
-            26,
-            39
-        ],
         "defaultTitle": "GAMERS!",
         "houseScores": [
             [
@@ -1603,6 +1638,12 @@
                 90,
                 26,
                 39
+            ],
+            [
+                "Mom",
+                65,
+                30,
+                35
             ]
         ]
     },
@@ -1932,6 +1973,69 @@
         ]
     },
     {
+        "id": "106240",
+        "romajiTitle": "HELLO WORLD",
+        "englishTitle": null,
+        "nativeTitle": "HELLO WORLD",
+        "format": "MOVIE",
+        "description": "In Kyoto in the year 2027, Naomi Katagaki, a male high school student encounters a person who is claiming to be Naomi from 10 years in the future. Together, they must change the future and save a classmate, Ruri, whom the younger Naomi starts to date in three months.",
+        "episodes": 0,
+        "seasons": 0,
+        "unairedSeasons": 0,
+        "movies": 1,
+        "coverLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx106240-XeWQ4YhKzv7h.png",
+        "coverMed": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx106240-XeWQ4YhKzv7h.png",
+        "coverSmall": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx106240-XeWQ4YhKzv7h.png",
+        "genres": [
+            "Drama",
+            "Psychological",
+            "Romance",
+            "Sci-Fi"
+        ],
+        "tags": [
+            {
+                "name": "Time Manipulation",
+                "rank": 91,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Virtual World",
+                "rank": 88,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Full CGI",
+                "rank": 83,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Alternate Universe",
+                "rank": 83,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Rehabilitation",
+                "rank": 60,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "School",
+                "rank": 46,
+                "isMediaSpoiler": false
+            }
+        ],
+        "score": 73,
+        "defaultTitle": "HELLO WORLD",
+        "houseScores": [
+            [
+                "",
+                0,
+                0,
+                0
+            ]
+        ]
+    },
+    {
         "id": "12189",
         "romajiTitle": "Hyouka",
         "englishTitle": "Hyouka",
@@ -2021,21 +2125,6 @@
             }
         ],
         "score": 79,
-        "jaredScore": [
-            80,
-            -40,
-            -30
-        ],
-        "simonScore": [
-            50,
-            -35,
-            -20
-        ],
-        "kenanScore": [
-            65,
-            -40,
-            -20
-        ],
         "defaultTitle": "Hyouka",
         "houseScores": [
             [
@@ -2055,6 +2144,12 @@
                 65,
                 -40,
                 -20
+            ],
+            [
+                "Mom",
+                50,
+                -20,
+                0
             ]
         ]
     },
@@ -2213,6 +2308,78 @@
                 90,
                 0,
                 -50
+            ]
+        ]
+    },
+    {
+        "id": "99750",
+        "romajiTitle": "Kimi no Suizou wo Tabetai",
+        "englishTitle": "I Want to Eat Your Pancreas",
+        "nativeTitle": "\u541b\u306e\u81b5\u81d3\u3092\u305f\u3079\u305f\u3044",
+        "format": "MOVIE",
+        "description": "Spring time in April and the last of the cherry blossoms are still in bloom. The usually aloof bookworm with no interest in others comes across a book in a hospital waiting room. Handwritten on the cover are the words: \"Living with Dying.\" He soon discovers that it is a diary kept by his very popular and genuinely cheerful classmate, Sakura Yamauchi, who reveals to him that she is secretly suffering from a pancreatic illness and only has a limited time left. It is at this moment that she gains just one more person to share her secret.<br>\n<br>\nTrying to maintain a normal life as much as possible, Sakura is determined to live her life to the fullest until the very last day. As her free spirit and unpredictable actions throw him for a loop, his heart begins to gradually change.\n<br><br>\n(Source: Aniplex USA)",
+        "episodes": 0,
+        "seasons": 0,
+        "unairedSeasons": 0,
+        "movies": 1,
+        "coverLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99750-zadlgc0NMR46.jpg",
+        "coverMed": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99750-zadlgc0NMR46.jpg",
+        "coverSmall": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx99750-zadlgc0NMR46.jpg",
+        "genres": [
+            "Drama",
+            "Romance",
+            "Slice of Life"
+        ],
+        "tags": [
+            {
+                "name": "Tragedy",
+                "rank": 97,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Coming of Age",
+                "rank": 89,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Heterosexual",
+                "rank": 84,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Male Protagonist",
+                "rank": 82,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Female Protagonist",
+                "rank": 82,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Philosophy",
+                "rank": 78,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Hikikomori",
+                "rank": 70,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "School",
+                "rank": 55,
+                "isMediaSpoiler": false
+            }
+        ],
+        "score": 84,
+        "defaultTitle": "I Want to Eat Your Pancreas",
+        "houseScores": [
+            [
+                "",
+                0,
+                0,
+                0
             ]
         ]
     },
@@ -3426,21 +3593,6 @@
             }
         ],
         "score": 82,
-        "jaredScore": [
-            84,
-            45,
-            48
-        ],
-        "simonScore": [
-            95,
-            45,
-            50
-        ],
-        "kenanScore": [
-            90,
-            0,
-            50
-        ],
         "defaultTitle": "Nichijou - My Ordinary Life",
         "houseScores": [
             [
@@ -3460,6 +3612,12 @@
                 90,
                 0,
                 50
+            ],
+            [
+                "Mom",
+                80,
+                45,
+                45
             ]
         ]
     },
@@ -3560,6 +3718,166 @@
         ],
         "defaultTitle": "Nisekoi",
         "houseScores": []
+    },
+    {
+        "id": "12477",
+        "romajiTitle": "Sakasama no Patema",
+        "englishTitle": "Patema Inverted",
+        "nativeTitle": "\u30b5\u30ab\u30b5\u30de\u306e\u30d1\u30c6\u30de",
+        "format": "MOVIE",
+        "description": "In an underground world where tunnels extend everywhere, even though they live in dark and confined spaces, people wear protective clothes and lead quiet and enjoyable lives. Patema, a princess in her underground village, loves to explore the tunnels. Her favorite place is a \"danger zone\" that her village prohibits people from entering. Even though she's scolded, Patema's curiosity can't be held back. No one ever explained what the supposed danger was. On her usual trip to the \"danger zone,\" Patema faces unexpected events. When hidden secrets come to light, the story begins to unfold.<br><br>\n(Source: Anime News Network)",
+        "episodes": 0,
+        "seasons": 0,
+        "unairedSeasons": 0,
+        "movies": 1,
+        "coverLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx12477-KtZm8BuvrPYo.jpg",
+        "coverMed": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx12477-KtZm8BuvrPYo.jpg",
+        "coverSmall": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx12477-KtZm8BuvrPYo.jpg",
+        "genres": [
+            "Adventure",
+            "Romance",
+            "Sci-Fi"
+        ],
+        "tags": [
+            {
+                "name": "Lost Civilization",
+                "rank": 94,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Dystopian",
+                "rank": 88,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Post-Apocalyptic",
+                "rank": 78,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Environmental",
+                "rank": 68,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Steampunk",
+                "rank": 63,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Female Protagonist",
+                "rank": 63,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Heterosexual",
+                "rank": 60,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Aviation",
+                "rank": 45,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Survival",
+                "rank": 40,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "School",
+                "rank": 20,
+                "isMediaSpoiler": false
+            }
+        ],
+        "score": 77,
+        "defaultTitle": "Patema Inverted",
+        "houseScores": [
+            [
+                "",
+                0,
+                0,
+                0
+            ]
+        ]
+    },
+    {
+        "id": "101249",
+        "romajiTitle": "Penguin Highway",
+        "englishTitle": "Penguin Highway",
+        "nativeTitle": "\u30da\u30f3\u30ae\u30f3\u30fb\u30cf\u30a4\u30a6\u30a7\u30a4",
+        "format": "MOVIE",
+        "description": "The narrator and protagonist is ten-year-old Aoyama. A serious student, he has already acquired a broad knowledge of the world and the universe, and he keeps notebooks in which he records day-to-day observations from his studies, explorations, and experiments. In May, some Ad\u00e9lie penguins appear in the town where he lives. They are captured and hauled away by truck, but then they vanish into thin air while being transported. Aoyama talks about the penguins with a young woman who works at the dentist\u2019s office and who has been a friend to him. The woman is referred to only as Onee-san. When Onee-san tosses a soda can one day, it turns into a penguin. Meanwhile, Aoyama\u2019s classmate Uchida has secretly been keeping a penguin, but it hasn\u2019t touched its food for three weeks. When Aoyama and Uchida take it with them on the train, it disappears. Another classmate, a girl named Hamamoto who often plays chess with Aoyama, discovers a strange spherical object in a field on the edge of town. The three classmates name the sphere \u201cOcean,\u201d and begin keeping a log of their observations of it. Aoyama soon concludes that there is a relationship between the swelling and shrinking of \u201cOcean\u201d and Onee-san\u2019s state of health.\n<br><br>\n(Source: Official Website)",
+        "episodes": 0,
+        "seasons": 0,
+        "unairedSeasons": 0,
+        "movies": 1,
+        "coverLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx101249-NafhTVQfsxmC.jpg",
+        "coverMed": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx101249-NafhTVQfsxmC.jpg",
+        "coverSmall": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx101249-NafhTVQfsxmC.jpg",
+        "genres": [
+            "Drama",
+            "Mystery",
+            "Sci-Fi",
+            "Slice of Life"
+        ],
+        "tags": [
+            {
+                "name": "Coming of Age",
+                "rank": 93,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Primarily Child Cast",
+                "rank": 92,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Male Protagonist",
+                "rank": 82,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Animals",
+                "rank": 80,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "School",
+                "rank": 79,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Philosophy",
+                "rank": 79,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Kids",
+                "rank": 60,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Age Gap",
+                "rank": 53,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Rural",
+                "rank": 40,
+                "isMediaSpoiler": false
+            }
+        ],
+        "score": 75,
+        "defaultTitle": "Penguin Highway",
+        "houseScores": [
+            [
+                "Jared",
+                81,
+                -25,
+                -15
+            ]
+        ]
     },
     {
         "id": "99426",
@@ -3910,6 +4228,113 @@
         ]
     },
     {
+        "id": "20954",
+        "romajiTitle": "Koe no Katachi",
+        "englishTitle": "A Silent Voice",
+        "nativeTitle": "\u8072\u306e\u5f62",
+        "format": "MOVIE",
+        "description": "After transferring into a new school, a deaf girl, Shouko Nishimiya, is bullied by the popular Shouya Ishida. As Shouya continues to bully Shouko, the class turns its back on him. Shouko transfers and Shouya grows up as an outcast. Alone and depressed, the regretful Shouya finds Shouko to make amends.\n<br><br>\n(Source: Eleven Arts)",
+        "episodes": 0,
+        "seasons": 0,
+        "unairedSeasons": 0,
+        "movies": 1,
+        "coverLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx20954-RYEF5mWglzV8.png",
+        "coverMed": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx20954-RYEF5mWglzV8.png",
+        "coverSmall": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx20954-RYEF5mWglzV8.png",
+        "genres": [
+            "Drama",
+            "Romance",
+            "Slice of Life"
+        ],
+        "tags": [
+            {
+                "name": "Bullying",
+                "rank": 94,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Denpa",
+                "rank": 94,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Rehabilitation",
+                "rank": 92,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Language Barrier",
+                "rank": 91,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Coming of Age",
+                "rank": 85,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Suicide",
+                "rank": 80,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Time Skip",
+                "rank": 78,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Philosophy",
+                "rank": 76,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Tragedy",
+                "rank": 75,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "School",
+                "rank": 71,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Female Protagonist",
+                "rank": 71,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Male Protagonist",
+                "rank": 71,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Urban",
+                "rank": 43,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Shounen",
+                "rank": 37,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Tomboy",
+                "rank": 25,
+                "isMediaSpoiler": false
+            }
+        ],
+        "score": 88,
+        "defaultTitle": "A Silent Voice",
+        "houseScores": [
+            [
+                "Jared",
+                91,
+                -30,
+                -20
+            ]
+        ]
+    },
+    {
         "id": "99468",
         "romajiTitle": "Karakai Jouzu no Takagi-san",
         "englishTitle": "Teasing Master Takagi-san",
@@ -4207,6 +4632,109 @@
         "houseScores": []
     },
     {
+        "id": "106286",
+        "romajiTitle": "Tenki no Ko",
+        "englishTitle": "Weathering With You",
+        "nativeTitle": "\u5929\u6c17\u306e\u5b50",
+        "format": "MOVIE",
+        "description": "High school student Hodaka leaves his home on an isolated island and moves to Tokyo, but he immediately becomes broke. He lives his days in isolation, but finally finds a job as a writer for a shady occult magazine. After he starts his job, the weather has been rainy day after day. In a corner of the crowded and busy city, Hodaka meets a young woman named Hina. Due to certain circumstances, Hina and her younger brother live together, but have a cheerful and sturdy life. Hina also has a certain power: the power to stop the rain and clear the sky.\n<br><br>\n(Source: Anime News Network)",
+        "episodes": 0,
+        "seasons": 0,
+        "unairedSeasons": 0,
+        "movies": 1,
+        "coverLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx106286-5COcpd0J9VbL.png",
+        "coverMed": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx106286-5COcpd0J9VbL.png",
+        "coverSmall": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx106286-5COcpd0J9VbL.png",
+        "genres": [
+            "Drama",
+            "Romance",
+            "Slice of Life",
+            "Supernatural"
+        ],
+        "tags": [
+            {
+                "name": "Urban Fantasy",
+                "rank": 93,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Environmental",
+                "rank": 86,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Fugitive",
+                "rank": 81,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Female Protagonist",
+                "rank": 80,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Male Protagonist",
+                "rank": 77,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Family Life",
+                "rank": 77,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Angels",
+                "rank": 70,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Work",
+                "rank": 65,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Heterosexual",
+                "rank": 64,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Gods",
+                "rank": 62,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Philosophy",
+                "rank": 60,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Magic",
+                "rank": 60,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Guns",
+                "rank": 55,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Time Skip",
+                "rank": 40,
+                "isMediaSpoiler": true
+            }
+        ],
+        "score": 82,
+        "defaultTitle": "Weathering With You",
+        "houseScores": [
+            [
+                "",
+                0,
+                0,
+                0
+            ]
+        ]
+    },
+    {
         "id": "98005",
         "romajiTitle": "Ballroom e Youkoso",
         "englishTitle": "Welcome to the Ballroom",
@@ -4288,6 +4816,216 @@
                 "Jared",
                 81,
                 -15,
+                -15
+            ]
+        ]
+    },
+    {
+        "id": "20665",
+        "romajiTitle": "Shigatsu wa Kimi no Uso",
+        "englishTitle": "Your Lie in April",
+        "nativeTitle": "\u56db\u6708\u306f\u541b\u306e\u5618",
+        "description": "Piano prodigy Arima Kousei dominated the competition and all child musicians knew his name. But after his mother, who was also his instructor, passed away, he had a mental breakdown while performing at a recital. This resulted in him no longer being able to hear the sound of his piano playing. Two years later, Kousei hasn\u2019t touched the piano and views the world without any flair or color. He was content at living out his life with his good friends Tsubaki and Watari until, one day, a girl changed everything. Miyazono Kaori is a pretty, free spirited violinist whose playing style reflects her personality. Kaori helps Kousei return to the music world and show that it should be free and mold breaking unlike the structured and rigid style Kousei was used to.",
+        "episodes": 22,
+        "seasons": 1,
+        "unairedSeasons": 0,
+        "movies": 0,
+        "coverLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20665-CnzR2zVpdxtR.png",
+        "coverMed": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20665-CnzR2zVpdxtR.png",
+        "coverSmall": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20665-CnzR2zVpdxtR.png",
+        "genres": [
+            "Drama",
+            "Music",
+            "Romance",
+            "Slice of Life"
+        ],
+        "tags": [
+            {
+                "name": "Musical",
+                "rank": 94,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Tragedy",
+                "rank": 89,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Coming of Age",
+                "rank": 86,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Rehabilitation",
+                "rank": 81,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Female Protagonist",
+                "rank": 79,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Male Protagonist",
+                "rank": 76,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Love Triangle",
+                "rank": 74,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Heterosexual",
+                "rank": 66,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "School",
+                "rank": 62,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Slapstick",
+                "rank": 43,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Shounen",
+                "rank": 42,
+                "isMediaSpoiler": false
+            }
+        ],
+        "score": 84,
+        "defaultTitle": "Your Lie in April",
+        "houseScores": [
+            [
+                "Jared",
+                82,
+                -25,
+                -30
+            ],
+            [
+                "Mom",
+                85,
+                -30,
+                -30
+            ]
+        ]
+    },
+    {
+        "id": "21519",
+        "romajiTitle": "Kimi no Na wa.",
+        "englishTitle": "Your Name.",
+        "nativeTitle": "\u541b\u306e\u540d\u306f\u3002",
+        "format": "MOVIE",
+        "description": "Mitsuha Miyamizu, a high school girl, yearns to live the life of a boy in the bustling city of Tokyo\u2014a dream that stands in stark contrast to her present life in the countryside. Meanwhile in the city, Taki Tachibana lives a busy life as a high school student while juggling his part-time job and hopes for a future in architecture.<br>\n<br>\nOne day, Mitsuha awakens in a room that is not her own and suddenly finds herself living the dream life in Tokyo\u2014but in Taki's body! Elsewhere, Taki finds himself living Mitsuha's life in the humble countryside. In pursuit of an answer to this strange phenomenon, they begin to search for one another.<br>\n<br>\n<i>Kimi no Na wa.</i> revolves around Mitsuha and Taki's actions, which begin to have a dramatic impact on each other's lives, weaving them into a fabric held together by fate and circumstance.<br>\n<br>\n(Source: MAL Rewrite)",
+        "episodes": 0,
+        "seasons": 0,
+        "unairedSeasons": 0,
+        "movies": 1,
+        "coverLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21519-XIr3PeczUjjF.png",
+        "coverMed": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21519-XIr3PeczUjjF.png",
+        "coverSmall": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21519-XIr3PeczUjjF.png",
+        "genres": [
+            "Drama",
+            "Romance",
+            "Supernatural"
+        ],
+        "tags": [
+            {
+                "name": "Body Swapping",
+                "rank": 96,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Time Manipulation",
+                "rank": 92,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Urban Fantasy",
+                "rank": 84,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Memory Manipulation",
+                "rank": 80,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Female Protagonist",
+                "rank": 79,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Coming of Age",
+                "rank": 79,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Male Protagonist",
+                "rank": 78,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Urban",
+                "rank": 72,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Rural",
+                "rank": 70,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Tragedy",
+                "rank": 70,
+                "isMediaSpoiler": true
+            },
+            {
+                "name": "Gender Bending",
+                "rank": 63,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Heterosexual",
+                "rank": 63,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Alternate Universe",
+                "rank": 52,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "School",
+                "rank": 44,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Trains",
+                "rank": 43,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Shrine Maiden",
+                "rank": 40,
+                "isMediaSpoiler": false
+            },
+            {
+                "name": "Seinen",
+                "rank": 32,
+                "isMediaSpoiler": false
+            }
+        ],
+        "score": 86,
+        "defaultTitle": "Your Name.",
+        "houseScores": [
+            [
+                "Jared",
+                91,
+                5,
                 -15
             ]
         ]
