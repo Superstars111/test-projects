@@ -11,6 +11,7 @@ query = """query($id: Int){
       english
       native
     },
+    format,
     description,
     episodes,
     coverImage {
@@ -55,11 +56,22 @@ def collect_seasonal_data(show_id, episodes=0, seasons=1, unaired_seasons=0, mov
                 movies += 1
             sequel_id = series["node"]["id"]
 
-    if sequel_id:
-        episodes, seasons, unaired_seasons, movies, sequel_id = \
-            collect_seasonal_data(sequel_id, episodes=episodes, seasons=seasons, unaired_seasons=unaired_seasons, movies=movies)
+    seasonal_data = {
+        "total_episodes": episodes,
+        "seasons": seasons,
+        "unaired_seasons": unaired_seasons,
+        "movies": movies,
+        "sequel": sequel_id
+    }
 
-    return episodes, seasons, unaired_seasons, movies, sequel_id
+    if sequel_id:
+        seasonal_data = collect_seasonal_data(sequel_id,
+                                              episodes=episodes,
+                                              seasons=seasons,
+                                              unaired_seasons=unaired_seasons,
+                                              movies=movies)
+
+    return seasonal_data
 
 if __name__ == "__main__":
     with open("anime_data.json", "r") as anime_data:
