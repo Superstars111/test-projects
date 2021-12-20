@@ -338,10 +338,10 @@ class EditWindow(tk.Toplevel):
         self.bind("<Return>", self.update_series)
         self.lbl_show_name = tk.Label(self.edit_frame)
         self.frm_user_ratings = tk.Frame(self.edit_frame)
-        self.lbl_name = tk.Label(self.frm_user_ratings, text="Name")
-        self.lbl_score = tk.Label(self.frm_user_ratings, text="Score")
-        self.lbl_energy = tk.Label(self.frm_user_ratings, text="Energy")
-        self.lbl_drama = tk.Label(self.frm_user_ratings, text="Tone")
+        lbl_name = tk.Label(self.frm_user_ratings, text="Name")
+        lbl_score = tk.Label(self.frm_user_ratings, text="Score")
+        lbl_energy = tk.Label(self.frm_user_ratings, text="Energy")
+        lbl_drama = tk.Label(self.frm_user_ratings, text="Tone")
 
         self.adjust_rows()
 
@@ -354,10 +354,10 @@ class EditWindow(tk.Toplevel):
         self.edit_frame.rowconfigure(1, minsize=15)
         self.lbl_show_name.grid(row=1, column=0, columnspan=4)
         self.frm_user_ratings.grid(row=2, column=0, columnspan=4)
-        self.lbl_name.grid(row=0, column=0)
-        self.lbl_score.grid(row=0, column=1)
-        self.lbl_energy.grid(row=0, column=2)
-        self.lbl_drama.grid(row=0, column=3)
+        lbl_name.grid(row=0, column=0)
+        lbl_score.grid(row=0, column=1)
+        lbl_energy.grid(row=0, column=2)
+        lbl_drama.grid(row=0, column=3)
         btn_confirm_scores.grid(row=3, column=2, padx=3, pady=3)
         btn_add_user.grid(row=3, column=1, padx=3, pady=3)
         self.edit_frame.grid()
@@ -383,26 +383,53 @@ class EditWindow(tk.Toplevel):
     def get_series(self, media_id):
         id_var = {"id": media_id}
         request = rq.post(collection.url, json={"query": collection.query, "variables": id_var}).json()['data']["Media"]
-        total_episodes, seasons, unaired_seasons, movies, sequel = collection.collect_seasonal_data(media_id,
-                                                                                                    episodes=request["episodes"])
+        if request["format"] == "MOVIE":
+            seasonal_data = {
+                "total_episodes": 0,
+                "seasons": 0,
+                "unaired_seasons": 0,
+                "movies": 1,
+                "sequel": None
+            }
+        else:
+            seasonal_data = {
+                "total_episodes": request["episodes"],
+                "seasons": 1,
+                "unaired_seasons": 0,
+                "movies": 0,
+                "sequel": None
+            }
+
+        seasonal_data = collection.collect_seasonal_data(
+            media_id,
+            episodes=seasonal_data["total_episodes"],
+            seasons=seasonal_data["seasons"],
+            movies=seasonal_data["movies"])
+
+        if request["title"]["english"]:
+            title = request["title"]["english"]
+        else:
+            title = request["title"]["romaji"]
 
         entry = {
             "id": media_id,
             "romajiTitle": request["title"]["romaji"],
             "englishTitle": request["title"]["english"],
             "nativeTitle": request["title"]["native"],
+            "format": request["format"],
             "description": request["description"],
-            "episodes": total_episodes,
-            "seasons": seasons,
-            "unairedSeasons": unaired_seasons,
-            "movies": movies,
+            "episodes": seasonal_data["total_episodes"],
+            "seasons": seasonal_data["seasons"],
+            "unairedSeasons": seasonal_data["unaired_seasons"],
+            "movies": seasonal_data["movies"],
             "coverLarge": request["coverImage"]["extraLarge"],
             "coverMed": request["coverImage"]["large"],
             "coverSmall": request["coverImage"]["medium"],
             "genres": request["genres"],
             "tags": request["tags"],
             "score": request["averageScore"],
-            "houseScores": ["", 0, 0, 0]
+            "defaultTitle": title,
+            "houseScores": [["", 0, 0, 0]]
         }
 
         for show in library:
@@ -412,12 +439,20 @@ class EditWindow(tk.Toplevel):
         self.current_show = entry
 
     def enter_ratings(self):
-        user_scores = [self.current_show["jaredScore"], self.current_show["simonScore"], self.current_show["kenanScore"]]
-        for row, score in enumerate(user_scores):
-            for col in range(3):
-                for widget in self.edit_frame.grid_slaves(row=row+3, column=col+1):
-                    score[col] = int(widget.get())
-                    widget["state"] = "disabled"
+        rows = count_rows(self.frm_user_ratings.grid_slaves())
+        # user_scores = [score for score in self.current_show["houseScores"]]
+        for row in range(rows):
+            for col in range(4):
+                for widget in self.frm_user_ratings.grid_slaves(row=row, column=col):
+                    if row != 0:
+                        if row-1 == len(self.current_show["houseScores"]):
+                            self.current_show["houseScores"].append(["", 0, 0, 0])
+                        if col == 0:
+                            self.current_show["houseScores"][row-1][col] = widget.get()
+                            widget["state"] = "disabled"
+                        else:
+                            self.current_show["houseScores"][row-1][col] = int(widget.get())
+                            widget["state"] = "disabled"
 
         match_found = False
         lib_clone = library.copy()
@@ -426,7 +461,7 @@ class EditWindow(tk.Toplevel):
                 library[idx] = self.current_show
                 match_found = True
 
-        if not match_found:
+        if not match_found:  # FIXME: Local library doesn't update properly when adding new shows
             alphabetize.insert_alphabetically(self.current_show, library)
             library_titles[0:-1] = []
             for show in library:
@@ -435,20 +470,21 @@ class EditWindow(tk.Toplevel):
         self.lbl_show_name["text"] = "Data Confirmed!"
 
     def add_user(self):
-        rows = 0
-        for idx in range(len(self.frm_user_ratings.grid_slaves())):
-            if idx % 4 == 0:
-                rows += 1
+        rows = count_rows(self.frm_user_ratings.grid_slaves())
+        # rows = 0
+        # for idx in range(len(self.frm_user_ratings.grid_slaves())):
+        #     if idx % 4 == 0:
+        #         rows += 1
 
         ent_user = tk.Entry(self.frm_user_ratings)
-        ent_user.grid(row=rows+1, column=0)
+        ent_user.grid(row=rows, column=0, padx=3)
         for col in range(3):
             ent_score = tk.Entry(self.frm_user_ratings, width=5)
-            ent_score.grid(row=rows+1, column=col+1, padx=3)
+            ent_score.grid(row=rows, column=col+1, padx=3)
 
     def adjust_rows(self):
         for idx, widget in enumerate(self.frm_user_ratings.grid_slaves()):
-            if idx > 3:
+            if idx < (len(self.frm_user_ratings.grid_slaves()) - 4):
                 widget.destroy()
         if self.current_show:
             users = self.current_show["houseScores"]
@@ -457,10 +493,10 @@ class EditWindow(tk.Toplevel):
         for row, user in enumerate(users):
             # lbl_user = tk.Label(self.frm_user_ratings, text=f"{user}: ")
             # lbl_user.grid(row=row + 1, column=0)
-            ent_user = tk.Entry(self.frm_user_ratings, state="disabled")
-            ent_user.grid(row=row + 1, column=0)
+            ent_user = tk.Entry(self.frm_user_ratings)
+            ent_user.grid(row=row + 1, column=0, padx=3)
             for col in range(3):
-                ent_score = tk.Entry(self.frm_user_ratings, width=5, state="disabled")
+                ent_score = tk.Entry(self.frm_user_ratings, width=5)
                 ent_score.grid(row=row + 1, column=col + 1, padx=3)
 
 
@@ -473,6 +509,15 @@ def convert_image(url):
         cover_image.append(image)
 
     return image
+
+
+def count_rows(item):
+    rows = 0
+    for idx in range(len(item)):
+        if idx % 4 == 0:
+            rows += 1
+
+    return rows
 
 
 if __name__ == "__main__":
