@@ -440,7 +440,7 @@ class EditWindow(tk.Toplevel):
 
     def enter_ratings(self):
         rows = count_rows(self.frm_user_ratings.grid_slaves())
-        # user_scores = [score for score in self.current_show["houseScores"]]
+
         for row in range(rows):
             for col in range(4):
                 for widget in self.frm_user_ratings.grid_slaves(row=row, column=col):
@@ -461,9 +461,9 @@ class EditWindow(tk.Toplevel):
                 library[idx] = self.current_show
                 match_found = True
 
-        if not match_found:  # FIXME: Local library doesn't update properly when adding new shows
+        if not match_found:
             alphabetize.insert_alphabetically(self.current_show, library)
-            library_titles[0:-1] = []
+            library_titles[0:len(library_titles)] = []
             for show in library:
                 library_titles.append(show["defaultTitle"])
 
@@ -471,10 +471,6 @@ class EditWindow(tk.Toplevel):
 
     def add_user(self):
         rows = count_rows(self.frm_user_ratings.grid_slaves())
-        # rows = 0
-        # for idx in range(len(self.frm_user_ratings.grid_slaves())):
-        #     if idx % 4 == 0:
-        #         rows += 1
 
         ent_user = tk.Entry(self.frm_user_ratings)
         ent_user.grid(row=rows, column=0, padx=3)
@@ -491,8 +487,7 @@ class EditWindow(tk.Toplevel):
         else:
             users = []
         for row, user in enumerate(users):
-            # lbl_user = tk.Label(self.frm_user_ratings, text=f"{user}: ")
-            # lbl_user.grid(row=row + 1, column=0)
+
             ent_user = tk.Entry(self.frm_user_ratings)
             ent_user.grid(row=row + 1, column=0, padx=3)
             for col in range(3):

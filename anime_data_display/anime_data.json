@@ -4825,6 +4825,7 @@
         "romajiTitle": "Shigatsu wa Kimi no Uso",
         "englishTitle": "Your Lie in April",
         "nativeTitle": "\u56db\u6708\u306f\u541b\u306e\u5618",
+        "format": "TV",
         "description": "Piano prodigy Arima Kousei dominated the competition and all child musicians knew his name. But after his mother, who was also his instructor, passed away, he had a mental breakdown while performing at a recital. This resulted in him no longer being able to hear the sound of his piano playing. Two years later, Kousei hasn\u2019t touched the piano and views the world without any flair or color. He was content at living out his life with his good friends Tsubaki and Watari until, one day, a girl changed everything. Miyazono Kaori is a pretty, free spirited violinist whose playing style reflects her personality. Kaori helps Kousei return to the music world and show that it should be free and mold breaking unlike the structured and rigid style Kousei was used to.",
         "episodes": 22,
         "seasons": 1,
@@ -4910,6 +4911,12 @@
                 85,
                 -30,
                 -30
+            ],
+            [
+                "Simon",
+                80,
+                -40,
+                -10
             ]
         ]
     },
@@ -5027,6 +5034,12 @@
                 91,
                 5,
                 -15
+            ],
+            [
+                "Simon",
+                95,
+                15,
+                10
             ]
         ]
     }
