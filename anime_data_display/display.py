@@ -8,7 +8,7 @@ from PIL import Image, ImageTk
 import io
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-import pandas
+from matplotlib.text import Annotation
 import decimal as dc
 import alphabetize
 
@@ -47,12 +47,12 @@ class Root:
         self.lbl_house_rating = tk.Label(self.frm_ratings, text="House score: 0/100")
         self.lbl_public_star = tk.Label(self.frm_ratings, text="\u2605")
         self.lbl_house_star = tk.Label(self.frm_ratings, text="\u2605")
-        graph_frame = plt.Figure(figsize=(5, 4), dpi=100)
-        graph = graph_frame.add_subplot(111)
-        graph.scatter([50, -50], [50, -50], s=[0, 0])
-        scatter_chart = FigureCanvasTkAgg(graph_frame, self.frm_ratings)
-        graph.set_ylabel("< Drama \u2022 Comedy >")
-        graph.set_xlabel("< Slow Pacing \u2022 Fast Pacing >")
+        self.graph_frame = plt.Figure(figsize=(5, 4), dpi=100)
+        self.graph = self.graph_frame.add_subplot(111)
+        self.scatter_chart = FigureCanvasTkAgg(self.graph_frame, self.frm_ratings)
+        self.build_graph()
+        self.labels = []
+        self.graph_frame.canvas.mpl_connect('pick_event', self.onpick)
 
         # Build data frame
         self.frm_series_info = tk.Frame(self.frm_anime_display)
@@ -95,8 +95,7 @@ class Root:
         self.lbl_public_star.grid(row=0, column=1, sticky="w")
         self.lbl_house_rating.grid(row=0, column=2, sticky="e")
         self.lbl_house_star.grid(row=0, column=3, sticky="w")
-        graph.grid()
-        scatter_chart.get_tk_widget().grid(row=1, column=0, columnspan=4)
+        self.scatter_chart.get_tk_widget().grid(row=1, column=0, columnspan=4)
 
         # Grid data frame
         self.lbl_cover_image.grid(row=0, column=0, rowspan=4, sticky="w", padx=15)
@@ -213,30 +212,59 @@ class Root:
         self.lbl_spoiler_tags["text"] = f"{', '.join(spoiler_tags)}"
 
     def plot_graph(self):
-        self.frm_ratings.grid_slaves(row=1, column=0)[0].grid_remove()
+        self.graph.cla()
+        self.build_graph()
         scores = [rating for rating in self.show["houseScores"]]
         ratings = [score_list[1] for score_list in scores]
         pacing_scores = []
         drama_scores = []
+        colors = []
+        self.labels = []
         for idx, score in enumerate(ratings):
             if score > 0:
                 pacing_scores.append(scores[idx][2])
                 drama_scores.append(scores[idx][3])
+                self.labels.append(f"{scores[idx][0]} - {scores[idx][1]}")
+                if score >= 85:
+                    colors.append("purple")
+                elif score >= 70:
+                    colors.append("blue")
+                elif score >= 55:
+                    colors.append("orange")
+                else:
+                    colors.append("red")
 
-        graph_location = {
-            "pacing": pacing_scores,
-            "comedy": drama_scores
-        }
-        data_sorting = pandas.DataFrame(graph_location, columns=["pacing", "comedy"])
-        graph_frame = plt.Figure(figsize=(5, 4), dpi=100)
-        graph = graph_frame.add_subplot(111)
-        graph.grid()
-        graph.scatter([50, -50], [50, -50], s=[0, 0])
-        scatter_chart = FigureCanvasTkAgg(graph_frame, self.frm_ratings)
-        scatter_chart.get_tk_widget().grid(row=1, column=0, columnspan=4)
-        graph.set_ylabel("< Drama \u2022 Comedy >")
-        graph.set_xlabel("< Low Energy/Slow Pacing \u2022 Fast Pacing/High Energy >")
-        graph.scatter(data_sorting["pacing"], data_sorting["comedy"], color="g")
+        self.graph.scatter(pacing_scores, drama_scores, color=colors, picker=True)
+        self.graph.figure.canvas.draw_idle()
+
+    def build_graph(self):
+        self.graph.grid()  # Adds a grid to the graph- does not add the graph to the Tkinter grid
+        self.graph.scatter([50, -50], [50, -50], s=[0, 0])
+        self.graph.set_ylabel("< Drama \u2022 Comedy >")
+        self.graph.set_xlabel("< Slow Pacing \u2022 Fast Pacing >")
+
+    def annotate(self, axis, text, x, y):
+        text_annotation = Annotation(text, xy=(x, y), xycoords='data')
+        axis.add_artist(text_annotation)
+
+    def onpick(self, event):
+        ind = event.ind
+        label_pos_x = event.mouseevent.xdata
+        label_pos_y = event.mouseevent.ydata
+        offset = 1
+
+        for i in ind:
+            label = self.labels[i]
+            self.annotate(
+                self.graph,
+                label,
+                label_pos_x + offset,
+                label_pos_y + offset
+            )
+
+            self.graph.figure.canvas.draw_idle()
+
+            offset += 3.5
 
     def toggle_spoilers(self):
         if self.spoiler_state.get() == 1:
