@@ -36,6 +36,7 @@ class Root:
         self.lbox_options = tk.Listbox(self.parent, height=35)
         self.lbox_options.bind("<<ListboxSelect>>", self.update_page_display)
         self.btn_options = tk.Button(self.parent, text="Add Options", command=self.add_options)
+        self.btn_display_all = tk.Button(self.parent, text="Display All", command=self.display_all)
 
         # Build main window
         self.frm_anime_display = tk.Frame(self.parent)
@@ -83,11 +84,12 @@ class Root:
 
 
         # Grid main window
-        self.lbox_options.grid(row=0, column=1, sticky="ns", padx=10, pady=5)
-        self.btn_options.grid(row=1, column=1, pady=7, padx=3, sticky="n")
+        self.lbox_options.grid(row=0, column=1, columnspan=2, sticky="ns", padx=10, pady=5)
+        self.btn_options.grid(row=1, column=2, pady=7, padx=3, sticky="n")
         self.frm_anime_display.grid(row=0, column=0)
         self.frm_anime_display.rowconfigure(0, minsize=120)
         self.lbl_title.grid(row=0, column=0, columnspan=2, pady=8)
+        self.btn_display_all.grid(row=1, column=1, pady=7, padx=3, sticky="n")
 
         # Grid ratings frame
         self.frm_ratings.grid(row=1, column=0, padx=15)
@@ -210,6 +212,125 @@ class Root:
         self.lbl_tags_list["text"] = f"{', '.join(normal_tags)}"
         self.lbl_warnings_list["text"] = f"{', '.join(warning_tags)}"
         self.lbl_spoiler_tags["text"] = f"{', '.join(spoiler_tags)}"
+
+    def display_all(self):
+        house_scores = []
+        public_scores = []
+        titles = []
+        pacing_scores = []
+        drama_scores = []
+        colors = []
+        self.labels = []
+        episodes = 0
+        seasons = 0
+        movies = 0
+        unfinished_seasons = 0
+        dc.getcontext().rounding = dc.ROUND_HALF_UP
+        for show in library:
+            seenby = 0
+            total_house_score = 0
+            total_pacing_score = 0
+            total_drama_score = 0
+            for rating in (show["houseScores"]):
+                if rating[1]:
+                    seenby += 1
+                    total_house_score += rating[1]
+                    total_pacing_score += rating[2]
+                    total_drama_score += rating[3]
+            if seenby > 0:
+                avg_house_score = total_house_score / seenby
+                avg_house_score = int(dc.Decimal(str(avg_house_score)).quantize(dc.Decimal("1")))
+                avg_pacing_score = total_pacing_score / seenby
+                avg_pacing_score = int(dc.Decimal(str(avg_pacing_score)).quantize(dc.Decimal("1")))
+                avg_drama_score = total_drama_score / seenby
+                avg_drama_score = int(dc.Decimal(str(avg_drama_score)).quantize(dc.Decimal("1")))
+                titles.append(show["defaultTitle"])
+                house_scores.append(avg_house_score)
+                public_scores.append(show["score"])
+                pacing_scores.append(avg_pacing_score)
+                drama_scores.append(avg_drama_score)
+                self.labels.append(f"{show['defaultTitle']}\n"
+                              f"Public:{show['score']}, House:{avg_house_score}")
+                if avg_house_score >= 85:
+                    colors.append("purple")
+                elif avg_house_score >= 70:
+                    colors.append("blue")
+                elif avg_house_score >= 55:
+                    colors.append("orange")
+                else:
+                    colors.append("red")
+
+            episodes += show["episodes"]
+            seasons += show["seasons"]
+            movies += show["movies"]
+            unfinished_seasons += show["unairedSeasons"]
+
+        total_score = 0
+        for rating in public_scores:
+            total_score += rating
+
+        avg_public_score = total_score / len(public_scores)
+        avg_public_score = int(dc.Decimal(str(avg_public_score)).quantize(dc.Decimal("1")))
+
+        total_house_score = 0
+        for rating in house_scores:
+            total_house_score += rating
+
+        avg_house_score = total_house_score / len(house_scores)
+        avg_house_score = int(dc.Decimal(str(avg_house_score)).quantize(dc.Decimal("1")))
+
+        self.graph.cla()
+        self.build_graph()
+
+        self.graph.scatter(pacing_scores, drama_scores, color=colors, picker=True)
+        self.graph.figure.canvas.draw_idle()
+
+        # Set stars to correct colors
+        if avg_public_score >= 85:
+            self.lbl_public_star.config(fg="purple")
+        elif avg_public_score >= 70:
+            self.lbl_public_star.config(fg="blue")
+        elif avg_public_score >= 55:
+            self.lbl_public_star.config(fg="orange")
+        elif avg_public_score >= 1:
+            self.lbl_public_star.config(fg="red")
+        else:
+            self.lbl_public_star.config(fg="black")
+
+        if avg_house_score >= 85:
+            self.lbl_house_star.config(fg="purple")
+        elif avg_house_score >= 70:
+            self.lbl_house_star.config(fg="blue")
+        elif avg_house_score >= 55:
+            self.lbl_house_star.config(fg="orange")
+        elif avg_house_score >= 1:
+            self.lbl_house_star.config(fg="red")
+        else:
+            self.lbl_house_star.config(fg="black")
+
+        if self.spoiler_state.get() == 1:
+            self.cbox_spoiler_tags[
+                "text"] = f"\u25BC Spoiler Tags: ({content_warnings[0]}, {content_warnings[1]}, {content_warnings[2]})"
+        else:
+            self.cbox_spoiler_tags[
+                "text"] = f"\u25B6 Spoiler Tags: ({content_warnings[0]}, {content_warnings[1]}, {content_warnings[2]})"
+
+        # Update display values
+        self.lbl_title["text"] = "Displaying Entire Library"
+        self.lbl_avg_rating["text"] = f"Public score: {avg_public_score}/100"
+        self.lbl_house_rating["text"] = f"House score: {avg_house_score}/100"
+        self.lbl_cover_image["image"] = ""
+        self.lbl_episodes["text"] = f"Total episodes: {episodes}"
+        self.lbl_seasons["text"] = f"Seasons: {seasons}"
+        self.lbl_movies["text"] = f"Movies: {movies}"
+        self.lbl_unaired_seasons["text"] = f"Unfinished Seasons: {unfinished_seasons}"
+        self.txt_description["state"] = "normal"
+        self.txt_description.delete("1.0", tk.END)
+        self.txt_description["state"] = "disabled"
+        self.lbl_genres_list["text"] = f""
+        self.lbl_tags_list["text"] = f""
+        self.lbl_warnings_list["text"] = f""
+        self.lbl_spoiler_tags["text"] = f""
 
     def plot_graph(self):
         self.graph.cla()
