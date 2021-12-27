@@ -221,6 +221,9 @@ class Root:
         drama_scores = []
         colors = []
         self.labels = []
+        tags = []
+        tag_content_labels = []
+        tag_frequency_labels = []
         episodes = 0
         seasons = 0
         movies = 0
@@ -260,10 +263,44 @@ class Root:
                 else:
                     colors.append("red")
 
+                calc_tags = []
+
+                for item in tags:
+                    calc_tags.append(item["name"])
+
+                for tag in show["tags"]:
+                    if tag["name"] not in calc_tags:
+                        tags.append(tag.copy())
+
             episodes += show["episodes"]
             seasons += show["seasons"]
             movies += show["movies"]
             unfinished_seasons += show["unairedSeasons"]
+
+        for tag in tags:
+            tag["rank"] = 0
+            tag["shows"] = 0
+            for show in library:
+                if show["houseScores"] and show["houseScores"][0][1]:
+                    for item in show["tags"]:
+                        if item["name"] == tag["name"]:
+                            tag["shows"] += 1
+
+        tag_content = []
+        tag_frequency = []
+        for i in range(100, 0, -1):
+            for tag in tags:
+                if tag["shows"] == i:
+                    if tag["name"] in mild_warnings or tag["name"] in extreme_warnings:
+                        tag_content.append(tag)
+                    else:
+                        tag_frequency.append(tag)
+        for idx, tag in enumerate(tag_frequency):
+            if idx <= 20:
+                tag_frequency_labels.append(f"{tag['name']}: {tag['shows']}")
+        for idx, tag in enumerate(tag_content):
+            if idx <= 8:
+                tag_content_labels.append(f"{tag['name']}: {tag['shows']}")
 
         total_score = 0
         for rating in public_scores:
@@ -328,8 +365,8 @@ class Root:
         self.txt_description.delete("1.0", tk.END)
         self.txt_description["state"] = "disabled"
         self.lbl_genres_list["text"] = f""
-        self.lbl_tags_list["text"] = f""
-        self.lbl_warnings_list["text"] = f""
+        self.lbl_tags_list["text"] = f"{', '.join(tag_frequency_labels)}"
+        self.lbl_warnings_list["text"] = f"{', '.join(tag_content_labels)}"
         self.lbl_spoiler_tags["text"] = f""
 
     def plot_graph(self):

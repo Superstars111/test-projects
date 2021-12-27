@@ -250,6 +250,7 @@
         "romajiTitle": "Kanata no Astra",
         "englishTitle": "ASTRA LOST IN SPACE",
         "nativeTitle": "\u5f7c\u65b9\u306e\u30a2\u30b9\u30c8\u30e9",
+        "format": "TV",
         "description": "It\u02bcs the first day of Planet Camp, and Aries Spring couldn\u02bct be more excited! She, along with eight other strangers, leave for Planet McPa for a weeklong excursion. Soon after they arrive, however, a mysterious orb appears and transports them into the depths of space, where they find an empty floating spaceship\u2026\n<br><br>\n(Source: Viz Media)\n<br><br>\n<i>Note: The first and last episode aired with a runtime of ~48 minutes as opposed to the standard 24 minute long episode.</i>",
         "episodes": 12,
         "seasons": 1,
@@ -320,6 +321,11 @@
                 "isMediaSpoiler": false
             },
             {
+                "name": "Primarily Teen Cast",
+                "rank": 60,
+                "isMediaSpoiler": false
+            },
+            {
                 "name": "Kuudere",
                 "rank": 56,
                 "isMediaSpoiler": false
@@ -342,11 +348,11 @@
                 "Jared",
                 86,
                 10,
-                10
+                -5
             ],
             [
                 "Simon",
-                75,
+                80,
                 10,
                 35
             ],
