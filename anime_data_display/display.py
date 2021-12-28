@@ -222,12 +222,15 @@ class Root:
         colors = []
         self.labels = []
         tags = []
+        genres = []
         tag_content_labels = []
         tag_frequency_labels = []
+        genre_frequency_labels = []
         episodes = 0
         seasons = 0
         movies = 0
         unfinished_seasons = 0
+        # TODO: Add counter in spoilers for how many overall content warnings there are
         dc.getcontext().rounding = dc.ROUND_HALF_UP
         for show in library:
             seenby = 0
@@ -264,13 +267,21 @@ class Root:
                     colors.append("red")
 
                 calc_tags = []
+                calc_genres = []
+                for genre in genres:
+                    calc_genres.append(genre["name"])
 
-                for item in tags:
-                    calc_tags.append(item["name"])
+                for tag in tags:
+                    calc_tags.append(tag["name"])
 
                 for tag in show["tags"]:
                     if tag["name"] not in calc_tags:
                         tags.append(tag.copy())
+
+                for genre in show["genres"]:
+                    if genre not in calc_genres:
+                        genres.append({"name": genre,
+                                       "shows": 0})
 
             episodes += show["episodes"]
             seasons += show["seasons"]
@@ -286,21 +297,35 @@ class Root:
                         if item["name"] == tag["name"]:
                             tag["shows"] += 1
 
+        for genre in genres:
+            for show in library:
+                if show["houseScores"] and show["houseScores"][0][1]:
+                    for item in show["genres"]:
+                        if item == genre["name"]:
+                            genre["shows"] += 1
+
         tag_content = []
         tag_frequency = []
-        for i in range(100, 0, -1):
+        genre_frequency = []
+        for i in range(len(titles), 0, -1):
             for tag in tags:
                 if tag["shows"] == i:
                     if tag["name"] in mild_warnings or tag["name"] in extreme_warnings:
                         tag_content.append(tag)
                     else:
                         tag_frequency.append(tag)
+            for genre in genres:
+                if genre["shows"] == i:
+                    genre_frequency.append(genre)
         for idx, tag in enumerate(tag_frequency):
             if idx <= 20:
                 tag_frequency_labels.append(f"{tag['name']}: {tag['shows']}")
         for idx, tag in enumerate(tag_content):
             if idx <= 8:
                 tag_content_labels.append(f"{tag['name']}: {tag['shows']}")
+        for idx, genre in enumerate(genre_frequency):
+            if idx <= 9:
+                genre_frequency_labels.append(f"{genre['name']}: {genre['shows']}")
 
         total_score = 0
         for rating in public_scores:
@@ -364,7 +389,7 @@ class Root:
         self.txt_description["state"] = "normal"
         self.txt_description.delete("1.0", tk.END)
         self.txt_description["state"] = "disabled"
-        self.lbl_genres_list["text"] = f""
+        self.lbl_genres_list["text"] = f"{', '.join(genre_frequency_labels)}"
         self.lbl_tags_list["text"] = f"{', '.join(tag_frequency_labels)}"
         self.lbl_warnings_list["text"] = f"{', '.join(tag_content_labels)}"
         self.lbl_spoiler_tags["text"] = f""
