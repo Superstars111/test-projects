@@ -140,48 +140,27 @@ class Root:
 
     def update_page_display(self, *ignore):
         self.show = options[self.lbox_options.curselection()[0]]
-        seenby = 0
-        total_house_score = 0
+        names, scores, pacing_scores, drama_scores = sort_ratings(self.show["houseScores"])
+        self.labels = []
+        for idx, name in enumerate(names):
+            self.labels.append(f"{name} - {scores[idx]}")
+        colors = collect_colors(scores)
+        total_house_score = sum(scores)
         content_warnings[0] = 0
         content_warnings[1] = 0
         content_warnings[2] = 0
         normal_tags, warning_tags, spoiler_tags = self.sort_tags()
-        self.plot_graph()
+        self.plot_graph(pacing_scores, drama_scores, colors)
 
         # Get average household score
-        for rating in (self.show["houseScores"]):
-            if rating[1]:
-                seenby += 1
-                total_house_score += rating[1]
-        if seenby > 0:
-            avg_house_score = total_house_score / seenby
+        if total_house_score > 0:
+            avg_house_score = total_house_score / len(scores)
             dc.getcontext().rounding = dc.ROUND_HALF_UP
             avg_house_score = int(dc.Decimal(str(avg_house_score)).quantize(dc.Decimal("1")))
         else:
             avg_house_score = 0
 
-        # Set stars to correct colors
-        if self.show["score"] >= 85:
-            self.lbl_public_star.config(fg="purple")
-        elif self.show["score"] >= 70:
-            self.lbl_public_star.config(fg="blue")
-        elif self.show["score"] >= 55:
-            self.lbl_public_star.config(fg="orange")
-        elif self.show["score"] >= 1:
-            self.lbl_public_star.config(fg="red")
-        else:
-            self.lbl_public_star.config(fg="black")
-
-        if avg_house_score >= 85:
-            self.lbl_house_star.config(fg="purple")
-        elif avg_house_score >= 70:
-            self.lbl_house_star.config(fg="blue")
-        elif avg_house_score >= 55:
-            self.lbl_house_star.config(fg="orange")
-        elif avg_house_score >= 1:
-            self.lbl_house_star.config(fg="red")
-        else:
-            self.lbl_house_star.config(fg="black")
+        self.color_stars(self.show["score"], avg_house_score)
 
         # Toggle display
         if self.show["unairedSeasons"] == 0:
@@ -219,7 +198,6 @@ class Root:
         titles = []
         pacing_scores = []
         drama_scores = []
-        colors = []
         self.labels = []
         tags = []
         genres = []
@@ -230,25 +208,20 @@ class Root:
         seasons = 0
         movies = 0
         unfinished_seasons = 0
-        # TODO: Add counter in spoilers for how many overall content warnings there are
+        content_warnings[0:3] = [0, 0, 0]
         dc.getcontext().rounding = dc.ROUND_HALF_UP
         for show in library:
-            seenby = 0
-            total_house_score = 0
-            total_pacing_score = 0
-            total_drama_score = 0
-            for rating in (show["houseScores"]):
-                if rating[1]:
-                    seenby += 1
-                    total_house_score += rating[1]
-                    total_pacing_score += rating[2]
-                    total_drama_score += rating[3]
-            if seenby > 0:
-                avg_house_score = total_house_score / seenby
+            ratings = [rating for rating in show["houseScores"]]
+            names, scores, pacing, drama = sort_ratings(ratings)
+            total_house_score = sum(scores)
+            total_pacing_score = sum(pacing)
+            total_drama_score = sum(drama)
+            if total_house_score > 0:
+                avg_house_score = total_house_score / len(scores)
                 avg_house_score = int(dc.Decimal(str(avg_house_score)).quantize(dc.Decimal("1")))
-                avg_pacing_score = total_pacing_score / seenby
+                avg_pacing_score = total_pacing_score / len(scores)
                 avg_pacing_score = int(dc.Decimal(str(avg_pacing_score)).quantize(dc.Decimal("1")))
-                avg_drama_score = total_drama_score / seenby
+                avg_drama_score = total_drama_score / len(scores)
                 avg_drama_score = int(dc.Decimal(str(avg_drama_score)).quantize(dc.Decimal("1")))
                 titles.append(show["defaultTitle"])
                 house_scores.append(avg_house_score)
@@ -256,15 +229,7 @@ class Root:
                 pacing_scores.append(avg_pacing_score)
                 drama_scores.append(avg_drama_score)
                 self.labels.append(f"{show['defaultTitle']}\n"
-                              f"Public:{show['score']}, House:{avg_house_score}")
-                if avg_house_score >= 85:
-                    colors.append("purple")
-                elif avg_house_score >= 70:
-                    colors.append("blue")
-                elif avg_house_score >= 55:
-                    colors.append("orange")
-                else:
-                    colors.append("red")
+                                   f"Public:{show['score']}, House:{avg_house_score}")
 
                 calc_tags = []
                 calc_genres = []
@@ -287,6 +252,8 @@ class Root:
             seasons += show["seasons"]
             movies += show["movies"]
             unfinished_seasons += show["unairedSeasons"]
+
+        colors = collect_colors(house_scores)
 
         for tag in tags:
             tag["rank"] = 0
@@ -327,48 +294,16 @@ class Root:
             if idx <= 9:
                 genre_frequency_labels.append(f"{genre['name']}: {genre['shows']}")
 
-        total_score = 0
-        for rating in public_scores:
-            total_score += rating
-
+        total_score = sum(public_scores)
         avg_public_score = total_score / len(public_scores)
         avg_public_score = int(dc.Decimal(str(avg_public_score)).quantize(dc.Decimal("1")))
 
-        total_house_score = 0
-        for rating in house_scores:
-            total_house_score += rating
-
+        total_house_score = sum(house_scores)
         avg_house_score = total_house_score / len(house_scores)
         avg_house_score = int(dc.Decimal(str(avg_house_score)).quantize(dc.Decimal("1")))
 
-        self.graph.cla()
-        self.build_graph()
-
-        self.graph.scatter(pacing_scores, drama_scores, color=colors, picker=True)
-        self.graph.figure.canvas.draw_idle()
-
-        # Set stars to correct colors
-        if avg_public_score >= 85:
-            self.lbl_public_star.config(fg="purple")
-        elif avg_public_score >= 70:
-            self.lbl_public_star.config(fg="blue")
-        elif avg_public_score >= 55:
-            self.lbl_public_star.config(fg="orange")
-        elif avg_public_score >= 1:
-            self.lbl_public_star.config(fg="red")
-        else:
-            self.lbl_public_star.config(fg="black")
-
-        if avg_house_score >= 85:
-            self.lbl_house_star.config(fg="purple")
-        elif avg_house_score >= 70:
-            self.lbl_house_star.config(fg="blue")
-        elif avg_house_score >= 55:
-            self.lbl_house_star.config(fg="orange")
-        elif avg_house_score >= 1:
-            self.lbl_house_star.config(fg="red")
-        else:
-            self.lbl_house_star.config(fg="black")
+        self.plot_graph(pacing_scores, drama_scores, colors)
+        self.color_stars(avg_public_score, avg_house_score)
 
         if self.spoiler_state.get() == 1:
             self.cbox_spoiler_tags[
@@ -394,31 +329,28 @@ class Root:
         self.lbl_warnings_list["text"] = f"{', '.join(tag_content_labels)}"
         self.lbl_spoiler_tags["text"] = f""
 
-    def plot_graph(self):
-        self.graph.cla()
-        self.build_graph()
-        scores = [rating for rating in self.show["houseScores"]]
-        ratings = [score_list[1] for score_list in scores]
-        pacing_scores = []
-        drama_scores = []
-        colors = []
-        self.labels = []
-        for idx, score in enumerate(ratings):
-            if score > 0:
-                pacing_scores.append(scores[idx][2])
-                drama_scores.append(scores[idx][3])
-                self.labels.append(f"{scores[idx][0]} - {scores[idx][1]}")
-                if score >= 85:
-                    colors.append("purple")
-                elif score >= 70:
-                    colors.append("blue")
-                elif score >= 55:
-                    colors.append("orange")
-                else:
-                    colors.append("red")
+    def color_stars(self, score1, score2):
+        if score1 >= 85:
+            self.lbl_public_star.config(fg="purple")
+        elif score1 >= 70:
+            self.lbl_public_star.config(fg="blue")
+        elif score1 >= 55:
+            self.lbl_public_star.config(fg="orange")
+        elif score1 >= 1:
+            self.lbl_public_star.config(fg="red")
+        else:
+            self.lbl_public_star.config(fg="black")
 
-        self.graph.scatter(pacing_scores, drama_scores, color=colors, picker=True)
-        self.graph.figure.canvas.draw_idle()
+        if score2 >= 85:
+            self.lbl_house_star.config(fg="purple")
+        elif score2 >= 70:
+            self.lbl_house_star.config(fg="blue")
+        elif score2 >= 55:
+            self.lbl_house_star.config(fg="orange")
+        elif score2 >= 1:
+            self.lbl_house_star.config(fg="red")
+        else:
+            self.lbl_house_star.config(fg="black")
 
     def build_graph(self):
         self.graph.grid()  # Adds a grid to the graph- does not add the graph to the Tkinter grid
@@ -426,9 +358,11 @@ class Root:
         self.graph.set_ylabel("< Drama \u2022 Comedy >")
         self.graph.set_xlabel("< Slow Pacing \u2022 Fast Pacing >")
 
-    def annotate(self, axis, text, x, y):
-        text_annotation = Annotation(text, xy=(x, y), xycoords='data')
-        axis.add_artist(text_annotation)
+    def plot_graph(self, pacing_scores, drama_scores, colors):
+        self.graph.cla()
+        self.build_graph()
+        self.graph.scatter(pacing_scores, drama_scores, color=colors, picker=True)
+        self.graph.figure.canvas.draw_idle()
 
     def onpick(self, event):
         ind = event.ind
@@ -438,7 +372,7 @@ class Root:
 
         for i in ind:
             label = self.labels[i]
-            self.annotate(
+            annotate(
                 self.graph,
                 label,
                 label_pos_x + offset,
@@ -724,6 +658,40 @@ def count_rows(item):
             rows += 1
 
     return rows
+
+
+def annotate(axis, text, x, y):
+    text_annotation = Annotation(text, xy=(x, y), xycoords='data')
+    axis.add_artist(text_annotation)
+
+
+def collect_colors(scores):
+    colors = []
+    for idx, score in enumerate(scores):
+        if score > 0:
+            if score >= 85:
+                colors.append("purple")
+            elif score >= 70:
+                colors.append("blue")
+            elif score >= 55:
+                colors.append("orange")
+            else:
+                colors.append("red")
+    return colors
+
+def sort_ratings(ratings):
+    scores = []
+    names = []
+    pacing_scores = []
+    drama_scores = []
+    for rating in ratings:
+        if rating[1] > 0:
+            names.append(rating[0])
+            scores.append(rating[1])
+            pacing_scores.append(rating[2])
+            drama_scores.append(rating[3])
+
+    return names, scores, pacing_scores, drama_scores
 
 
 if __name__ == "__main__":
