@@ -14,6 +14,17 @@ query = """query($id: Int){
     format,
     description,
     episodes,
+    relations{
+      edges{
+        relationType,
+        node{
+          id,
+          episodes,
+          format,
+          status
+        }
+      }
+    },
     coverImage {
       extraLarge
       large
@@ -32,8 +43,7 @@ query = """query($id: Int){
 
 def collect_seasonal_data(show_id, episodes=0, seasons=1, unaired_seasons=0, movies=0):
     id_var = {"id": show_id}
-    sequel_id = None
-    query = """query($id: Int){
+    season_query = """query($id: Int){
                  Media(id: $id, type:ANIME){
                    relations{
                      edges{
@@ -43,8 +53,27 @@ def collect_seasonal_data(show_id, episodes=0, seasons=1, unaired_seasons=0, mov
                          episodes,
                          format,
                          status}}}}}"""
-    showData = rq.post(url, json={"query": query, "variables": id_var}).json()["data"]["Media"]
-    for series in showData["relations"]["edges"]:
+    show_data = rq.post(url, json={"query": season_query, "variables": id_var}).json()["data"]["Media"]
+
+    seasonal_data = sort_seasonal_data(
+        show_data,
+        episodes=episodes,
+        seasons=seasons,
+        unaired_seasons=unaired_seasons,
+        movies=movies)
+
+    if seasonal_data["sequel"]:
+        seasonal_data = collect_seasonal_data(seasonal_data["sequel"],
+                                              episodes=seasonal_data["total_episodes"],
+                                              seasons=seasonal_data["seasons"],
+                                              unaired_seasons=seasonal_data["unaired_seasons"],
+                                              movies=seasonal_data["movies"])
+    return seasonal_data
+
+
+def sort_seasonal_data(data_tree, episodes=0, seasons=1, unaired_seasons=0, movies=0):
+    sequel_id = None
+    for series in data_tree["relations"]["edges"]:
         if series["relationType"] == "SEQUEL":
             if series["node"]["format"] in ("TV", "TV_SHORT"):
                 if series["node"]["status"] == "FINISHED":
@@ -63,15 +92,8 @@ def collect_seasonal_data(show_id, episodes=0, seasons=1, unaired_seasons=0, mov
         "movies": movies,
         "sequel": sequel_id
     }
-
-    if sequel_id:
-        seasonal_data = collect_seasonal_data(sequel_id,
-                                              episodes=episodes,
-                                              seasons=seasons,
-                                              unaired_seasons=unaired_seasons,
-                                              movies=movies)
-
     return seasonal_data
+
 
 if __name__ == "__main__":
     with open("anime_data.json", "r") as anime_data:

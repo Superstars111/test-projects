@@ -11,15 +11,18 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.text import Annotation
 import decimal as dc
 import alphabetize
+import time
 
 with open("anime_data.json", "r") as anime_data:
-    library = json.load(anime_data)
+    download_data = json.load(anime_data)
+
 options = []
 option_titles = []
 library_titles = []
 cover_image = []
-mild_warnings = ("Afterlife", "Ahegao", "Angels", "Assassins", "Bisexual", "Body Swapping", "Bullying", "Cosmic Horror", "Crossdressing", "Death Game", "DILF", "Drugs", "Ero Guru", "Feet", "Female Harem", "Flat Chest", "Gambling", "Gangs", "Gender Bending", "Ghost", "Gods", "Large Breasts", "Male Harem", "Masochism", "MILF", "Oiran", "Prostitution", "Reincarnation", "Slavery", "Succubus", "Sweat", "Teens' Love", "Tentacles", "Terrorism", "Virginity", "Yandere", "Youkai")
-extreme_warnings = ("Anal Sex", "Ashikoki", "Body Horror", "Boobjob", "Boy's Love", "Cannibalism", "Cunnilingus", "Defloration", "Ero Guro", "Exhibitionism", "Facial", "Fellatio", "Femdom", "Flash", "Futanari", "Gore", "Group Sex", "Handjob", "Incest", "Inseki", "Irrumatio", "Lactation", "LGBTQ+ Themes", "Masturmation", "Nakadashi", "Netorare", "Netorase", "Netori", "Nudity", "Public Sex", "Rape", "Rimjob", "Scat", "Scissoring", "Sex Toys", "Suicide", "Sumata", "Threesome", "Torture", "Transgenger", "Vore", "Voyeur", "Yaoi", "Yuri")
+mild_warnings = download_data[0]
+extreme_warnings = download_data[1]
+library = download_data[2]
 content_warnings = [0, 0, 0]
 
 for show in library:
@@ -33,12 +36,11 @@ class Root:
         self.show = {}
         self.spoiler_state = tk.IntVar()
 
+        # Build main window
         self.lbox_options = tk.Listbox(self.parent, height=35)
         self.lbox_options.bind("<<ListboxSelect>>", self.update_page_display)
-        self.btn_options = tk.Button(self.parent, text="Add Options", command=self.add_options)
-        self.btn_display_all = tk.Button(self.parent, text="Display All", command=self.display_all)
-
-        # Build main window
+        btn_options = tk.Button(self.parent, text="Add Options", command=self.add_options)
+        btn_display_all = tk.Button(self.parent, text="Display All", command=self.display_all)
         self.frm_anime_display = tk.Frame(self.parent)
         self.lbl_title = tk.Label(self.frm_anime_display, text="Anime Data Program", font=("Arial", 20), wraplength=900)
 
@@ -85,11 +87,11 @@ class Root:
 
         # Grid main window
         self.lbox_options.grid(row=0, column=1, columnspan=2, sticky="ns", padx=10, pady=5)
-        self.btn_options.grid(row=1, column=2, pady=7, padx=3, sticky="n")
+        btn_options.grid(row=1, column=2, pady=7, padx=3, sticky="n")
         self.frm_anime_display.grid(row=0, column=0)
         self.frm_anime_display.rowconfigure(0, minsize=120)
         self.lbl_title.grid(row=0, column=0, columnspan=2, pady=8)
-        self.btn_display_all.grid(row=1, column=1, pady=7, padx=3, sticky="n")
+        btn_display_all.grid(row=1, column=1, pady=7, padx=3, sticky="n")
 
         # Grid ratings frame
         self.frm_ratings.grid(row=1, column=0, padx=15)
@@ -168,12 +170,7 @@ class Root:
         else:
             self.lbl_unaired_seasons["text"] = f"Unfinished Seasons: {self.show['unairedSeasons']}"
 
-        if self.spoiler_state.get() == 1:
-            self.cbox_spoiler_tags[
-                "text"] = f"\u25BC Spoiler Tags: ({content_warnings[0]}, {content_warnings[1]}, {content_warnings[2]})"
-        else:
-            self.cbox_spoiler_tags[
-                "text"] = f"\u25B6 Spoiler Tags: ({content_warnings[0]}, {content_warnings[1]}, {content_warnings[2]})"
+        self.set_spoiler_label()
 
         # Update display values
         self.lbl_title["text"] = f"{self.show['romajiTitle']} \u2022 {self.show['englishTitle']} \u2022 {self.show['nativeTitle']}"
@@ -271,14 +268,14 @@ class Root:
                         if item == genre["name"]:
                             genre["shows"] += 1
 
-        tag_content = []
+        warning_frequency = []
         tag_frequency = []
         genre_frequency = []
         for i in range(len(titles), 0, -1):
             for tag in tags:
                 if tag["shows"] == i:
                     if tag["name"] in mild_warnings or tag["name"] in extreme_warnings:
-                        tag_content.append(tag)
+                        warning_frequency.append(tag)
                     else:
                         tag_frequency.append(tag)
             for genre in genres:
@@ -287,7 +284,7 @@ class Root:
         for idx, tag in enumerate(tag_frequency):
             if idx <= 20:
                 tag_frequency_labels.append(f"{tag['name']}: {tag['shows']}")
-        for idx, tag in enumerate(tag_content):
+        for idx, tag in enumerate(warning_frequency):
             if idx <= 8:
                 tag_content_labels.append(f"{tag['name']}: {tag['shows']}")
         for idx, genre in enumerate(genre_frequency):
@@ -305,12 +302,7 @@ class Root:
         self.plot_graph(pacing_scores, drama_scores, colors)
         self.color_stars(avg_public_score, avg_house_score)
 
-        if self.spoiler_state.get() == 1:
-            self.cbox_spoiler_tags[
-                "text"] = f"\u25BC Spoiler Tags: ({content_warnings[0]}, {content_warnings[1]}, {content_warnings[2]})"
-        else:
-            self.cbox_spoiler_tags[
-                "text"] = f"\u25B6 Spoiler Tags: ({content_warnings[0]}, {content_warnings[1]}, {content_warnings[2]})"
+        self.set_spoiler_label()
 
         # Update display values
         self.lbl_title["text"] = "Displaying Entire Library"
@@ -328,6 +320,14 @@ class Root:
         self.lbl_tags_list["text"] = f"{', '.join(tag_frequency_labels)}"
         self.lbl_warnings_list["text"] = f"{', '.join(tag_content_labels)}"
         self.lbl_spoiler_tags["text"] = f""
+
+    def set_spoiler_label(self):
+        if self.spoiler_state.get() == 1:
+            self.cbox_spoiler_tags[
+                "text"] = f"\u25BC Spoiler Tags: ({content_warnings[0]}, {content_warnings[1]}, {content_warnings[2]})"
+        else:
+            self.cbox_spoiler_tags[
+                "text"] = f"\u25B6 Spoiler Tags: ({content_warnings[0]}, {content_warnings[1]}, {content_warnings[2]})"
 
     def color_stars(self, score1, score2):
         if score1 >= 85:
@@ -418,9 +418,11 @@ class SelectionWindow(tk.Toplevel):
     def __init__(self, parent):
         super().__init__(parent)
         self.parent = parent
-        self.selection_frame = tk.Frame(self)
         self.library_var = tk.StringVar(value=library_titles)
         self.options_var = tk.StringVar(value=option_titles)
+
+        # Build main frame
+        self.selection_frame = tk.Frame(self)
         self.btn_confirm = tk.Button(self.selection_frame, text="Confirm choices", command=lambda: self.dismiss_window())
         self.lbox_library = tk.Listbox(self.selection_frame, listvariable=self.library_var)
         self.lbox_selected = tk.Listbox(self.selection_frame, listvariable=self.options_var)
@@ -431,6 +433,7 @@ class SelectionWindow(tk.Toplevel):
         self.lbox_selected.bind("<Double-1>", lambda x: self.remove_from_list(options))
         self.btn_edit_library = tk.Button(self.selection_frame, text="Edit Entry", command=self.add_to_library)
 
+        # Grid main frame
         self.lbox_library.grid(row=1, column=0, rowspan=4)
         self.lbox_selected.grid(row=1, column=2, rowspan=4)
         self.btn_add_option.grid(row=2, column=1, padx=7, pady=3, sticky="ew")
@@ -474,38 +477,42 @@ class EditWindow(tk.Toplevel):
     def __init__(self, parent):
         super().__init__(parent)
         self.parent = parent
-        self.edit_frame = tk.Frame(self)
         self.current_show = {}
+        self.bind("<Return>", self.update_series)
 
+        # Build main frame
+        self.edit_frame = tk.Frame(self)
         self.lbl_id_no = tk.Label(self.edit_frame, text="ID no.")
         self.ent_id_no = tk.Entry(self.edit_frame, width=15)
         self.btn_confirm_id = tk.Button(self.edit_frame, text="Confirm", command=self.update_series)
-        self.bind("<Return>", self.update_series)
         self.lbl_show_name = tk.Label(self.edit_frame)
+        btn_confirm_scores = tk.Button(self.edit_frame, text="Confirm", command=self.enter_ratings)
+        btn_add_user = tk.Button(self.edit_frame, text="Add User", command=self.add_user)
+
+        # Build ratings frame
         self.frm_user_ratings = tk.Frame(self.edit_frame)
         lbl_name = tk.Label(self.frm_user_ratings, text="Name")
         lbl_score = tk.Label(self.frm_user_ratings, text="Score")
         lbl_energy = tk.Label(self.frm_user_ratings, text="Energy")
         lbl_drama = tk.Label(self.frm_user_ratings, text="Tone")
-
         self.adjust_rows()
 
-        btn_confirm_scores = tk.Button(self.edit_frame, text="Confirm", command=self.enter_ratings)
-        btn_add_user = tk.Button(self.edit_frame, text="Add User", command=self.add_user)
-
+        # Grid main frame
+        self.edit_frame.grid()
         self.lbl_id_no.grid(row=0, column=0)
         self.ent_id_no.grid(row=0, column=1, columnspan=2)
         self.btn_confirm_id.grid(row=0, column=3, padx=3, pady=3)
         self.edit_frame.rowconfigure(1, minsize=15)
         self.lbl_show_name.grid(row=1, column=0, columnspan=4)
+        btn_confirm_scores.grid(row=3, column=2, padx=3, pady=3)
+        btn_add_user.grid(row=3, column=1, padx=3, pady=3)
+
+        # Grid ratings frame
         self.frm_user_ratings.grid(row=2, column=0, columnspan=4)
         lbl_name.grid(row=0, column=0)
         lbl_score.grid(row=0, column=1)
         lbl_energy.grid(row=0, column=2)
         lbl_drama.grid(row=0, column=3)
-        btn_confirm_scores.grid(row=3, column=2, padx=3, pady=3)
-        btn_add_user.grid(row=3, column=1, padx=3, pady=3)
-        self.edit_frame.grid()
 
     def update_series(self, *ignore):
         media_id = self.ent_id_no.get()
@@ -544,12 +551,18 @@ class EditWindow(tk.Toplevel):
                 "movies": 0,
                 "sequel": None
             }
-
-        seasonal_data = collection.collect_seasonal_data(
-            media_id,
+        seasonal_data = collection.sort_seasonal_data(
+            request,
             episodes=seasonal_data["total_episodes"],
             seasons=seasonal_data["seasons"],
             movies=seasonal_data["movies"])
+
+        if seasonal_data["sequel"]:
+            seasonal_data = collection.collect_seasonal_data(
+                seasonal_data["sequel"],
+                episodes=seasonal_data["total_episodes"],
+                seasons=seasonal_data["seasons"],
+                movies=seasonal_data["movies"])
 
         if request["title"]["english"]:
             title = request["title"]["english"]
@@ -639,6 +652,21 @@ class EditWindow(tk.Toplevel):
                 ent_score = tk.Entry(self.frm_user_ratings, width=5)
                 ent_score.grid(row=row + 1, column=col + 1, padx=3)
 
+    def update_all(self):
+        lib_clone = library.copy()
+        for series in library:
+            self.get_series(series["id"])
+            for idx, show in enumerate(lib_clone):
+                if self.current_show["id"] == show["id"]:
+                    library[idx] = self.current_show
+                    break
+            if len(library) > 90:
+                time.sleep(2)
+            elif len(library) > 60:
+                time.sleep(1.5)
+            elif len(library) > 45:
+                time.sleep(1)
+
 
 def convert_image(url):
     raw_url = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "text/html"})
@@ -679,6 +707,7 @@ def collect_colors(scores):
                 colors.append("red")
     return colors
 
+
 def sort_ratings(ratings):
     scores = []
     names = []
@@ -702,5 +731,6 @@ if __name__ == "__main__":
 
     application.mainloop()
 
+    upload_data = [mild_warnings, extreme_warnings, library]
     with open("anime_data.json", "w") as anime_data:
-        json.dump(library, anime_data, indent=4)
+        json.dump(upload_data, anime_data, indent=4)
