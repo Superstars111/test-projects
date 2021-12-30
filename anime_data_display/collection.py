@@ -14,6 +14,20 @@ query = """query($id: Int){
     format,
     description,
     episodes,
+    relations{
+      edges{
+        relationType,
+        node{
+          id,
+          episodes,
+          format,
+          status,
+          externalLinks {
+            site
+          }
+        }
+      }
+    },
     coverImage {
       extraLarge
       large
@@ -26,15 +40,18 @@ query = """query($id: Int){
       isMediaSpoiler
     },
     averageScore,
+    externalLinks {
+      site
+    }
   }
 }"""
 
 
-def collect_seasonal_data(show_id, episodes=0, seasons=1, unaired_seasons=0, movies=0):
+def collect_seasonal_data(show_id, seasonal_data):
     id_var = {"id": show_id}
-    sequel_id = None
-    query = """query($id: Int){
+    season_query = """query($id: Int){
                  Media(id: $id, type:ANIME){
+                   format,
                    relations{
                      edges{
                        relationType,
@@ -42,36 +59,95 @@ def collect_seasonal_data(show_id, episodes=0, seasons=1, unaired_seasons=0, mov
                          id,
                          episodes,
                          format,
-                         status}}}}}"""
-    showData = rq.post(url, json={"query": query, "variables": id_var}).json()["data"]["Media"]
-    for series in showData["relations"]["edges"]:
+                         status,
+                         },
+                       }
+                     }
+                   externalLinks {
+                     site
+                   },
+                 }
+               }"""
+    show_data = rq.post(url, json={"query": season_query, "variables": id_var}).json()["data"]["Media"]
+
+    seasonal_data = sort_seasonal_data(show_data, seasonal_data)
+
+    if seasonal_data["sequel"]:
+        seasonal_data = collect_seasonal_data(seasonal_data["sequel"], seasonal_data)
+    return seasonal_data
+
+
+def sort_seasonal_data(data_tree, seasonal_data):
+    check_stream_locations(data_tree, seasonal_data["streaming"])
+    seasonal_data["sequel"] = None
+    for series in data_tree["relations"]["edges"]:
         if series["relationType"] == "SEQUEL":
             if series["node"]["format"] in ("TV", "TV_SHORT"):
                 if series["node"]["status"] == "FINISHED":
-                    episodes += series["node"]["episodes"]
-                    seasons += 1
+                    seasonal_data["total_episodes"] += series["node"]["episodes"]
+                    seasonal_data["seasons"] += 1
                 else:
-                    unaired_seasons += 1
+                    seasonal_data["unaired_seasons"] += 1
             elif series["node"]["format"] == "MOVIE":
-                movies += 1
-            sequel_id = series["node"]["id"]
-
-    seasonal_data = {
-        "total_episodes": episodes,
-        "seasons": seasons,
-        "unaired_seasons": unaired_seasons,
-        "movies": movies,
-        "sequel": sequel_id
-    }
-
-    if sequel_id:
-        seasonal_data = collect_seasonal_data(sequel_id,
-                                              episodes=episodes,
-                                              seasons=seasons,
-                                              unaired_seasons=unaired_seasons,
-                                              movies=movies)
+                seasonal_data["movies"] += 1
+            seasonal_data["sequel"] = series["node"]["id"]
 
     return seasonal_data
+
+
+def check_stream_locations(data_tree, stream_list):
+    for value in data_tree["externalLinks"]:
+        if value["site"] == "Crunchyroll":
+            if data_tree["format"] in ("TV", "TV_SHORT"):
+                stream_list["crunchyroll"]["seasons"] += 1
+            elif data_tree["format"] == "MOVIE":
+                stream_list["crunchyroll"]["movies"] += 1
+        elif value["site"] == "Funimation":
+            if data_tree["format"] in ("TV", "TV_SHORT"):
+                stream_list["funimation"]["seasons"] += 1
+            elif data_tree["format"] == "MOVIE":
+                stream_list["funimation"]["movies"] += 1
+        elif value["site"] == "Netflix":
+            if data_tree["format"] in ("TV", "TV_SHORT"):
+                stream_list["prison"]["seasons"] += 1
+            elif data_tree["format"] == "MOVIE":
+                stream_list["prison"]["movies"] += 1
+        elif value["site"] == "Amazon":
+            if data_tree["format"] in ("TV", "TV_SHORT"):
+                stream_list["amazon"]["seasons"] += 1
+            elif data_tree["format"] == "MOVIE":
+                stream_list["amazon"]["movies"] += 1
+        elif value["site"] == "VRV":
+            if data_tree["format"] in ("TV", "TV_SHORT"):
+                stream_list["vrv"]["seasons"] += 1
+            elif data_tree["format"] == "MOVIE":
+                stream_list["vrv"]["movies"] += 1
+        elif value["site"] == "Hulu":
+            if data_tree["format"] in ("TV", "TV_SHORT"):
+                stream_list["hulu"]["seasons"] += 1
+            elif data_tree["format"] == "MOVIE":
+                stream_list["hulu"]["movies"] += 1
+        elif value["site"] == "Youtube":
+            if data_tree["format"] in ("TV", "TV_SHORT"):
+                stream_list["youtube"]["seasons"] += 1
+            elif data_tree["format"] == "MOVIE":
+                stream_list["youtube"]["movies"] += 1
+        elif value["site"] == "Tubi TV":
+            if data_tree["format"] in ("TV", "TV_SHORT"):
+                stream_list["tubi"]["seasons"] += 1
+            elif data_tree["format"] == "MOVIE":
+                stream_list["tubi"]["movies"] += 1
+        elif value["site"] == "HBO Max":
+            if data_tree["format"] in ("TV", "TV_SHORT"):
+                stream_list["hbo"]["seasons"] += 1
+            elif data_tree["format"] == "MOVIE":
+                stream_list["hbo"]["movies"] += 1
+        elif value["site"] == "Hidive":
+            if data_tree["format"] in ("TV", "TV_SHORT"):
+                stream_list["hidive"]["seasons"] += 1
+            elif data_tree["format"] == "MOVIE":
+                stream_list["hidive"]["movies"] += 1
+
 
 if __name__ == "__main__":
     with open("anime_data.json", "r") as anime_data:
