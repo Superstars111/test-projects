@@ -536,6 +536,38 @@ class EditWindow(tk.Toplevel):
 
     def get_series(self, media_id):
         id_var = {"id": media_id}
+        stream_info = {
+            "crunchyroll": {"seasons": 0,
+                            "movies": 0
+                            },
+            "funimation":  {"seasons": 0,
+                            "movies": 0
+                            },
+            "prison":      {"seasons": 0,
+                            "movies": 0
+                            },
+            "amazon":      {"seasons": 0,
+                            "movies": 0
+                            },
+            "vrv":         {"seasons": 0,
+                            "movies": 0
+                            },
+            "hulu":        {"seasons": 0,
+                            "movies": 0
+                            },
+            "youtube":     {"seasons": 0,
+                            "movies": 0
+                            },
+            "tubi":        {"seasons": 0,
+                            "movies": 0
+                            },
+            "hbo":         {"seasons": 0,
+                            "movies": 0
+                            },
+            "hidive":      {"seasons": 0,
+                            "movies": 0
+                            }
+        }
         request = rq.post(collection.url, json={"query": collection.query, "variables": id_var}).json()['data']["Media"]
         if request["format"] == "MOVIE":
             seasonal_data = {
@@ -543,7 +575,8 @@ class EditWindow(tk.Toplevel):
                 "seasons": 0,
                 "unaired_seasons": 0,
                 "movies": 1,
-                "sequel": None
+                "sequel": None,
+                "streaming": stream_info
             }
         else:
             seasonal_data = {
@@ -551,20 +584,13 @@ class EditWindow(tk.Toplevel):
                 "seasons": 1,
                 "unaired_seasons": 0,
                 "movies": 0,
-                "sequel": None
+                "sequel": None,
+                "streaming": stream_info
             }
-        seasonal_data = collection.sort_seasonal_data(
-            request,
-            episodes=seasonal_data["total_episodes"],
-            seasons=seasonal_data["seasons"],
-            movies=seasonal_data["movies"])
+        seasonal_data = collection.sort_seasonal_data(request, seasonal_data)
 
         if seasonal_data["sequel"]:
-            seasonal_data = collection.collect_seasonal_data(
-                seasonal_data["sequel"],
-                episodes=seasonal_data["total_episodes"],
-                seasons=seasonal_data["seasons"],
-                movies=seasonal_data["movies"])
+            seasonal_data = collection.collect_seasonal_data(seasonal_data["sequel"], seasonal_data)
 
         if request["title"]["english"]:
             title = request["title"]["english"]
@@ -576,6 +602,7 @@ class EditWindow(tk.Toplevel):
             "romajiTitle": request["title"]["romaji"],
             "englishTitle": request["title"]["english"],
             "nativeTitle": request["title"]["native"],
+            "defaultTitle": title,
             "format": request["format"],
             "description": request["description"],
             "episodes": seasonal_data["total_episodes"],
@@ -588,7 +615,7 @@ class EditWindow(tk.Toplevel):
             "genres": request["genres"],
             "tags": request["tags"],
             "score": request["averageScore"],
-            "defaultTitle": title,
+            "streaming": seasonal_data["streaming"],
             "houseScores": [["", 0, 0, 0]]
         }
 

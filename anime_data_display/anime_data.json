@@ -90,6 +90,7 @@
             "romajiTitle": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai.",
             "englishTitle": "Anohana: The Flower We Saw That Day",
             "nativeTitle": "\u3042\u306e\u65e5\u898b\u305f\u82b1\u306e\u540d\u524d\u3092\u50d5\u9054\u306f\u307e\u3060\u77e5\u3089\u306a\u3044\u3002",
+            "defaultTitle": "Anohana: The Flower We Saw That Day",
             "format": "TV",
             "description": "Jinta Yadomi and his group of childhood friends have become estranged after a tragic accident split them apart. Now in their high school years, a sudden surprise forces each of them to confront their guilt over what happened that day and come to terms with the ghosts of their past. <br><br>\n(Source: NIS America)",
             "episodes": 11,
@@ -168,7 +169,48 @@
                 }
             ],
             "score": 81,
-            "defaultTitle": "Anohana: The Flower We Saw That Day",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 1,
+                    "movies": 1
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Kenan",
@@ -183,6 +225,7 @@
             "romajiTitle": "Ansatsu Kyoushitsu",
             "englishTitle": "Assassination Classroom",
             "nativeTitle": "\u6697\u6bba\u6559\u5ba4",
+            "defaultTitle": "Assassination Classroom",
             "format": "TV",
             "description": "The students of class 3-E have a mission: kill their teacher before graduation. He has already destroyed the moon, and has promised to destroy the Earth if he can not be killed within a year. But how can this class of misfits kill a tentacled monster, capable of reaching Mach 20 speed, who may be the best teacher any of them have ever had?",
             "episodes": 47,
@@ -286,7 +329,48 @@
                 }
             ],
             "score": 80,
-            "defaultTitle": "Assassination Classroom",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -313,6 +397,7 @@
             "romajiTitle": "Kanata no Astra",
             "englishTitle": "ASTRA LOST IN SPACE",
             "nativeTitle": "\u5f7c\u65b9\u306e\u30a2\u30b9\u30c8\u30e9",
+            "defaultTitle": "ASTRA LOST IN SPACE",
             "format": "TV",
             "description": "It\u02bcs the first day of Planet Camp, and Aries Spring couldn\u02bct be more excited! She, along with eight other strangers, leave for Planet McPa for a weeklong excursion. Soon after they arrive, however, a mysterious orb appears and transports them into the depths of space, where they find an empty floating spaceship\u2026\n<br><br>\n(Source: Viz Media)\n<br><br>\n<i>Note: The first and last episode aired with a runtime of ~48 minutes as opposed to the standard 24 minute long episode.</i>",
             "episodes": 12,
@@ -405,7 +490,48 @@
                 }
             ],
             "score": 79,
-            "defaultTitle": "ASTRA LOST IN SPACE",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -438,6 +564,7 @@
             "romajiTitle": "Barakamon",
             "englishTitle": null,
             "nativeTitle": "\u3070\u3089\u304b\u3082\u3093",
+            "defaultTitle": "Barakamon",
             "format": "TV",
             "description": "Seishuu Handa is an up-and-coming calligrapher: young, handsome, talented, and unfortunately, a narcissist to boot. When a veteran labels his award-winning piece as \"unoriginal,\" Seishuu quickly loses his cool with severe repercussions. <br><br>\n\nAs punishment, and also in order to aid him in self-reflection, Seishuu's father exiles him to the Goto Islands, far from the comfortable Tokyo lifestyle the temperamental artist is used to. Now thrown into a rural setting, Seishuu must attempt to find new inspiration and develop his own unique art style\u2014that is, if boisterous children (headed by the frisky Naru Kotoishi), fujoshi middle schoolers, and energetic old men stop barging into his house! The newest addition to the intimate and quirky Goto community only wants to get some work done, but the islands are far from the peaceful countryside he signed up for. Thanks to his wacky neighbors who are entirely incapable of minding their own business, the arrogant calligrapher learns so much more than he ever hoped to. <br><br>\n(Source: MAL Rewrite)",
             "episodes": 12,
@@ -519,7 +646,48 @@
                 }
             ],
             "score": 82,
-            "defaultTitle": "Barakamon",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": []
         },
         {
@@ -527,6 +695,7 @@
             "romajiTitle": "BEASTARS",
             "englishTitle": "BEASTARS",
             "nativeTitle": "BEASTARS",
+            "defaultTitle": "BEASTARS",
             "format": "TV",
             "description": "In a world populated by anthropomorphic animals, herbivores and carnivores coexist with each other. For the adolescents of Cherryton Academy, school life is filled with hope, romance, distrust, and uneasiness.<br><br>\nThe main character is Legoshi the wolf, a member of the drama club. Despite his menacing appearance, he has a very gentle heart. Throughout most of his life, he has always been an object of fear and hatred by other animals, and he\u2019s been quite accustomed to that lifestyle. But soon, he finds himself becoming more involved with his fellow classmates who have their own share of insecurities and finds his life in school changing slowly.<br><br>\n(Source: moetron)",
             "episodes": 24,
@@ -651,7 +820,48 @@
                 }
             ],
             "score": 78,
-            "defaultTitle": "BEASTARS",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": []
         },
         {
@@ -659,6 +869,7 @@
             "romajiTitle": "Kyoukai no Kanata",
             "englishTitle": "Beyond the Boundary",
             "nativeTitle": "\u5883\u754c\u306e\u5f7c\u65b9",
+            "defaultTitle": "Beyond the Boundary",
             "format": "TV",
             "description": "They should never have met. They shouldn't even exist. But when they come together, the entire world will change. The last surviving member of her clan, Mirai Kuriyama is cursed with the terrifying ability to control and manipulate blood, a power so heretical that she is shunned even by those with the ability to understand her \"gift\". Akihito Kanbara is only half human, but while the monstrous other half of his lineage seems to have doomed him to a life alone, it has also given him near invulnerability in the form of rapid healing. Alone, their futures seem bleak, but when a chance encounter brings them together, it becomes clear that they share more than just an unexpected bond. Together they share a destiny and a mission that only the two of them together may be strong enough to survive.<br>\n<br>\n(Source: Sentai Filmworks)",
             "episodes": 12,
@@ -763,7 +974,48 @@
                 }
             ],
             "score": 75,
-            "defaultTitle": "Beyond the Boundary",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 1,
+                    "movies": 1
+                }
+            },
             "houseScores": []
         },
         {
@@ -771,6 +1023,7 @@
             "romajiTitle": "Bokura no Nanokakan Sensou",
             "englishTitle": null,
             "nativeTitle": "\u307c\u304f\u3089\u306e\u4e03\u65e5\u9593\u6226\u4e89",
+            "defaultTitle": "Bokura no Nanokakan Sensou",
             "format": "MOVIE",
             "description": "The mystery story and social satire begins on the day before summer vacation, when every boy in a first-year class of a downtown Tokyo middle school disappears. Was it some accident? A mass kidnapping? Actually, the boys holed themselves up in an abandoned factory on the riverbed. With support from the schoolgirls, the boys start a revolution against the adults from this \"liberation zone.\"<br><br>\n\n(Source: Anime News Network)",
             "episodes": 0,
@@ -824,7 +1077,48 @@
                 }
             ],
             "score": 64,
-            "defaultTitle": "Bokura no Nanokakan Sensou",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "",
@@ -839,6 +1133,7 @@
             "romajiTitle": "Charlotte",
             "englishTitle": null,
             "nativeTitle": "Charlotte(\u30b7\u30e3\u30fc\u30ed\u30c3\u30c8)",
+            "defaultTitle": "Charlotte",
             "format": "TV",
             "description": "The story centers around the special abilities that occur among a small percentage of boys and girls in puberty. Yuu Otosaka uses his power without others knowing, and lives a fairly normal, average school life. Before him suddenly appears a girl, Nao Tomori. Due to his meeting with her, the fate of special power-users will be exposed.<br>\n<br>\n(Source: Anime News Network)",
             "episodes": 13,
@@ -988,7 +1283,48 @@
                 }
             ],
             "score": 75,
-            "defaultTitle": "Charlotte",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": []
         },
         {
@@ -996,6 +1332,7 @@
             "romajiTitle": "Chihayafuru",
             "englishTitle": "Chihayafuru",
             "nativeTitle": "\u3061\u306f\u3084\u3075\u308b",
+            "defaultTitle": "Chihayafuru",
             "format": "TV",
             "description": "Chihaya Ayase is a girl who has spent most of her life simply supporting her sister in her model career. That changes when she meets a boy named Arata Wataya, a talented karuta player who recognizes Chihaya's potential to become a great player herself. As Chihaya takes on a new dream of becoming Japan's best karuta player, she is soon separated from her karuta playing friends, Taichi Mashima and Arata Wataya, as they grow up. Now in high school, Chihaya still continues to play karuta in the hope that she will one day meet her friends again. <br>\n<br>\n(Source: Chihayafuru Wikia)",
             "episodes": 74,
@@ -1074,7 +1411,48 @@
                 }
             ],
             "score": 81,
-            "defaultTitle": "Chihayafuru",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 3,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 3,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 3,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Kenan",
@@ -1089,6 +1467,7 @@
             "romajiTitle": "CLANNAD",
             "englishTitle": "Clannad",
             "nativeTitle": "\uff23\uff2c\uff21\uff2e\uff2e\uff21\uff24 -\u30af\u30e9\u30ca\u30c9-",
+            "defaultTitle": "Clannad",
             "format": "TV",
             "description": "Tomoya is a bitter, third year high school student. His mother passed away, causing his father to resort to alcohol and gambling. Tomoya is distant with his father and has become a delinquent in the years since his mother's death. Walking to school, he meets Nagisa Furukawa who is a year older but is repeating the grade due to illness. She is alone, as most of her friends have moved on. The two begin hanging out, and as time goes by, Tomoya finds his life shifting in a new direction.<br>\n<br>\n(Source: Sentai Filmworks)",
             "episodes": 47,
@@ -1218,7 +1597,48 @@
                 }
             ],
             "score": 77,
-            "defaultTitle": "Clannad",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 2,
+                    "movies": 0
+                }
+            },
             "houseScores": []
         },
         {
@@ -1226,6 +1646,7 @@
             "romajiTitle": "Code Geass: Hangyaku no Lelouch",
             "englishTitle": "Code Geass: Lelouch of the Rebellion",
             "nativeTitle": "\u30b3\u30fc\u30c9\u30ae\u30a2\u30b9 \u53cd\u9006\u306e\u30eb\u30eb\u30fc\u30b7\u30e5",
+            "defaultTitle": "Code Geass: Lelouch of the Rebellion",
             "format": "TV",
             "description": "On August 10th of the year 2010 the Holy Empire of Britannia began a campaign of conquest, its sights set on Japan. Operations were completed in one month thanks to Britannia's deployment of new mobile humanoid armor vehicles dubbed Knightmare Frames. Japan's rights and identity were stripped away, the once proud nation now referred to as Area 11. Its citizens, Elevens, are forced to scratch out a living while the Britannian aristocracy lives comfortably within their settlements. Pockets of resistance appear throughout Area 11, working towards independence for Japan.<br><br>\n Lelouch, an exiled Imperial Prince of Britannia posing as a student, finds himself in the heart of the ongoing conflict for the island nation. Through a chance meeting with a mysterious girl named C.C., Lelouch gains his Geass, the power of the king. Now endowed with absolute dominance over any person, Lelouch may finally realize his goal of bringing down Britannia from within!<br><br>\n(Source: Bandai Entertainment)",
             "episodes": 50,
@@ -1360,7 +1781,48 @@
                 }
             ],
             "score": 84,
-            "defaultTitle": "Code Geass: Lelouch of the Rebellion",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -1387,6 +1849,7 @@
             "romajiTitle": "Boku dake ga Inai Machi",
             "englishTitle": "ERASED",
             "nativeTitle": "\u50d5\u3060\u3051\u304c\u3044\u306a\u3044\u8857",
+            "defaultTitle": "ERASED",
             "format": "TV",
             "description": "Satoru Fujinuma is a 29 year old manga artist struggling to make a name for himself following his debut. But, that was not the only thing in his life that Satoru was feeling frustrated about\u2026 He has a unique supernatural ability of being forced to prevent deaths and catastrophes by being sent back in time before the incident occurred, repeating time until the accident is prevented. One day, he gets involved in an accident that has him framed as a murderer. Desperate to save the victim, he sends himself back in time only to find himself as a grade-schooler one month before fellow classmate Kayo Hinazuki went missing. Satoru now embarks on a new quest: to save Kayo and solve the mystery behind her disappearance.\n",
             "episodes": 12,
@@ -1496,7 +1959,48 @@
                 }
             ],
             "score": 82,
-            "defaultTitle": "ERASED",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -1529,6 +2033,7 @@
             "romajiTitle": "Gamers!",
             "englishTitle": "GAMERS!",
             "nativeTitle": "\u30b2\u30fc\u30de\u30fc\u30ba!",
+            "defaultTitle": "GAMERS!",
             "format": "TV",
             "description": "Keita Amano is a fan of one thing: gaming! Whether he\u2019s on his phone or console, he just loves playing video games. And when the beautiful president of the game club, Karen Tendou, invites him to join, it seems like an EZ choice. Except, he declines! KO\u2019d by the shock, Karen suddenly makes getting close to Amano her main quest. But she\u2019s not the only one interested in him!<br>\n<br>\n(Source: Funimation)",
             "episodes": 12,
@@ -1582,7 +2087,7 @@
                 },
                 {
                     "name": "School Club",
-                    "rank": 61,
+                    "rank": 60,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1602,7 +2107,48 @@
                 }
             ],
             "score": 66,
-            "defaultTitle": "GAMERS!",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -1635,6 +2181,7 @@
             "romajiTitle": "GUILTY CROWN",
             "englishTitle": "Guilty Crown",
             "nativeTitle": "\u30ae\u30eb\u30c6\u30a3\u30af\u30e9\u30a6\u30f3",
+            "defaultTitle": "Guilty Crown",
             "format": "TV",
             "description": "Tokyo 2039, Japan has fallen under the control of the multinational organization GHQ after the outbreak, in 2029, of an epidemic caused by a virus known as Apocalypse.\n<br><br>\nShuu Ouma, wielder of \"The Power of Kings\", has led a rather secluded life at least until his encounter with Gai Tsusugami and Yuzuriha Inori, members of the resistance, thrusts him into the fight against the GHQ. \n\n",
             "episodes": 22,
@@ -1745,7 +2292,48 @@
                 }
             ],
             "score": 70,
-            "defaultTitle": "Guilty Crown",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": []
         },
         {
@@ -1753,6 +2341,7 @@
             "romajiTitle": "Haikyuu!!",
             "englishTitle": "HAIKYU!!",
             "nativeTitle": "\u30cf\u30a4\u30ad\u30e5\u30fc!!",
+            "defaultTitle": "HAIKYU!!",
             "format": "TV",
             "description": "Inspired after watching a volleyball ace nicknamed \"Little Giant\" in action, small-statured Shouyou Hinata revives the volleyball club at his middle school. The newly-formed team even makes it to a tournament; however, their first match turns out to be their last when they are brutally squashed by the \"King of the Court,\" Tobio Kageyama. Hinata vows to surpass Kageyama, and so after graduating from middle school, he joins Karasuno High School's volleyball team\u2014only to find that his sworn rival, Kageyama, is now his teammate.\n<br><br>\nThanks to his short height, Hinata struggles to find his role on the team, even with his superior jumping power. Surprisingly, Kageyama has his own problems that only Hinata can help with, and learning to work together appears to be the only way for the team to be successful. Based on Haruichi Furudate's popular shounen manga of the same name, Haikyuu!! is an exhilarating and emotional sports comedy following two determined athletes as they attempt to patch a heated rivalry in order to make their high school volleyball team the best in Japan.\n<br><br>\n[Written by MAL Rewrite]",
             "episodes": 85,
@@ -1835,7 +2424,48 @@
                 }
             ],
             "score": 84,
-            "defaultTitle": "HAIKYU!!",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 5,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 5,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 5,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 2,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -1862,6 +2492,7 @@
             "romajiTitle": "Sakamoto desu ga?",
             "englishTitle": "Haven't You Heard? I'm Sakamoto",
             "nativeTitle": "\u5742\u672c\u3067\u3059\u304c?",
+            "defaultTitle": "Haven't You Heard? I'm Sakamoto",
             "format": "TV",
             "description": "First year high school student Sakamoto isn't just cool, he's the coolest! Almost immediately after starting school, he began attracting everyone's attention. The girls love him, and most of the boys resent him. There's even a boy in the class who works as a model, but who is constantly upstaged by Sakamoto! No matter what tricks the other boys try to play on him, Sakamoto always manages to foil them with ease and grace. Though Sakamoto may seem cool and aloof, he helps others when asked, such as in the case of the boy in his class who was being constantly bullied. No matter what difficulties Sakamoto encounters, he moves through his high school life with confidence and class!<br>\n<br>\n(Source: MangaHelpers)",
             "episodes": 12,
@@ -1913,7 +2544,48 @@
                 }
             ],
             "score": 73,
-            "defaultTitle": "Haven't You Heard? I'm Sakamoto",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 1,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -1928,6 +2600,7 @@
             "romajiTitle": "HELLO WORLD",
             "englishTitle": null,
             "nativeTitle": "HELLO WORLD",
+            "defaultTitle": "HELLO WORLD",
             "format": "MOVIE",
             "description": "In Kyoto in the year 2027, Naomi Katagaki, a male high school student encounters a person who is claiming to be Naomi from 10 years in the future. Together, they must change the future and save a classmate, Ruri, whom the younger Naomi starts to date in three months.",
             "episodes": 0,
@@ -1976,7 +2649,48 @@
                 }
             ],
             "score": 73,
-            "defaultTitle": "HELLO WORLD",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 1
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "",
@@ -1991,6 +2705,7 @@
             "romajiTitle": "Hyouka",
             "englishTitle": "Hyouka",
             "nativeTitle": "\u6c37\u83d3",
+            "defaultTitle": "Hyouka",
             "format": "TV",
             "description": "Energy-conservative high school student Houtarou Oreki ends up with more than he bargained for when he signs up for the Classic Literature Club at his sister's behest\u2014especially when he realizes how deep-rooted the club's history really is. Begrudgingly, Oreki is dragged into an investigation concerning the 45-year-old mystery that surrounds the club room.<br>\n<br>\nAccompanied by his fellow club members, the knowledgeable Satoshi Fukube, the stern but benign Mayaka Ibara, and the ever-curious Eru Chitanda, Oreki must combat deadlines and lack of information with resourcefulness and hidden talent, in order to not only find the truth buried beneath the dust of works created years before them, but of other side cases as well.<br>\n<br>\nBased on the award-winning Koten-bu light novel series, and directed by Yasuhiro Takemoto of Suzumiya Haruhi no Shoushitsu, Hyouka shows that normal life can be full of small mysteries, be it family history, a student film, or even the withered flowers that make up a ghost story.<br>\n<br>\n(Source: MAL Rewrite)",
             "episodes": 22,
@@ -2056,6 +2771,11 @@
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Primarily Teen Cast",
+                    "rank": 50,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Cosplay",
                     "rank": 37,
                     "isMediaSpoiler": false
@@ -2074,15 +2794,51 @@
                     "name": "Heterosexual",
                     "rank": 20,
                     "isMediaSpoiler": false
-                },
-                {
-                    "name": "Primarily Teen Cast",
-                    "rank": 20,
-                    "isMediaSpoiler": false
                 }
             ],
             "score": 79,
-            "defaultTitle": "Hyouka",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -2115,6 +2871,7 @@
             "romajiTitle": "Inuyashiki",
             "englishTitle": "INUYASHIKI LAST HERO",
             "nativeTitle": "\u3044\u306c\u3084\u3057\u304d",
+            "defaultTitle": "INUYASHIKI LAST HERO",
             "format": "TV",
             "description": "Ichiro Inuyashiki is down on his luck. While only 58 years old, his geriatric looks often have him written off as a pathetic old man by the world around him and he's constantly ignored and disrespected by his family despite all that he's done to support them. On top of everything else, his doctor has revealed that he has cancer and it appears that he has little time left in this world. But just when it seems things couldn't get any worse, a blinding light in the night sky strikes the earth where Ichiro stands. He later wakes up to find himself unscathed, but he soon starts to notice that there's something\u2026different about himself.<br><br>\n\n(Source: Crunchyroll)",
             "episodes": 11,
@@ -2238,7 +2995,48 @@
                 }
             ],
             "score": 74,
-            "defaultTitle": "INUYASHIKI LAST HERO",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -2259,6 +3057,7 @@
             "romajiTitle": "Kimi no Suizou wo Tabetai",
             "englishTitle": "I Want to Eat Your Pancreas",
             "nativeTitle": "\u541b\u306e\u81b5\u81d3\u3092\u305f\u3079\u305f\u3044",
+            "defaultTitle": "I Want to Eat Your Pancreas",
             "format": "MOVIE",
             "description": "Spring time in April and the last of the cherry blossoms are still in bloom. The usually aloof bookworm with no interest in others comes across a book in a hospital waiting room. Handwritten on the cover are the words: \"Living with Dying.\" He soon discovers that it is a diary kept by his very popular and genuinely cheerful classmate, Sakura Yamauchi, who reveals to him that she is secretly suffering from a pancreatic illness and only has a limited time left. It is at this moment that she gains just one more person to share her secret.<br>\n<br>\nTrying to maintain a normal life as much as possible, Sakura is determined to live her life to the fullest until the very last day. As her free spirit and unpredictable actions throw him for a loop, his heart begins to gradually change.\n<br><br>\n(Source: Aniplex USA)",
             "episodes": 0,
@@ -2326,7 +3125,48 @@
                 }
             ],
             "score": 84,
-            "defaultTitle": "I Want to Eat Your Pancreas",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "",
@@ -2341,6 +3181,7 @@
             "romajiTitle": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
             "englishTitle": "Kaguya-sama: Love is War",
             "nativeTitle": "\u304b\u3050\u3084\u69d8\u306f\u544a\u3089\u305b\u305f\u3044\uff5e\u5929\u624d\u305f\u3061\u306e\u604b\u611b\u982d\u8133\u6226\uff5e",
+            "defaultTitle": "Kaguya-sama: Love is War",
             "format": "TV",
             "description": "Known for being both brilliant and powerful, Miyuki Shirogane and Kaguya Shinomiya lead the illustrious Shuchiin Academy as near equals. And everyone thinks they\u2019d make a great couple. Pride and arrogance are in ample supply, so the only logical move is to trick the other into instigating a date! Who will come out on top in this psychological war where the first move is the only one that matters?\n<br><br>\n(Source: Aniplex)",
             "episodes": 24,
@@ -2434,7 +3275,48 @@
                 }
             ],
             "score": 83,
-            "defaultTitle": "Kaguya-sama: Love is War",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -2461,6 +3343,7 @@
             "romajiTitle": "Eizouken ni wa Te wo Dasu na!",
             "englishTitle": "Keep Your Hands Off Eizouken!",
             "nativeTitle": "\u6620\u50cf\u7814\u306b\u306f\u624b\u3092\u51fa\u3059\u306a\uff01",
+            "defaultTitle": "Keep Your Hands Off Eizouken!",
             "format": "TV",
             "description": "First year high schooler Midori Asakusa loves anime so much, she insists that \"concept is everything\" in animation. Though she draws a variety of ideas in her sketchbook, she hasn't taken the first step to creating anime, insisting that she can't do it alone. The producer-type Sayaka Kanamori is the first to notice Asakusa's genius. Then, when it becomes clear that their classmate, charismatic fashion model Tsubame Mizusaki, really wants to be an animator, they create an animation club to realize the \"ultimate world\" that exists in their minds.<br>\n<br>\n(Source: Crunchyroll)",
             "episodes": 12,
@@ -2548,7 +3431,48 @@
                 }
             ],
             "score": 80,
-            "defaultTitle": "Keep Your Hands Off Eizouken!",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -2569,6 +3493,7 @@
             "romajiTitle": "Kino no Tabi: the Beautiful World",
             "englishTitle": "Kino's Journey",
             "nativeTitle": "\u30ad\u30ce\u306e\u65c5 -the Beautiful World-",
+            "defaultTitle": "Kino's Journey",
             "format": "TV",
             "description": "Based on a hit light novel series by Keiichi Sigsawa, the philosophical Kino's Journey employs the time-honored motif of the road trip as a vehicle for self-discovery and universal truth. Deeply meditative and cooler than zero, the series follows the existential adventures of the apt marksman Kino along with talking motorcycle Hermes as they travel the world and learn much about themselves in the process. Imaginative, thought-provoking, and sometimes disturbing, Kino's journey is documented in an episodic style with an emphasis on atmosphere rather than action or plot, though still prevalent.",
             "episodes": 13,
@@ -2672,7 +3597,48 @@
                 }
             ],
             "score": 81,
-            "defaultTitle": "Kino's Journey",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 1,
+                    "movies": 0
+                }
+            },
             "houseScores": []
         },
         {
@@ -2680,6 +3646,7 @@
             "romajiTitle": "Kino no Tabi -the Beautiful World- the Animated Series",
             "englishTitle": "Kino's Journey -the Beautiful World- the Animated Series",
             "nativeTitle": "\u30ad\u30ce\u306e\u65c5 -the Beautiful World- the Animated Series",
+            "defaultTitle": "Kino's Journey -the Beautiful World- the Animated Series",
             "format": "TV",
             "description": "The story follows the travels of Kino, a young adventurer who rides a talking motorcycle named Hermes. They explore the people and cultures of different places throughout their adventures, spending only three days at each location.<br><br>\n\nSource: (ANN)",
             "episodes": 12,
@@ -2743,7 +3710,48 @@
                 }
             ],
             "score": 73,
-            "defaultTitle": "Kino's Journey -the Beautiful World- the Animated Series",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Kenan",
@@ -2758,6 +3766,7 @@
             "romajiTitle": "Kiznaiver",
             "englishTitle": "Kiznaiver",
             "nativeTitle": "\u30ad\u30ba\u30ca\u30a4\u30fc\u30d0\u30fc",
+            "defaultTitle": "Kiznaiver",
             "format": "TV",
             "description": "The fictional Japanese city named Sugomori City is built on reclaimed land. But as the years go by, the city's population is decreasing. One day, Sonosaki tells her classmate Katsuhira: \"You have been selected to be a Kiznaiver.\" The Kizuna System, which allows Katsuhira to share his wounds, connects him to the classmates whose lives and personalities completely differ from his. The Kizuna System is an incomplete system for the implementation of world peace that connects people through wounds. All those who are connected to this system are called Kiznaivers. When one Kiznaiver is wounded, the system divides and transmits the wound among the other Kiznaivers.\n<br><br>\n(Source: Anime News Network)",
             "episodes": 12,
@@ -2845,7 +3854,48 @@
                 }
             ],
             "score": 72,
-            "defaultTitle": "Kiznaiver",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -2860,6 +3910,7 @@
             "romajiTitle": "Chuunibyou demo Koi ga Shitai!",
             "englishTitle": "Love, Chunibyo & Other Delusions",
             "nativeTitle": "\u4e2d\u4e8c\u75c5\u3067\u3082\u604b\u304c\u3057\u305f\u3044!",
+            "defaultTitle": "Love, Chunibyo & Other Delusions",
             "format": "TV",
             "description": "Everybody has had that stage in their life where they have thought themselves to be special, different from the masses of ordinary humans. They might go as far as seeing themselves capable of wielding mystical powers, or maybe even believe themselves to have descended from a fantasy realm. This \"disease\" is known as \"chuunibyou\" and is often the source of some of the most embarrassing moments of a person's life.\n<br><br>\nFor Yuuta Togashi, the scars that his chuunibyou has left behind are still fresh. Having posed as the \"Dark Flame Master\" during his middle school years, he looks back at those times with extreme embarrassment, so much so that he decides to attend a high school far away where nobody will recognize him. Putting his dark history behind him, he longs to live a normal high school life.\n<br><br>\nUnfortunately, he hasn't escaped his past yet: enter Rikka Takanashi, Yuuta's new classmate and self-declared vessel of the \"Wicked Eye.\" As this eccentric young girl crashes into Yuuta's life, his dream of an ordinary, chuunibyou-free life quickly crumbles away. In this hilarious and heartwarming story of a boy who just wants to leave his embarrassing memories behind, the delusions of old are far from a thing of the past.\n<br><br>\n(Source: MAL Rewrite)",
             "episodes": 24,
@@ -2928,7 +3979,48 @@
                 }
             ],
             "score": 76,
-            "defaultTitle": "Love, Chunibyo & Other Delusions",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 2,
+                    "movies": 2
+                },
+                "hulu": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 2,
+                    "movies": 1
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -2949,6 +4041,7 @@
             "romajiTitle": "Made in Abyss",
             "englishTitle": "Made in Abyss",
             "nativeTitle": "\u30e1\u30a4\u30c9\u30a4\u30f3\u30a2\u30d3\u30b9",
+            "defaultTitle": "Made in Abyss",
             "format": "TV",
             "description": "The \"Abyss\" is the last unexplored place in the world. Strange and wonderful creatures roam within, and it is full of precious relics that present humans can't recreate. Those that dare to explore the depths are known as \"Cave Raiders.\" An orphan girl named Riko lives on the rim. Her dream is to become a Cave Raider like her mother and solve the mysteries of the cave system. One day, Riko starts exploring the caves and discovers a robot who resembles a human boy.<br><br>\n\n(Source: Anime News Network, edited)\n<br><br>\n<i>Note: The last episode aired with a runtime of ~48 minutes as opposed to the standard 24 minute long episode.</i>",
             "episodes": 13,
@@ -3079,7 +4172,48 @@
                 }
             ],
             "score": 85,
-            "defaultTitle": "Made in Abyss",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 1,
+                    "movies": 1
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -3094,6 +4228,7 @@
             "romajiTitle": "3-gatsu no Lion",
             "englishTitle": "March comes in like a lion",
             "nativeTitle": "\uff13\u6708\u306e\u30e9\u30a4\u30aa\u30f3",
+            "defaultTitle": "March comes in like a lion",
             "format": "TV",
             "description": "Rei Kiriyama is a 17 year old boy who recently started living alone, financed by his salary as a professional Shogi player. Despite his independence, however, he's yet to mature emotionally, and his problems continue to haunt him in his daily life. His relationship with his adoptive family is strained, and he has difficulties interacting with his fellow high school students.<br>\n<br>\nMeanwhile, his professional career in Shogi has entered a slump. Burdened with the heavy expectations placed upon him, his wins and losses are fluctuating as his record and progression into the ranks begin to stagnate.<br>\n<br>\nAcquainted with Rei are the three Kawamoto sisters: Akari, Hinata, and Momo. Unlike Rei, they live happily in their modest home, which they warmly welcome Rei into as if he were one of their own.  He frequently visits the family, interacting with them and receiving the kind of care and affection he never quite had while under his foster home.<br>\nThis is the story of Rei's triumphs and failures, relationships new and old, and his growth as a person.<br>\n<br>\n(Source: TV Tropes)",
             "episodes": 44,
@@ -3175,7 +4310,48 @@
                 }
             ],
             "score": 83,
-            "defaultTitle": "March comes in like a lion",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Kenan",
@@ -3190,6 +4366,7 @@
             "romajiTitle": "Tonari no Kaibutsu-kun",
             "englishTitle": "My Little Monster",
             "nativeTitle": "\u3068\u306a\u308a\u306e\u602a\u7269\u304f\u3093",
+            "defaultTitle": "My Little Monster",
             "format": "TV",
             "description": "Standoffish, reclusive Shizuku Mizutani cares far more about earning stellar grades than cultivating friendships. But her opinions on friendship and relationships begin to change when she meets habitual truant Haru Yoshida, who happens to have a rather fearsome reputation. Like Shizuku, Haru\u2019s reputation has made it difficult to make friends. And yet through their budding friendship and stirrings of attraction the unlikely pair learns to understand one another, the world around them, and the tenor of their own emotions.\n<br><br>\n(Source: Sentai Filmworks)",
             "episodes": 13,
@@ -3257,7 +4434,48 @@
                 }
             ],
             "score": 73,
-            "defaultTitle": "My Little Monster",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 1,
+                    "movies": 0
+                }
+            },
             "houseScores": []
         },
         {
@@ -3265,6 +4483,7 @@
             "romajiTitle": "Ore Monogatari!!",
             "englishTitle": "My Love Story!!",
             "nativeTitle": "\u4ffa\u7269\u8a9e!!",
+            "defaultTitle": "My Love Story!!",
             "format": "TV",
             "description": "Takeo Goda is a giant guy with a giant heart. Too bad the girls don't want him! (They always go for his good-looking best friend, Sunakawa.) Used to being on the sidelines, Takeo simply stands tall and accepts his fate. But one day when he saves a girl named Yamato from a harasser on the train, his (love!) life suddenly takes an incredible turn! Takeo can hardly believe it when he crosses paths with Yamato again, and he finds himself falling in love with her\u2026 But with handsome Sunakawa around, does Takeo even stand a chance?<br><br>\n(Source: Crunchyroll)",
             "episodes": 24,
@@ -3321,7 +4540,48 @@
                 }
             ],
             "score": 77,
-            "defaultTitle": "My Love Story!!",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 1,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -3336,6 +4596,7 @@
             "romajiTitle": "Nichijou",
             "englishTitle": "Nichijou - My Ordinary Life",
             "nativeTitle": "\u65e5\u5e38",
+            "defaultTitle": "Nichijou - My Ordinary Life",
             "format": "TV",
             "description": "<i>Nichijou</i> primarily focuses on the daily antics of a trio of childhood friends\u2014high school girls Mio Naganohara, Yuuko Aioi and Mai Minakami\u2014whose stories soon intertwine with the young genius Hakase Shinonome, her robot caretaker Nano, and their talking cat Sakamoto. With every passing day, the lives of these six, as well as of the many people around them, experience both the calms of normal life and the insanity of the absurd. Walking to school, being bitten by a talking crow, spending time with friends, and watching the principal suplex a deer: they are all in a day's work in the extraordinary everyday lives of those in <i>Nichijou</i>. <br>\n<br>\n[Written by MAL Rewrite]",
             "episodes": 26,
@@ -3392,7 +4653,7 @@
                 },
                 {
                     "name": "Cute Girls Doing Cute Things",
-                    "rank": 66,
+                    "rank": 67,
                     "isMediaSpoiler": false
                 },
                 {
@@ -3412,7 +4673,7 @@
                 },
                 {
                     "name": "Drawing",
-                    "rank": 46,
+                    "rank": 45,
                     "isMediaSpoiler": false
                 },
                 {
@@ -3422,7 +4683,7 @@
                 },
                 {
                     "name": "Go",
-                    "rank": 35,
+                    "rank": 34,
                     "isMediaSpoiler": false
                 },
                 {
@@ -3437,7 +4698,48 @@
                 }
             ],
             "score": 82,
-            "defaultTitle": "Nichijou - My Ordinary Life",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -3470,6 +4772,7 @@
             "romajiTitle": "Nisekoi",
             "englishTitle": "Nisekoi",
             "nativeTitle": "\u30cb\u30bb\u30b3\u30a4",
+            "defaultTitle": "Nisekoi",
             "format": "TV",
             "description": "As a child, Raku Ichijo made a secret promise with his childhood sweetheart, keeping a pendant as a memento while his love took the key. He dreams of one day meeting his past love, but years later, reality smashes his hopes when Chitoge Kirisaki accidentally knees him in the face...<br><br>\r\nThough Raku's a normal high schooler, his family heads the notorious yakuza gang the Shuei-Gumi faction! And he's dragged into family affairs when he's forced into a relationship with Chitoge, the daughter of a rival gang's boss!<br><br>\r\nDespite their constant spats, the two somehow fool everyone with their false relationship. Raku then discovers that Chitoge has a mysterious key from her past, which she can't remember... Plus, two other girls appear with keys as well\u2014Kosaki Onodera and Marika Tachibana!<br><br>\r\nCaught in the midst of this love maelstrom, even more complications arise for Raku when his class decides on Romeo and Juliet as the class's play for the school festival. Can the two false lovebirds pull off the impossible and make the play a success?<br><br>\r\n(Source: Viz Media)",
             "episodes": 32,
@@ -3546,7 +4849,48 @@
                 }
             ],
             "score": 74,
-            "defaultTitle": "Nisekoi",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": []
         },
         {
@@ -3554,6 +4898,7 @@
             "romajiTitle": "Sakasama no Patema",
             "englishTitle": "Patema Inverted",
             "nativeTitle": "\u30b5\u30ab\u30b5\u30de\u306e\u30d1\u30c6\u30de",
+            "defaultTitle": "Patema Inverted",
             "format": "MOVIE",
             "description": "In an underground world where tunnels extend everywhere, even though they live in dark and confined spaces, people wear protective clothes and lead quiet and enjoyable lives. Patema, a princess in her underground village, loves to explore the tunnels. Her favorite place is a \"danger zone\" that her village prohibits people from entering. Even though she's scolded, Patema's curiosity can't be held back. No one ever explained what the supposed danger was. On her usual trip to the \"danger zone,\" Patema faces unexpected events. When hidden secrets come to light, the story begins to unfold.<br><br>\n(Source: Anime News Network)",
             "episodes": 0,
@@ -3621,7 +4966,48 @@
                 }
             ],
             "score": 77,
-            "defaultTitle": "Patema Inverted",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "",
@@ -3636,6 +5022,7 @@
             "romajiTitle": "Penguin Highway",
             "englishTitle": "Penguin Highway",
             "nativeTitle": "\u30da\u30f3\u30ae\u30f3\u30fb\u30cf\u30a4\u30a6\u30a7\u30a4",
+            "defaultTitle": "Penguin Highway",
             "format": "MOVIE",
             "description": "The narrator and protagonist is ten-year-old Aoyama. A serious student, he has already acquired a broad knowledge of the world and the universe, and he keeps notebooks in which he records day-to-day observations from his studies, explorations, and experiments. In May, some Ad\u00e9lie penguins appear in the town where he lives. They are captured and hauled away by truck, but then they vanish into thin air while being transported. Aoyama talks about the penguins with a young woman who works at the dentist\u2019s office and who has been a friend to him. The woman is referred to only as Onee-san. When Onee-san tosses a soda can one day, it turns into a penguin. Meanwhile, Aoyama\u2019s classmate Uchida has secretly been keeping a penguin, but it hasn\u2019t touched its food for three weeks. When Aoyama and Uchida take it with them on the train, it disappears. Another classmate, a girl named Hamamoto who often plays chess with Aoyama, discovers a strange spherical object in a field on the edge of town. The three classmates name the sphere \u201cOcean,\u201d and begin keeping a log of their observations of it. Aoyama soon concludes that there is a relationship between the swelling and shrinking of \u201cOcean\u201d and Onee-san\u2019s state of health.\n<br><br>\n(Source: Official Website)",
             "episodes": 0,
@@ -3699,7 +5086,48 @@
                 }
             ],
             "score": 75,
-            "defaultTitle": "Penguin Highway",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 1
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -3714,6 +5142,7 @@
             "romajiTitle": "Sora yori mo Tooi Basho",
             "englishTitle": "A Place Further Than the Universe",
             "nativeTitle": "\u5b87\u5b99\u3088\u308a\u3082\u9060\u3044\u5834\u6240",
+            "defaultTitle": "A Place Further Than the Universe",
             "format": "TV",
             "description": "Mari Tamaki is in her second year of high school and wants to start something. It's then that she meets Shirase, a girl with few friends who's considered weirdo by the rest of the class and nicknamed \"Antarctic\" since it's all she ever talks about. Unlike her peers, Mari is moved by Shirase's dedication and decides that even though it's unlikely that high school girls will ever go to Antarctica, she's going to try to go with Shirase.<br><br>\n\n(Source: Anime News Network)",
             "episodes": 13,
@@ -3756,7 +5185,7 @@
                 },
                 {
                     "name": "Cute Girls Doing Cute Things",
-                    "rank": 69,
+                    "rank": 68,
                     "isMediaSpoiler": false
                 },
                 {
@@ -3791,7 +5220,48 @@
                 }
             ],
             "score": 84,
-            "defaultTitle": "A Place Further Than the Universe",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Simon",
@@ -3806,6 +5276,7 @@
             "romajiTitle": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
             "englishTitle": "Rascal Does Not Dream of Bunny Girl Senpai",
             "nativeTitle": "\u9752\u6625\u30d6\u30bf\u91ce\u90ce\u306f\u30d0\u30cb\u30fc\u30ac\u30fc\u30eb\u5148\u8f29\u306e\u5922\u3092\u898b\u306a\u3044",
+            "defaultTitle": "Rascal Does Not Dream of Bunny Girl Senpai",
             "format": "TV",
             "description": "There's a rumor about a mysterious phenomenon called \"puberty syndrome.\" For example, Sakuta Azusagawa is a high school student who suddenly sees a bunny girl appear in front of him. The girl is actually a girl named Mai Sakurajima, who is Sakuta's upperclassman who is also a famous actress who has gone on hiatus from the entertainment industry. For some reason, the people around Mai cannot see her bunny-girl figure. Sakuta sets out to solve this mystery, and as he spends time with Mai, he learns her secret feelings. Other heroines who have \"puberty syndrome\" start to appear in front of Sakuta.<br><br>\n(Source: Anime News Network)",
             "episodes": 13,
@@ -3931,7 +5402,48 @@
                 }
             ],
             "score": 81,
-            "defaultTitle": "Rascal Does Not Dream of Bunny Girl Senpai",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -3958,6 +5470,7 @@
             "romajiTitle": "Oushitsu Kyoushi Heine",
             "englishTitle": "The Royal Tutor",
             "nativeTitle": "\u738b\u5ba4\u6559\u5e2b\u30cf\u30a4\u30cd",
+            "defaultTitle": "The Royal Tutor",
             "format": "TV",
             "description": "Accepting the post of Royal Tutor at the court of the king of Grannzreich, Heine Wittgenstein is a little professor with a big job ahead! Each of the kingdom's four princes has a rather distinct personality. Does their diminutive new instructor have what it takes to lay down some learning? It's a comedy of educational proportions!<br><br>\n\n(Source: Yen Press)",
             "episodes": 12,
@@ -4004,7 +5517,48 @@
                 }
             ],
             "score": 72,
-            "defaultTitle": "The Royal Tutor",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -4025,6 +5579,7 @@
             "romajiTitle": "Koe no Katachi",
             "englishTitle": "A Silent Voice",
             "nativeTitle": "\u8072\u306e\u5f62",
+            "defaultTitle": "A Silent Voice",
             "format": "MOVIE",
             "description": "After transferring into a new school, a deaf girl, Shouko Nishimiya, is bullied by the popular Shouya Ishida. As Shouya continues to bully Shouko, the class turns its back on him. Shouko transfers and Shouya grows up as an outcast. Alone and depressed, the regretful Shouya finds Shouko to make amends.\n<br><br>\n(Source: Eleven Arts)",
             "episodes": 0,
@@ -4122,7 +5677,48 @@
                 }
             ],
             "score": 88,
-            "defaultTitle": "A Silent Voice",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 1
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -4137,6 +5733,7 @@
             "romajiTitle": "Karakai Jouzu no Takagi-san",
             "englishTitle": "Teasing Master Takagi-san",
             "nativeTitle": "\u304b\u3089\u304b\u3044\u4e0a\u624b\u306e\u9ad8\u6728\u3055\u3093",
+            "defaultTitle": "Teasing Master Takagi-san",
             "format": "TV",
             "description": "Having a friend that knows you inside out should be a good thing, but in Nishikata's case, the opposite is true.<br>\n<br>\nHis classmate Takagi loves to tease him on a daily basis, and she uses her extensive knowledge of his behavior to predict exactly how he will react to her teasing, making it nearly impossible for Nishikata to ever make a successful comeback. Despite this, Nishikata vows to someday give Takagi a taste of her own medicine by making her blush out of embarrassment from his teasing.\n",
             "episodes": 24,
@@ -4199,7 +5796,48 @@
                 }
             ],
             "score": 75,
-            "defaultTitle": "Teasing Master Takagi-san",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 2,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -4220,6 +5858,7 @@
             "romajiTitle": "Zankyou no Terror",
             "englishTitle": "Terror in Resonance",
             "nativeTitle": "\u6b8b\u97ff\u306e\u30c6\u30ed\u30eb",
+            "defaultTitle": "Terror in Resonance",
             "format": "TV",
             "description": "Painted in red, the word \"VON\" is all that is left behind after a terrorist attack on a nuclear facility in Japan. The government is shattered by their inability to act, and the police are left frantically searching for ways to crack down the perpetrators. The public are clueless\u2014until, six months later, a strange video makes its way onto the internet. In it, two teenage boys who identify themselves only as \"Sphinx\" directly challenge the police, threatening to cause destruction and mayhem across Tokyo. Unable to stop the mass panic quickly spreading through the city and desperate for any leads in their investigation, the police struggle to act effectively against these terrorists, with Detective Kenjirou Shibazaki caught in the middle of it all.<br>\n<br>\n<i>Zankyou no Terror</i> tells the story of Nine and Twelve, the two boys behind the masked figures of Sphinx. They should not exist, yet they stand strong in a world of deception and secrets while they make the city fall around them, all in the hopes of burying their own tragic truth.<br>\n<br>\n(Source: MAL Rewrite)",
             "episodes": 11,
@@ -4308,7 +5947,48 @@
                 }
             ],
             "score": 78,
-            "defaultTitle": "Terror in Resonance",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": []
         },
         {
@@ -4316,6 +5996,7 @@
             "romajiTitle": "Toradora!",
             "englishTitle": "Toradora!",
             "nativeTitle": "\u3068\u3089\u30c9\u30e9\uff01",
+            "defaultTitle": "Toradora!",
             "format": "TV",
             "description": "Ryuuji Takasu is a gentle high school student with a love for housework; but in contrast to his kind nature, he has an intimidating face that often gets him labeled as a delinquent. On the other hand is Taiga Aisaka, a small, doll-like student, who is anything but a cute and fragile girl. Equipped with a wooden katana and feisty personality, Taiga is known throughout the school as the \"Palmtop Tiger.\"\n<br><br>\nOne day, an embarrassing mistake causes the two students to cross paths. Ryuuji discovers that Taiga actually has a sweet side: she has a crush on the popular vice president, Yuusaku Kitamura, who happens to be his best friend. But things only get crazier when Ryuuji reveals that he has a crush on Minori Kushieda\u2014Taiga's best friend!\n<br><br>\n<i>Toradora!</i> is a romantic comedy that follows this odd duo as they embark on a quest to help each other with their respective crushes, forming an unlikely alliance in the process.\n",
             "episodes": 25,
@@ -4384,7 +6065,48 @@
                 }
             ],
             "score": 79,
-            "defaultTitle": "Toradora!",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": []
         },
         {
@@ -4392,6 +6114,7 @@
             "romajiTitle": "Tenki no Ko",
             "englishTitle": "Weathering With You",
             "nativeTitle": "\u5929\u6c17\u306e\u5b50",
+            "defaultTitle": "Weathering With You",
             "format": "MOVIE",
             "description": "High school student Hodaka leaves his home on an isolated island and moves to Tokyo, but he immediately becomes broke. He lives his days in isolation, but finally finds a job as a writer for a shady occult magazine. After he starts his job, the weather has been rainy day after day. In a corner of the crowded and busy city, Hodaka meets a young woman named Hina. Due to certain circumstances, Hina and her younger brother live together, but have a cheerful and sturdy life. Hina also has a certain power: the power to stop the rain and clear the sky.\n<br><br>\n(Source: Anime News Network)",
             "episodes": 0,
@@ -4480,7 +6203,48 @@
                 }
             ],
             "score": 82,
-            "defaultTitle": "Weathering With You",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 1
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 1
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "",
@@ -4495,6 +6259,7 @@
             "romajiTitle": "Ballroom e Youkoso",
             "englishTitle": "Welcome to the Ballroom",
             "nativeTitle": "\u30dc\u30fc\u30eb\u30eb\u30fc\u30e0\u3078\u3088\u3046\u3053\u305d",
+            "defaultTitle": "Welcome to the Ballroom",
             "format": "TV",
             "description": "Fujita has drifted through middle school aimlessly, unable to find friends or anything that can hold his attention. Then, one day, he's attacked by a gang and saved by a mysterious man. But this isn't a karate master; it's a ballroom dance instructor! Reluctantly, Fujita takes a few beginner's classes, only to find his inspiration... an entrancing, teenage dance prodigy named Shizuku.\n<br>\nIt's Fujita's first step into the high-octane world of competitive dance!\n<br><br>\n(Source: Kodansha USA)",
             "episodes": 24,
@@ -4552,7 +6317,48 @@
                 }
             ],
             "score": 79,
-            "defaultTitle": "Welcome to the Ballroom",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -4567,6 +6373,7 @@
             "romajiTitle": "Shigatsu wa Kimi no Uso",
             "englishTitle": "Your Lie in April",
             "nativeTitle": "\u56db\u6708\u306f\u541b\u306e\u5618",
+            "defaultTitle": "Your Lie in April",
             "format": "TV",
             "description": "Piano prodigy Arima Kousei dominated the competition and all child musicians knew his name. But after his mother, who was also his instructor, passed away, he had a mental breakdown while performing at a recital. This resulted in him no longer being able to hear the sound of his piano playing. Two years later, Kousei hasn\u2019t touched the piano and views the world without any flair or color. He was content at living out his life with his good friends Tsubaki and Watari until, one day, a girl changed everything. Miyazono Kaori is a pretty, free spirited violinist whose playing style reflects her personality. Kaori helps Kousei return to the music world and show that it should be free and mold breaking unlike the structured and rigid style Kousei was used to.",
             "episodes": 22,
@@ -4640,7 +6447,48 @@
                 }
             ],
             "score": 84,
-            "defaultTitle": "Your Lie in April",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 1,
+                    "movies": 0
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
@@ -4667,6 +6515,7 @@
             "romajiTitle": "Kimi no Na wa.",
             "englishTitle": "Your Name.",
             "nativeTitle": "\u541b\u306e\u540d\u306f\u3002",
+            "defaultTitle": "Your Name.",
             "format": "MOVIE",
             "description": "Mitsuha Miyamizu, a high school girl, yearns to live the life of a boy in the bustling city of Tokyo\u2014a dream that stands in stark contrast to her present life in the countryside. Meanwhile in the city, Taki Tachibana lives a busy life as a high school student while juggling his part-time job and hopes for a future in architecture.<br>\n<br>\nOne day, Mitsuha awakens in a room that is not her own and suddenly finds herself living the dream life in Tokyo\u2014but in Taki's body! Elsewhere, Taki finds himself living Mitsuha's life in the humble countryside. In pursuit of an answer to this strange phenomenon, they begin to search for one another.<br>\n<br>\n<i>Kimi no Na wa.</i> revolves around Mitsuha and Taki's actions, which begin to have a dramatic impact on each other's lives, weaving them into a fabric held together by fate and circumstance.<br>\n<br>\n(Source: MAL Rewrite)",
             "episodes": 0,
@@ -4769,7 +6618,48 @@
                 }
             ],
             "score": 86,
-            "defaultTitle": "Your Name.",
+            "streaming": {
+                "crunchyroll": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "funimation": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "prison": {
+                    "seasons": 0,
+                    "movies": 1
+                },
+                "amazon": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "vrv": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hulu": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "youtube": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "tubi": {
+                    "seasons": 0,
+                    "movies": 0
+                },
+                "hbo": {
+                    "seasons": 0,
+                    "movies": 1
+                },
+                "hidive": {
+                    "seasons": 0,
+                    "movies": 0
+                }
+            },
             "houseScores": [
                 [
                     "Jared",
