@@ -90,6 +90,7 @@
             "romajiTitle": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai.",
             "englishTitle": "Anohana: The Flower We Saw That Day",
             "nativeTitle": "\u3042\u306e\u65e5\u898b\u305f\u82b1\u306e\u540d\u524d\u3092\u50d5\u9054\u306f\u307e\u3060\u77e5\u3089\u306a\u3044\u3002",
+            "format": "TV",
             "description": "Jinta Yadomi and his group of childhood friends have become estranged after a tragic accident split them apart. Now in their high school years, a sudden surprise forces each of them to confront their guilt over what happened that day and come to terms with the ghosts of their past. <br><br>\n(Source: NIS America)",
             "episodes": 11,
             "seasons": 1,
@@ -107,7 +108,7 @@
             "tags": [
                 {
                     "name": "Coming of Age",
-                    "rank": 94,
+                    "rank": 95,
                     "isMediaSpoiler": false
                 },
                 {
@@ -127,7 +128,7 @@
                 },
                 {
                     "name": "Love Triangle",
-                    "rank": 68,
+                    "rank": 72,
                     "isMediaSpoiler": true
                 },
                 {
@@ -147,7 +148,7 @@
                 },
                 {
                     "name": "Crossdressing",
-                    "rank": 43,
+                    "rank": 42,
                     "isMediaSpoiler": true
                 },
                 {
@@ -167,21 +168,6 @@
                 }
             ],
             "score": 81,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                90,
-                0,
-                -40
-            ],
             "defaultTitle": "Anohana: The Flower We Saw That Day",
             "houseScores": [
                 [
@@ -197,6 +183,7 @@
             "romajiTitle": "Ansatsu Kyoushitsu",
             "englishTitle": "Assassination Classroom",
             "nativeTitle": "\u6697\u6bba\u6559\u5ba4",
+            "format": "TV",
             "description": "The students of class 3-E have a mission: kill their teacher before graduation. He has already destroyed the moon, and has promised to destroy the Earth if he can not be killed within a year. But how can this class of misfits kill a tentacled monster, capable of reaching Mach 20 speed, who may be the best teacher any of them have ever had?",
             "episodes": 47,
             "seasons": 2,
@@ -219,7 +206,7 @@
                 },
                 {
                     "name": "School",
-                    "rank": 92,
+                    "rank": 93,
                     "isMediaSpoiler": false
                 },
                 {
@@ -259,7 +246,7 @@
                 },
                 {
                     "name": "Bullying",
-                    "rank": 60,
+                    "rank": 61,
                     "isMediaSpoiler": false
                 },
                 {
@@ -270,6 +257,11 @@
                 {
                     "name": "Guns",
                     "rank": 56,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 50,
                     "isMediaSpoiler": false
                 },
                 {
@@ -284,7 +276,7 @@
                 },
                 {
                     "name": "Crossdressing",
-                    "rank": 42,
+                    "rank": 40,
                     "isMediaSpoiler": true
                 },
                 {
@@ -294,21 +286,6 @@
                 }
             ],
             "score": 80,
-            "jaredScore": [
-                93,
-                25,
-                20
-            ],
-            "simonScore": [
-                95,
-                15,
-                25
-            ],
-            "kenanScore": [
-                70,
-                -10,
-                25
-            ],
             "defaultTitle": "Assassination Classroom",
             "houseScores": [
                 [
@@ -461,6 +438,7 @@
             "romajiTitle": "Barakamon",
             "englishTitle": null,
             "nativeTitle": "\u3070\u3089\u304b\u3082\u3093",
+            "format": "TV",
             "description": "Seishuu Handa is an up-and-coming calligrapher: young, handsome, talented, and unfortunately, a narcissist to boot. When a veteran labels his award-winning piece as \"unoriginal,\" Seishuu quickly loses his cool with severe repercussions. <br><br>\n\nAs punishment, and also in order to aid him in self-reflection, Seishuu's father exiles him to the Goto Islands, far from the comfortable Tokyo lifestyle the temperamental artist is used to. Now thrown into a rural setting, Seishuu must attempt to find new inspiration and develop his own unique art style\u2014that is, if boisterous children (headed by the frisky Naru Kotoishi), fujoshi middle schoolers, and energetic old men stop barging into his house! The newest addition to the intimate and quirky Goto community only wants to get some work done, but the islands are far from the peaceful countryside he signed up for. Thanks to his wacky neighbors who are entirely incapable of minding their own business, the arrogant calligrapher learns so much more than he ever hoped to. <br><br>\n(Source: MAL Rewrite)",
             "episodes": 12,
             "seasons": 1,
@@ -541,21 +519,6 @@
                 }
             ],
             "score": 82,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "Barakamon",
             "houseScores": []
         },
@@ -564,6 +527,7 @@
             "romajiTitle": "BEASTARS",
             "englishTitle": "BEASTARS",
             "nativeTitle": "BEASTARS",
+            "format": "TV",
             "description": "In a world populated by anthropomorphic animals, herbivores and carnivores coexist with each other. For the adolescents of Cherryton Academy, school life is filled with hope, romance, distrust, and uneasiness.<br><br>\nThe main character is Legoshi the wolf, a member of the drama club. Despite his menacing appearance, he has a very gentle heart. Throughout most of his life, he has always been an object of fear and hatred by other animals, and he\u2019s been quite accustomed to that lifestyle. But soon, he finds himself becoming more involved with his fellow classmates who have their own share of insecurities and finds his life in school changing slowly.<br><br>\n(Source: moetron)",
             "episodes": 24,
             "seasons": 2,
@@ -611,6 +575,11 @@
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Male Protagonist",
+                    "rank": 79,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Ensemble Cast",
                     "rank": 79,
                     "isMediaSpoiler": false
@@ -621,19 +590,9 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Male Protagonist",
-                    "rank": 79,
-                    "isMediaSpoiler": false
-                },
-                {
                     "name": "Love Triangle",
                     "rank": 75,
                     "isMediaSpoiler": true
-                },
-                {
-                    "name": "Shounen",
-                    "rank": 65,
-                    "isMediaSpoiler": false
                 },
                 {
                     "name": "Bullying",
@@ -641,14 +600,19 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Crime",
-                    "rank": 64,
-                    "isMediaSpoiler": true
+                    "name": "Shounen",
+                    "rank": 65,
+                    "isMediaSpoiler": false
                 },
                 {
                     "name": "School Club",
                     "rank": 64,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Crime",
+                    "rank": 64,
+                    "isMediaSpoiler": true
                 },
                 {
                     "name": "Acting",
@@ -671,6 +635,11 @@
                     "isMediaSpoiler": true
                 },
                 {
+                    "name": "Primarily Teen Cast",
+                    "rank": 40,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Nudity",
                     "rank": 32,
                     "isMediaSpoiler": false
@@ -682,21 +651,6 @@
                 }
             ],
             "score": 78,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "BEASTARS",
             "houseScores": []
         },
@@ -705,6 +659,7 @@
             "romajiTitle": "Kyoukai no Kanata",
             "englishTitle": "Beyond the Boundary",
             "nativeTitle": "\u5883\u754c\u306e\u5f7c\u65b9",
+            "format": "TV",
             "description": "They should never have met. They shouldn't even exist. But when they come together, the entire world will change. The last surviving member of her clan, Mirai Kuriyama is cursed with the terrifying ability to control and manipulate blood, a power so heretical that she is shunned even by those with the ability to understand her \"gift\". Akihito Kanbara is only half human, but while the monstrous other half of his lineage seems to have doomed him to a life alone, it has also given him near invulnerability in the form of rapid healing. Alone, their futures seem bleak, but when a chance encounter brings them together, it becomes clear that they share more than just an unexpected bond. Together they share a destiny and a mission that only the two of them together may be strong enough to survive.<br>\n<br>\n(Source: Sentai Filmworks)",
             "episodes": 12,
             "seasons": 1,
@@ -808,21 +763,6 @@
                 }
             ],
             "score": 75,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "Beyond the Boundary",
             "houseScores": []
         },
@@ -899,6 +839,7 @@
             "romajiTitle": "Charlotte",
             "englishTitle": null,
             "nativeTitle": "Charlotte(\u30b7\u30e3\u30fc\u30ed\u30c3\u30c8)",
+            "format": "TV",
             "description": "The story centers around the special abilities that occur among a small percentage of boys and girls in puberty. Yuu Otosaka uses his power without others knowing, and lives a fairly normal, average school life. Before him suddenly appears a girl, Nao Tomori. Due to his meeting with her, the fate of special power-users will be exposed.<br>\n<br>\n(Source: Anime News Network)",
             "episodes": 13,
             "seasons": 1,
@@ -997,12 +938,12 @@
                 },
                 {
                     "name": "Slapstick",
-                    "rank": 44,
+                    "rank": 46,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Yandere",
-                    "rank": 41,
+                    "rank": 42,
                     "isMediaSpoiler": true
                 },
                 {
@@ -1036,27 +977,17 @@
                     "isMediaSpoiler": true
                 },
                 {
+                    "name": "Primarily Teen Cast",
+                    "rank": 20,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Baseball",
                     "rank": 15,
                     "isMediaSpoiler": false
                 }
             ],
             "score": 75,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "Charlotte",
             "houseScores": []
         },
@@ -1065,6 +996,7 @@
             "romajiTitle": "Chihayafuru",
             "englishTitle": "Chihayafuru",
             "nativeTitle": "\u3061\u306f\u3084\u3075\u308b",
+            "format": "TV",
             "description": "Chihaya Ayase is a girl who has spent most of her life simply supporting her sister in her model career. That changes when she meets a boy named Arata Wataya, a talented karuta player who recognizes Chihaya's potential to become a great player herself. As Chihaya takes on a new dream of becoming Japan's best karuta player, she is soon separated from her karuta playing friends, Taichi Mashima and Arata Wataya, as they grow up. Now in high school, Chihaya still continues to play karuta in the hope that she will one day meet her friends again. <br>\n<br>\n(Source: Chihayafuru Wikia)",
             "episodes": 74,
             "seasons": 3,
@@ -1134,24 +1066,14 @@
                     "name": "Tomboy",
                     "rank": 37,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 20,
+                    "isMediaSpoiler": false
                 }
             ],
             "score": 81,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                95,
-                -5,
-                -30
-            ],
             "defaultTitle": "Chihayafuru",
             "houseScores": [
                 [
@@ -1167,6 +1089,7 @@
             "romajiTitle": "CLANNAD",
             "englishTitle": "Clannad",
             "nativeTitle": "\uff23\uff2c\uff21\uff2e\uff2e\uff21\uff24 -\u30af\u30e9\u30ca\u30c9-",
+            "format": "TV",
             "description": "Tomoya is a bitter, third year high school student. His mother passed away, causing his father to resort to alcohol and gambling. Tomoya is distant with his father and has become a delinquent in the years since his mother's death. Walking to school, he meets Nagisa Furukawa who is a year older but is repeating the grade due to illness. She is alone, as most of her friends have moved on. The two begin hanging out, and as time goes by, Tomoya finds his life shifting in a new direction.<br>\n<br>\n(Source: Sentai Filmworks)",
             "episodes": 47,
             "seasons": 2,
@@ -1204,14 +1127,14 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Ensemble Cast",
-                    "rank": 79,
-                    "isMediaSpoiler": false
-                },
-                {
                     "name": "Ghost",
                     "rank": 79,
                     "isMediaSpoiler": true
+                },
+                {
+                    "name": "Ensemble Cast",
+                    "rank": 79,
+                    "isMediaSpoiler": false
                 },
                 {
                     "name": "Tragedy",
@@ -1235,7 +1158,7 @@
                 },
                 {
                     "name": "Philosophy",
-                    "rank": 64,
+                    "rank": 65,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1279,7 +1202,7 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Age Regression",
+                    "name": "Primarily Teen Cast",
                     "rank": 20,
                     "isMediaSpoiler": false
                 },
@@ -1287,24 +1210,14 @@
                     "name": "Baseball",
                     "rank": 20,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Age Regression",
+                    "rank": 20,
+                    "isMediaSpoiler": false
                 }
             ],
             "score": 77,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "Clannad",
             "houseScores": []
         },
@@ -1313,6 +1226,7 @@
             "romajiTitle": "Code Geass: Hangyaku no Lelouch",
             "englishTitle": "Code Geass: Lelouch of the Rebellion",
             "nativeTitle": "\u30b3\u30fc\u30c9\u30ae\u30a2\u30b9 \u53cd\u9006\u306e\u30eb\u30eb\u30fc\u30b7\u30e5",
+            "format": "TV",
             "description": "On August 10th of the year 2010 the Holy Empire of Britannia began a campaign of conquest, its sights set on Japan. Operations were completed in one month thanks to Britannia's deployment of new mobile humanoid armor vehicles dubbed Knightmare Frames. Japan's rights and identity were stripped away, the once proud nation now referred to as Area 11. Its citizens, Elevens, are forced to scratch out a living while the Britannian aristocracy lives comfortably within their settlements. Pockets of resistance appear throughout Area 11, working towards independence for Japan.<br><br>\n Lelouch, an exiled Imperial Prince of Britannia posing as a student, finds himself in the heart of the ongoing conflict for the island nation. Through a chance meeting with a mysterious girl named C.C., Lelouch gains his Geass, the power of the king. Now endowed with absolute dominance over any person, Lelouch may finally realize his goal of bringing down Britannia from within!<br><br>\n(Source: Bandai Entertainment)",
             "episodes": 50,
             "seasons": 2,
@@ -1350,23 +1264,18 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Revenge",
+                    "name": "Politics",
                     "rank": 90,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Politics",
+                    "name": "Revenge",
                     "rank": 89,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Seinen",
-                    "rank": 86,
-                    "isMediaSpoiler": false
-                },
-                {
                     "name": "Real Robot",
-                    "rank": 84,
+                    "rank": 88,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1376,8 +1285,13 @@
                 },
                 {
                     "name": "Terrorism",
-                    "rank": 82,
+                    "rank": 83,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Tragedy",
+                    "rank": 75,
+                    "isMediaSpoiler": true
                 },
                 {
                     "name": "Dystopian",
@@ -1385,13 +1299,8 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Tragedy",
-                    "rank": 74,
-                    "isMediaSpoiler": true
-                },
-                {
                     "name": "Super Robot",
-                    "rank": 67,
+                    "rank": 68,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1405,18 +1314,13 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Female Harem",
-                    "rank": 53,
-                    "isMediaSpoiler": false
-                },
-                {
                     "name": "Nudity",
-                    "rank": 53,
+                    "rank": 52,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Tanned Skin",
-                    "rank": 46,
+                    "name": "Female Harem",
+                    "rank": 48,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1425,17 +1329,22 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "School Club",
-                    "rank": 42,
-                    "isMediaSpoiler": false
-                },
-                {
                     "name": "Kuudere",
                     "rank": 42,
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "School Club",
+                    "rank": 41,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Gore",
+                    "rank": 40,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Tanned Skin",
                     "rank": 40,
                     "isMediaSpoiler": false
                 },
@@ -1451,21 +1360,6 @@
                 }
             ],
             "score": 84,
-            "jaredScore": [
-                91,
-                15,
-                -37
-            ],
-            "simonScore": [
-                85,
-                -5,
-                -45
-            ],
-            "kenanScore": [
-                95,
-                0,
-                -25
-            ],
             "defaultTitle": "Code Geass: Lelouch of the Rebellion",
             "houseScores": [
                 [
@@ -1493,6 +1387,7 @@
             "romajiTitle": "Boku dake ga Inai Machi",
             "englishTitle": "ERASED",
             "nativeTitle": "\u50d5\u3060\u3051\u304c\u3044\u306a\u3044\u8857",
+            "format": "TV",
             "description": "Satoru Fujinuma is a 29 year old manga artist struggling to make a name for himself following his debut. But, that was not the only thing in his life that Satoru was feeling frustrated about\u2026 He has a unique supernatural ability of being forced to prevent deaths and catastrophes by being sent back in time before the incident occurred, repeating time until the accident is prevented. One day, he gets involved in an accident that has him framed as a murderer. Desperate to save the victim, he sends himself back in time only to find himself as a grade-schooler one month before fellow classmate Kayo Hinazuki went missing. Satoru now embarks on a new quest: to save Kayo and solve the mystery behind her disappearance.\n",
             "episodes": 12,
             "seasons": 1,
@@ -1511,7 +1406,7 @@
             "tags": [
                 {
                     "name": "Age Regression",
-                    "rank": 95,
+                    "rank": 96,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1634,6 +1529,7 @@
             "romajiTitle": "Gamers!",
             "englishTitle": "GAMERS!",
             "nativeTitle": "\u30b2\u30fc\u30de\u30fc\u30ba!",
+            "format": "TV",
             "description": "Keita Amano is a fan of one thing: gaming! Whether he\u2019s on his phone or console, he just loves playing video games. And when the beautiful president of the game club, Karen Tendou, invites him to join, it seems like an EZ choice. Except, he declines! KO\u2019d by the shock, Karen suddenly makes getting close to Amano her main quest. But she\u2019s not the only one interested in him!<br>\n<br>\n(Source: Funimation)",
             "episodes": 12,
             "seasons": 1,
@@ -1651,7 +1547,7 @@
             "tags": [
                 {
                     "name": "Love Triangle",
-                    "rank": 87,
+                    "rank": 88,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1660,18 +1556,18 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Video Games",
-                    "rank": 78,
-                    "isMediaSpoiler": false
-                },
-                {
                     "name": "School",
                     "rank": 77,
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Video Games",
+                    "rank": 77,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Slapstick",
-                    "rank": 74,
+                    "rank": 75,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1687,11 +1583,6 @@
                 {
                     "name": "School Club",
                     "rank": 61,
-                    "isMediaSpoiler": false
-                },
-                {
-                    "name": "Shounen",
-                    "rank": 60,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1744,6 +1635,7 @@
             "romajiTitle": "GUILTY CROWN",
             "englishTitle": "Guilty Crown",
             "nativeTitle": "\u30ae\u30eb\u30c6\u30a3\u30af\u30e9\u30a6\u30f3",
+            "format": "TV",
             "description": "Tokyo 2039, Japan has fallen under the control of the multinational organization GHQ after the outbreak, in 2029, of an epidemic caused by a virus known as Apocalypse.\n<br><br>\nShuu Ouma, wielder of \"The Power of Kings\", has led a rather secluded life at least until his encounter with Gai Tsusugami and Yuzuriha Inori, members of the resistance, thrusts him into the fight against the GHQ. \n\n",
             "episodes": 22,
             "seasons": 1,
@@ -1817,11 +1709,6 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Shounen",
-                    "rank": 66,
-                    "isMediaSpoiler": false
-                },
-                {
                     "name": "Male Protagonist",
                     "rank": 66,
                     "isMediaSpoiler": false
@@ -1858,21 +1745,6 @@
                 }
             ],
             "score": 70,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "Guilty Crown",
             "houseScores": []
         },
@@ -1881,6 +1753,7 @@
             "romajiTitle": "Haikyuu!!",
             "englishTitle": "HAIKYU!!",
             "nativeTitle": "\u30cf\u30a4\u30ad\u30e5\u30fc!!",
+            "format": "TV",
             "description": "Inspired after watching a volleyball ace nicknamed \"Little Giant\" in action, small-statured Shouyou Hinata revives the volleyball club at his middle school. The newly-formed team even makes it to a tournament; however, their first match turns out to be their last when they are brutally squashed by the \"King of the Court,\" Tobio Kageyama. Hinata vows to surpass Kageyama, and so after graduating from middle school, he joins Karasuno High School's volleyball team\u2014only to find that his sworn rival, Kageyama, is now his teammate.\n<br><br>\nThanks to his short height, Hinata struggles to find his role on the team, even with his superior jumping power. Surprisingly, Kageyama has his own problems that only Hinata can help with, and learning to work together appears to be the only way for the team to be successful. Based on Haruichi Furudate's popular shounen manga of the same name, Haikyuu!! is an exhilarating and emotional sports comedy following two determined athletes as they attempt to patch a heated rivalry in order to make their high school volleyball team the best in Japan.\n<br><br>\n[Written by MAL Rewrite]",
             "episodes": 85,
             "seasons": 5,
@@ -1937,12 +1810,17 @@
                 },
                 {
                     "name": "Kuudere",
-                    "rank": 60,
+                    "rank": 55,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 53,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Cute Boys Doing Cute Things",
-                    "rank": 45,
+                    "rank": 40,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1957,21 +1835,6 @@
                 }
             ],
             "score": 84,
-            "jaredScore": [
-                99,
-                20,
-                -20
-            ],
-            "simonScore": [
-                65,
-                15,
-                -20
-            ],
-            "kenanScore": [
-                75,
-                -10,
-                0
-            ],
             "defaultTitle": "HAIKYU!!",
             "houseScores": [
                 [
@@ -1999,6 +1862,7 @@
             "romajiTitle": "Sakamoto desu ga?",
             "englishTitle": "Haven't You Heard? I'm Sakamoto",
             "nativeTitle": "\u5742\u672c\u3067\u3059\u304c?",
+            "format": "TV",
             "description": "First year high school student Sakamoto isn't just cool, he's the coolest! Almost immediately after starting school, he began attracting everyone's attention. The girls love him, and most of the boys resent him. There's even a boy in the class who works as a model, but who is constantly upstaged by Sakamoto! No matter what tricks the other boys try to play on him, Sakamoto always manages to foil them with ease and grace. Though Sakamoto may seem cool and aloof, he helps others when asked, such as in the case of the boy in his class who was being constantly bullied. No matter what difficulties Sakamoto encounters, he moves through his high school life with confidence and class!<br>\n<br>\n(Source: MangaHelpers)",
             "episodes": 12,
             "seasons": 1,
@@ -2028,32 +1892,27 @@
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Episodic",
+                    "rank": 79,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Delinquents",
                     "rank": 72,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Seinen",
-                    "rank": 56,
+                    "rank": 53,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 20,
                     "isMediaSpoiler": false
                 }
             ],
             "score": 73,
-            "jaredScore": [
-                85,
-                12,
-                39
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "Haven't You Heard? I'm Sakamoto",
             "houseScores": [
                 [
@@ -2087,32 +1946,32 @@
             "tags": [
                 {
                     "name": "Time Manipulation",
-                    "rank": 91,
+                    "rank": 92,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Virtual World",
-                    "rank": 88,
+                    "rank": 89,
+                    "isMediaSpoiler": true
+                },
+                {
+                    "name": "Alternate Universe",
+                    "rank": 85,
                     "isMediaSpoiler": true
                 },
                 {
                     "name": "Full CGI",
-                    "rank": 83,
+                    "rank": 84,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Alternate Universe",
-                    "rank": 83,
-                    "isMediaSpoiler": true
-                },
-                {
                     "name": "Rehabilitation",
-                    "rank": 60,
+                    "rank": 64,
                     "isMediaSpoiler": true
                 },
                 {
                     "name": "School",
-                    "rank": 46,
+                    "rank": 48,
                     "isMediaSpoiler": false
                 }
             ],
@@ -2256,6 +2115,7 @@
             "romajiTitle": "Inuyashiki",
             "englishTitle": "INUYASHIKI LAST HERO",
             "nativeTitle": "\u3044\u306c\u3084\u3057\u304d",
+            "format": "TV",
             "description": "Ichiro Inuyashiki is down on his luck. While only 58 years old, his geriatric looks often have him written off as a pathetic old man by the world around him and he's constantly ignored and disrespected by his family despite all that he's done to support them. On top of everything else, his doctor has revealed that he has cancer and it appears that he has little time left in this world. But just when it seems things couldn't get any worse, a blinding light in the night sky strikes the earth where Ichiro stands. He later wakes up to find himself unscathed, but he soon starts to notice that there's something\u2026different about himself.<br><br>\n\n(Source: Crunchyroll)",
             "episodes": 11,
             "seasons": 1,
@@ -2378,21 +2238,6 @@
                 }
             ],
             "score": 74,
-            "jaredScore": [
-                90,
-                20,
-                -50
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                90,
-                0,
-                -50
-            ],
             "defaultTitle": "INUYASHIKI LAST HERO",
             "houseScores": [
                 [
@@ -2440,11 +2285,6 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Heterosexual",
-                    "rank": 84,
-                    "isMediaSpoiler": false
-                },
-                {
                     "name": "Male Protagonist",
                     "rank": 82,
                     "isMediaSpoiler": false
@@ -2455,19 +2295,34 @@
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Heterosexual",
+                    "rank": 82,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Philosophy",
                     "rank": 78,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Hikikomori",
-                    "rank": 70,
+                    "rank": 69,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "School",
-                    "rank": 55,
+                    "rank": 54,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 50,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Cannibalism",
+                    "rank": 10,
+                    "isMediaSpoiler": true
                 }
             ],
             "score": 84,
@@ -2486,6 +2341,7 @@
             "romajiTitle": "Kaguya-sama wa Kokurasetai: Tensaitachi no Renai Zunousen",
             "englishTitle": "Kaguya-sama: Love is War",
             "nativeTitle": "\u304b\u3050\u3084\u69d8\u306f\u544a\u3089\u305b\u305f\u3044\uff5e\u5929\u624d\u305f\u3061\u306e\u604b\u611b\u982d\u8133\u6226\uff5e",
+            "format": "TV",
             "description": "Known for being both brilliant and powerful, Miyuki Shirogane and Kaguya Shinomiya lead the illustrious Shuchiin Academy as near equals. And everyone thinks they\u2019d make a great couple. Pride and arrogance are in ample supply, so the only logical move is to trick the other into instigating a date! Who will come out on top in this psychological war where the first move is the only one that matters?\n<br><br>\n(Source: Aniplex)",
             "episodes": 24,
             "seasons": 2,
@@ -2548,7 +2404,12 @@
                 },
                 {
                     "name": "Male Protagonist",
-                    "rank": 60,
+                    "rank": 59,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 53,
                     "isMediaSpoiler": false
                 },
                 {
@@ -2573,21 +2434,6 @@
                 }
             ],
             "score": 83,
-            "jaredScore": [
-                88,
-                42,
-                35
-            ],
-            "simonScore": [
-                100,
-                40,
-                45
-            ],
-            "kenanScore": [
-                80,
-                0,
-                20
-            ],
             "defaultTitle": "Kaguya-sama: Love is War",
             "houseScores": [
                 [
@@ -2615,6 +2461,7 @@
             "romajiTitle": "Eizouken ni wa Te wo Dasu na!",
             "englishTitle": "Keep Your Hands Off Eizouken!",
             "nativeTitle": "\u6620\u50cf\u7814\u306b\u306f\u624b\u3092\u51fa\u3059\u306a\uff01",
+            "format": "TV",
             "description": "First year high schooler Midori Asakusa loves anime so much, she insists that \"concept is everything\" in animation. Though she draws a variety of ideas in her sketchbook, she hasn't taken the first step to creating anime, insisting that she can't do it alone. The producer-type Sayaka Kanamori is the first to notice Asakusa's genius. Then, when it becomes clear that their classmate, charismatic fashion model Tsubame Mizusaki, really wants to be an animator, they create an animation club to realize the \"ultimate world\" that exists in their minds.<br>\n<br>\n(Source: Crunchyroll)",
             "episodes": 12,
             "seasons": 1,
@@ -2675,6 +2522,11 @@
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Primarily Teen Cast",
+                    "rank": 60,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Urban Fantasy",
                     "rank": 56,
                     "isMediaSpoiler": false
@@ -2696,21 +2548,6 @@
                 }
             ],
             "score": 80,
-            "jaredScore": [
-                79,
-                -5,
-                10
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                90,
-                -10,
-                10
-            ],
             "defaultTitle": "Keep Your Hands Off Eizouken!",
             "houseScores": [
                 [
@@ -2732,6 +2569,7 @@
             "romajiTitle": "Kino no Tabi: the Beautiful World",
             "englishTitle": "Kino's Journey",
             "nativeTitle": "\u30ad\u30ce\u306e\u65c5 -the Beautiful World-",
+            "format": "TV",
             "description": "Based on a hit light novel series by Keiichi Sigsawa, the philosophical Kino's Journey employs the time-honored motif of the road trip as a vehicle for self-discovery and universal truth. Deeply meditative and cooler than zero, the series follows the existential adventures of the apt marksman Kino along with talking motorcycle Hermes as they travel the world and learn much about themselves in the process. Imaginative, thought-provoking, and sometimes disturbing, Kino's journey is documented in an episodic style with an emphasis on atmosphere rather than action or plot, though still prevalent.",
             "episodes": 13,
             "seasons": 1,
@@ -2778,9 +2616,9 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Agender",
-                    "rank": 60,
-                    "isMediaSpoiler": false
+                    "name": "Female Protagonist",
+                    "rank": 61,
+                    "isMediaSpoiler": true
                 },
                 {
                     "name": "Iyashikei",
@@ -2793,11 +2631,6 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Female Protagonist",
-                    "rank": 60,
-                    "isMediaSpoiler": true
-                },
-                {
                     "name": "Rural",
                     "rank": 58,
                     "isMediaSpoiler": false
@@ -2805,6 +2638,11 @@
                 {
                     "name": "Guns",
                     "rank": 56,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Agender",
+                    "rank": 50,
                     "isMediaSpoiler": false
                 },
                 {
@@ -2819,7 +2657,7 @@
                 },
                 {
                     "name": "LGBTQ+ Themes",
-                    "rank": 35,
+                    "rank": 33,
                     "isMediaSpoiler": true
                 },
                 {
@@ -2834,21 +2672,6 @@
                 }
             ],
             "score": 81,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "Kino's Journey",
             "houseScores": []
         },
@@ -2857,6 +2680,7 @@
             "romajiTitle": "Kino no Tabi -the Beautiful World- the Animated Series",
             "englishTitle": "Kino's Journey -the Beautiful World- the Animated Series",
             "nativeTitle": "\u30ad\u30ce\u306e\u65c5 -the Beautiful World- the Animated Series",
+            "format": "TV",
             "description": "The story follows the travels of Kino, a young adventurer who rides a talking motorcycle named Hermes. They explore the people and cultures of different places throughout their adventures, spending only three days at each location.<br><br>\n\nSource: (ANN)",
             "episodes": 12,
             "seasons": 1,
@@ -2919,21 +2743,6 @@
                 }
             ],
             "score": 73,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                80,
-                0,
-                0
-            ],
             "defaultTitle": "Kino's Journey -the Beautiful World- the Animated Series",
             "houseScores": [
                 [
@@ -2949,6 +2758,7 @@
             "romajiTitle": "Kiznaiver",
             "englishTitle": "Kiznaiver",
             "nativeTitle": "\u30ad\u30ba\u30ca\u30a4\u30fc\u30d0\u30fc",
+            "format": "TV",
             "description": "The fictional Japanese city named Sugomori City is built on reclaimed land. But as the years go by, the city's population is decreasing. One day, Sonosaki tells her classmate Katsuhira: \"You have been selected to be a Kiznaiver.\" The Kizuna System, which allows Katsuhira to share his wounds, connects him to the classmates whose lives and personalities completely differ from his. The Kizuna System is an incomplete system for the implementation of world peace that connects people through wounds. All those who are connected to this system are called Kiznaivers. When one Kiznaiver is wounded, the system divides and transmits the wound among the other Kiznaivers.\n<br><br>\n(Source: Anime News Network)",
             "episodes": 12,
             "seasons": 1,
@@ -3020,7 +2830,7 @@
                 },
                 {
                     "name": "Bullying",
-                    "rank": 51,
+                    "rank": 50,
                     "isMediaSpoiler": false
                 },
                 {
@@ -3035,21 +2845,6 @@
                 }
             ],
             "score": 72,
-            "jaredScore": [
-                90,
-                -15,
-                -30
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "Kiznaiver",
             "houseScores": [
                 [
@@ -3065,6 +2860,7 @@
             "romajiTitle": "Chuunibyou demo Koi ga Shitai!",
             "englishTitle": "Love, Chunibyo & Other Delusions",
             "nativeTitle": "\u4e2d\u4e8c\u75c5\u3067\u3082\u604b\u304c\u3057\u305f\u3044!",
+            "format": "TV",
             "description": "Everybody has had that stage in their life where they have thought themselves to be special, different from the masses of ordinary humans. They might go as far as seeing themselves capable of wielding mystical powers, or maybe even believe themselves to have descended from a fantasy realm. This \"disease\" is known as \"chuunibyou\" and is often the source of some of the most embarrassing moments of a person's life.\n<br><br>\nFor Yuuta Togashi, the scars that his chuunibyou has left behind are still fresh. Having posed as the \"Dark Flame Master\" during his middle school years, he looks back at those times with extreme embarrassment, so much so that he decides to attend a high school far away where nobody will recognize him. Putting his dark history behind him, he longs to live a normal high school life.\n<br><br>\nUnfortunately, he hasn't escaped his past yet: enter Rikka Takanashi, Yuuta's new classmate and self-declared vessel of the \"Wicked Eye.\" As this eccentric young girl crashes into Yuuta's life, his dream of an ordinary, chuunibyou-free life quickly crumbles away. In this hilarious and heartwarming story of a boy who just wants to leave his embarrassing memories behind, the delusions of old are far from a thing of the past.\n<br><br>\n(Source: MAL Rewrite)",
             "episodes": 24,
             "seasons": 2,
@@ -3124,24 +2920,14 @@
                     "name": "Parody",
                     "rank": 45,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 20,
+                    "isMediaSpoiler": false
                 }
             ],
             "score": 76,
-            "jaredScore": [
-                80,
-                -5,
-                15
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                80,
-                0,
-                5
-            ],
             "defaultTitle": "Love, Chunibyo & Other Delusions",
             "houseScores": [
                 [
@@ -3163,6 +2949,7 @@
             "romajiTitle": "Made in Abyss",
             "englishTitle": "Made in Abyss",
             "nativeTitle": "\u30e1\u30a4\u30c9\u30a4\u30f3\u30a2\u30d3\u30b9",
+            "format": "TV",
             "description": "The \"Abyss\" is the last unexplored place in the world. Strange and wonderful creatures roam within, and it is full of precious relics that present humans can't recreate. Those that dare to explore the depths are known as \"Cave Raiders.\" An orphan girl named Riko lives on the rim. Her dream is to become a Cave Raider like her mother and solve the mysteries of the cave system. One day, Riko starts exploring the caves and discovers a robot who resembles a human boy.<br><br>\n\n(Source: Anime News Network, edited)\n<br><br>\n<i>Note: The last episode aired with a runtime of ~48 minutes as opposed to the standard 24 minute long episode.</i>",
             "episodes": 13,
             "seasons": 1,
@@ -3226,14 +3013,14 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Chibi",
-                    "rank": 70,
-                    "isMediaSpoiler": false
-                },
-                {
                     "name": "Amnesia",
                     "rank": 70,
                     "isMediaSpoiler": true
+                },
+                {
+                    "name": "Chibi",
+                    "rank": 70,
+                    "isMediaSpoiler": false
                 },
                 {
                     "name": "Gore",
@@ -3256,14 +3043,14 @@
                     "isMediaSpoiler": true
                 },
                 {
+                    "name": "Ero Guro",
+                    "rank": 57,
+                    "isMediaSpoiler": true
+                },
+                {
                     "name": "Monster Girl",
                     "rank": 52,
                     "isMediaSpoiler": false
-                },
-                {
-                    "name": "Ero Guro",
-                    "rank": 50,
-                    "isMediaSpoiler": true
                 },
                 {
                     "name": "Tanned Skin",
@@ -3284,24 +3071,14 @@
                     "name": "Crossdressing",
                     "rank": 28,
                     "isMediaSpoiler": true
+                },
+                {
+                    "name": "Agender",
+                    "rank": 20,
+                    "isMediaSpoiler": false
                 }
             ],
             "score": 85,
-            "jaredScore": [
-                85,
-                -10,
-                -25
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "Made in Abyss",
             "houseScores": [
                 [
@@ -3317,6 +3094,7 @@
             "romajiTitle": "3-gatsu no Lion",
             "englishTitle": "March comes in like a lion",
             "nativeTitle": "\uff13\u6708\u306e\u30e9\u30a4\u30aa\u30f3",
+            "format": "TV",
             "description": "Rei Kiriyama is a 17 year old boy who recently started living alone, financed by his salary as a professional Shogi player. Despite his independence, however, he's yet to mature emotionally, and his problems continue to haunt him in his daily life. His relationship with his adoptive family is strained, and he has difficulties interacting with his fellow high school students.<br>\n<br>\nMeanwhile, his professional career in Shogi has entered a slump. Burdened with the heavy expectations placed upon him, his wins and losses are fluctuating as his record and progression into the ranks begin to stagnate.<br>\n<br>\nAcquainted with Rei are the three Kawamoto sisters: Akari, Hinata, and Momo. Unlike Rei, they live happily in their modest home, which they warmly welcome Rei into as if he were one of their own.  He frequently visits the family, interacting with them and receiving the kind of care and affection he never quite had while under his foster home.<br>\nThis is the story of Rei's triumphs and failures, relationships new and old, and his growth as a person.<br>\n<br>\n(Source: TV Tropes)",
             "episodes": 44,
             "seasons": 2,
@@ -3397,21 +3175,6 @@
                 }
             ],
             "score": 83,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                85,
-                -45,
-                -35
-            ],
             "defaultTitle": "March comes in like a lion",
             "houseScores": [
                 [
@@ -3427,6 +3190,7 @@
             "romajiTitle": "Tonari no Kaibutsu-kun",
             "englishTitle": "My Little Monster",
             "nativeTitle": "\u3068\u306a\u308a\u306e\u602a\u7269\u304f\u3093",
+            "format": "TV",
             "description": "Standoffish, reclusive Shizuku Mizutani cares far more about earning stellar grades than cultivating friendships. But her opinions on friendship and relationships begin to change when she meets habitual truant Haru Yoshida, who happens to have a rather fearsome reputation. Like Shizuku, Haru\u2019s reputation has made it difficult to make friends. And yet through their budding friendship and stirrings of attraction the unlikely pair learns to understand one another, the world around them, and the tenor of their own emotions.\n<br><br>\n(Source: Sentai Filmworks)",
             "episodes": 13,
             "seasons": 1,
@@ -3485,24 +3249,14 @@
                     "name": "Male Protagonist",
                     "rank": 40,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 20,
+                    "isMediaSpoiler": false
                 }
             ],
             "score": 73,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "My Little Monster",
             "houseScores": []
         },
@@ -3511,6 +3265,7 @@
             "romajiTitle": "Ore Monogatari!!",
             "englishTitle": "My Love Story!!",
             "nativeTitle": "\u4ffa\u7269\u8a9e!!",
+            "format": "TV",
             "description": "Takeo Goda is a giant guy with a giant heart. Too bad the girls don't want him! (They always go for his good-looking best friend, Sunakawa.) Used to being on the sidelines, Takeo simply stands tall and accepts his fate. But one day when he saves a girl named Yamato from a harasser on the train, his (love!) life suddenly takes an incredible turn! Takeo can hardly believe it when he crosses paths with Yamato again, and he finds himself falling in love with her\u2026 But with handsome Sunakawa around, does Takeo even stand a chance?<br><br>\n(Source: Crunchyroll)",
             "episodes": 24,
             "seasons": 1,
@@ -3558,24 +3313,14 @@
                     "name": "Bullying",
                     "rank": 46,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 20,
+                    "isMediaSpoiler": false
                 }
             ],
             "score": 77,
-            "jaredScore": [
-                81,
-                -5,
-                28
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "My Love Story!!",
             "houseScores": [
                 [
@@ -3591,6 +3336,7 @@
             "romajiTitle": "Nichijou",
             "englishTitle": "Nichijou - My Ordinary Life",
             "nativeTitle": "\u65e5\u5e38",
+            "format": "TV",
             "description": "<i>Nichijou</i> primarily focuses on the daily antics of a trio of childhood friends\u2014high school girls Mio Naganohara, Yuuko Aioi and Mai Minakami\u2014whose stories soon intertwine with the young genius Hakase Shinonome, her robot caretaker Nano, and their talking cat Sakamoto. With every passing day, the lives of these six, as well as of the many people around them, experience both the calms of normal life and the insanity of the absurd. Walking to school, being bitten by a talking crow, spending time with friends, and watching the principal suplex a deer: they are all in a day's work in the extraordinary everyday lives of those in <i>Nichijou</i>. <br>\n<br>\n[Written by MAL Rewrite]",
             "episodes": 26,
             "seasons": 1,
@@ -3724,6 +3470,7 @@
             "romajiTitle": "Nisekoi",
             "englishTitle": "Nisekoi",
             "nativeTitle": "\u30cb\u30bb\u30b3\u30a4",
+            "format": "TV",
             "description": "As a child, Raku Ichijo made a secret promise with his childhood sweetheart, keeping a pendant as a memento while his love took the key. He dreams of one day meeting his past love, but years later, reality smashes his hopes when Chitoge Kirisaki accidentally knees him in the face...<br><br>\r\nThough Raku's a normal high schooler, his family heads the notorious yakuza gang the Shuei-Gumi faction! And he's dragged into family affairs when he's forced into a relationship with Chitoge, the daughter of a rival gang's boss!<br><br>\r\nDespite their constant spats, the two somehow fool everyone with their false relationship. Raku then discovers that Chitoge has a mysterious key from her past, which she can't remember... Plus, two other girls appear with keys as well\u2014Kosaki Onodera and Marika Tachibana!<br><br>\r\nCaught in the midst of this love maelstrom, even more complications arise for Raku when his class decides on Romeo and Juliet as the class's play for the school festival. Can the two false lovebirds pull off the impossible and make the play a success?<br><br>\r\n(Source: Viz Media)",
             "episodes": 32,
             "seasons": 2,
@@ -3754,7 +3501,7 @@
                 },
                 {
                     "name": "Tsundere",
-                    "rank": 84,
+                    "rank": 83,
                     "isMediaSpoiler": false
                 },
                 {
@@ -3799,21 +3546,6 @@
                 }
             ],
             "score": 74,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "Nisekoi",
             "houseScores": []
         },
@@ -3839,7 +3571,7 @@
             "tags": [
                 {
                     "name": "Lost Civilization",
-                    "rank": 94,
+                    "rank": 95,
                     "isMediaSpoiler": false
                 },
                 {
@@ -3982,6 +3714,7 @@
             "romajiTitle": "Sora yori mo Tooi Basho",
             "englishTitle": "A Place Further Than the Universe",
             "nativeTitle": "\u5b87\u5b99\u3088\u308a\u3082\u9060\u3044\u5834\u6240",
+            "format": "TV",
             "description": "Mari Tamaki is in her second year of high school and wants to start something. It's then that she meets Shirase, a girl with few friends who's considered weirdo by the rest of the class and nicknamed \"Antarctic\" since it's all she ever talks about. Unlike her peers, Mari is moved by Shirase's dedication and decides that even though it's unlikely that high school girls will ever go to Antarctica, she's going to try to go with Shirase.<br><br>\n\n(Source: Anime News Network)",
             "episodes": 13,
             "seasons": 1,
@@ -4003,7 +3736,7 @@
                 },
                 {
                     "name": "Primarily Female Cast",
-                    "rank": 89,
+                    "rank": 88,
                     "isMediaSpoiler": false
                 },
                 {
@@ -4023,18 +3756,18 @@
                 },
                 {
                     "name": "Cute Girls Doing Cute Things",
-                    "rank": 70,
+                    "rank": 69,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Tragedy",
+                    "rank": 62,
+                    "isMediaSpoiler": true
                 },
                 {
                     "name": "Work",
                     "rank": 60,
                     "isMediaSpoiler": false
-                },
-                {
-                    "name": "Tragedy",
-                    "rank": 60,
-                    "isMediaSpoiler": true
                 },
                 {
                     "name": "Educational",
@@ -4043,31 +3776,21 @@
                 },
                 {
                     "name": "Ships",
-                    "rank": 52,
+                    "rank": 53,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 53,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "School",
-                    "rank": 32,
+                    "rank": 33,
                     "isMediaSpoiler": false
                 }
             ],
             "score": 84,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                85,
-                -25,
-                -15
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "A Place Further Than the Universe",
             "houseScores": [
                 [
@@ -4083,6 +3806,7 @@
             "romajiTitle": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
             "englishTitle": "Rascal Does Not Dream of Bunny Girl Senpai",
             "nativeTitle": "\u9752\u6625\u30d6\u30bf\u91ce\u90ce\u306f\u30d0\u30cb\u30fc\u30ac\u30fc\u30eb\u5148\u8f29\u306e\u5922\u3092\u898b\u306a\u3044",
+            "format": "TV",
             "description": "There's a rumor about a mysterious phenomenon called \"puberty syndrome.\" For example, Sakuta Azusagawa is a high school student who suddenly sees a bunny girl appear in front of him. The girl is actually a girl named Mai Sakurajima, who is Sakuta's upperclassman who is also a famous actress who has gone on hiatus from the entertainment industry. For some reason, the people around Mai cannot see her bunny-girl figure. Sakuta sets out to solve this mystery, and as he spends time with Mai, he learns her secret feelings. Other heroines who have \"puberty syndrome\" start to appear in front of Sakuta.<br><br>\n(Source: Anime News Network)",
             "episodes": 13,
             "seasons": 1,
@@ -4196,32 +3920,17 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Female Harem",
-                    "rank": 31,
+                    "name": "Trains",
+                    "rank": 20,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Trains",
+                    "name": "Primarily Teen Cast",
                     "rank": 20,
                     "isMediaSpoiler": false
                 }
             ],
             "score": 81,
-            "jaredScore": [
-                91,
-                -15,
-                -10
-            ],
-            "simonScore": [
-                90,
-                5,
-                -40
-            ],
-            "kenanScore": [
-                90,
-                0,
-                0
-            ],
             "defaultTitle": "Rascal Does Not Dream of Bunny Girl Senpai",
             "houseScores": [
                 [
@@ -4249,6 +3958,7 @@
             "romajiTitle": "Oushitsu Kyoushi Heine",
             "englishTitle": "The Royal Tutor",
             "nativeTitle": "\u738b\u5ba4\u6559\u5e2b\u30cf\u30a4\u30cd",
+            "format": "TV",
             "description": "Accepting the post of Royal Tutor at the court of the king of Grannzreich, Heine Wittgenstein is a little professor with a big job ahead! Each of the kingdom's four princes has a rather distinct personality. Does their diminutive new instructor have what it takes to lay down some learning? It's a comedy of educational proportions!<br><br>\n\n(Source: Yen Press)",
             "episodes": 12,
             "seasons": 1,
@@ -4283,32 +3993,17 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Shounen",
+                    "name": "Tsundere",
                     "rank": 60,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Tsundere",
-                    "rank": 60,
+                    "name": "Shounen",
+                    "rank": 48,
                     "isMediaSpoiler": false
                 }
             ],
             "score": 72,
-            "jaredScore": [
-                96,
-                -5,
-                19
-            ],
-            "simonScore": [
-                75,
-                -15,
-                25
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "The Royal Tutor",
             "houseScores": [
                 [
@@ -4351,14 +4046,14 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Denpa",
-                    "rank": 94,
-                    "isMediaSpoiler": true
-                },
-                {
                     "name": "Rehabilitation",
                     "rank": 92,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Denpa",
+                    "rank": 92,
+                    "isMediaSpoiler": true
                 },
                 {
                     "name": "Language Barrier",
@@ -4419,6 +4114,11 @@
                     "name": "Tomboy",
                     "rank": 25,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 20,
+                    "isMediaSpoiler": false
                 }
             ],
             "score": 88,
@@ -4437,6 +4137,7 @@
             "romajiTitle": "Karakai Jouzu no Takagi-san",
             "englishTitle": "Teasing Master Takagi-san",
             "nativeTitle": "\u304b\u3089\u304b\u3044\u4e0a\u624b\u306e\u9ad8\u6728\u3055\u3093",
+            "format": "TV",
             "description": "Having a friend that knows you inside out should be a good thing, but in Nishikata's case, the opposite is true.<br>\n<br>\nHis classmate Takagi loves to tease him on a daily basis, and she uses her extensive knowledge of his behavior to predict exactly how he will react to her teasing, making it nearly impossible for Nishikata to ever make a successful comeback. Despite this, Nishikata vows to someday give Takagi a taste of her own medicine by making her blush out of embarrassment from his teasing.\n",
             "episodes": 24,
             "seasons": 2,
@@ -4453,42 +4154,42 @@
             "tags": [
                 {
                     "name": "Primarily Child Cast",
-                    "rank": 99,
+                    "rank": 98,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Slapstick",
-                    "rank": 87,
+                    "rank": 86,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Heterosexual",
-                    "rank": 80,
+                    "rank": 86,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "School",
-                    "rank": 78,
+                    "rank": 77,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Bullying",
-                    "rank": 73,
+                    "rank": 70,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Episodic",
-                    "rank": 66,
+                    "rank": 67,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Shounen",
-                    "rank": 65,
+                    "rank": 64,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Rural",
-                    "rank": 56,
+                    "rank": 53,
                     "isMediaSpoiler": false
                 },
                 {
@@ -4498,21 +4199,6 @@
                 }
             ],
             "score": 75,
-            "jaredScore": [
-                84,
-                -20,
-                20
-            ],
-            "simonScore": [
-                95,
-                -15,
-                35
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "Teasing Master Takagi-san",
             "houseScores": [
                 [
@@ -4534,6 +4220,7 @@
             "romajiTitle": "Zankyou no Terror",
             "englishTitle": "Terror in Resonance",
             "nativeTitle": "\u6b8b\u97ff\u306e\u30c6\u30ed\u30eb",
+            "format": "TV",
             "description": "Painted in red, the word \"VON\" is all that is left behind after a terrorist attack on a nuclear facility in Japan. The government is shattered by their inability to act, and the police are left frantically searching for ways to crack down the perpetrators. The public are clueless\u2014until, six months later, a strange video makes its way onto the internet. In it, two teenage boys who identify themselves only as \"Sphinx\" directly challenge the police, threatening to cause destruction and mayhem across Tokyo. Unable to stop the mass panic quickly spreading through the city and desperate for any leads in their investigation, the police struggle to act effectively against these terrorists, with Detective Kenjirou Shibazaki caught in the middle of it all.<br>\n<br>\n<i>Zankyou no Terror</i> tells the story of Nine and Twelve, the two boys behind the masked figures of Sphinx. They should not exist, yet they stand strong in a world of deception and secrets while they make the city fall around them, all in the hopes of burying their own tragic truth.<br>\n<br>\n(Source: MAL Rewrite)",
             "episodes": 11,
             "seasons": 1,
@@ -4600,17 +4287,17 @@
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Police",
+                    "rank": 60,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Mythology",
-                    "rank": 56,
+                    "rank": 57,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Primarily Male Cast",
-                    "rank": 56,
-                    "isMediaSpoiler": false
-                },
-                {
-                    "name": "Police",
                     "rank": 56,
                     "isMediaSpoiler": false
                 },
@@ -4621,21 +4308,6 @@
                 }
             ],
             "score": 78,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                -25
-            ],
             "defaultTitle": "Terror in Resonance",
             "houseScores": []
         },
@@ -4644,6 +4316,7 @@
             "romajiTitle": "Toradora!",
             "englishTitle": "Toradora!",
             "nativeTitle": "\u3068\u3089\u30c9\u30e9\uff01",
+            "format": "TV",
             "description": "Ryuuji Takasu is a gentle high school student with a love for housework; but in contrast to his kind nature, he has an intimidating face that often gets him labeled as a delinquent. On the other hand is Taiga Aisaka, a small, doll-like student, who is anything but a cute and fragile girl. Equipped with a wooden katana and feisty personality, Taiga is known throughout the school as the \"Palmtop Tiger.\"\n<br><br>\nOne day, an embarrassing mistake causes the two students to cross paths. Ryuuji discovers that Taiga actually has a sweet side: she has a crush on the popular vice president, Yuusaku Kitamura, who happens to be his best friend. But things only get crazier when Ryuuji reveals that he has a crush on Minori Kushieda\u2014Taiga's best friend!\n<br><br>\n<i>Toradora!</i> is a romantic comedy that follows this odd duo as they embark on a quest to help each other with their respective crushes, forming an unlikely alliance in the process.\n",
             "episodes": 25,
             "seasons": 1,
@@ -4666,7 +4339,12 @@
                 },
                 {
                     "name": "Love Triangle",
-                    "rank": 91,
+                    "rank": 90,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Heterosexual",
+                    "rank": 88,
                     "isMediaSpoiler": false
                 },
                 {
@@ -4680,13 +4358,8 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Heterosexual",
-                    "rank": 87,
-                    "isMediaSpoiler": false
-                },
-                {
                     "name": "Female Protagonist",
-                    "rank": 77,
+                    "rank": 78,
                     "isMediaSpoiler": false
                 },
                 {
@@ -4696,12 +4369,12 @@
                 },
                 {
                     "name": "Slapstick",
-                    "rank": 67,
+                    "rank": 68,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Shounen",
-                    "rank": 50,
+                    "name": "Primarily Teen Cast",
+                    "rank": 53,
                     "isMediaSpoiler": false
                 },
                 {
@@ -4711,21 +4384,6 @@
                 }
             ],
             "score": 79,
-            "jaredScore": [
-                0,
-                0,
-                0
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "Toradora!",
             "houseScores": []
         },
@@ -4837,6 +4495,7 @@
             "romajiTitle": "Ballroom e Youkoso",
             "englishTitle": "Welcome to the Ballroom",
             "nativeTitle": "\u30dc\u30fc\u30eb\u30eb\u30fc\u30e0\u3078\u3088\u3046\u3053\u305d",
+            "format": "TV",
             "description": "Fujita has drifted through middle school aimlessly, unable to find friends or anything that can hold his attention. Then, one day, he's attacked by a gang and saved by a mysterious man. But this isn't a karate master; it's a ballroom dance instructor! Reluctantly, Fujita takes a few beginner's classes, only to find his inspiration... an entrancing, teenage dance prodigy named Shizuku.\n<br>\nIt's Fujita's first step into the high-octane world of competitive dance!\n<br><br>\n(Source: Kodansha USA)",
             "episodes": 24,
             "seasons": 1,
@@ -4853,7 +4512,7 @@
             "tags": [
                 {
                     "name": "Dancing",
-                    "rank": 96,
+                    "rank": 97,
                     "isMediaSpoiler": false
                 },
                 {
@@ -4893,21 +4552,6 @@
                 }
             ],
             "score": 79,
-            "jaredScore": [
-                81,
-                -15,
-                -15
-            ],
-            "simonScore": [
-                0,
-                0,
-                0
-            ],
-            "kenanScore": [
-                0,
-                0,
-                0
-            ],
             "defaultTitle": "Welcome to the Ballroom",
             "houseScores": [
                 [
@@ -4940,11 +4584,6 @@
             ],
             "tags": [
                 {
-                    "name": "Musical",
-                    "rank": 94,
-                    "isMediaSpoiler": false
-                },
-                {
                     "name": "Tragedy",
                     "rank": 89,
                     "isMediaSpoiler": true
@@ -4976,7 +4615,7 @@
                 },
                 {
                     "name": "Heterosexual",
-                    "rank": 66,
+                    "rank": 64,
                     "isMediaSpoiler": false
                 },
                 {
@@ -4986,12 +4625,17 @@
                 },
                 {
                     "name": "Slapstick",
-                    "rank": 43,
+                    "rank": 42,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Shounen",
                     "rank": 42,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 20,
                     "isMediaSpoiler": false
                 }
             ],
@@ -5119,8 +4763,8 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Seinen",
-                    "rank": 32,
+                    "name": "Primarily Teen Cast",
+                    "rank": 20,
                     "isMediaSpoiler": false
                 }
             ],

@@ -484,10 +484,11 @@ class EditWindow(tk.Toplevel):
         self.edit_frame = tk.Frame(self)
         self.lbl_id_no = tk.Label(self.edit_frame, text="ID no.")
         self.ent_id_no = tk.Entry(self.edit_frame, width=15)
-        self.btn_confirm_id = tk.Button(self.edit_frame, text="Confirm", command=self.update_series)
+        btn_confirm_id = tk.Button(self.edit_frame, text="Confirm", command=self.update_series)
         self.lbl_show_name = tk.Label(self.edit_frame)
         btn_confirm_scores = tk.Button(self.edit_frame, text="Confirm", command=self.enter_ratings)
         btn_add_user = tk.Button(self.edit_frame, text="Add User", command=self.add_user)
+        btn_update_all = tk.Button(self.edit_frame, text="Update All", command=self.update_all)
 
         # Build ratings frame
         self.frm_user_ratings = tk.Frame(self.edit_frame)
@@ -500,15 +501,16 @@ class EditWindow(tk.Toplevel):
         # Grid main frame
         self.edit_frame.grid()
         self.lbl_id_no.grid(row=0, column=0)
-        self.ent_id_no.grid(row=0, column=1, columnspan=2)
-        self.btn_confirm_id.grid(row=0, column=3, padx=3, pady=3)
+        self.ent_id_no.grid(row=0, column=1, columnspan=1)
+        btn_confirm_id.grid(row=0, column=2, padx=3, pady=3)
         self.edit_frame.rowconfigure(1, minsize=15)
-        self.lbl_show_name.grid(row=1, column=0, columnspan=4)
-        btn_confirm_scores.grid(row=3, column=2, padx=3, pady=3)
-        btn_add_user.grid(row=3, column=1, padx=3, pady=3)
+        self.lbl_show_name.grid(row=1, column=0, columnspan=3)
+        btn_confirm_scores.grid(row=3, column=1, padx=3, pady=3)
+        btn_add_user.grid(row=3, column=0, padx=3, pady=3)
+        btn_update_all.grid(row=3, column=2, padx=3, pady=3)
 
         # Grid ratings frame
-        self.frm_user_ratings.grid(row=2, column=0, columnspan=4)
+        self.frm_user_ratings.grid(row=2, column=0, columnspan=3)
         lbl_name.grid(row=0, column=0)
         lbl_score.grid(row=0, column=1)
         lbl_energy.grid(row=0, column=2)
@@ -666,6 +668,7 @@ class EditWindow(tk.Toplevel):
                 time.sleep(1.5)
             elif len(library) > 45:
                 time.sleep(1)
+            print(f"{series['defaultTitle']} updated")
 
 
 def convert_image(url):
