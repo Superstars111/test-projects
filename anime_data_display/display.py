@@ -79,19 +79,52 @@ class Root:
                                          wraplength=490)
 
         # Build synopsis frame
-        self.frm_description = tk.Frame(self.frm_anime_display, width=300, height=300, borderwidth=2, relief="solid")
-        self.txt_description = tk.Text(self.frm_description, height=18, width=55, state="disabled",
+        self.frm_description = tk.Frame(self.frm_anime_display, width=300, height=150, borderwidth=2, relief="solid")
+        self.txt_description = tk.Text(self.frm_description, height=9, width=55, state="disabled",
                                        wrap="word", font=default_font, bg="gray92")
         self.sbar = tk.Scrollbar(self.frm_description, orient=tk.VERTICAL, command=self.txt_description.yview)
+        lbl_streaming = tk.Label(self.frm_description, text="Streaming Locations:")
+        self.frm_stream_locations = tk.Frame(self.frm_description)
+        lbl_crunchy_name = tk.Label(self.frm_stream_locations, text="Crunchyroll")
+        lbl_crunchy_seasons = tk.Label(self.frm_stream_locations, text="Seasons: 0")
+        lbl_crunchy_movies = tk.Label(self.frm_stream_locations, text="Movies: 0")
+        lbl_funi_name = tk.Label(self.frm_stream_locations, text="Funimation")
+        lbl_funi_seasons = tk.Label(self.frm_stream_locations, text="Seasons: 0")
+        lbl_funi_movies = tk.Label(self.frm_stream_locations, text="Movies: 0")
+        lbl_hidive_name = tk.Label(self.frm_stream_locations, text="Hidive")
+        lbl_hidive_seasons = tk.Label(self.frm_stream_locations, text="Seasons: 0")
+        lbl_hidive_movies = tk.Label(self.frm_stream_locations, text="Movies: 0")
+        lbl_vrv_name = tk.Label(self.frm_stream_locations, text="VRV")
+        lbl_vrv_seasons = tk.Label(self.frm_stream_locations, text="Seasons: 0")
+        lbl_vrv_movies = tk.Label(self.frm_stream_locations, text="Movies: 0")
+        lbl_hulu_name = tk.Label(self.frm_stream_locations, text="Hulu")
+        lbl_hulu_seasons = tk.Label(self.frm_stream_locations, text="Seasons: 0")
+        lbl_hulu_movies = tk.Label(self.frm_stream_locations, text="Movies: 0")
+        lbl_amazon_name = tk.Label(self.frm_stream_locations, text="Amazon Prime")
+        lbl_amazon_seasons = tk.Label(self.frm_stream_locations, text="Seasons: 0")
+        lbl_amazon_movies = tk.Label(self.frm_stream_locations, text="Movies: 0")
+        lbl_youtube_name = tk.Label(self.frm_stream_locations, text="YouTube")
+        lbl_youtube_seasons = tk.Label(self.frm_stream_locations, text="Seasons: 0")
+        lbl_youtube_movies = tk.Label(self.frm_stream_locations, text="Movies: 0")
+        lbl_prison_name = tk.Label(self.frm_stream_locations, text="Netflix Prison")
+        lbl_prison_seasons = tk.Label(self.frm_stream_locations, text="Seasons: 0")
+        lbl_prison_movies = tk.Label(self.frm_stream_locations, text="Movies: 0")
+        lbl_hbo_name = tk.Label(self.frm_stream_locations, text="HBO Max")
+        lbl_hbo_seasons = tk.Label(self.frm_stream_locations, text="Seasons: 0")
+        lbl_hbo_movies = tk.Label(self.frm_stream_locations, text="Movies: 0")
+        lbl_tubi_name = tk.Label(self.frm_stream_locations, text="Tubi TV")
+        lbl_tubi_seasons = tk.Label(self.frm_stream_locations, text="Seasons: 0")
+        lbl_tubi_movies = tk.Label(self.frm_stream_locations, text="Movies: 0")
+
 
 
         # Grid main window
         self.lbox_options.grid(row=0, column=1, columnspan=2, sticky="ns", padx=10, pady=5)
-        btn_options.grid(row=1, column=2, pady=7, padx=3, sticky="n")
-        self.frm_anime_display.grid(row=0, column=0)
+        btn_options.grid(row=1, column=2, pady=7, padx=3, sticky="s")
+        self.frm_anime_display.grid(row=0, column=0, rowspan=2)
         self.frm_anime_display.rowconfigure(0, minsize=120)
         self.lbl_title.grid(row=0, column=0, columnspan=2, pady=8)
-        btn_display_all.grid(row=1, column=1, pady=7, padx=3, sticky="n")
+        btn_display_all.grid(row=1, column=1, pady=7, padx=3, sticky="s")
 
         # Grid ratings frame
         self.frm_ratings.grid(row=1, column=0, padx=15)
@@ -126,11 +159,48 @@ class Root:
         self.frm_tags.rowconfigure(7, minsize=70)
 
         # Grid synopsis frame
-        self.frm_description.grid(row=2, column=1, padx=15)
-        self.frm_description.columnconfigure(0, minsize=450)
-        self.frm_description.rowconfigure(0, minsize=330)
+        self.frm_description.grid(row=2, column=1, padx=10, pady=15, sticky="n")
+        self.frm_description.columnconfigure(0)
+        self.frm_description.rowconfigure(0, minsize=150)
         self.txt_description.grid(row=0, column=0)
         self.sbar.grid(row=0, column=1, sticky="ns")
+        lbl_streaming.grid(row=1, column=0)
+
+        self.frm_stream_locations.columnconfigure((0, 1, 2, 3, 4), minsize=100)
+        self.frm_stream_locations.rowconfigure(2, minsize=45)
+        self.frm_stream_locations.rowconfigure(5, minsize=45)
+        self.frm_stream_locations.grid(row=2, column=0, columnspan=2)
+        lbl_crunchy_name.grid(row=0, column=0)
+        lbl_crunchy_seasons.grid(row=1, column=0)
+        lbl_crunchy_movies.grid(row=2, column=0, sticky="n")
+        lbl_funi_name.grid(row=0, column=1)
+        lbl_funi_seasons.grid(row=1, column=1)
+        lbl_funi_movies.grid(row=2, column=1, sticky="n")
+        lbl_hidive_name.grid(row=0, column=2)
+        lbl_hidive_seasons.grid(row=1, column=2)
+        lbl_hidive_movies.grid(row=2, column=2, sticky="n")
+        lbl_vrv_name.grid(row=0, column=3)
+        lbl_vrv_seasons.grid(row=1, column=3)
+        lbl_vrv_movies.grid(row=2, column=3, sticky="n")
+        lbl_hulu_name.grid(row=0, column=4)
+        lbl_hulu_seasons.grid(row=1, column=4)
+        lbl_hulu_movies.grid(row=2, column=4, sticky="n")
+        lbl_amazon_name.grid(row=3, column=0)
+        lbl_amazon_seasons.grid(row=4, column=0)
+        lbl_amazon_movies.grid(row=5, column=0, sticky="n")
+        lbl_youtube_name.grid(row=3, column=1)
+        lbl_youtube_seasons.grid(row=4, column=1)
+        lbl_youtube_movies.grid(row=5, column=1, sticky="n")
+        lbl_prison_name.grid(row=3, column=2)
+        lbl_prison_seasons.grid(row=4, column=2)
+        lbl_prison_movies.grid(row=5, column=2, sticky="n")
+        lbl_hbo_name.grid(row=3, column=3)
+        lbl_hbo_seasons.grid(row=4, column=3)
+        lbl_hbo_movies.grid(row=5, column=3, sticky="n")
+        lbl_tubi_name.grid(row=3, column=4)
+        lbl_tubi_seasons.grid(row=4, column=4)
+        lbl_tubi_movies.grid(row=5, column=4, sticky="n")
+
 
     def add_options(self):
 
@@ -142,6 +212,7 @@ class Root:
 
     def update_page_display(self, *ignore):
         self.show = options[self.lbox_options.curselection()[0]]
+        self.check_streaming()
         names, scores, pacing_scores, drama_scores = sort_ratings(self.show["houseScores"])
         self.labels = []
         for idx, name in enumerate(names):
@@ -413,6 +484,54 @@ class Root:
 
         return normal_tags, warning_tags, spoiler_tags
 
+    def check_streaming(self):
+        indices = []
+        color = "black"
+        for service in self.show["streaming"].items():
+            if service[0] == "crunchyroll":
+                indices = [27, 28, 29]
+                color = "dark orange"
+            elif service[0] == "funimation":
+                indices = [24, 25, 26]
+                color = "purple"
+            elif service[0] == "hidive":
+                indices = [21, 22, 23]
+                color = "dodger blue"
+            elif service[0] == "vrv":
+                indices = [18, 19, 20]
+                color = "gold"
+            elif service[0] == "hulu":
+                indices = [15, 16, 17]
+                color = "lime green"
+            elif service[0] == "amazon":
+                indices = [12, 13, 14]
+                color = "dodger blue"
+            elif service[0] == "youtube":
+                indices = [9, 10, 11]
+                color = "red"
+            elif service[0] == "prison":
+                indices = [6, 7, 8]
+                color = "red"
+            elif service[0] == "hbo":
+                indices = [3, 4, 5]
+                color = "purple"
+            elif service[0] == "tubi":
+                indices = [0, 1, 2]
+                color = "red"
+
+            self.frm_stream_locations.grid_slaves()[indices[1]]["text"] = f"Seasons: {service[1]['seasons']}"
+            self.frm_stream_locations.grid_slaves()[indices[0]]["text"] = f"Movies: {service[1]['movies']}"
+            if service[1]["seasons"] + service[1]["movies"] == 0:
+                for idx in indices:
+                    self.frm_stream_locations.grid_slaves()[idx]["fg"] = "gray"
+            elif service[1]["seasons"] >= self.show["seasons"] and service[1]["movies"] >= self.show["movies"]:
+                self.frm_stream_locations.grid_slaves()[indices[2]]["fg"] = color
+                self.frm_stream_locations.grid_slaves()[indices[1]]["fg"] = "black"
+                self.frm_stream_locations.grid_slaves()[indices[0]]["fg"] = "black"
+            else:
+                for idx in indices:
+                    self.frm_stream_locations.grid_slaves()[idx]["fg"] = "black"
+
 
 class SelectionWindow(tk.Toplevel):
     def __init__(self, parent):
@@ -423,7 +542,7 @@ class SelectionWindow(tk.Toplevel):
 
         # Build main frame
         self.selection_frame = tk.Frame(self)
-        self.btn_confirm = tk.Button(self.selection_frame, text="Confirm choices", command=lambda: self.dismiss_window())
+        btn_confirm = tk.Button(self.selection_frame, text="Confirm choices", command=lambda: self.dismiss_window())
         self.lbox_library = tk.Listbox(self.selection_frame, listvariable=self.library_var)
         self.lbox_selected = tk.Listbox(self.selection_frame, listvariable=self.options_var)
         self.btn_add_option = tk.Button(self.selection_frame, text="Add", command=self.add_to_list)
@@ -438,7 +557,7 @@ class SelectionWindow(tk.Toplevel):
         self.lbox_selected.grid(row=1, column=2, rowspan=4)
         self.btn_add_option.grid(row=2, column=1, padx=7, pady=3, sticky="ew")
         self.btn_remove_option.grid(row=3, column=1, padx=7, pady=3, sticky="ew")
-        self.btn_confirm.grid(row=5, column=1, padx=3, pady=3)
+        btn_confirm.grid(row=5, column=1, padx=3, pady=3)
         self.btn_edit_library.grid(row=5, column=0, padx=3, pady=3)
         self.selection_frame.grid()
 
