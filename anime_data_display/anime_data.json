@@ -319,7 +319,7 @@
                 },
                 {
                     "name": "Crossdressing",
-                    "rank": 40,
+                    "rank": 41,
                     "isMediaSpoiler": true
                 },
                 {
@@ -430,7 +430,7 @@
                 },
                 {
                     "name": "Ensemble Cast",
-                    "rank": 89,
+                    "rank": 90,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1153,7 +1153,7 @@
             "tags": [
                 {
                     "name": "Super Power",
-                    "rank": 98,
+                    "rank": 97,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1168,23 +1168,18 @@
                 },
                 {
                     "name": "Urban Fantasy",
-                    "rank": 90,
+                    "rank": 89,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Male Protagonist",
-                    "rank": 83,
+                    "rank": 84,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Body Swapping",
                     "rank": 82,
                     "isMediaSpoiler": true
-                },
-                {
-                    "name": "Tsundere",
-                    "rank": 80,
-                    "isMediaSpoiler": false
                 },
                 {
                     "name": "School",
@@ -1197,29 +1192,39 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Amnesia",
-                    "rank": 71,
-                    "isMediaSpoiler": true
+                    "name": "Tsundere",
+                    "rank": 73,
+                    "isMediaSpoiler": false
                 },
                 {
-                    "name": "Dissociative Identities",
-                    "rank": 60,
+                    "name": "Amnesia",
+                    "rank": 72,
                     "isMediaSpoiler": true
                 },
                 {
                     "name": "Survival",
-                    "rank": 60,
+                    "rank": 62,
                     "isMediaSpoiler": true
                 },
                 {
+                    "name": "Primarily Teen Cast",
+                    "rank": 60,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Memory Manipulation",
-                    "rank": 59,
+                    "rank": 60,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Anti-Hero",
-                    "rank": 56,
+                    "rank": 58,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Dissociative Identities",
+                    "rank": 57,
+                    "isMediaSpoiler": true
                 },
                 {
                     "name": "Episodic",
@@ -1268,13 +1273,8 @@
                 },
                 {
                     "name": "Drugs",
-                    "rank": 29,
+                    "rank": 30,
                     "isMediaSpoiler": true
-                },
-                {
-                    "name": "Primarily Teen Cast",
-                    "rank": 20,
-                    "isMediaSpoiler": false
                 },
                 {
                     "name": "Baseball",
@@ -1396,17 +1396,17 @@
                 },
                 {
                     "name": "Heterosexual",
-                    "rank": 50,
-                    "isMediaSpoiler": false
-                },
-                {
-                    "name": "Tomboy",
-                    "rank": 37,
+                    "rank": 45,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Primarily Teen Cast",
-                    "rank": 20,
+                    "rank": 40,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Tomboy",
+                    "rank": 35,
                     "isMediaSpoiler": false
                 }
             ],
@@ -1903,12 +1903,12 @@
                     "isMediaSpoiler": true
                 },
                 {
-                    "name": "Male Protagonist",
-                    "rank": 79,
+                    "name": "Detective",
+                    "rank": 80,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Detective",
+                    "name": "Male Protagonist",
                     "rank": 79,
                     "isMediaSpoiler": false
                 },
@@ -2202,7 +2202,7 @@
             "tags": [
                 {
                     "name": "Terrorism",
-                    "rank": 93,
+                    "rank": 94,
                     "isMediaSpoiler": false
                 },
                 {
@@ -2408,13 +2408,13 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Cute Boys Doing Cute Things",
-                    "rank": 40,
+                    "name": "Rural",
+                    "rank": 37,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Rural",
-                    "rank": 37,
+                    "name": "Cute Boys Doing Cute Things",
+                    "rank": 33,
                     "isMediaSpoiler": false
                 },
                 {
@@ -4016,7 +4016,7 @@
                 },
                 "vrv": {
                     "seasons": 2,
-                    "movies": 2
+                    "movies": 1
                 },
                 "hulu": {
                     "seasons": 2,
@@ -4318,7 +4318,7 @@
                 },
                 {
                     "name": "Iyashikei",
-                    "rank": 33,
+                    "rank": 35,
                     "isMediaSpoiler": false
                 },
                 {
@@ -5088,11 +5088,6 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Kids",
-                    "rank": 60,
-                    "isMediaSpoiler": false
-                },
-                {
                     "name": "Age Gap",
                     "rank": 53,
                     "isMediaSpoiler": false
@@ -5183,7 +5178,7 @@
                 },
                 {
                     "name": "Primarily Female Cast",
-                    "rank": 88,
+                    "rank": 89,
                     "isMediaSpoiler": false
                 },
                 {
@@ -5769,16 +5764,16 @@
             "tags": [
                 {
                     "name": "Primarily Child Cast",
-                    "rank": 98,
-                    "isMediaSpoiler": false
-                },
-                {
-                    "name": "Slapstick",
-                    "rank": 86,
+                    "rank": 99,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Heterosexual",
+                    "rank": 88,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Slapstick",
                     "rank": 86,
                     "isMediaSpoiler": false
                 },
@@ -5788,13 +5783,13 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Bullying",
-                    "rank": 70,
+                    "name": "Episodic",
+                    "rank": 69,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Episodic",
-                    "rank": 67,
+                    "name": "Bullying",
+                    "rank": 69,
                     "isMediaSpoiler": false
                 },
                 {
@@ -5803,13 +5798,13 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Rural",
-                    "rank": 53,
+                    "name": "Iyashikei",
+                    "rank": 60,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Iyashikei",
-                    "rank": 40,
+                    "name": "Rural",
+                    "rank": 52,
                     "isMediaSpoiler": false
                 }
             ],
@@ -5900,28 +5895,23 @@
                 },
                 {
                     "name": "Anti-Hero",
-                    "rank": 91,
+                    "rank": 92,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Detective",
-                    "rank": 88,
+                    "rank": 89,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Male Protagonist",
-                    "rank": 87,
+                    "rank": 88,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Tragedy",
-                    "rank": 84,
+                    "rank": 85,
                     "isMediaSpoiler": true
-                },
-                {
-                    "name": "Crime",
-                    "rank": 83,
-                    "isMediaSpoiler": false
                 },
                 {
                     "name": "Revenge",
@@ -5929,8 +5919,13 @@
                     "isMediaSpoiler": true
                 },
                 {
+                    "name": "Crime",
+                    "rank": 81,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Urban",
-                    "rank": 66,
+                    "rank": 67,
                     "isMediaSpoiler": false
                 },
                 {
@@ -5945,17 +5940,17 @@
                 },
                 {
                     "name": "Police",
-                    "rank": 60,
+                    "rank": 62,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Male Cast",
+                    "rank": 58,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Mythology",
                     "rank": 57,
-                    "isMediaSpoiler": false
-                },
-                {
-                    "name": "Primarily Male Cast",
-                    "rank": 56,
                     "isMediaSpoiler": false
                 },
                 {
@@ -6047,13 +6042,13 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "School",
+                    "name": "Tsundere",
                     "rank": 87,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Tsundere",
-                    "rank": 87,
+                    "name": "School",
+                    "rank": 86,
                     "isMediaSpoiler": false
                 },
                 {
@@ -6078,7 +6073,7 @@
                 },
                 {
                     "name": "Female Harem",
-                    "rank": 46,
+                    "rank": 40,
                     "isMediaSpoiler": true
                 }
             ],
@@ -6216,7 +6211,7 @@
                 },
                 {
                     "name": "Time Skip",
-                    "rank": 40,
+                    "rank": 39,
                     "isMediaSpoiler": true
                 }
             ],
