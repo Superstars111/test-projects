@@ -72,14 +72,14 @@ def collect_seasonal_data(show_id, seasonal_data):
 
     seasonal_data = sort_seasonal_data(show_data, seasonal_data)
 
-    if seasonal_data["sequel"]:
-        seasonal_data = collect_seasonal_data(seasonal_data["sequel"], seasonal_data)
+    for id in seasonal_data["sequel"]:
+        seasonal_data = collect_seasonal_data(id, seasonal_data)
     return seasonal_data
 
 
 def sort_seasonal_data(data_tree, seasonal_data):
     check_stream_locations(data_tree, seasonal_data["streaming"])
-    seasonal_data["sequel"] = None
+    seasonal_data["sequel"] = []
     for series in data_tree["relations"]["edges"]:
         if series["relationType"] == "SEQUEL":
             if series["node"]["format"] in ("TV", "TV_SHORT"):
@@ -90,7 +90,7 @@ def sort_seasonal_data(data_tree, seasonal_data):
                     seasonal_data["unaired_seasons"] += 1
             elif series["node"]["format"] == "MOVIE":
                 seasonal_data["movies"] += 1
-            seasonal_data["sequel"] = series["node"]["id"]
+            seasonal_data["sequel"].append(series["node"]["id"])
 
     return seasonal_data
 

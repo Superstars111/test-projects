@@ -6,15 +6,16 @@ import tkinter.font as fnt
 import urllib.request
 from PIL import Image, ImageTk
 import io
+import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.text import Annotation
 import decimal as dc
 import alphabetize
 import time
+import fabric
 
-with open("anime_data.json", "r") as anime_data:
-    download_data = json.load(anime_data)
+download_data = pd.read_json("anime_data.json", typ="series", orient="records")
 
 options = []
 option_titles = []
@@ -201,15 +202,6 @@ class Root:
         lbl_tubi_seasons.grid(row=4, column=4)
         lbl_tubi_movies.grid(row=5, column=4, sticky="n")
 
-
-    def add_options(self):
-
-        dlg_selection = SelectionWindow(self.parent)
-        dlg_selection.title("Option Selector")
-        dlg_selection.transient(self.parent)
-        dlg_selection.grab_set()
-        dlg_selection.wait_window()
-
     def update_page_display(self, *ignore):
         self.show = options[self.lbox_options.curselection()[0]]
         self.check_streaming()
@@ -259,6 +251,14 @@ class Root:
         self.lbl_tags_list["text"] = f"{', '.join(normal_tags)}"
         self.lbl_warnings_list["text"] = f"{', '.join(warning_tags)}"
         self.lbl_spoiler_tags["text"] = f"{', '.join(spoiler_tags)}"
+
+    def add_options(self):
+
+        dlg_selection = SelectionWindow(self.parent)
+        dlg_selection.title("Option Selector")
+        dlg_selection.transient(self.parent)
+        dlg_selection.grab_set()
+        dlg_selection.wait_window()
 
     def display_all(self):
         house_scores = []
@@ -694,7 +694,7 @@ class EditWindow(tk.Toplevel):
                 "seasons": 0,
                 "unaired_seasons": 0,
                 "movies": 1,
-                "sequel": None,
+                "sequel": [],
                 "streaming": stream_info
             }
         else:
@@ -703,13 +703,13 @@ class EditWindow(tk.Toplevel):
                 "seasons": 1,
                 "unaired_seasons": 0,
                 "movies": 0,
-                "sequel": None,
+                "sequel": [],
                 "streaming": stream_info
             }
         seasonal_data = collection.sort_seasonal_data(request, seasonal_data)
 
-        if seasonal_data["sequel"]:
-            seasonal_data = collection.collect_seasonal_data(seasonal_data["sequel"], seasonal_data)
+        for id in seasonal_data["sequel"]:
+            seasonal_data = collection.collect_seasonal_data(id, seasonal_data)
 
         if request["title"]["english"]:
             title = request["title"]["english"]

@@ -294,7 +294,7 @@
                 },
                 {
                     "name": "Male Protagonist",
-                    "rank": 58,
+                    "rank": 56,
                     "isMediaSpoiler": false
                 },
                 {
@@ -784,6 +784,11 @@
                     "isMediaSpoiler": true
                 },
                 {
+                    "name": "Primarily Teen Cast",
+                    "rank": 60,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Acting",
                     "rank": 58,
                     "isMediaSpoiler": false
@@ -802,11 +807,6 @@
                     "name": "Mafia",
                     "rank": 50,
                     "isMediaSpoiler": true
-                },
-                {
-                    "name": "Primarily Teen Cast",
-                    "rank": 40,
-                    "isMediaSpoiler": false
                 },
                 {
                     "name": "Nudity",
@@ -1193,7 +1193,7 @@
                 },
                 {
                     "name": "Tsundere",
-                    "rank": 73,
+                    "rank": 75,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1267,6 +1267,11 @@
                     "isMediaSpoiler": true
                 },
                 {
+                    "name": "Baseball",
+                    "rank": 32,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "College",
                     "rank": 30,
                     "isMediaSpoiler": false
@@ -1275,11 +1280,6 @@
                     "name": "Drugs",
                     "rank": 30,
                     "isMediaSpoiler": true
-                },
-                {
-                    "name": "Baseball",
-                    "rank": 15,
-                    "isMediaSpoiler": false
                 }
             ],
             "score": 75,
@@ -1487,7 +1487,7 @@
             "tags": [
                 {
                     "name": "Coming of Age",
-                    "rank": 94,
+                    "rank": 95,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1700,13 +1700,18 @@
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Terrorism",
+                    "rank": 83,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Male Protagonist",
                     "rank": 83,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Terrorism",
-                    "rank": 83,
+                    "name": "Primarily Teen Cast",
+                    "rank": 79,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1736,17 +1741,17 @@
                 },
                 {
                     "name": "Nudity",
-                    "rank": 52,
-                    "isMediaSpoiler": false
-                },
-                {
-                    "name": "Female Harem",
-                    "rank": 48,
+                    "rank": 53,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Love Triangle",
                     "rank": 44,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Female Harem",
+                    "rank": 43,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1766,7 +1771,7 @@
                 },
                 {
                     "name": "Tanned Skin",
-                    "rank": 40,
+                    "rank": 36,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1776,6 +1781,11 @@
                 },
                 {
                     "name": "Age Gap",
+                    "rank": 20,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Disability",
                     "rank": 20,
                     "isMediaSpoiler": false
                 }
@@ -1803,7 +1813,7 @@
                     "movies": 0
                 },
                 "hulu": {
-                    "seasons": 0,
+                    "seasons": 1,
                     "movies": 0
                 },
                 "youtube": {
@@ -1894,7 +1904,7 @@
                 },
                 {
                     "name": "Primarily Child Cast",
-                    "rank": 81,
+                    "rank": 82,
                     "isMediaSpoiler": false
                 },
                 {
@@ -1954,7 +1964,7 @@
                 },
                 {
                     "name": "Kuudere",
-                    "rank": 30,
+                    "rank": 28,
                     "isMediaSpoiler": false
                 }
             ],
@@ -2289,6 +2299,11 @@
                     "name": "Female Harem",
                     "rank": 42,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Disability",
+                    "rank": 20,
+                    "isMediaSpoiler": false
                 }
             ],
             "score": 70,
@@ -2398,23 +2413,23 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Kuudere",
-                    "rank": 55,
+                    "name": "Primarily Teen Cast",
+                    "rank": 60,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Primarily Teen Cast",
+                    "name": "Kuudere",
                     "rank": 53,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Rural",
-                    "rank": 37,
+                    "rank": 39,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Cute Boys Doing Cute Things",
-                    "rank": 33,
+                    "rank": 35,
                     "isMediaSpoiler": false
                 },
                 {
@@ -2514,17 +2529,17 @@
                 },
                 {
                     "name": "School",
-                    "rank": 88,
+                    "rank": 89,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Male Protagonist",
-                    "rank": 84,
+                    "rank": 85,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Episodic",
-                    "rank": 79,
+                    "rank": 73,
                     "isMediaSpoiler": false
                 },
                 {
@@ -3094,14 +3109,19 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Heterosexual",
-                    "rank": 82,
+                    "name": "Philosophy",
+                    "rank": 79,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Philosophy",
+                    "name": "Heterosexual",
                     "rank": 78,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Cannibalism",
+                    "rank": 73,
+                    "isMediaSpoiler": true
                 },
                 {
                     "name": "Hikikomori",
@@ -3109,19 +3129,14 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "School",
-                    "rank": 54,
-                    "isMediaSpoiler": false
-                },
-                {
                     "name": "Primarily Teen Cast",
-                    "rank": 50,
+                    "rank": 66,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Cannibalism",
-                    "rank": 10,
-                    "isMediaSpoiler": true
+                    "name": "School",
+                    "rank": 55,
+                    "isMediaSpoiler": false
                 }
             ],
             "score": 84,
@@ -3230,32 +3245,27 @@
                 },
                 {
                     "name": "Slapstick",
-                    "rank": 77,
+                    "rank": 78,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Female Protagonist",
-                    "rank": 73,
+                    "rank": 72,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Seinen",
-                    "rank": 70,
+                    "rank": 68,
+                    "isMediaSpoiler": false
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 64,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Male Protagonist",
                     "rank": 59,
-                    "isMediaSpoiler": false
-                },
-                {
-                    "name": "Primarily Teen Cast",
-                    "rank": 53,
-                    "isMediaSpoiler": false
-                },
-                {
-                    "name": "Primarily Female Cast",
-                    "rank": 47,
                     "isMediaSpoiler": false
                 },
                 {
@@ -3265,7 +3275,7 @@
                 },
                 {
                     "name": "Philosophy",
-                    "rank": 26,
+                    "rank": 20,
                     "isMediaSpoiler": false
                 },
                 {
@@ -3380,6 +3390,11 @@
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Primarily Teen Cast",
+                    "rank": 79,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Otaku Culture",
                     "rank": 75,
                     "isMediaSpoiler": false
@@ -3401,22 +3416,17 @@
                 },
                 {
                     "name": "Educational",
-                    "rank": 65,
-                    "isMediaSpoiler": false
-                },
-                {
-                    "name": "Primarily Teen Cast",
-                    "rank": 60,
+                    "rank": 64,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Urban Fantasy",
-                    "rank": 56,
+                    "rank": 57,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Ensemble Cast",
-                    "rank": 51,
+                    "rank": 53,
                     "isMediaSpoiler": false
                 },
                 {
@@ -3541,11 +3551,6 @@
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Female Protagonist",
-                    "rank": 61,
-                    "isMediaSpoiler": true
-                },
-                {
                     "name": "Iyashikei",
                     "rank": 60,
                     "isMediaSpoiler": false
@@ -3556,18 +3561,23 @@
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Female Protagonist",
+                    "rank": 60,
+                    "isMediaSpoiler": true
+                },
+                {
                     "name": "Rural",
                     "rank": 58,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Guns",
+                    "name": "Agender",
                     "rank": 56,
                     "isMediaSpoiler": false
                 },
                 {
-                    "name": "Agender",
-                    "rank": 50,
+                    "name": "Guns",
+                    "rank": 56,
                     "isMediaSpoiler": false
                 },
                 {
@@ -3957,7 +3967,7 @@
                 },
                 {
                     "name": "School",
-                    "rank": 79,
+                    "rank": 78,
                     "isMediaSpoiler": false
                 },
                 {
@@ -4154,18 +4164,18 @@
                     "isMediaSpoiler": true
                 },
                 {
-                    "name": "Ero Guro",
-                    "rank": 57,
-                    "isMediaSpoiler": true
-                },
-                {
                     "name": "Monster Girl",
                     "rank": 52,
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Ero Guro",
+                    "rank": 52,
+                    "isMediaSpoiler": true
+                },
+                {
                     "name": "Tanned Skin",
-                    "rank": 44,
+                    "rank": 41,
                     "isMediaSpoiler": false
                 },
                 {
@@ -4273,7 +4283,7 @@
                 },
                 {
                     "name": "Shogi",
-                    "rank": 86,
+                    "rank": 85,
                     "isMediaSpoiler": false
                 },
                 {
@@ -4851,6 +4861,11 @@
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Heterosexual",
+                    "rank": 64,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Kuudere",
                     "rank": 60,
                     "isMediaSpoiler": false
@@ -4858,11 +4873,6 @@
                 {
                     "name": "Shounen",
                     "rank": 59,
-                    "isMediaSpoiler": false
-                },
-                {
-                    "name": "Heterosexual",
-                    "rank": 55,
                     "isMediaSpoiler": false
                 }
             ],
@@ -5188,7 +5198,7 @@
                 },
                 {
                     "name": "Outdoor",
-                    "rank": 84,
+                    "rank": 85,
                     "isMediaSpoiler": false
                 },
                 {
@@ -5203,7 +5213,7 @@
                 },
                 {
                     "name": "Tragedy",
-                    "rank": 62,
+                    "rank": 67,
                     "isMediaSpoiler": true
                 },
                 {
@@ -5213,7 +5223,7 @@
                 },
                 {
                     "name": "Educational",
-                    "rank": 55,
+                    "rank": 57,
                     "isMediaSpoiler": false
                 },
                 {
@@ -5228,7 +5238,7 @@
                 },
                 {
                     "name": "School",
-                    "rank": 33,
+                    "rank": 34,
                     "isMediaSpoiler": false
                 }
             ],
@@ -5315,7 +5325,7 @@
                 },
                 {
                     "name": "Heterosexual",
-                    "rank": 91,
+                    "rank": 92,
                     "isMediaSpoiler": false
                 },
                 {
@@ -5335,8 +5345,13 @@
                 },
                 {
                     "name": "Memory Manipulation",
-                    "rank": 78,
+                    "rank": 79,
                     "isMediaSpoiler": true
+                },
+                {
+                    "name": "Urban",
+                    "rank": 79,
+                    "isMediaSpoiler": false
                 },
                 {
                     "name": "Female Protagonist",
@@ -5370,7 +5385,7 @@
                 },
                 {
                     "name": "Time Manipulation",
-                    "rank": 70,
+                    "rank": 69,
                     "isMediaSpoiler": true
                 },
                 {
@@ -5385,13 +5400,18 @@
                 },
                 {
                     "name": "Ensemble Cast",
-                    "rank": 60,
+                    "rank": 62,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Body Swapping",
-                    "rank": 60,
+                    "rank": 61,
                     "isMediaSpoiler": true
+                },
+                {
+                    "name": "Primarily Teen Cast",
+                    "rank": 60,
+                    "isMediaSpoiler": false
                 },
                 {
                     "name": "Tsundere",
@@ -5405,12 +5425,7 @@
                 },
                 {
                     "name": "Trains",
-                    "rank": 20,
-                    "isMediaSpoiler": false
-                },
-                {
-                    "name": "Primarily Teen Cast",
-                    "rank": 20,
+                    "rank": 43,
                     "isMediaSpoiler": false
                 }
             ],
@@ -5500,7 +5515,7 @@
             "tags": [
                 {
                     "name": "Teacher",
-                    "rank": 97,
+                    "rank": 98,
                     "isMediaSpoiler": false
                 },
                 {
@@ -5510,12 +5525,12 @@
                 },
                 {
                     "name": "Primarily Male Cast",
-                    "rank": 72,
+                    "rank": 76,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Historical",
-                    "rank": 71,
+                    "rank": 75,
                     "isMediaSpoiler": false
                 },
                 {
@@ -5529,7 +5544,7 @@
                     "isMediaSpoiler": false
                 }
             ],
-            "score": 72,
+            "score": 71,
             "streaming": {
                 "crunchyroll": {
                     "seasons": 1,
@@ -5614,14 +5629,14 @@
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Denpa",
+                    "rank": 94,
+                    "isMediaSpoiler": true
+                },
+                {
                     "name": "Rehabilitation",
                     "rank": 92,
                     "isMediaSpoiler": false
-                },
-                {
-                    "name": "Denpa",
-                    "rank": 92,
-                    "isMediaSpoiler": true
                 },
                 {
                     "name": "Language Barrier",
@@ -5635,7 +5650,7 @@
                 },
                 {
                     "name": "Suicide",
-                    "rank": 80,
+                    "rank": 81,
                     "isMediaSpoiler": true
                 },
                 {
@@ -5652,6 +5667,11 @@
                     "name": "Tragedy",
                     "rank": 75,
                     "isMediaSpoiler": true
+                },
+                {
+                    "name": "Disability",
+                    "rank": 73,
+                    "isMediaSpoiler": false
                 },
                 {
                     "name": "School",
@@ -5783,6 +5803,11 @@
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Iyashikei",
+                    "rank": 70,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Episodic",
                     "rank": 69,
                     "isMediaSpoiler": false
@@ -5795,11 +5820,6 @@
                 {
                     "name": "Shounen",
                     "rank": 64,
-                    "isMediaSpoiler": false
-                },
-                {
-                    "name": "Iyashikei",
-                    "rank": 60,
                     "isMediaSpoiler": false
                 },
                 {
@@ -5835,7 +5855,7 @@
                     "movies": 0
                 },
                 "youtube": {
-                    "seasons": 0,
+                    "seasons": 1,
                     "movies": 0
                 },
                 "tubi": {
@@ -5847,7 +5867,7 @@
                     "movies": 0
                 },
                 "hidive": {
-                    "seasons": 0,
+                    "seasons": 1,
                     "movies": 0
                 }
             },
@@ -6156,7 +6176,7 @@
                 },
                 {
                     "name": "Fugitive",
-                    "rank": 81,
+                    "rank": 80,
                     "isMediaSpoiler": true
                 },
                 {
@@ -6319,6 +6339,11 @@
                     "isMediaSpoiler": false
                 },
                 {
+                    "name": "Primarily Teen Cast",
+                    "rank": 40,
+                    "isMediaSpoiler": false
+                },
+                {
                     "name": "Rehabilitation",
                     "rank": 20,
                     "isMediaSpoiler": true
@@ -6422,6 +6447,11 @@
                     "name": "Female Protagonist",
                     "rank": 79,
                     "isMediaSpoiler": false
+                },
+                {
+                    "name": "Disability",
+                    "rank": 79,
+                    "isMediaSpoiler": true
                 },
                 {
                     "name": "Male Protagonist",
@@ -6566,12 +6596,12 @@
                 },
                 {
                     "name": "Female Protagonist",
-                    "rank": 79,
+                    "rank": 80,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Coming of Age",
-                    "rank": 79,
+                    "rank": 80,
                     "isMediaSpoiler": false
                 },
                 {
@@ -6596,12 +6626,12 @@
                 },
                 {
                     "name": "Gender Bending",
-                    "rank": 63,
+                    "rank": 62,
                     "isMediaSpoiler": false
                 },
                 {
                     "name": "Heterosexual",
-                    "rank": 63,
+                    "rank": 62,
                     "isMediaSpoiler": false
                 },
                 {
@@ -6616,7 +6646,7 @@
                 },
                 {
                     "name": "Trains",
-                    "rank": 43,
+                    "rank": 44,
                     "isMediaSpoiler": false
                 },
                 {
